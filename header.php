@@ -30,6 +30,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
+	<div id="wrapper-announce" class="container">
+		<?php if ( !function_exists( 'dynamic_sidebar' ) || !dynamic_sidebar('announce-sidebar') ) ?>
+	</div>
+
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
 
