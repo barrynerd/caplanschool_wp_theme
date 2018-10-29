@@ -15,7 +15,8 @@ $bcc_menu_text_hover: white;
 $bcc_menu_text_hover: #777;
 $bcc_menu_sub_bg: #ddd;
 $bcc_menu_text: #777;
-$bcc_underline: #2a8700;
+$bcc_menu_underline: #2a8700;
+
 
 $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
@@ -43,7 +44,7 @@ $font-family-base: "Open Sans";
     display: block;
     width: 0;
     height: 2px;
-    background: $bcc_underline;
+    background: $bcc_menu_underline;
     transition: 0.05s;
 }
 
