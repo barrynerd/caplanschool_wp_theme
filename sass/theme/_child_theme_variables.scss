@@ -8,6 +8,11 @@
 // Color system
 //
 $bcc_yellow: #FFEE5D;
+$bcc_green: #2a8700;
+$bcc_dark_green: #366223;
+$bcc_light_green: #BBDFAB;
+$bcc_extra_light_green: #fffff6;
+
 $bcc_menu_bg: #777;
 $bcc_menu_text: #777;
 $bcc_menu_text: white;
@@ -16,7 +21,6 @@ $bcc_menu_text_hover: #777;
 $bcc_menu_sub_bg: #ddd;
 $bcc_menu_text: #777;
 $bcc_menu_underline: #2a8700;
-$bcc_light_green: #BBDFAB;
 
 $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
@@ -92,6 +96,43 @@ $font-family-base: "Open Sans";
     border-color: #2F3E48;
 }
 
+.home .wrapper {
+    padding:0;
+}
+
+.home .entry-header {
+    display:none;
+}
+
+.home .headline01-row {
+    background-color: $bcc_green;
+    color:white;
+}
+
+.home .headline01-row h1.sow-headline{
+    text-align:center;
+    font-family: $font-family-base;
+    font-size: 2rem;
+    letter-spacing: calc(1rem/16);
+    padding: .5rem;
+
+}
+
+.home .panel-grid {
+    margin: 0!important;
+}
+
+.home .feature01-row {
+    background: $bcc_extra_light_green;
+}
+
+.home .feature01-row h1.sow-headline {
+    color: $bcc_dark_green;
+    font-family: $font-family-base;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: calc(1rem/16 * -1);
+}
 
 // $primary:       $blue !default;
 // $secondary:     $gray-600 !default;

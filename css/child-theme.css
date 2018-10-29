@@ -57,6 +57,36 @@
   color: #FFF;
   border-color: #2F3E48; }
 
+.home .wrapper {
+  padding: 0; }
+
+.home .entry-header {
+  display: none; }
+
+.home .headline01-row {
+  background-color: #2a8700;
+  color: white; }
+
+.home .headline01-row h1.sow-headline {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  letter-spacing: calc(1rem/16);
+  padding: .5rem; }
+
+.home .panel-grid {
+  margin: 0 !important; }
+
+.home .feature01-row {
+  background: #fffff6; }
+
+.home .feature01-row h1.sow-headline {
+  color: #366223;
+  font-family: "Open Sans";
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: calc(1rem/16 * -1); }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
