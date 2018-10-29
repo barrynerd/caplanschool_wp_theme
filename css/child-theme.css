@@ -45,6 +45,18 @@
 .dropdown-item:hover {
   background: #fec400; }
 
+#wrapper-announce {
+  background-color: #BBDFAB;
+  padding-top: .5rem; }
+
+#wrapper-announce a {
+  margin-bottom: .5rem; }
+
+#wrapper-announce .btn-primary {
+  background-color: #2B8801;
+  color: #FFF;
+  border-color: #2F3E48; }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors

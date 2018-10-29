@@ -16,7 +16,7 @@ $bcc_menu_text_hover: #777;
 $bcc_menu_sub_bg: #ddd;
 $bcc_menu_text: #777;
 $bcc_menu_underline: #2a8700;
-
+$bcc_light_green: #BBDFAB;
 
 $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
@@ -75,6 +75,24 @@ $font-family-base: "Open Sans";
 .dropdown-item:hover {
     background: #fec400;
 }
+
+#wrapper-announce {
+    background-color: $bcc_light_green;
+    padding-top: .5rem;
+
+}
+
+#wrapper-announce a {
+    margin-bottom: .5rem;
+}
+
+#wrapper-announce .btn-primary {
+    background-color: #2B8801;
+    color:#FFF;
+    border-color: #2F3E48;
+}
+
+
 // $primary:       $blue !default;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
