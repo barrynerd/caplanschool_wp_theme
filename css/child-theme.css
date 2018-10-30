@@ -87,6 +87,18 @@
   font-weight: bold;
   letter-spacing: calc(1rem/16 * -1); }
 
+.home .sow-icon-container [class^="sow-icon-"] {
+  color: #fffbad !important; }
+
+.home .sow-icon-container {
+  color: #2a8700 !important; }
+
+.home .feature01-row h5 {
+  color: #201529;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 0.5rem !important; }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors

@@ -8,6 +8,8 @@
 // Color system
 //
 $bcc_yellow: #FFEE5D;
+$bcc_light_yellow: #fffbad;
+
 $bcc_green: #2a8700;
 $bcc_dark_green: #366223;
 $bcc_light_green: #BBDFAB;
@@ -133,6 +135,22 @@ $font-family-base: "Open Sans";
     font-weight: bold;
     letter-spacing: calc(1rem/16 * -1);
 }
+
+.home .sow-icon-container [class^="sow-icon-"] {
+    color: #fffbad!important;
+}
+
+.home .sow-icon-container {
+    color: $bcc_green!important;
+}
+
+.home .feature01-row h5 {
+    color: #201529;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 .5rem!important;
+}
+
 
 // $primary:       $blue !default;
 // $secondary:     $gray-600 !default;
