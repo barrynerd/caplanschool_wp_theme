@@ -30,12 +30,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-	<div id="wrapper-announce" class="container-fluid">
-		<?php if ( is_active_sidebar( 'announce-sidebar' ) ) : ?>
-				<?php dynamic_sidebar( 'announce-sidebar' ); ?>
-		<?php endif; ?>
+	<?php if ( is_active_sidebar( 'announce-sidebar' ) ) : ?>
+		<div id="wrapper-announce" class="container-fluid">
+			<?php dynamic_sidebar( 'announce-sidebar' ); ?>
+			</div>
+	<?php endif; ?>
 
-	</div>
 
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
