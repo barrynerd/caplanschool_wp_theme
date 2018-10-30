@@ -53,7 +53,7 @@
   margin-bottom: .5rem; }
 
 #wrapper-announce .btn-primary {
-  background-color: #2B8801;
+  background-color: #2a8700;
   color: #FFF;
   border-color: #2F3E48; }
 
@@ -98,6 +98,77 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0 0 0.5rem !important; }
+
+.home .video-row01 .bcc-video {
+  text-align: center; }
+
+.home .video-row01 h3 {
+  display: none; }
+
+.home .video-row01 {
+  background-color: #ebf0e8;
+  padding-top: 2rem;
+  padding-bottom: calc(2rem - 6px); }
+
+.home .upcomingclasses01-row {
+  text-align: center; }
+
+.home .upcomingclasses01-row h3 {
+  color: #366223;
+  font-weight: bold;
+  font-size: 2.25rem;
+  letter-spacing: calc(1rem/16 * -1);
+  margin: 1.25rem 0; }
+
+.home .upcomingclasses01-row ul {
+  margin: 1.25rem 0;
+  padding: 0; }
+
+.home .upcomingclasses01-row ul li:nth-of-type(odd) {
+  background: #eee; }
+
+.home .upcomingclasses01-row ul li h3 {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.375rem; }
+
+.home .upcomingclasses01-row ul li h3 a {
+  color: #2a8700;
+  text-decoration: none; }
+
+.home #calendar-row {
+  background-color: #fffbad; }
+
+.home #calendar-row a {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.4;
+  background: #2B8801;
+  border: none; }
+
+.home #calendar-row .panel-grid-cell:last-of-type {
+  -ms-flex-preferred-size: 480px;
+      flex-basis: 480px;
+  width: 61.8034%;
+  width: calc(61.8034% - ( 0.38196600790794 * 30px )); }
+
+.home #calendar-row .sow-cta-base {
+  padding: 0; }
+
+.home #flyer-row {
+  background-color: #ebf0e8; }
+
+.home #flyer-row h3 {
+  color: #366223;
+  font-weight: bold;
+  font-size: 2.25rem;
+  letter-spacing: calc(1rem/16 * -1);
+  margin: 1.25rem 0; }
+
+.home #flyer-row .btn-primary {
+  background-color: #2a8700;
+  color: #FFF;
+  border-color: #2F3E48; }
 
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
