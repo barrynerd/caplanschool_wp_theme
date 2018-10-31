@@ -16,6 +16,8 @@ $bcc_light_green: #BBDFAB;
 $bcc_medium_light_green: #ebf0e8;
 $bcc_extra_light_green: #fffff6;
 
+$bcc_lime_green: #84D263;
+
 $bcc_menu_bg: #777;
 $bcc_menu_text: #777;
 $bcc_menu_text: white;
@@ -224,6 +226,7 @@ $font-family-base: "Open Sans";
 
 .home #flyer-row{
     background-color: $bcc_medium_light_green;
+    padding-bottom: 1.5rem;
 }
 
 .home #flyer-row h3{
@@ -240,6 +243,32 @@ $font-family-base: "Open Sans";
     border-color: #2F3E48;
 }
 
+#wrapper-footer {
+        background-color: #58535C;
+        padding-top: 2rem;
+}
+
+#wrapper-footer  .box {
+    background-color: white;
+    border: 1px solid $bcc_green;
+    color: $bcc_lime_green;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+
+#wrapper-footer  ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#wrapper-footer  #footer-summary {
+    color: white;
+    font-size: .8rem;
+    padding: 1rem 4rem 0;
+    text-align: center;
+}
 
 // $primary:       $blue !default;
 // $secondary:     $gray-600 !default;

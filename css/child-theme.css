@@ -156,7 +156,8 @@
   padding: 0; }
 
 .home #flyer-row {
-  background-color: #ebf0e8; }
+  background-color: #ebf0e8;
+  padding-bottom: 1.5rem; }
 
 .home #flyer-row h3 {
   color: #366223;
@@ -169,6 +170,29 @@
   background-color: #2a8700;
   color: #FFF;
   border-color: #2F3E48; }
+
+#wrapper-footer {
+  background-color: #58535C;
+  padding-top: 2rem; }
+
+#wrapper-footer .box {
+  background-color: white;
+  border: 1px solid #2a8700;
+  color: #84D263;
+  font-size: .9rem;
+  font-weight: bold;
+  padding: 1rem 4rem;
+  text-align: center; }
+
+#wrapper-footer ul {
+  list-style-type: none;
+  padding: 0; }
+
+#wrapper-footer #footer-summary {
+  color: white;
+  font-size: .8rem;
+  padding: 1rem 4rem 0;
+  text-align: center; }
 
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
