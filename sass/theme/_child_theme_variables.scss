@@ -274,7 +274,27 @@ $font-family-base: "Open Sans";
     color: white;
 }
 
-#pg-11009-0,
+.logo-row {
+    margin-right:0!important;
+}
+
+#bcc-slider {
+    width: 100vw!important;
+}
+
+#bcc-slider .slider-logo .slider-logo-overlay{
+    margin: 0;
+    padding: 0;
+    padding-top: calc(180px - 60px);
+    padding-left: calc(50vw - 104px);
+}
+
+#bcc-slider .slider-logo .slider-logo-overlay img{
+    height: auto;
+    width: 75%;
+}
+
+
 #pg-11009-1,
 #pg-11009-2,
 #pg-11009-3,
@@ -305,6 +325,19 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     #main-menu {
         font-size: 1rem;
     }
+    #bcc-slider .slider-logo .slider-logo-overlay{
+        margin: 0;
+        padding: 0;
+        padding-top: calc(150px + 44px);
+        padding-left: calc(50vw - 150px);
+    }
+
+    #bcc-slider .slider-logo .slider-logo-overlay img{
+        height: auto;
+        width: auto;
+    }
+
+
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
