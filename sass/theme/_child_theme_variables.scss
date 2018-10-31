@@ -90,10 +90,10 @@ $font-family-base: "Open Sans";
 #wrapper-announce {
     background-color: $bcc_light_green;
     padding-top: .5rem;
-
 }
 
 #wrapper-announce a {
+    font-size: .75rem;
     margin-bottom: .5rem;
 }
 
@@ -273,11 +273,56 @@ $font-family-base: "Open Sans";
 #wrapper-footer  ul a {
     color: white;
 }
-// $primary:       $blue !default;
-// $secondary:     $gray-600 !default;
-// $success:       $green !default;
-// $info:          $cyan !default;
-// $warning:       $yellow !default;
-// $danger:        $red !default;
-// $light:         $gray-100 !default;
-// $dark:          $gray-800 !default;
+
+#wrapper-footer,
+#pg-11009-0,
+#pg-11009-1,
+#pg-11009-2,
+#pg-11009-3,
+#pg-11009-4,
+#pg-11009-5,
+#pg-11009-6 {
+    display: none;
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/*
+Extra small devices (portrait phones, less than 544px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+    #main-menu {
+        font-size: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+    #wrapper-announce a {
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
