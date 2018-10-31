@@ -151,7 +151,7 @@ $font-family-base: "Open Sans";
 
 .home .feature01-row h5 {
     color: #201529;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     margin: 0 0 .5rem!important;
 }
@@ -295,8 +295,12 @@ $font-family-base: "Open Sans";
 }
 
 
-#pg-11009-1,
-#pg-11009-2,
+.feature01-row {
+    padding-left: 0!important;
+}
+
+// #pg-11009-1,
+// #pg-11009-2,
 #pg-11009-3,
 #pg-11009-4,
 #pg-11009-5,
@@ -337,6 +341,41 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         width: auto;
     }
 
+    .home .feature01-row p {
+        font-size: .85rem;
+    }
+
+    .home .feature01-row .sow-features-feature {
+        width: 50%!important;
+        padding: 0 1.5rem 1.5rem!important;
+
+    }
+
+    .home .feature01-row .sow-features-list{
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        }
+
+    .home .feature01-row .sow-features-feature .textwidget {
+        margin: .5rem 0 3rem!important;
+    }
+
+    .home .feature01-row .sow-features-feature .sow-icon-container{
+        width: 6rem;
+        height: 6rem;
+        font-size: 6rem;
+        }
+
+    .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"]{
+        width: 6rem;
+        height: 6rem;
+        font-size: 3.5rem!important;
+        }
+
+    .home .feature01-row .sow-features-feature .textwidget {
+        margin: .5rem 0 0!important;
+    }
 
 }
 
@@ -347,7 +386,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         font-size: 1rem;
     }
 
+    .home .feature01-row h5 {
+        font-size: 1.5rem;
+    }
+    .home .feature01-row p {
+        font-size: 1rem;
+    }
 
+    .home .feature01-row .sow-features-feature {
+        width: 25%!important;
+    }
+
+    .home .feature01-row .sow-features-feature .sow-icon-container{
+        width: 7.5rem;
+        height: 7.5rem;
+        font-size: 7.5rem;
+        }
+
+    .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"]{
+        width: 7.5rem;
+        height: 7.5rem;
+        font-size: 4rem!important;
+        }
 }
 
 /* Large devices (desktops, 992px and up) */
