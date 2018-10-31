@@ -194,6 +194,9 @@
   padding: 1rem 4rem 0;
   text-align: center; }
 
+#wrapper-footer ul a {
+  color: white; }
+
 /*!
  * Bootstrap v4.1.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
