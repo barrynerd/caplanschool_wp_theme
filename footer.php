@@ -28,7 +28,7 @@ $container = get_theme_mod('understrap_container_type');
 
 					<div class="site-info">
 
-						<div class="d-flex justify-content-around">
+						<div class="d-sm-flex justify-content-around flex-sm-column flex-md-row">
 
 					        <div class="box">
 					            <ul class="d-flex flex-column">
