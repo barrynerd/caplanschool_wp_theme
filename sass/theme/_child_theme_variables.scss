@@ -33,6 +33,11 @@ $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
 $font-family-base: "Open Sans";
 
+// bootstrap overrides
+.btn {
+    font-weight: bold!important;
+}
+
 // main menu colors
 #main-menu {
     background-color: $bcc_yellow!important;
@@ -242,6 +247,8 @@ $font-family-base: "Open Sans";
     background-color: $bcc_green;
     color:#FFF;
     border-color: #2F3E48;
+    white-space:normal;
+    display:inline-flex;
 }
 
 #wrapper-footer {
@@ -307,16 +314,6 @@ $font-family-base: "Open Sans";
     width: 100vw!important;
 }
 
-// #pg-11009-0,
-// #pg-11009-1,
-// #pg-11009-2,
-// #pg-11009-3,
-// #pg-11009-4,
-// #pg-11009-5,
-#pg-11009-6
-{
-    display: none;
-}
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -355,7 +352,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .home .headline02-row,
     .home .feature01-row,
     .home .video-row01,
-    .home .upcomingclasses01-row
+    .home .upcomingclasses01-row,
+    .home #flyer-row
     {
         margin-right: 0!important;
         width: 100vw;
