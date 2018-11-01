@@ -193,13 +193,14 @@ $font-family-base: "Open Sans";
 
 .home .upcomingclasses01-row ul li h3 {
     margin: 0;
-    padding: 1rem 0;
+    padding: .5rem;
     font-size: 1.375rem;
 }
 
 .home .upcomingclasses01-row ul li h3 a {
     color: $bcc_green;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 .home #calendar-row {
@@ -311,8 +312,9 @@ $font-family-base: "Open Sans";
 // #pg-11009-2,
 // #pg-11009-3,
 // #pg-11009-4,
-#pg-11009-5,
-#pg-11009-6 {
+// #pg-11009-5,
+#pg-11009-6
+{
     display: none;
 }
 /*
@@ -352,7 +354,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .home .headline01-row,
     .home .headline02-row,
     .home .feature01-row,
-    .home .video-row01 {
+    .home .video-row01,
+    .home .upcomingclasses01-row
+    {
         margin-right: 0!important;
         width: 100vw;
         padding-left: 0!important;
@@ -435,6 +439,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         display: flex;
         padding-left: 0!important;
         margin-right:0!important;
+    }
+
+    .home .upcomingclasses01-row ul li h3 a {
+        font-size: 1.375rem;
     }
 
 }

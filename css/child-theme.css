@@ -130,12 +130,13 @@
 
 .home .upcomingclasses01-row ul li h3 {
   margin: 0;
-  padding: 1rem 0;
+  padding: .5rem;
   font-size: 1.375rem; }
 
 .home .upcomingclasses01-row ul li h3 a {
   color: #2a8700;
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1rem; }
 
 .home #calendar-row {
   background-color: #fffbad; }
@@ -225,7 +226,6 @@
   margin-right: 0 !important;
   width: 100vw !important; }
 
-#pg-11009-5,
 #pg-11009-6 {
   display: none; }
 
@@ -257,7 +257,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .home .headline01-row,
   .home .headline02-row,
   .home .feature01-row,
-  .home .video-row01 {
+  .home .video-row01,
+  .home .upcomingclasses01-row {
     margin-right: 0 !important;
     width: 100vw;
     padding-left: 0 !important; }
@@ -317,7 +318,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: -ms-flexbox;
     display: flex;
     padding-left: 0 !important;
-    margin-right: 0 !important; } }
+    margin-right: 0 !important; }
+  .home .upcomingclasses01-row ul li h3 a {
+    font-size: 1.375rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
