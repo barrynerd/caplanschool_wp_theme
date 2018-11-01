@@ -225,7 +225,6 @@
   margin-right: 0 !important;
   width: 100vw !important; }
 
-#pg-11009-4,
 #pg-11009-5,
 #pg-11009-6 {
   display: none; }
@@ -256,9 +255,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: auto;
     width: auto; }
   .home .headline01-row,
+  .home .headline02-row,
   .home .feature01-row,
   .home .video-row01 {
-    margin-right: 0 !important; }
+    margin-right: 0 !important;
+    width: 100vw;
+    padding-left: 0 !important; }
   .home .feature01-row p {
     font-size: .85rem; }
   .home .feature01-row .sow-features-feature {

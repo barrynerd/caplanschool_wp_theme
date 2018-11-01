@@ -306,10 +306,11 @@ $font-family-base: "Open Sans";
     width: 100vw!important;
 }
 
+// #pg-11009-0,
 // #pg-11009-1,
 // #pg-11009-2,
 // #pg-11009-3,
-#pg-11009-4,
+// #pg-11009-4,
 #pg-11009-5,
 #pg-11009-6 {
     display: none;
@@ -332,7 +333,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
 /* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) { 
+@media (min-width: 544px) {
     #main-menu {
         font-size: 1rem;
     }
@@ -349,9 +350,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .home .headline01-row,
+    .home .headline02-row,
     .home .feature01-row,
     .home .video-row01 {
         margin-right: 0!important;
+        width: 100vw;
+        padding-left: 0!important;
     }
 
     .home .feature01-row p {
