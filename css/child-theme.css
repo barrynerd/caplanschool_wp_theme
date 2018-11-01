@@ -258,15 +258,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #bcc-slider .slider-logo .slider-logo-overlay img {
     height: auto;
     width: auto; }
-  .home .headline01-row,
-  .home .headline02-row,
-  .home .feature01-row,
-  .home .video-row01,
-  .home .upcomingclasses01-row,
-  .home #flyer-row {
-    margin-right: 0 !important;
-    width: 100vw;
-    padding-left: 0 !important; }
   .home .feature01-row p {
     font-size: .85rem; }
   .home .feature01-row .sow-features-feature {

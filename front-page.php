@@ -20,7 +20,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapperx" id="page-wrapper">
+<div class="wrapper" id="page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
