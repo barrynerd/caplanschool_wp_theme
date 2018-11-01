@@ -47,6 +47,17 @@ function understrap_child_widgets_init() {
     ) );
 }
 #----------------------------------------------------
+// woocommerce hooks
+
+// get rid of sidebar on woocommerce pages
+// https://stackoverflow.com/questions/49521577/remove-woocommerce-sidebar-from-any-theme
+remove_action( 'woocommerce_after_main_content',  'output_content_wrapper_end' , 10 );
+add_action( 'woocommerce_after_main_content', 'custom_output_content_wrapper_end', 10 );
+function custom_output_content_wrapper_end() {
+        echo '</main>';
+        echo '</div>';
+        echo '</div>';
+    }
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
