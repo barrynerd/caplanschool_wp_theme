@@ -49,17 +49,19 @@ function understrap_child_widgets_init() {
 #----------------------------------------------------
 // woocommerce hooks
 
-// get rid of sidebar on woocommerce pages
-// https://stackoverflow.com/questions/49521577/remove-woocommerce-sidebar-from-any-theme
-remove_action( 'woocommerce_after_main_content',  'output_content_wrapper_end' , 10 );
-add_action( 'woocommerce_after_main_content', 'custom_output_content_wrapper_end', 10 );
-function custom_output_content_wrapper_end() {
-        echo '</main>';
-        echo '</div>';
-        echo '</div>';
-    }
+// remove breadcrumbs from woocommerce pages
+
+// https://www.isitwp.com/remove-woocommerce-breadcrumbs/
+remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
 #----------------------------------------------------
+// remove tabls
+
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
 #----------------------------------------------------
-#----------------------------------------------------
+// Remove related products output
+
+// https://docs.woocommerce.com/document/remove-related-posts-output/
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+
 #----------------------------------------------------
 #----------------------------------------------------
