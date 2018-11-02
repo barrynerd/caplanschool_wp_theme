@@ -64,4 +64,12 @@ remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_pr
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 
 #----------------------------------------------------
+// remove roduct image zoom
+
+/ https://businessbloomer.com/woocommerce-disable-zoom-gallery-slider-lightbox-single-product/
+add_action( 'after_setup_theme', 'xomli_remove_zoom_theme_support', 99 );
+
+function xomli_remove_zoom_theme_support() {
+	remove_theme_support( 'wc-product-gallery-zoom' );
+}
 #----------------------------------------------------
