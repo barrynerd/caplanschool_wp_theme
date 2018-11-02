@@ -326,6 +326,50 @@ $font-family-base: "Open Sans";
     width: 100vw!important;
 }
 
+.single-product .product {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-product .product h1{
+    display:none
+}
+
+.single-product .product .summary {
+    max-width: 960px;
+    width: auto!important;
+    margin-top: 4.75rem;
+}
+
+.single-product .product .woocommerce-product-details__short-description {
+    background-color: #dad6dd;
+        font-size: 1rem;
+        line-height: 1.428571429;
+        margin: 0 auto;
+        padding: 1.5rem 4rem;
+        max-width: 700px;
+    }
+
+.single-product .product .price{
+    color: $bcc_green!important;
+    font-size: 4rem!important;
+    font-weight: bold;
+    line-height: 1.428571429;
+    text-align: center;
+    margin: 1rem 0 0;
+}
+
+.single-product .product .btn-primary {
+    background-color: $bcc_green;
+    color:#FFF;
+    border-color: #2F3E48;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin:1rem auto 0;
+    max-width: 700px;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S

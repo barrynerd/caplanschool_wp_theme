@@ -73,3 +73,36 @@ function xomli_remove_zoom_theme_support() {
 	remove_theme_support( 'wc-product-gallery-zoom' );
 }
 #----------------------------------------------------
+// from old ecaplan-child theme
+function bcc_product_has_deposit($product){
+    $product_id = $product->get_id();
+    $deposit_enabled_array = get_post_meta( $product_id, "_enable_deposit" );
+    $has_deposit = false;
+    if ($deposit_enabled_array[0] == "yes"){
+        $has_deposit = true;
+        }
+    if (current_user_can('administrator')){
+        // echo "<pre>";
+        // $print_r( $deposit_enabled_array[0]);
+        // echo "</pre>";
+    }
+
+    return ($has_deposit);
+    }
+
+#----------------------------------------------------
+// from old ecaplan-child theme
+#see https://docs.woocommerce.com/document/change-add-to-cart-button-text/
+#add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );    // 2.1 +
+
+function bcc_woo_custom_cart_button_text_deposit() {
+
+        return __( 'Deposit', 'woocommerce' );
+
+}
+
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
