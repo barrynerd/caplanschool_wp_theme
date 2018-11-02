@@ -278,6 +278,35 @@
   margin: 1rem auto 0;
   max-width: 700px; }
 
+.woocommerce-message {
+  font-size: .75rem; }
+
+.xoo-wsc-footer a.btn {
+  font-size: .75rem;
+  background-color: #2a8700;
+  color: #FFF;
+  border-color: #2F3E48;
+  font-size: 1.25rem;
+  text-transform: uppercase; }
+
+.xoo-wsc-basket .xoo-wsc-items-count {
+  background-color: #2a8700;
+  color: white; }
+
+.xoo-wsc-basket .xoo-wsc-icon-basket1 {
+  color: #2a8700; }
+
+.xoo-wsc-basket {
+  background-color: #FFEE5D;
+  border: 2px solid #2a8700;
+  border-radius: .5rem;
+  padding: .375rem .75rem .625rem .5rem; }
+
+.xoo-wsc-icon-basket1:before {
+  font-family: FontAwesome;
+  content: "\f07a";
+  font-size: 2.5rem; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -361,7 +390,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     padding-left: 0 !important;
     margin-right: 0 !important; }
   .home .upcomingclasses01-row ul li h3 a {
-    font-size: 1.375rem; } }
+    font-size: 1.375rem; }
+  .woocommerce-message {
+    font-size: .85rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
