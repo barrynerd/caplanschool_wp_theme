@@ -420,6 +420,16 @@ $font-family-base: "Open Sans";
 .woocommerce-cart table.cart img {
     width: auto;
 }
+
+.woocommerce-cart .wc-proceed-to-checkout a.btn-primary {
+    background-color: $bcc_green;
+    color:#FFF;
+    border-color: #2F3E48;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    padding: .618em 1em;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
