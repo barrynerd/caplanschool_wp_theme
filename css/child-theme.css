@@ -307,6 +307,18 @@
   content: "\f07a";
   font-size: 2.5rem; }
 
+.woocommerce-cart table.cart td.product-remove {
+  width: 1rem; }
+
+.woocommerce-cart table.cart td.product-thumbnail {
+  width: 25vw; }
+
+.woocommerce-cart table.cart td.product-name {
+  width: auto; }
+
+.woocommerce-cart table.cart img {
+  width: auto; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -392,7 +404,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .home .upcomingclasses01-row ul li h3 a {
     font-size: 1.375rem; }
   .woocommerce-message {
-    font-size: .85rem; } }
+    font-size: .85rem; }
+  .woocommerce-cart table.cart td.product-thumbnail {
+    display: block; }
+  .woocommerce-cart table.cart td.product-name {
+    width: 30vw; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
