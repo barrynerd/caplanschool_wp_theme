@@ -45,9 +45,28 @@ $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
 $font-family-base: "Open Sans";
 
+$bcc_button_border: #2f3e48;
+
 // bootstrap overrides
 .btn {
+    background-color: $bcc_green!important;
+    border: 1px solid $bcc_button_border!important;
+    box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
+    color: white!important;
+    font-size: 1.25rem!important;
     font-weight: bold!important;
+    line-height: 1.5!important;
+    text-transform: uppercase!important;
+    padding: .375rem .75rem!important;
+}
+
+.btn:hover {
+    background-color: $bcc_yellow!important;
+    border: 1px solid $bcc_button_border!important;
+    color: $bcc_green!important;
+    border-color: #2f3e48!important;
+
+
 }
 
 // main menu colors
@@ -107,18 +126,9 @@ $font-family-base: "Open Sans";
 #wrapper-announce {
     background-color: $bcc_light_green;
     padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
-#wrapper-announce a {
-    font-size: .75rem;
-    margin-bottom: .5rem;
-}
-
-#wrapper-announce .btn-primary {
-    background-color: $bcc_green;
-    color:#FFF;
-    border-color: #2F3E48;
-}
 
 .home .wrapper {
     padding:0;
@@ -255,14 +265,6 @@ $font-family-base: "Open Sans";
     margin: 1.25rem 0;
 }
 
-.home #flyer-row .btn-primary{
-    background-color: $bcc_green;
-    color:#FFF;
-    border-color: #2F3E48;
-    white-space:normal;
-    display:inline-flex;
-}
-
 #wrapper-footer {
         background-color: #58535C;
         padding-top: 2rem;
@@ -361,26 +363,13 @@ $font-family-base: "Open Sans";
 }
 
 .single-product .product .btn-primary {
-    background-color: $bcc_green;
-    color:#FFF;
-    border-color: #2F3E48;
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 2rem!important;
     margin:1rem auto 0;
     max-width: 700px;
 }
 
 .woocommerce-message {
     font-size: .75rem;
-}
-
-.xoo-wsc-footer a.btn {
-    font-size: .75rem;
-    background-color: $bcc_green;
-    color:#FFF;
-    border-color: #2F3E48;
-    font-size: 1.25rem;
-    text-transform: uppercase;
 }
 
 .xoo-wsc-basket .xoo-wsc-items-count{
@@ -421,19 +410,10 @@ $font-family-base: "Open Sans";
     width: auto;
 }
 
-.woocommerce-cart .wc-proceed-to-checkout a.btn-primary {
-    background-color: $bcc_green;
-    color:#FFF;
-    border-color: #2F3E48;
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    padding: .618em 1em;
-}
-
 .woocommerce-cart .cart_totals p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin: 0 .85rem 1rem;
+    margin: 0 .5rem 1rem;
     text-align: center;
 }
 
