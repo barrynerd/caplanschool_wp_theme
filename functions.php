@@ -102,6 +102,24 @@ function bcc_woo_custom_cart_button_text_deposit() {
 }
 
 #----------------------------------------------------
+/**
+ * Add a standard $ value surcharge to all transactions in cart / checkout
+ */
+// add_action( 'woocommerce_cart_calculate_fees','wc_add_surcharge' );
+function wc_add_surcharge() {
+global $woocommerce;
+
+if ( is_admin() && ! defined( 'DOING_AJAX' ) )
+return;
+
+$county = array('US');
+// change the $fee to set the surcharge to a value to suit
+$fee = 4.00;
+
+if ( in_array( WC()->customer->get_shipping_country(), $county ) ) :
+    $woocommerce->cart->add_fee( 'Surcharge', $fee, true, 'standard' );
+endif;
+}
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
