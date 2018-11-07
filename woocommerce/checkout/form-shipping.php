@@ -60,36 +60,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h5><?php _e( 'Student (if different from credit card holder)', 'woocommerce' ); ?></h5>
+			<h5><?php _e( 'Additional Info', 'woocommerce' ); ?></h5>
 
 		<?php endif; ?>
 
 		<div class="woocommerce-additional-fields__field-wrapper">
-			
-			<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
+			<div class="form-row">
 				<?php
-					$label = $field["label"];
-					switch ($label) {
-						case 'Student Name':
-							echo "<div id='student-name'>";
-							woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-							echo "</div>";
-
-							break;
-
-						case 'Referral Name':
-							echo "<div id='referral-name'>";
-							echo "<h5>Referral Name and Agency</h5>";
-							woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-							echo "</div>";
-							break;
-
-						default:
-							woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-							break;
-						}
+					foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) {
+						$bcc_class = "col-md-12";
+						$bcc_id = "$label";
 						?>
-			<?php endforeach; ?>
+						<div id="<?php echo $bcc_id?>" class="<?php echo $bcc_class; ?>">
+							<?php
+							bcc_woocommerce_form_field ($key,$field, $fields, $checkout);
+							?>
+						</div>
+					<?php } ?>
+			</div>
 		</div>
 
 	<?php endif; ?>
