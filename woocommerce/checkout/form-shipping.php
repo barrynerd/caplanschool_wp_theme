@@ -24,11 +24,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="woocommerce-shipping-fields">
 	<?php if ( true === WC()->cart->needs_shipping_address() ) : ?>
 
-		<h3 id="ship-to-different-address">
+		<h5 id="ship-to-different-address">
 			<label class="woocommerce-form__label woocommerce-form__label-for-checkbox checkbox">
 				<input id="ship-to-different-address-checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" <?php checked( apply_filters( 'woocommerce_ship_to_different_address_checked', 'shipping' === get_option( 'woocommerce_ship_to_destination' ) ? 1 : 0 ), 1 ); ?> type="checkbox" name="ship_to_different_address" value="1" /> <span><?php _e( 'Ship to a different address?', 'woocommerce' ); ?></span>
 			</label>
-		</h3>
+		</h5>
 
 		<div class="shipping_address">
 
@@ -60,18 +60,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h3><?php _e( 'Additional information', 'woocommerce' ); ?></h3>
+			<h5><?php _e( 'Student (if different from credit card holder)', 'woocommerce' ); ?></h5>
 
 		<?php endif; ?>
 
 		<div class="woocommerce-additional-fields__field-wrapper">
+			
 			<?php foreach ( $checkout->get_checkout_fields( 'order' ) as $key => $field ) : ?>
 				<?php
 					$label = $field["label"];
 					switch ($label) {
 						case 'Student Name':
 							echo "<div id='student-name'>";
-							echo "<h5>Student Info (if different from credit card holder</h5>";
 							woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
 							echo "</div>";
 

@@ -121,6 +121,22 @@ if ( in_array( WC()->customer->get_shipping_country(), $county ) ) :
 endif;
 }
 #----------------------------------------------------
+//  output form elements on checkout form using bootstrap
+
+function bcc_woocommerce_form_field ($key,$field, $fields, $checkout){
+
+	if ( isset( $field['country_field'], $fields[ $field['country_field'] ] ) ) {
+		$field['country'] = $checkout->get_value( $field['country_field'] );
+	}
+	// echo "key; $key, field: $field";
+	woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
+}
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------

@@ -426,6 +426,37 @@ $bcc_button_border: #2f3e48;
 .woocommerce-checkout .place-order button{
     min-width: 280px;
 }
+
+.woocommerce-checkout form.checkout label {
+    text-transform: capitalize;
+    font-size: .85rem;
+    font-weight: bold;
+}
+
+.woocommerce-checkout form.checkout label .optional {
+    visibility: hidden;
+}
+
+.woocommerce-checkout form.checkout label .required {
+    color: $bcc_green;
+}
+
+.woocommerce form .form-row-first,
+.woocommerce form .form-row-last,
+.woocommerce-page form .form-row-first,
+.woocommerce-page form .form-row-last {
+    width: 100%;
+}
+
+.woocommerce form label.control-label {
+    display: inline-block!important;
+}
+
+.woocommerce form .woocommerce-input-wrapper {
+    width: 100%;
+}
+
+
 /*
 ####################################################
 M E D I A  Q U E R I E S

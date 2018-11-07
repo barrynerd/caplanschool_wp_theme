@@ -26,27 +26,54 @@ if ( ! defined( 'ABSPATH' ) ) {
 <div class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h3><?php _e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h3>
+		<h5><?php _e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h5>
 
 	<?php else : ?>
 
-		<h3><?php _e( 'Credit Card Billing Details', 'woocommerce' ); ?></h3>
+		<h5><?php _e( 'Credit Card Billing Details', 'woocommerce' ); ?></h5>
 
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_before_checkout_billing_form', $checkout ); ?>
 
 	<div class="woocommerce-billing-fields__field-wrapper">
+		<div class="form-row">
 		<?php
 			$fields = $checkout->get_checkout_fields( 'billing' );
 
 			foreach ( $fields as $key => $field ) {
-				if ( isset( $field['country_field'], $fields[ $field['country_field'] ] ) ) {
-					$field['country'] = $checkout->get_value( $field['country_field'] );
-				}
-				woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
-			}
-		?>
+				switch ($key) {
+					case 'billing_first_name':
+					case 'billing_last_name':
+					case 'billing_city':
+					case 'billing_phone':
+					case 'billing_email':
+						$bcc_class = "col-md-6";
+						break;
+					case 'billing_state':
+					case 'billing_postcode':
+						$bcc_class = "col-md-3";
+							break;
+					case "billing_address_1":
+						$bcc_class = "col-md-8";
+						break;
+					case "billing_address_2":
+						$bcc_class = "col-md-4";
+						break;
+					case "billing_country":
+						$bcc_class = "d-none";
+						break;
+					default:
+						$bcc_class = "col-md-12";
+					}
+					?>
+				<div class="<?php echo $bcc_class; ?>">
+					<?php
+					bcc_woocommerce_form_field ($key,$field, $fields, $checkout);
+					?>
+				</div>
+			<?php } ?>
+		</div>
 	</div>
 
 	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>
