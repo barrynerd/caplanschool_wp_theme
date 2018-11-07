@@ -456,6 +456,18 @@ $bcc_button_border: #2f3e48;
     width: 100%;
 }
 
+.woocommerce form fieldset {
+    border:1px solid $bcc_light_green;
+}
+
+ .woocommerce form  legend {
+     width:auto;
+     padding: 0.2rem 0.5rem;
+     background: $bcc_light_green;
+     font-size:1.4rem;
+//   text-align:right;
+  }
+
 
 /*
 ####################################################

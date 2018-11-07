@@ -23,14 +23,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** @global WC_Checkout $checkout */
 
 ?>
-<div class="woocommerce-billing-fields">
+<fieldset class="woocommerce-billing-fields">
 	<?php if ( wc_ship_to_billing_address_only() && WC()->cart->needs_shipping() ) : ?>
 
-		<h5><?php _e( 'Billing &amp; Shipping', 'woocommerce' ); ?></h5>
+		<legend><?php _e( 'Billing &amp; Shipping', 'woocommerce' ); ?></legend>
 
 	<?php else : ?>
 
-		<h5><?php _e( 'Credit Card Billing Details', 'woocommerce' ); ?></h5>
+		<legend><?php _e( 'Credit Card Billing Details', 'woocommerce' ); ?></legend>
 
 	<?php endif; ?>
 
@@ -77,7 +77,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div>
 
 	<?php do_action( 'woocommerce_after_checkout_billing_form', $checkout ); ?>
-</div>
+</fieldset>
 
 <?php if ( ! is_user_logged_in() && $checkout->is_registration_enabled() ) : ?>
 	<div class="woocommerce-account-fields">

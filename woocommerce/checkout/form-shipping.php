@@ -53,14 +53,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php endif; ?>
 </div>
-<div class="woocommerce-additional-fields">
+<fieldset class="woocommerce-additional-fields">
 	<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
 
 	<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' === get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) : ?>
 
 		<?php if ( ! WC()->cart->needs_shipping() || wc_ship_to_billing_address_only() ) : ?>
 
-			<h5><?php _e( 'Additional Info', 'woocommerce' ); ?></h5>
+			<legend><?php _e( 'Additional Info', 'woocommerce' ); ?></legend>
 
 		<?php endif; ?>
 
@@ -83,4 +83,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php endif; ?>
 
 	<?php do_action( 'woocommerce_after_order_notes', $checkout ); ?>
-</div>
+</fieldset>

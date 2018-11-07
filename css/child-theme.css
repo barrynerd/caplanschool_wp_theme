@@ -342,6 +342,15 @@
 .woocommerce form .woocommerce-input-wrapper {
   width: 100%; }
 
+.woocommerce form fieldset {
+  border: 1px solid #BBDFAB; }
+
+.woocommerce form legend {
+  width: auto;
+  padding: 0.2rem 0.5rem;
+  background: #BBDFAB;
+  font-size: 1.4rem; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
