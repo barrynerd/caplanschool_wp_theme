@@ -429,8 +429,9 @@ $bcc_alert_info_color: #3e2e4c;
     width: auto;
 }
 
-.woocommerce-checkout .place-order button{
+.woocommerce-checkout button{
     min-width: 280px;
+    margin:0 auto;
 }
 
 .woocommerce-checkout form.checkout label {

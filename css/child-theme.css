@@ -316,8 +316,9 @@
 .woocommerce-page .cart-collaterals .cart_totals {
   width: auto; }
 
-.woocommerce-checkout .place-order button {
-  min-width: 280px; }
+.woocommerce-checkout button {
+  min-width: 280px;
+  margin: 0 auto; }
 
 .woocommerce-checkout form.checkout label {
   text-transform: capitalize;
