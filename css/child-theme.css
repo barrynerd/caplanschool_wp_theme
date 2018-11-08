@@ -358,7 +358,9 @@
   text-transform: capitalize;
   width: auto; }
 
-#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
   background: white; }
 
 #add_payment_method #payment div.payment_box,
@@ -397,9 +399,36 @@
 .woocommerce-info::before {
   color: #3b0c66; }
 
+#authnet-card-number,
+#authnet-card-expiry,
+#authnet-card-cvc {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  color: #495057;
+  display: block;
+  font-size: 1rem !important;
+  height: calc(2.25rem + 2px);
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  width: 100%; }
+
+#authnet-card-number:focus,
+#authnet-card-expiry:focus,
+#authnet-card-cvc:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+
 /*
-
-
 ####################################################
 M E D I A  Q U E R I E S
 ####################################################
