@@ -369,6 +369,13 @@
 #add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
   padding-top: 0; }
 
+.page .alert-info {
+  background-color: rgba(142, 20, 255, 0.06);
+  border-color: rgba(142, 20, 255, 0.2);
+  font-size: 1.1rem;
+  color: #3e2e4c;
+  text-align: center; }
+
 /*
 
 

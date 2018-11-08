@@ -47,6 +47,10 @@ $font-family-base: "Open Sans";
 
 $bcc_button_border: #2f3e48;
 
+$bcc_alert_info_background-color: rgba(142, 20, 255, 0.06);
+$bcc_alert_info_border-color: rgba(142, 20, 255, 0.2);
+$bcc_alert_info_color: #3e2e4c;
+
 // bootstrap overrides
 .btn {
     background-color: $bcc_green!important;
@@ -488,6 +492,15 @@ $bcc_button_border: #2f3e48;
 #add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
     padding-top: 0;
 }
+
+.page .alert-info {
+    background-color: $bcc_alert_info_background-color;
+    border-color: $bcc_alert_info_border-color;
+    font-size: 1.1rem;
+    color: $bcc_alert_info_color;
+    text-align: center;
+}
+
 /*
 
 
