@@ -355,6 +355,7 @@
   font-size: 1.4rem;
   margin-left: .5rem;
   padding: 0.2rem 0.5rem;
+  text-transform: capitalize;
   width: auto; }
 
 #add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
