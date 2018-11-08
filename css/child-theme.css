@@ -322,7 +322,8 @@
 .woocommerce-checkout form.checkout label {
   text-transform: capitalize;
   font-size: .85rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-right: .4rem; }
 
 .woocommerce-checkout form.checkout label .optional {
   visibility: hidden; }
@@ -336,22 +337,41 @@
 .woocommerce-page form .form-row-last {
   width: 100%; }
 
-.woocommerce form label.control-label {
+.woocommerce-checkout form label.control-label {
   display: inline-block !important; }
 
-.woocommerce form .woocommerce-input-wrapper {
+.woocommerce-checkout form .woocommerce-input-wrapper {
   width: 100%; }
 
-.woocommerce form fieldset {
+.woocommerce-checkout form fieldset {
   border: 1px solid #BBDFAB; }
 
-.woocommerce form legend {
-  width: auto;
-  padding: 0.2rem 0.5rem;
+.woocommerce-checkout form legend {
   background: #BBDFAB;
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-left: .5rem;
+  padding: 0.2rem 0.5rem;
+  width: auto; }
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+  background: white; }
+
+#add_payment_method #payment div.payment_box,
+.woocommerce-cart #payment div.payment_box,
+.woocommerce-checkout #payment div.payment_box {
+  background-color: rgba(223, 221, 222, 0.3); }
+
+#add_payment_method #payment ul.payment_methods,
+.woocommerce-cart #payment ul.payment_methods,
+.woocommerce-checkout #payment ul.payment_methods {
+  border-bottom: none; }
+
+#add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
+  padding-top: 0; }
 
 /*
+
+
 ####################################################
 M E D I A  Q U E R I E S
 ####################################################

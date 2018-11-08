@@ -53,7 +53,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<?php endif; ?>
 </div>
-<fieldset class="woocommerce-additional-fields">
+<fieldset class="woocommerce-additional-fields mt-3 mt-md-0">
 	<?php do_action( 'woocommerce_before_order_notes', $checkout ); ?>
 
 	<?php if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' === get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) : ?>
