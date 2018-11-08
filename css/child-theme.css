@@ -316,6 +316,9 @@
 .woocommerce-page .cart-collaterals .cart_totals {
   width: auto; }
 
+.woocommerce-checkout .entry-header {
+  display: none; }
+
 .woocommerce-checkout button {
   min-width: 280px;
   margin: 0 auto; }
@@ -375,6 +378,12 @@
   border-color: rgba(142, 20, 255, 0.2);
   font-size: 1.1rem;
   color: #3e2e4c;
+  text-align: center; }
+
+.page .alert-dark {
+  background-color: #ecfde4; }
+
+.page .alert-dark h5 {
   text-align: center; }
 
 .woocommerce-info {

@@ -53,6 +53,8 @@ $bcc_alert_info_border-color: rgba(142, 20, 255, 0.2);
 $bcc_alert_icon_color:#3b0c66;
 $bcc_alert_info_color: #3e2e4c;
 
+$bcc_alert_dark_background_color: #ecfde4;
+
 // bootstrap overrides
 .btn {
     background-color: $bcc_green!important;
@@ -429,6 +431,11 @@ $bcc_alert_info_color: #3e2e4c;
     width: auto;
 }
 
+
+.woocommerce-checkout .entry-header{
+    display: none;
+}
+
 .woocommerce-checkout button{
     min-width: 280px;
     margin:0 auto;
@@ -501,6 +508,14 @@ $bcc_alert_info_color: #3e2e4c;
     border-color: $bcc_alert_info_border-color;
     font-size: 1.1rem;
     color: $bcc_alert_info_color;
+    text-align: center;
+}
+
+.page .alert-dark {
+    background-color: $bcc_alert_dark_background_color;
+}
+
+.page .alert-dark h5{
     text-align: center;
 }
 
