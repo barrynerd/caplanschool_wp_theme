@@ -47,8 +47,10 @@ $font-family-base: "Open Sans";
 
 $bcc_button_border: #2f3e48;
 
+$bcc_alert_info_anchor-color: rgba(142, 20, 255, 0.75);
 $bcc_alert_info_background-color: rgba(142, 20, 255, 0.06);
 $bcc_alert_info_border-color: rgba(142, 20, 255, 0.2);
+$bcc_alert_icon_color:#3b0c66;
 $bcc_alert_info_color: #3e2e4c;
 
 // bootstrap overrides
@@ -501,6 +503,18 @@ $bcc_alert_info_color: #3e2e4c;
     text-align: center;
 }
 
+.woocommerce-info {
+    border-top-color: $bcc_alert_info_border-color;
+    color: $bcc_alert_info_color;
+}
+
+.woocommerce-info a {
+    color: $bcc_alert_info_anchor-color;
+}
+
+.woocommerce-info::before {
+    color: $bcc_alert_icon_color;
+}
 /*
 
 

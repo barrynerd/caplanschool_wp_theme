@@ -376,6 +376,16 @@
   color: #3e2e4c;
   text-align: center; }
 
+.woocommerce-info {
+  border-top-color: rgba(142, 20, 255, 0.2);
+  color: #3e2e4c; }
+
+.woocommerce-info a {
+  color: rgba(142, 20, 255, 0.75); }
+
+.woocommerce-info::before {
+  color: #3b0c66; }
+
 /*
 
 
