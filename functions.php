@@ -132,9 +132,25 @@ function bcc_woocommerce_form_field ($key,$field, $fields, $checkout){
 	woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
 }
 #----------------------------------------------------
-#----------------------------------------------------
-#----------------------------------------------------
-#----------------------------------------------------
+// see code example at bottom of https://docs.woocommerce.com/document/woocommerce-shortcodes/#section-11
+add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby' );
+
+function woocommerce_shortcode_products_orderby( $args ) {
+
+	// echo "<pre>";
+	// print_r($args);
+	// echo "</pre>";
+
+	$standard_array = array('menu_order','title','date','rand','id');
+
+    if( isset( $args['orderby'] ) && !in_array( $args['orderby'], $standard_array ) ) {
+		$my_sort_key = $args['orderby'];
+        $args[$my_sort_key] = $args['orderby'];
+        $args['orderby']  = 'meta_value_num';
+    }
+
+    return $args;
+}
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
