@@ -133,9 +133,9 @@ function bcc_woocommerce_form_field ($key,$field, $fields, $checkout){
 }
 #----------------------------------------------------
 // see code example at bottom of https://docs.woocommerce.com/document/woocommerce-shortcodes/#section-11
-add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby' );
+add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby',10, 3  );
 
-function woocommerce_shortcode_products_orderby( $args ) {
+function woocommerce_shortcode_products_orderby( $query_args,  $atts, $loop_name ) {
 
 	// echo "<pre>";
 	// print_r($args);
@@ -143,16 +143,94 @@ function woocommerce_shortcode_products_orderby( $args ) {
 
 	$standard_array = array('menu_order','title','date','rand','id');
 
-    if( isset( $args['orderby'] ) && !in_array( $args['orderby'], $standard_array ) ) {
-		$my_sort_key = $args['orderby'];
-        $args[$my_sort_key] = $args['orderby'];
-        $args['orderby']  = 'meta_value_num';
+    if( isset( $query_args['orderby'] ) && !in_array( $query_args['orderby'], $standard_array ) ) {
+		$my_sort_key = $query_args['orderby'];
+        $query_args[$my_sort_key] = $query_args['orderby'];
+        $query_args['orderby']  = 'meta_value_num';
     }
 
-    return $args;
+    return $query_args;
 }
 #----------------------------------------------------
-#----------------------------------------------------
+// based on answer #1 here:
+// https://stackoverflow.com/questions/48302186/woocommerce-only-show-products-between-start-and-end-dates
+
+function custom__shortcode_products_query( $query_args, $atts, $loop_name ) {
+	//ugly, I know
+	global $__xomli_month_num;
+	global $__xomli_year;
+
+	$month = $__xomli_month_num;
+	$year = $__xomli_year;
+
+	$query_args['meta_query'] = array (
+		'meta_query' => array(
+			array(
+				'key'=>'_sku',
+				'value' => "-$year-$month",
+				'compare'=> 'REGEXP',
+				),
+		));
+
+   // echo ("<pre>");
+   // print_r( $query_args);
+   // echo ("</pre>");
+
+	return $query_args;
+}
+
+#shortcode to show products only for a certain $month
+// Add Shortcode
+function xomli_show_products_for_one_month_shortcode( $atts ) {
+	// ugly, I know
+	global $__xomli_month_num;
+	global $__xomli_year;
+
+	$atts = shortcode_atts(
+		array(
+			'month_num' => '',
+			'year' => '',
+			'category' => '',
+		),
+		$atts
+	);
+
+	$content = "";
+	$__xomli_month_num = $atts["month_num"];
+	$__xomli_year = $atts["year"];
+
+	$current_month = date("m");
+	$current_year = date("y");
+	$monthName = date('F', mktime(0, 0, 0, intval($__xomli_month_num), 10)); // March
+
+	$last_date = "last day of $monthName 20$__xomli_year";
+
+	//already past the requested month, so dont provide any output
+	if (strtotime("now") >   strtotime($last_date)){
+		return ;
+	}
+
+	add_filter( 'woocommerce_shortcode_products_query', 'custom__shortcode_products_query', 10, 3 );
+
+	$my_shortcode = '[products category="'. $atts["category"]. '"]';
+	$content = do_shortcode('[products category="'. $atts["category"]. '"]');
+
+	// remove_filter( 'woocommerce_shortcode_products_query', 'custom__shortcode_products_query', 10, 3 );
+
+	// default empty elemet from shortcode is "<div class="woocommerce columns-4 "></div>"
+	$my_shortcode_len = strlen($content);
+	if ($my_shortcode_len > 42) {
+
+
+		$content = "<h2>$monthName"."20"."$__xomli_year $current_month $current_year"   .$atts['category']." </h2>".$content;
+		}
+	else { // there are no items to show for this month
+		$content = "";
+	}
+
+	return $content;
+}
+add_shortcode( 'xomli_show_products_for_one_month', 'xomli_show_products_for_one_month_shortcode' );#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
