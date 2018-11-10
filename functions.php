@@ -215,7 +215,7 @@ function xomli_show_products_for_one_month_shortcode( $atts ) {
 	$my_shortcode = '[products category="'. $atts["category"]. '"]';
 	$content = do_shortcode('[products category="'. $atts["category"]. '"]');
 
-	// remove_filter( 'woocommerce_shortcode_products_query', 'custom__shortcode_products_query', 10, 3 );
+	remove_filter( 'woocommerce_shortcode_products_query', 'custom__shortcode_products_query', 10, 3 );
 
 	// default empty elemet from shortcode is "<div class="woocommerce columns-4 "></div>"
 	$my_shortcode_len = strlen($content);
