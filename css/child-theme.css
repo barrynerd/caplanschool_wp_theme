@@ -454,6 +454,9 @@ ul.products li.product .add-to-cart-container {
   margin: 0 auto;
   padding: 0 .5em 1em; }
 
+ul.products li.product form.cart button {
+  margin: 0 auto .5em; }
+
 ul.products li.product .button {
   margin-top: 0 !important; }
 
@@ -462,6 +465,10 @@ ul.products li.product del .woocommerce-Price-amount {
 
 ul.products li.product ins {
   text-decoration: none; }
+
+ul.products span.cart-buttons,
+ul.products .yith-wcdp {
+  display: none; }
 
 /*
 ####################################################

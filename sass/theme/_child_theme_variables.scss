@@ -600,6 +600,10 @@ ul.products li.product .add-to-cart-container {
     padding: 0 .5em 1em;
 }
 
+ul.products li.product form.cart button {
+    margin: 0 auto .5em;
+}
+
 ul.products  li.product .button {
     margin-top: 0!important;
 }
@@ -612,6 +616,10 @@ ul.products  li.product ins {
     text-decoration: none;
 }
 
+ul.products span.cart-buttons,
+ul.products  .yith-wcdp {
+    display:none;
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S
