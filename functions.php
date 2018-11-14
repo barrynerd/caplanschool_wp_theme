@@ -133,7 +133,7 @@ function bcc_woocommerce_form_field ($key,$field, $fields, $checkout){
 }
 #----------------------------------------------------
 // see code example at bottom of https://docs.woocommerce.com/document/woocommerce-shortcodes/#section-11
-add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby',10, 3  );
+// add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby',10, 3  );
 
 function woocommerce_shortcode_products_orderby( $query_args,  $atts, $loop_name ) {
 
