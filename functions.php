@@ -97,7 +97,7 @@ function bcc_product_has_deposit($product){
 
 function bcc_woo_custom_cart_button_text_deposit() {
 
-        return __( 'Deposit', 'woocommerce' );
+        return __( 'Pay Deposit', 'woocommerce' );
 
 }
 
