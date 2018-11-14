@@ -273,6 +273,9 @@
   margin: 1rem auto 0;
   max-width: 700px; }
 
+.single-product .product del {
+  font-size: 2rem; }
+
 .woocommerce-message {
   font-size: .75rem; }
 
