@@ -431,30 +431,30 @@
 /*
 shop page formattingS
 */
-.post-type-archive-product li.product a h2 {
+ul.products li.product a h2 {
   text-align: center;
   min-height: 8em;
   padding: 0.5em 0 0 !important; }
 
-.post-type-archive-product li.product a span.price {
+ul.products li.product a span.price {
   color: #2a8700 !important;
   font-size: 2em !important;
   font-weight: bold !important;
   text-align: center; }
 
-.post-type-archive-product li.product {
+ul.products li.product {
   border: 1px solid #ddd;
   margin-right: 1% !important;
   width: 100% !important;
   float: left !important;
   clear: none !important; }
 
-.post-type-archive-product li.product .yith-wcdp,
-.post-type-archive-product li.product .add-to-cart-container {
+ul.products li.product .yith-wcdp,
+ul.products li.product .add-to-cart-container {
   margin: 0 auto;
   padding: 0 .5em 1em; }
 
-.post-type-archive-product li.product .button {
+ul.products li.product .button {
   margin-top: 0 !important; }
 
 /*
@@ -547,7 +547,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: block; }
   .woocommerce-cart table.cart td.product-name {
     width: 30vw; }
-  .post-type-archive-product li.product {
+  ul.products li.product {
     width: 24% !important; } }
 
 /* Large devices (desktops, 992px and up) */
