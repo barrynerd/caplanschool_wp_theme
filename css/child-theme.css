@@ -442,7 +442,9 @@ shop page formattingS
 
 .post-type-archive-product li.product {
   border: 1px solid #ddd;
-  padding: 0.5em !important; }
+  padding: 0.5em !important;
+  width: 24% !important;
+  margin-right: 1% !important; }
 
 .post-type-archive-product li.product .yith-wcdp,
 .post-type-archive-product li.product .add-to-cart-container {
