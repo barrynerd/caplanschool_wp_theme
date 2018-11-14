@@ -232,6 +232,27 @@ function xomli_show_products_for_one_month_shortcode( $atts ) {
 }
 add_shortcode( 'xomli_show_products_for_one_month', 'xomli_show_products_for_one_month_shortcode' );
 #----------------------------------------------------
+/**
+ * Exclude products from a particular category on the shop page
+ */
+ // https://docs.woocommerce.com/document/exclude-a-category-from-the-shop-page/
+function custom_pre_get_posts_query( $q ) {
+
+	if (is_shop()){
+	    $tax_query = (array) $q->get( 'tax_query' );
+
+	    $tax_query[] = array(
+	           'taxonomy' => 'product_cat',
+	           'field' => 'slug',
+	           'terms' => array( 'members' ), // Don't display products in the clothing category on the shop page.
+	           'operator' => 'NOT IN'
+	    );
+
+
+	    $q->set( 'tax_query', $tax_query );
+		}
+}
+add_action( 'woocommerce_product_query', 'custom_pre_get_posts_query' );
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
