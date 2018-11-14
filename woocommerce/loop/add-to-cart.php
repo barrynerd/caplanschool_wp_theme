@@ -23,8 +23,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $product;
 global $post;
 
-echo "ssss";
-
 #barry
 if (bcc_product_has_deposit($product)){
     $button_string = esc_html( bcc_woo_custom_cart_button_text_deposit());
@@ -33,7 +31,6 @@ else {
     $button_string = esc_html( $product->add_to_cart_text());
     }
 
-echo $button_string;
 
 $terms = wp_get_post_terms( $post->ID, 'product_cat' );
 #print_r($terms);
