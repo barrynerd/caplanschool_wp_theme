@@ -230,7 +230,8 @@ function xomli_show_products_for_one_month_shortcode( $atts ) {
 
 	return $content;
 }
-add_shortcode( 'xomli_show_products_for_one_month', 'xomli_show_products_for_one_month_shortcode' );#----------------------------------------------------
+add_shortcode( 'xomli_show_products_for_one_month', 'xomli_show_products_for_one_month_shortcode' );
+#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
