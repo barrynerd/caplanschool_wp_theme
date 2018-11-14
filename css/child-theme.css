@@ -432,9 +432,10 @@
 shop page formattingS
 */
 ul.products li.product a h2 {
-  text-align: center;
-  min-height: 8em;
-  padding: 0.5em 0 0 !important; }
+  font-size: 1.1em !important;
+  min-height: 6.3em;
+  padding: 0.5em 0 0 !important;
+  text-align: center; }
 
 ul.products li.product a span.price {
   color: #2a8700 !important;
@@ -446,8 +447,7 @@ ul.products li.product {
   border: 1px solid #ddd;
   margin-right: 1% !important;
   width: 100% !important;
-  float: left !important;
-  clear: none !important; }
+  float: left !important; }
 
 ul.products li.product .yith-wcdp,
 ul.products li.product .add-to-cart-container {

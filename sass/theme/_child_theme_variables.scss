@@ -572,9 +572,10 @@ shop page formattingS
 */
 
 ul.products li.product a h2 {
-    text-align: center;
-    min-height: 8em;
+    font-size: 1.1em!important;
+    min-height: 6.3em;
     padding: .5em 0 0!important;
+    text-align: center;
 }
 
 ul.products li.product a span.price {
@@ -590,7 +591,7 @@ ul.products li.product {
     margin-right: 1%!important;
     width:100%!important;
     float:left!important;
-    clear:none!important;
+    // clear:none!important;
 }
 
 ul.products li.product .yith-wcdp,
