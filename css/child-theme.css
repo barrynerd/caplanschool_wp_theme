@@ -429,6 +429,32 @@
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
 
 /*
+shop page formattingS
+*/
+.post-type-archive-product li.product a img {
+  border: 1px solid #ddd;
+  margin: 0 !important;
+  padding: 1em .25em;
+  border-bottom: none; }
+
+.post-type-archive-product li.product a h2 {
+  border: 1px solid #ddd;
+  border-top: none;
+  border-bottom: none;
+  padding: 0 0.5em !important; }
+
+.post-type-archive-product li.product a span.price {
+  border: 1px solid #ddd;
+  border-top: none;
+  padding-bottom: 1em;
+  /* border-bottom: none; */
+  text-align: center;
+  font-size: 2em !important;
+  font-weight: bold !important;
+  padding: 0 .5em .25em;
+  color: #2a8700 !important; }
+
+/*
 ####################################################
 M E D I A  Q U E R I E S
 ####################################################

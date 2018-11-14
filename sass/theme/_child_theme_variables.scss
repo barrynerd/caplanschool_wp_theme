@@ -39,6 +39,7 @@ $bcc_menu_sub_bg: #ddd;
 $bcc_menu_text: #777;
 $bcc_menu_underline: #2a8700;
 
+$bcc_gray: #ddd;
 $bcc_light_gray: #eee;
 
 $navbar-dark-color: #2a8700;
@@ -565,6 +566,37 @@ $bcc_alert_dark_background_color: #ecfde4;
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
+
+/*
+shop page formattingS
+*/
+
+.post-type-archive-product li.product a img {
+    border: 1px solid $bcc_gray;
+    margin: 0!important;
+    padding: 1em .25em;
+    border-bottom: none;
+}
+
+.post-type-archive-product li.product a h2 {
+    border: 1px solid $bcc_gray;
+    border-top: none;
+    border-bottom: none;
+    padding: 0 .5em!important;
+}
+
+.post-type-archive-product li.product a span.price {
+    border: 1px solid $bcc_gray;
+    border-top: none;
+    padding-bottom: 1em;
+    /* border-bottom: none; */
+    text-align: center;
+    font-size: 2em!important;
+    font-weight: bold!important;
+    padding: 0 .5em .25em;
+    color: $bcc_green!important;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
