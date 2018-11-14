@@ -624,6 +624,16 @@ ul.products span.cart-buttons,
 ul.products  .yith-wcdp {
     display:none;
 }
+
+.page-link {
+    color: $bcc_green!important;
+}
+
+.page-item.active .page-link {
+    // color: white!important;
+    background-color: $bcc_light_yellow!important;
+    border-color: $bcc_light_yellow!important;
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S
