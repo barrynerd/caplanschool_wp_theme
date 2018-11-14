@@ -587,8 +587,10 @@ shop page formattingS
 .post-type-archive-product li.product {
     border: 1px solid $bcc_gray;
     padding: .5em!important;
-    width:24%!important;
     margin-right: 1%!important;
+    width:100%!important;
+    float:left!important;
+    clear:none!important;
 }
 
 .post-type-archive-product li.product .yith-wcdp,
@@ -739,6 +741,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
     .woocommerce-cart table.cart td.product-name {
         width: 30vw;
+    }
+
+    .post-type-archive-product li.product {
+        width:24%!important;
     }
 
 }

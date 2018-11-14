@@ -445,8 +445,10 @@ shop page formattingS
 .post-type-archive-product li.product {
   border: 1px solid #ddd;
   padding: 0.5em !important;
-  width: 24% !important;
-  margin-right: 1% !important; }
+  margin-right: 1% !important;
+  width: 100% !important;
+  float: left !important;
+  clear: none !important; }
 
 .post-type-archive-product li.product .yith-wcdp,
 .post-type-archive-product li.product .add-to-cart-container {
@@ -544,7 +546,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .woocommerce-cart table.cart td.product-thumbnail {
     display: block; }
   .woocommerce-cart table.cart td.product-name {
-    width: 30vw; } }
+    width: 30vw; }
+  .post-type-archive-product li.product {
+    width: 24% !important; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
