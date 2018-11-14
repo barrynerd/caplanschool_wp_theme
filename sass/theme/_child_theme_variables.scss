@@ -571,27 +571,11 @@ $bcc_alert_dark_background_color: #ecfde4;
 shop page formattingS
 */
 
-// .post-type-archive-product li.product a img {
-//     border: 1px solid $bcc_gray;
-//     margin: 0!important;
-//     padding: 1em .25em;
-//     border-bottom: none;
-// }
-//
 .post-type-archive-product li.product a h2 {
-//     border: 1px solid $bcc_gray;
-//     border-top: none;
-//     border-bottom: none;
-//     padding: 0 .5em!important;
     text-align: center;
 }
 
 .post-type-archive-product li.product a span.price {
-    // border: 1px solid $bcc_gray;
-    // border-top: none;
-    // padding-bottom: 1em;
-    // /* border-bottom: none; */
-    // padding: 0 .5em .25em;
     color: $bcc_green!important;
     font-size: 2em!important;
     font-weight: bold!important;
