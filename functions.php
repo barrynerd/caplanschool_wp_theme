@@ -398,10 +398,10 @@ function bc_ce_classes_by_month($atts){
 
 	$result = "";
 
-	$result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
-	$result .= "<div class=\"bc_ce_classes_by_month woocommerce columns-1\">";
 	// The Loop
 	if ( $query->have_posts() ) {
+		$result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
+		$result .= "<div class=\"bc_ce_classes_by_month woocommerce columns-1\">";
 		$result .= '<ul class="products">';
 		while ( $query->have_posts() ) {
 			$query->the_post();
@@ -410,11 +410,11 @@ function bc_ce_classes_by_month($atts){
 			$result .= ob_get_clean();
 			}
 		$result .=  "</ul>";
+		$result .= "</div>";
 	} else {
 		// no posts found
 	}
 
-	$result .= "</div>";
 
 	// Restore original Post Data
 	wp_reset_postdata();
