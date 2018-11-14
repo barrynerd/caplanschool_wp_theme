@@ -432,7 +432,9 @@
 shop page formattingS
 */
 .post-type-archive-product li.product a h2 {
-  text-align: center; }
+  text-align: center;
+  min-height: 6em;
+  padding: 0.5em 0 0 !important; }
 
 .post-type-archive-product li.product a span.price {
   color: #2a8700 !important;
