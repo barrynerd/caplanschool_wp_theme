@@ -470,6 +470,7 @@ ul.products li.product ins {
   text-decoration: none; }
 
 ul.products span.cart-buttons,
+ul.products .add-to-cart-container,
 ul.products .yith-wcdp {
   display: none; }
 
