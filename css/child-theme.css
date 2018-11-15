@@ -431,6 +431,12 @@
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
 
+.bc_ce_classes_by_month p {
+  display: inline; }
+
+.bc_ce_classes_by_month p br {
+  display: none; }
+
 /*
 shop page formattingS
 */
