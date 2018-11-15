@@ -41,7 +41,7 @@ if ( $product->is_in_stock() ) : ?>
 		// do_action( 'woocommerce_before_add_to_cart_button' );
 		?>
 
-		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="btn btn-primary btn-block col-10 "><?php echo esc_html( $button_string ); ?></button>
+		<button type="submit" name="add-to-cart" value="<?php echo esc_attr( $product->get_id() ); ?>" class="btn btn-primary btn-block col-11 "><?php echo esc_html( $button_string ); ?></button>
 
 		<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
 	</form>
