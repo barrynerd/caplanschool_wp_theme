@@ -428,8 +428,8 @@ add_shortcode('bc_ce_classes_by_month', 'bc_ce_classes_by_month');
 #----------------------------------------------------
 //stop spurious insertions of <br> tags after several shortcodes in a row
 // https://stackoverflow.com/questions/32570351/shortcode-output-adding-br-after-new-line
-remove_filter( 'the_content', 'wpautop' );
-add_filter( 'the_content', 'wpautop' , 12);
+// remove_filter( 'the_content', 'wpautop' );
+// add_filter( 'the_content', 'wpautop' , 12);
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
