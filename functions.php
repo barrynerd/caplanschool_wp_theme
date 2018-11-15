@@ -396,8 +396,6 @@ function bc_ce_classes_by_month($atts){
 	// The Query
 	$query = new WP_Query( $args );
 
-	$result = "";
-
 	// The Loop
 	if ( $query->have_posts() ) {
 		$result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
@@ -405,7 +403,8 @@ function bc_ce_classes_by_month($atts){
 		$result .= '<ul class="products">';
 		while ( $query->have_posts() ) {
 			$query->the_post();
-			ob_start(); #http://stackoverflow.com/questions/18957416/load-template-in-wordpress-without-echo-it
+			#http://stackoverflow.com/questions/18957416/load-template-in-wordpress-without-echo-it
+			ob_start();
 			wc_get_template_part( 'content', 'product' );
 			$result .= ob_get_clean();
 			}
@@ -427,6 +426,10 @@ add_shortcode('bc_ce_classes_by_month', 'bc_ce_classes_by_month');
 
 
 #----------------------------------------------------
+//stop spurious insertions of <br> tags after several shortcodes in a row
+// https://stackoverflow.com/questions/32570351/shortcode-output-adding-br-after-new-line
+remove_filter( 'the_content', 'wpautop' );
+add_filter( 'the_content', 'wpautop' , 12);
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
