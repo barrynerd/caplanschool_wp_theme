@@ -487,6 +487,26 @@ ul.products .yith-wcdp {
   background-color: #fffbad !important;
   border-color: #fffbad !important; }
 
+.course-description-card {
+  background-color: #fffbad !important;
+  margin: 1.5rem 0 1rem;
+  padding: 0 !important; }
+
+.course-description-card .card-body {
+  padding: 0; }
+
+.course-description-card h2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: .75rem 0; }
+
+.course-description-card .card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.course-description-card ul {
+  list-style: none; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
