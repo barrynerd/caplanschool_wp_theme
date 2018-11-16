@@ -355,13 +355,11 @@ $bcc_alert_dark_background_color: #ecfde4;
 }
 
 .single-product .product .woocommerce-product-details__short-description {
-    background-color: #dad6dd;
-        font-size: 1rem;
-        line-height: 1.428571429;
-        margin: 0 auto;
-        padding: 1.5rem 4rem;
-        max-width: 700px;
-    }
+    font-size: 1rem;
+    line-height: 1.428571429;
+    margin: 0 auto;
+    max-width: 700px;
+}
 
 .single-product .product .price{
     color: $bcc_green!important;
@@ -680,6 +678,16 @@ ul.products .yith-wcdp {
     list-style: none;
     padding: 0 .5rem;
 }
+
+.woocommerce-product-details__short-description .card {
+    background-color: #dad6dd;
+    padding: 1rem 3rem;
+}
+
+.woocommerce-product-details__short-description .card ul{
+    margin-bottom: 1.5rem;
+}
+
 
 /*
 ####################################################
