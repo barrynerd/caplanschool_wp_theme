@@ -521,6 +521,26 @@ ul.products .yith-wcdp {
 .woocommerce-product-details__short-description .card ul {
   margin-bottom: 1.5rem; }
 
+.jumbotron-fluid.about {
+  background-image: url("/wordpress/wp-content/uploads/Classroom01.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 75% center;
+  padding: 0; }
+
+.jumbotron-fluid.about .about-content {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  background: rgba(42, 135, 0, 0.6);
+  line-height: 1.2;
+  font-size: 1rem; }
+
+.jumbotron-fluid.about h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0 0.75rem; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -622,7 +642,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   ul.products li.product:nth-last-of-type(4) {
     margin-bottom: 0; }
   .course-description-card h2 {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .jumbotron-fluid.about .about-content {
+    font-size: 1.2rem; }
+  .jumbotron-fluid.about h3 {
+    font-size: 2.5rem;
+    margin: 1rem 0 2rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
