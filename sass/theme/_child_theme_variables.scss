@@ -142,6 +142,10 @@ $bcc_alert_dark_background_color: #ecfde4;
 .wrapper {
     padding: 30px 0 0!important;
 }
+.page-template-page-no_featured_img .wrapper {
+    padding: 0 0 30px!important;
+}
+
 .home .wrapper {
     padding:0;
 }
@@ -795,6 +799,7 @@ ul.products .yith-wcdp {
 .course-cards .woocommerce ul.products li:nth-of-type(4n){
     margin-right:0!important;
 }
+
 
 /*
 ####################################################
