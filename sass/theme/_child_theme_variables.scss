@@ -743,8 +743,15 @@ ul.products .yith-wcdp {
 
 }
 
-.twostep01 .twostep01-jumbotron{
+.twostep01 .row{
     align-items: center;
+}
+
+.twostep01 .twostep01-jumbotron{
+    display:flex;
+    align-content:center;
+    justify-items:center;
+    align-items:center;
 }
 
 .twostep01 .twostep01-jumbotron h1{
