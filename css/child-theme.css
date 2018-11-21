@@ -604,6 +604,9 @@ ul.products .yith-wcdp {
   max-width: 1200px;
   margin: 0 auto; }
 
+.neptune-courses + .woocommerce ul.products li {
+  margin: 2rem 0 0; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
