@@ -57,7 +57,7 @@ $bcc_alert_info_color: #3e2e4c;
 $bcc_alert_dark_background_color: #ecfde4;
 
 // bootstrap overrides
-.btn {
+.btn.btn-primary {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
@@ -70,7 +70,7 @@ $bcc_alert_dark_background_color: #ecfde4;
     padding: .375rem .75rem!important;
 }
 
-.btn:hover {
+.btn.btn-primary:hover {
     background-color: $bcc_yellow!important;
     border: 1px solid $bcc_button_border!important;
     color: $bcc_green!important;
@@ -735,6 +735,45 @@ ul.products .yith-wcdp {
     margin-top: .75rem;
     padding: 1rem;
 }
+
+.twostep01{
+    margin-right: 0;
+    margin-left: 0;
+    background: antiquewhite;
+
+}
+
+.twostep01 .twostep01-jumbotron{
+    align-items: center;
+}
+
+.twostep01 .twostep01-jumbotron h1{
+    text-transform: uppercase;
+}
+
+.twostep01 .twostep01-jumbotron .card-img-top + p {
+    display:none;
+}
+
+.twostep01 .twostep01-jumbotron h5.card-title{
+    text-align: center;
+}
+
+.twostep01 .twostep01-jumbotron ul.card-text{
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.twostep01 .twostep01-btn-group-vertical{
+    width: 100%;
+}
+
+.twostep01 .twostep01-btn-group-vertical br{
+    display:none;
+}
+
 
 /*
 ####################################################
