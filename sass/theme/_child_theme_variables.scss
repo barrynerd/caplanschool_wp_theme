@@ -775,6 +775,14 @@ ul.products .yith-wcdp {
 }
 
 
+.twostep01 + .neptune-courses + .woocommerce ul.products {
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+
 /*
 ####################################################
 M E D I A  Q U E R I E S

@@ -595,6 +595,15 @@ ul.products .yith-wcdp {
 .twostep01 .twostep01-btn-group-vertical br {
   display: none; }
 
+.twostep01 + .neptune-courses + .woocommerce ul.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
