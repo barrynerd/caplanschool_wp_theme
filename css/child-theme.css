@@ -613,10 +613,19 @@ ul.products .yith-wcdp {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .neptune-courses + .woocommerce ul.products li {
   margin: 2rem 0 0; }
+
+.neptune-courses + .woocommerce ul.products li:nth-of-type(4n) {
+  margin-right: 0 !important; }
 
 /*
 ####################################################
@@ -709,7 +718,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .woocommerce-cart table.cart td.product-name {
     width: 30vw; }
   ul.products li.product {
-    width: 24% !important; }
+    width: 24.25% !important; }
   ul.products li.product:nth-last-of-type(1) {
     margin-bottom: 0; }
   ul.products li.product:nth-last-of-type(2) {
