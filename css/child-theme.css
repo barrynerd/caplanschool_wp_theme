@@ -595,7 +595,7 @@ ul.products .yith-wcdp {
 .twostep01 .twostep01-btn-group-vertical br {
   display: none; }
 
-.twostep01 + .neptune-courses + .woocommerce ul.products {
+.neptune-courses + .woocommerce ul.products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

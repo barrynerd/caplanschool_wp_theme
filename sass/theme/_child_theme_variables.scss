@@ -774,8 +774,7 @@ ul.products .yith-wcdp {
     display:none;
 }
 
-
-.twostep01 + .neptune-courses + .woocommerce ul.products {
+.neptune-courses + .woocommerce ul.products {
     display:flex;
     flex-wrap: wrap;
     max-width: 1200px;
