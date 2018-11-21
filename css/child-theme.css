@@ -566,8 +566,7 @@ ul.products .yith-wcdp {
 
 .twostep01 {
   margin-right: 0;
-  margin-left: 0;
-  background: antiquewhite; }
+  margin-left: 0; }
 
 .twostep01 .row {
   -webkit-box-align: center;
@@ -583,7 +582,8 @@ ul.products .yith-wcdp {
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  background: antiquewhite; }
 
 .twostep01 .twostep01-jumbotron h1 {
   text-transform: uppercase; }
@@ -615,10 +615,10 @@ ul.products .yith-wcdp {
   max-width: 1200px;
   margin: 0 auto; }
 
-.neptune-courses + .woocommerce ul.products li {
+.twostep01 .neptune-courses + .woocommerce ul.products li {
   margin: 2rem 0 0; }
 
-.neptune-courses + .woocommerce ul.products li:nth-of-type(4n) {
+.twostep01 .neptune-courses + .woocommerce ul.products li:nth-of-type(4n) {
   margin-right: 0 !important; }
 
 /*

@@ -739,7 +739,6 @@ ul.products .yith-wcdp {
 .twostep01{
     margin-right: 0;
     margin-left: 0;
-    background: antiquewhite;
 
 }
 
@@ -752,6 +751,7 @@ ul.products .yith-wcdp {
     align-content:center;
     justify-items:center;
     align-items:center;
+    background: antiquewhite;
 }
 
 .twostep01 .twostep01-jumbotron h1{
@@ -788,11 +788,11 @@ ul.products .yith-wcdp {
     margin:0 auto;
 }
 
-.neptune-courses + .woocommerce ul.products li{
+.twostep01 .neptune-courses + .woocommerce ul.products li{
     margin: 2rem 0 0;
 }
 
-.neptune-courses+.woocommerce ul.products li:nth-of-type(4n){
+.twostep01 .neptune-courses+.woocommerce ul.products li:nth-of-type(4n){
     margin-right:0!important;
 }
 
