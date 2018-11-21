@@ -72,6 +72,7 @@
 .wrapper {
   padding: 30px 0 0 !important; }
 
+.post-template-page-no_featured_img .wrapper,
 .page-template-page-no_featured_img .wrapper {
   padding: 0 0 30px !important; }
 
@@ -609,6 +610,12 @@ ul.products .yith-wcdp {
 .twostep01 .twostep01-btn-group-vertical br {
   display: none; }
 
+.twostep01 .course-cards {
+  background: #eee; }
+
+.twostep01 .course-description-card {
+  margin: 0; }
+
 .course-cards .woocommerce ul.products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,7 +626,8 @@ ul.products .yith-wcdp {
   margin: 0 auto; }
 
 .course-cards .woocommerce ul.products li {
-  margin: 2rem 0 0; }
+  margin: 2rem 0 0;
+  background: white; }
 
 .course-cards .woocommerce ul.products li:nth-of-type(4n) {
   margin-right: 0 !important; }
@@ -716,14 +724,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     width: 30vw; }
   ul.products li.product {
     width: 24.25% !important; }
-  ul.products li.product:nth-last-of-type(1) {
-    margin-bottom: 0; }
-  ul.products li.product:nth-last-of-type(2) {
-    margin-bottom: 0; }
-  ul.products li.product:nth-last-of-type(3) {
-    margin-bottom: 0; }
+  ul.products li.product:nth-last-of-type(1),
+  ul.products li.product:nth-last-of-type(2),
+  ul.products li.product:nth-last-of-type(3),
   ul.products li.product:nth-last-of-type(4) {
-    margin-bottom: 0; }
+    margin-bottom: 2rem !important; }
   .course-description-card h2 {
     font-size: 1.8rem; }
   .jumbotron-fluid.about .about-content {
