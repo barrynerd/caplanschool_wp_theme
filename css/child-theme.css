@@ -575,7 +575,10 @@ ul.products .yith-wcdp {
 .twostep01 .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .twostep01 .twostep01-jumbotron {
   display: -webkit-box;
@@ -590,7 +593,12 @@ ul.products .yith-wcdp {
   background: antiquewhite; }
 
 .twostep01 .twostep01-jumbotron h1 {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  text-align: center; }
+
+.twostep01 .twostep01-jumbotron h5 {
+  text-align: center; }
 
 .twostep01 .twostep01-jumbotron .card-img-top + p {
   display: none; }
@@ -610,10 +618,11 @@ ul.products .yith-wcdp {
 .twostep01 .twostep01-btn-group-vertical br {
   display: none; }
 
-.twostep01 .course-cards {
-  background: #eee; }
+.course-cards {
+  background: #eee;
+  padding: 0 1rem 1.5rem; }
 
-.twostep01 .course-description-card {
+.course-description-card {
   margin: 0; }
 
 .course-cards .woocommerce ul.products {
@@ -626,7 +635,7 @@ ul.products .yith-wcdp {
   margin: 0 auto; }
 
 .course-cards .woocommerce ul.products li {
-  margin: 2rem 0 0;
+  margin: 2rem 0 0 !important;
   background: white; }
 
 .course-cards .woocommerce ul.products li:nth-of-type(4n) {
@@ -724,18 +733,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     width: 30vw; }
   ul.products li.product {
     width: 24.25% !important; }
-  ul.products li.product:nth-last-of-type(1),
-  ul.products li.product:nth-last-of-type(2),
-  ul.products li.product:nth-last-of-type(3),
-  ul.products li.product:nth-last-of-type(4) {
-    margin-bottom: 2rem !important; }
   .course-description-card h2 {
     font-size: 1.8rem; }
   .jumbotron-fluid.about .about-content {
     font-size: 1.2rem; }
   .jumbotron-fluid.about h3 {
     font-size: 2.5rem;
-    margin: 1rem 0 2rem; } }
+    margin: 1rem 0 2rem; }
+  .twostep01 .twostep01-jumbotron h1 {
+    font-size: 2.5rem;
+    text-align: left; }
+  .twostep01 .twostep01-jumbotron h5 {
+    text-align: left; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
