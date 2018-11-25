@@ -638,14 +638,15 @@ ul.products .yith-wcdp {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .course-cards .woocommerce ul.products li {
-  margin: 2rem 0 0 !important;
-  background: white; }
-
-.course-cards .woocommerce ul.products li:nth-of-type(4n) {
-  margin-right: 0 !important; }
+  margin: 2rem 0.25rem 0 !important;
+  background: white;
+  width: 15rem !important; }
 
 .twostep02 {
   margin-right: 0;

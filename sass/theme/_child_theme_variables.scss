@@ -816,15 +816,17 @@ ul.products .yith-wcdp {
     flex-wrap: wrap;
     max-width: 1200px;
     margin:0 auto;
+    justify-content: center;
 }
 
 .course-cards  .woocommerce ul.products li{
-    margin: 2rem 0 0!important;
+    margin: 2rem .25rem 0!important;
     background: white;
+    width: 15rem!important;
 }
 
 .course-cards .woocommerce ul.products li:nth-of-type(4n){
-    margin-right:0!important;
+    // margin-right:0!important;
 }
 
 .twostep02{
