@@ -820,6 +820,93 @@ ul.products .yith-wcdp {
     margin-right:0!important;
 }
 
+.twostep02{
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+.twostep02 .row{
+    align-items: center;
+    align-items: flex-start;
+}
+
+.twostep02 .twostep02-jumbotron{
+    background: $bcc_light_yellow;
+}
+
+.twostep02 .twostep02-jumbotron .twostep02-row-01{
+    height: 40vh;
+}
+
+.twostep02 .twostep02-jumbotron .twostep02-row-02{
+    height: 25vh;
+}
+
+.twostep02 .twostep02-jumbotron .hl-text h1{
+    font-size: 2.6rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.twostep02 .twostep02-jumbotron .hl-text h5{
+    font-style: italic;
+}
+
+.twostep02 .twostep02-jumbotron .hl-text a{
+    margin-top: 1rem;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-01{
+    margin-top: 3rem;
+}
+
+.twostep02 .twostep02-descriptions h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.twostep02 .twostep02-descriptions h6 {
+    color:#777;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-02{
+    align-items: stretch;
+    margin-top: 3rem;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card{
+    margin: 0 .5rem;
+    width: 19rem;
+}
+
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:first-of-type{
+    height: 19rem;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 h5{
+    color: $bcc_lime_green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 p{
+    color: #777;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type{
+    text-align: center;
+}
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type h5{
+    color: $bcc_green;
+}
+
 
 /*
 ####################################################

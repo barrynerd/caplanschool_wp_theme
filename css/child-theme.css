@@ -641,6 +641,79 @@ ul.products .yith-wcdp {
 .course-cards .woocommerce ul.products li:nth-of-type(4n) {
   margin-right: 0 !important; }
 
+.twostep02 {
+  margin-right: 0;
+  margin-left: 0; }
+
+.twostep02 .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.twostep02 .twostep02-jumbotron {
+  background: #fffbad; }
+
+.twostep02 .twostep02-jumbotron .twostep02-row-01 {
+  height: 40vh; }
+
+.twostep02 .twostep02-jumbotron .twostep02-row-02 {
+  height: 25vh; }
+
+.twostep02 .twostep02-jumbotron .hl-text h1 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: -2px;
+  text-transform: uppercase; }
+
+.twostep02 .twostep02-jumbotron .hl-text h5 {
+  font-style: italic; }
+
+.twostep02 .twostep02-jumbotron .hl-text a {
+  margin-top: 1rem; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-01 {
+  margin-top: 3rem; }
+
+.twostep02 .twostep02-descriptions h3 {
+  font-weight: bold;
+  text-align: center; }
+
+.twostep02 .twostep02-descriptions h6 {
+  color: #777;
+  margin-top: 1.5rem;
+  text-align: center; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-top: 3rem; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card {
+  margin: 0 1rem;
+  width: 18rem; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:first-of-type {
+  height: 19rem; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 h5 {
+  color: #84D263;
+  font-weight: bold;
+  text-align: center; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 p {
+  color: #777; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type {
+  text-align: center; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type h5 {
+  color: #2a8700; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
