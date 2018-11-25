@@ -691,11 +691,11 @@ ul.products .yith-wcdp {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin-top: 3rem; }
+  margin-top: 1.5rem; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card {
-  margin: 0 1rem;
-  width: 18rem; }
+  margin: 0 .5rem 1rem;
+  width: 19rem; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:first-of-type {
   height: 19rem; }
@@ -703,7 +703,8 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-descriptions .twostep02-row-02 h5 {
   color: #84D263;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.35rem; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 p {
   color: #777; }
