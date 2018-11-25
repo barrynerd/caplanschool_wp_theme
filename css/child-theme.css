@@ -18,6 +18,12 @@
   color: #2a8700 !important;
   border-color: #2f3e48 !important; }
 
+.btn-group-sm-bcc > .btn, .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn, .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem; }
+
 #main-menu {
   background-color: #FFEE5D !important;
   font-family: "Open Sans";
@@ -657,10 +663,13 @@ ul.products .yith-wcdp {
   background: #fffbad; }
 
 .twostep02 .twostep02-jumbotron .twostep02-row-01 {
-  height: 53vh; }
+  height: 53vh;
+  padding: 0 1rem;
+  text-align: center; }
 
 .twostep02 .twostep02-jumbotron .twostep02-row-02 {
-  height: 25vh; }
+  height: 25vh;
+  text-align: center; }
 
 .twostep02 .twostep02-jumbotron .hl-text h1 {
   font-size: 1.6rem;
@@ -671,6 +680,12 @@ ul.products .yith-wcdp {
 
 .twostep02 .twostep02-jumbotron .hl-text h5 {
   font-style: italic; }
+
+.twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
+  font-size: .85rem;
+  font-style: italic;
+  margin-top: 1rem;
+  padding: 0 .75rem; }
 
 .twostep02 .twostep02-jumbotron .hl-text a {
   margin-top: 1rem; }
@@ -775,6 +790,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .btn-group-sm-bcc > .btn, .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn, .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem; }
   #wrapper-announce a {
     font-size: 1rem; }
   .home .feature01-row h5 {
@@ -820,9 +840,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep01 .twostep01-jumbotron h5 {
     text-align: left; }
   .twostep02 .twostep02-jumbotron .twostep02-row-01 {
-    height: 40vh; }
+    height: 53vh;
+    padding: 0;
+    text-align: left; }
   .twostep02 .twostep02-jumbotron .hl-text h1 {
-    font-size: 2.6rem; } }
+    font-size: 2.6rem; }
+  .twostep02 .twostep02-jumbotron .twostep02-row-02 {
+    text-align: left;
+    height: 25vh;
+    padding: 0; }
+  .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
+    padding: 0; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
@@ -2391,8 +2419,7 @@ pre {
 .wpcf7 input[type=datetime-local],
 .wpcf7 input[type=color],
 .wpcf7 input[type=email],
-.wpcf7 input[type=file],
-.wpcf7 input[type=submit],
+.wpcf7 input[type=file], .wpcf7 input[type=submit],
 .wpcf7 select,
 .wpcf7 textarea, .wpcf7 .wpcf7-validation-errors {
   display: block;
@@ -2425,8 +2452,7 @@ pre {
     .wpcf7 input[type=datetime-local],
     .wpcf7 input[type=color],
     .wpcf7 input[type=email],
-    .wpcf7 input[type=file],
-    .wpcf7 input[type=submit],
+    .wpcf7 input[type=file], .wpcf7 input[type=submit],
     .wpcf7 select,
     .wpcf7 textarea, .wpcf7 .wpcf7-validation-errors {
       -webkit-transition: none;
@@ -3164,8 +3190,7 @@ textarea.form-control,
     .form-inline .wpcf7 input[type=datetime-local], .wpcf7 .form-inline input[type=datetime-local],
     .form-inline .wpcf7 input[type=color], .wpcf7 .form-inline input[type=color],
     .form-inline .wpcf7 input[type=email], .wpcf7 .form-inline input[type=email],
-    .form-inline .wpcf7 input[type=file], .wpcf7 .form-inline input[type=file],
-    .form-inline .wpcf7 input[type=submit], .wpcf7 .form-inline input[type=submit],
+    .form-inline .wpcf7 input[type=file], .wpcf7 .form-inline input[type=file], .form-inline .wpcf7 input[type=submit], .wpcf7 .form-inline input[type=submit],
     .form-inline .wpcf7 select, .wpcf7 .form-inline select,
     .form-inline .wpcf7 textarea, .wpcf7 .form-inline textarea, .form-inline .wpcf7 .wpcf7-validation-errors, .wpcf7 .form-inline .wpcf7-validation-errors {
       display: inline-block;
@@ -3203,8 +3228,7 @@ textarea.form-control,
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
-.btn,
-.wpcf7 input[type=submit] {
+.btn, .wpcf7 input[type=submit] {
   display: inline-block;
   font-weight: 400;
   text-align: center;
@@ -3224,8 +3248,7 @@ textarea.form-control,
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out; }
   @media screen and (prefers-reduced-motion: reduce) {
-    .btn,
-    .wpcf7 input[type=submit] {
+    .btn, .wpcf7 input[type=submit] {
       -webkit-transition: none;
       transition: none; } }
   .btn:hover, .wpcf7 input:hover[type=submit], .btn:focus,
@@ -3446,8 +3469,7 @@ fieldset:disabled a.btn {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
-.btn-outline-primary,
-.wpcf7 input[type=submit] {
+.btn-outline-primary, .wpcf7 input[type=submit] {
   color: #007bff;
   background-color: transparent;
   background-image: none;
@@ -3669,15 +3691,13 @@ fieldset:disabled a.btn {
     color: #6c757d;
     pointer-events: none; }
 
-.btn-lg, .btn-group-lg > .btn,
-.wpcf7 .btn-group-lg > input[type=submit] {
+.btn-lg, .btn-group-lg > .btn, .wpcf7 .btn-group-lg > input[type=submit] {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn,
-.wpcf7 .btn-group-sm > input[type=submit] {
+.btn-sm, .btn-group-sm > .btn, .wpcf7 .btn-group-sm > input[type=submit] {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
@@ -3900,8 +3920,7 @@ input[type="button"].btn-block {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn,
-  .wpcf7 .btn-group > input[type=submit],
+  .btn-group > .btn, .wpcf7 .btn-group > input[type=submit],
   .btn-group-vertical > .btn,
   .wpcf7 .btn-group-vertical > input[type=submit] {
     position: relative;
@@ -3921,9 +3940,7 @@ input[type="button"].btn-block {
     .btn-group-vertical > .btn.active,
     .wpcf7 .btn-group-vertical > input.active[type=submit] {
       z-index: 1; }
-  .btn-group .btn + .btn, .btn-group .wpcf7 input[type=submit] + .btn, .wpcf7 .btn-group input[type=submit] + .btn,
-  .btn-group .wpcf7 .btn + input[type=submit], .wpcf7 .btn-group .btn + input[type=submit],
-  .btn-group .wpcf7 input[type=submit] + input[type=submit], .wpcf7 .btn-group input[type=submit] + input[type=submit],
+  .btn-group .btn + .btn, .btn-group .wpcf7 input[type=submit] + .btn, .wpcf7 .btn-group input[type=submit] + .btn, .btn-group .wpcf7 .btn + input[type=submit], .wpcf7 .btn-group .btn + input[type=submit], .btn-group .wpcf7 input[type=submit] + input[type=submit], .wpcf7 .btn-group input[type=submit] + input[type=submit],
   .btn-group .btn + .btn-group,
   .btn-group .wpcf7 input[type=submit] + .btn-group,
   .wpcf7 .btn-group input[type=submit] + .btn-group,
@@ -4003,13 +4020,10 @@ input[type="button"].btn-block {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .btn-group-vertical .btn,
-  .btn-group-vertical .wpcf7 input[type=submit], .wpcf7 .btn-group-vertical input[type=submit],
+  .btn-group-vertical .btn, .btn-group-vertical .wpcf7 input[type=submit], .wpcf7 .btn-group-vertical input[type=submit],
   .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn, .wpcf7 .btn-group-vertical > input[type=submit] + .btn,
-  .wpcf7 .btn-group-vertical > .btn + input[type=submit],
-  .wpcf7 .btn-group-vertical > input[type=submit] + input[type=submit],
+  .btn-group-vertical > .btn + .btn, .wpcf7 .btn-group-vertical > input[type=submit] + .btn, .wpcf7 .btn-group-vertical > .btn + input[type=submit], .wpcf7 .btn-group-vertical > input[type=submit] + input[type=submit],
   .btn-group-vertical > .btn + .btn-group,
   .wpcf7 .btn-group-vertical > input[type=submit] + .btn-group,
   .btn-group-vertical > .btn-group + .btn,
@@ -4028,8 +4042,7 @@ input[type="button"].btn-block {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group-toggle > .btn,
-.wpcf7 .btn-group-toggle > input[type=submit],
+.btn-group-toggle > .btn, .wpcf7 .btn-group-toggle > input[type=submit],
 .btn-group-toggle > .btn-group > .btn,
 .wpcf7 .btn-group-toggle > .btn-group > input[type=submit] {
   margin-bottom: 0; }
@@ -4069,8 +4082,7 @@ input[type="button"].btn-block {
   .wpcf7 .input-group > input[type=datetime-local],
   .wpcf7 .input-group > input[type=color],
   .wpcf7 .input-group > input[type=email],
-  .wpcf7 .input-group > input[type=file],
-  .wpcf7 .input-group > input[type=submit],
+  .wpcf7 .input-group > input[type=file], .wpcf7 .input-group > input[type=submit],
   .wpcf7 .input-group > select,
   .wpcf7 .input-group > textarea, .wpcf7 .input-group > .wpcf7-validation-errors,
   .input-group > .custom-select,
@@ -4361,27 +4373,7 @@ input[type="button"].btn-block {
     .wpcf7 .input-group > input[type=submit] + input[type=file],
     .wpcf7 .input-group > select + input[type=file],
     .wpcf7 .input-group > textarea + input[type=file],
-    .wpcf7 .input-group > .wpcf7-validation-errors + input[type=file],
-    .wpcf7 .input-group > .form-control + input[type=submit],
-    .wpcf7 .input-group > input[type=text] + input[type=submit],
-    .wpcf7 .input-group > input[type=search] + input[type=submit],
-    .wpcf7 .input-group > input[type=url] + input[type=submit],
-    .wpcf7 .input-group > input[type=tel] + input[type=submit],
-    .wpcf7 .input-group > input[type=number] + input[type=submit],
-    .wpcf7 .input-group > input[type=range] + input[type=submit],
-    .wpcf7 .input-group > input[type=date] + input[type=submit],
-    .wpcf7 .input-group > input[type=month] + input[type=submit],
-    .wpcf7 .input-group > input[type=week] + input[type=submit],
-    .wpcf7 .input-group > input[type=time] + input[type=submit],
-    .wpcf7 .input-group > input[type=datetime] + input[type=submit],
-    .wpcf7 .input-group > input[type=datetime-local] + input[type=submit],
-    .wpcf7 .input-group > input[type=color] + input[type=submit],
-    .wpcf7 .input-group > input[type=email] + input[type=submit],
-    .wpcf7 .input-group > input[type=file] + input[type=submit],
-    .wpcf7 .input-group > input[type=submit] + input[type=submit],
-    .wpcf7 .input-group > select + input[type=submit],
-    .wpcf7 .input-group > textarea + input[type=submit],
-    .wpcf7 .input-group > .wpcf7-validation-errors + input[type=submit],
+    .wpcf7 .input-group > .wpcf7-validation-errors + input[type=file], .wpcf7 .input-group > .form-control + input[type=submit], .wpcf7 .input-group > input[type=text] + input[type=submit], .wpcf7 .input-group > input[type=search] + input[type=submit], .wpcf7 .input-group > input[type=url] + input[type=submit], .wpcf7 .input-group > input[type=tel] + input[type=submit], .wpcf7 .input-group > input[type=number] + input[type=submit], .wpcf7 .input-group > input[type=range] + input[type=submit], .wpcf7 .input-group > input[type=date] + input[type=submit], .wpcf7 .input-group > input[type=month] + input[type=submit], .wpcf7 .input-group > input[type=week] + input[type=submit], .wpcf7 .input-group > input[type=time] + input[type=submit], .wpcf7 .input-group > input[type=datetime] + input[type=submit], .wpcf7 .input-group > input[type=datetime-local] + input[type=submit], .wpcf7 .input-group > input[type=color] + input[type=submit], .wpcf7 .input-group > input[type=email] + input[type=submit], .wpcf7 .input-group > input[type=file] + input[type=submit], .wpcf7 .input-group > input[type=submit] + input[type=submit], .wpcf7 .input-group > select + input[type=submit], .wpcf7 .input-group > textarea + input[type=submit], .wpcf7 .input-group > .wpcf7-validation-errors + input[type=submit],
     .wpcf7 .input-group > .form-control + select,
     .wpcf7 .input-group > input[type=text] + select,
     .wpcf7 .input-group > input[type=search] + select,
@@ -4591,16 +4583,13 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .input-group-prepend .btn,
-  .input-group-prepend .wpcf7 input[type=submit], .wpcf7 .input-group-prepend input[type=submit],
+  .input-group-prepend .btn, .input-group-prepend .wpcf7 input[type=submit], .wpcf7 .input-group-prepend input[type=submit],
   .input-group-append .btn,
   .input-group-append .wpcf7 input[type=submit],
   .wpcf7 .input-group-append input[type=submit] {
     position: relative;
     z-index: 2; }
-  .input-group-prepend .btn + .btn, .input-group-prepend .wpcf7 input[type=submit] + .btn, .wpcf7 .input-group-prepend input[type=submit] + .btn,
-  .input-group-prepend .wpcf7 .btn + input[type=submit], .wpcf7 .input-group-prepend .btn + input[type=submit],
-  .input-group-prepend .wpcf7 input[type=submit] + input[type=submit], .wpcf7 .input-group-prepend input[type=submit] + input[type=submit],
+  .input-group-prepend .btn + .btn, .input-group-prepend .wpcf7 input[type=submit] + .btn, .wpcf7 .input-group-prepend input[type=submit] + .btn, .input-group-prepend .wpcf7 .btn + input[type=submit], .wpcf7 .input-group-prepend .btn + input[type=submit], .input-group-prepend .wpcf7 input[type=submit] + input[type=submit], .wpcf7 .input-group-prepend input[type=submit] + input[type=submit],
   .input-group-prepend .btn + .input-group-text,
   .input-group-prepend .wpcf7 input[type=submit] + .input-group-text,
   .wpcf7 .input-group-prepend input[type=submit] + .input-group-text,
@@ -4666,8 +4655,7 @@ input[type="button"].btn-block {
 .wpcf7 .input-group-lg > input[type=datetime-local],
 .wpcf7 .input-group-lg > input[type=color],
 .wpcf7 .input-group-lg > input[type=email],
-.wpcf7 .input-group-lg > input[type=file],
-.wpcf7 .input-group-lg > input[type=submit],
+.wpcf7 .input-group-lg > input[type=file], .wpcf7 .input-group-lg > input[type=submit],
 .wpcf7 .input-group-lg > select,
 .wpcf7 .input-group-lg > textarea, .wpcf7 .input-group-lg > .wpcf7-validation-errors,
 .input-group-lg > .input-group-prepend > .input-group-text,
@@ -4696,8 +4684,7 @@ input[type="button"].btn-block {
 .wpcf7 .input-group-sm > input[type=datetime-local],
 .wpcf7 .input-group-sm > input[type=color],
 .wpcf7 .input-group-sm > input[type=email],
-.wpcf7 .input-group-sm > input[type=file],
-.wpcf7 .input-group-sm > input[type=submit],
+.wpcf7 .input-group-sm > input[type=file], .wpcf7 .input-group-sm > input[type=submit],
 .wpcf7 .input-group-sm > select,
 .wpcf7 .input-group-sm > textarea, .wpcf7 .input-group-sm > .wpcf7-validation-errors,
 .input-group-sm > .input-group-prepend > .input-group-text,
@@ -4712,8 +4699,7 @@ input[type="button"].btn-block {
   line-height: 1.5;
   border-radius: 0.2rem; }
 
-.input-group > .input-group-prepend > .btn,
-.wpcf7 .input-group > .input-group-prepend > input[type=submit],
+.input-group > .input-group-prepend > .btn, .wpcf7 .input-group > .input-group-prepend > input[type=submit],
 .input-group > .input-group-prepend > .input-group-text,
 .input-group > .input-group-append:not(:last-child) > .btn,
 .wpcf7 .input-group > .input-group-append:not(:last-child) > input[type=submit],
@@ -4724,8 +4710,7 @@ input[type="button"].btn-block {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.input-group > .input-group-append > .btn,
-.wpcf7 .input-group > .input-group-append > input[type=submit],
+.input-group > .input-group-append > .btn, .wpcf7 .input-group > .input-group-append > input[type=submit],
 .input-group > .input-group-append > .input-group-text,
 .input-group > .input-group-prepend:not(:first-child) > .btn,
 .wpcf7 .input-group > .input-group-prepend:not(:first-child) > input[type=submit],

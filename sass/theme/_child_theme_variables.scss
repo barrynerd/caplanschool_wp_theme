@@ -79,6 +79,13 @@ $bcc_alert_dark_background_color: #ecfde4;
 
 }
 
+.btn-group-sm-bcc>.btn, .btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
+    padding: .25rem .5rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+
 // main menu colors
 #main-menu {
     background-color: $bcc_yellow!important;
@@ -837,10 +844,13 @@ ul.products .yith-wcdp {
 
 .twostep02 .twostep02-jumbotron .twostep02-row-01{
     height: 53vh;
+    padding: 0 1rem;
+    text-align:center;
 }
 
 .twostep02 .twostep02-jumbotron .twostep02-row-02{
     height: 25vh;
+    text-align: center;
 }
 
 .twostep02 .twostep02-jumbotron .hl-text h1{
@@ -853,6 +863,13 @@ ul.products .yith-wcdp {
 
 .twostep02 .twostep02-jumbotron .hl-text h5{
     font-style: italic;
+}
+
+.twostep02 .twostep02-jumbotron .twostep02-row-02 h6{
+    font-size: .85rem;
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 0 .75rem;
 }
 
 .twostep02 .twostep02-jumbotron .hl-text a{
@@ -1001,6 +1018,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
 
+    .btn-group-sm-bcc>.btn, .btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+    }
+
     #wrapper-announce a {
         font-size: 1rem;
     }
@@ -1076,12 +1100,25 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .twostep02 .twostep02-jumbotron .twostep02-row-01{
-        height: 40vh;
+        height: 53vh;
+        padding:0;
+        text-align:left;
     }
 
     .twostep02 .twostep02-jumbotron .hl-text h1{
         font-size: 2.6rem;
     }
+
+    .twostep02 .twostep02-jumbotron .twostep02-row-02{
+        text-align: left;
+        height:25vh;
+        padding:0;
+    }
+
+    .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
+        padding:0;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up) */
