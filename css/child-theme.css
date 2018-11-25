@@ -657,13 +657,13 @@ ul.products .yith-wcdp {
   background: #fffbad; }
 
 .twostep02 .twostep02-jumbotron .twostep02-row-01 {
-  height: 40vh; }
+  height: 53vh; }
 
 .twostep02 .twostep02-jumbotron .twostep02-row-02 {
   height: 25vh; }
 
 .twostep02 .twostep02-jumbotron .hl-text h1 {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
   font-weight: bold;
   font-style: italic;
   letter-spacing: -2px;
@@ -818,7 +818,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 2.5rem;
     text-align: left; }
   .twostep01 .twostep01-jumbotron h5 {
-    text-align: left; } }
+    text-align: left; }
+  .twostep02 .twostep02-jumbotron .twostep02-row-01 {
+    height: 40vh; }
+  .twostep02 .twostep02-jumbotron .hl-text h1 {
+    font-size: 2.6rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
