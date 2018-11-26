@@ -646,7 +646,7 @@ ul.products .yith-wcdp {
 .course-cards .woocommerce ul.products li {
   margin: 2rem 0.25rem 0 !important;
   background: white;
-  width: 15rem !important; }
+  width: 100% !important; }
 
 .twostep02 {
   margin-right: 0;
@@ -851,7 +851,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 25vh;
     padding: 0; }
   .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
-    padding: 0; } }
+    padding: 0; }
+  .course-cards .woocommerce ul.products li {
+    width: 15rem !important; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
