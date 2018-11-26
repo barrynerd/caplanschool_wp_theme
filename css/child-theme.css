@@ -731,11 +731,15 @@ ul.products .yith-wcdp {
   text-align: center;
   font-size: 1.35rem; }
 
-.twostep02 .twostep02-descriptions .twostep02-row-02 p {
+.twostep02 .twostep02-descriptions .twostep02-row-02 p,
+.twostep02 .twostep02-descriptions .twostep02-row-02 ul {
   color: #777; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type {
   text-align: center; }
+
+.twostep02 .twostep02-descriptions .twostep02-row-02 #course-description-pre-license .card-body {
+  text-align: left; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type h5 {
   color: #2a8700; }
