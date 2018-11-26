@@ -70,13 +70,19 @@ $bcc_alert_dark_background_color: #ecfde4;
     padding: .375rem .75rem!important;
 }
 
-.btn.btn-primary:hover {
+.btn.btn-primary:hover,
+ .btn.btn-secondary:hover{
     background-color: $bcc_yellow!important;
     border: 1px solid $bcc_button_border!important;
     color: $bcc_green!important;
     border-color: #2f3e48!important;
+}
 
-
+.btn.btn-secondary {
+    background-color: $bcc_green!important;
+    border: 1px solid $bcc_button_border!important;
+    box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
+    color: white!important;
 }
 
 .btn-group-sm-bcc>.btn, .btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
