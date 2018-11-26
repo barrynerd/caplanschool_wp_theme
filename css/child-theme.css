@@ -731,6 +731,37 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type h5 {
   color: #2a8700; }
 
+#navigation-buttons {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ebf0e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 24rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#navigation-buttons .button-set {
+  margin-top: .75rem;
+  text-align: center;
+  width: 18rem; }
+
+#navigation-buttons h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; }
+
+#navigation-buttons .button-set h5 {
+  font-weight: bold; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -853,7 +884,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
     padding: 0; }
   .course-cards .woocommerce ul.products li {
-    width: 15rem !important; } }
+    width: 15rem !important; }
+  #navigation-buttons {
+    height: 16rem; }
+  #navigation-buttons h2 {
+    font-size: 2rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

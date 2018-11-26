@@ -927,6 +927,32 @@ ul.products .yith-wcdp {
     color: $bcc_green;
 }
 
+#navigation-buttons {
+    align-content: center;
+    align-items: center;
+    background: $bcc_medium_light_green;
+    display: flex;
+    flex-wrap: wrap;
+    height: 24rem;
+    justify-content: center;
+}
+
+#navigation-buttons .button-set{
+    margin-top: .75rem;
+    text-align: center;
+    width: 18rem;
+}
+
+#navigation-buttons h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#navigation-buttons .button-set h5{
+    font-weight: bold;
+}
 
 /*
 ####################################################
@@ -1125,6 +1151,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         width: 15rem!important;
     }
 
+    #navigation-buttons {
+        height: 16rem;
+    }
+
+    #navigation-buttons h2{
+        font-size: 2rem;
+    }
 
 }
 
