@@ -1159,6 +1159,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         padding:0;
     }
 
+    .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02{
+        height: 43vh;
+    }
+
+    .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02 h5 {
+        padding-top: .75rem;
+    }
+
+
     .course-cards  .woocommerce ul.products li{
         width: 15rem!important;
     }
