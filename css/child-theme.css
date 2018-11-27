@@ -739,7 +739,8 @@ ul.products .yith-wcdp {
   text-align: center; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 #course-description-pre-license .card-body {
-  text-align: left; }
+  text-align: left;
+  height: 23rem; }
 
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:last-of-type h5 {
   color: #2a8700; }
