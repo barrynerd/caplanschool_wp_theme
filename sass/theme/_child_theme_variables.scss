@@ -939,6 +939,19 @@ ul.products .yith-wcdp {
     color: $bcc_green;
 }
 
+.twostep02.upcoming .twostep02-jumbotron .twostep02-row-01{
+    height: 45vh;
+}
+
+.twostep02.upcoming .twostep02-jumbotron .twostep02-row-02{
+    height: 54vh;
+}
+
+.twostep02.upcoming .twostep02-jumbotron .twostep02-row-02 h5 {
+    padding-top: .75rem;
+}
+
+
 #navigation-buttons {
     align-content: center;
     align-items: center;
@@ -1160,7 +1173,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02{
-        height: 43vh;
+        height: 40vh;
     }
 
     .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02 h5 {
