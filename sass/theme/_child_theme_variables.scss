@@ -957,6 +957,10 @@ ul.products .yith-wcdp {
     padding: 1rem 0;
 }
 
+.twostep02-descriptions .woocommerce:empty:before {
+    content:"No Courses Currently Scheduled";
+}
+
 .twostep02-descriptions h1,
 .twostep02 .twostep02-descriptions h3 {
     font-weight: bold;
