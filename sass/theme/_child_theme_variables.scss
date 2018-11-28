@@ -156,10 +156,20 @@ $bcc_alert_dark_background_color: #ecfde4;
     padding: 30px 0 0!important;
 }
 
+#wrapper-announce {
+    display:none;
+}
+
+
 .post-template-page-no_featured_img .wrapper,
 .page-template-page-no_featured_img .wrapper {
     padding: 0 0 30px!important;
 }
+
+.home #wrapper-announce {
+    display:block;
+}
+
 
 .home .wrapper {
     padding:0;
