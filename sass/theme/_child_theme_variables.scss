@@ -85,11 +85,13 @@ $bcc_alert_dark_background_color: #ecfde4;
     color: white!important;
 }
 
-.btn-group-sm-bcc>.btn, .btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
-    padding: .25rem .5rem;
-    font-size: .875rem;
-    line-height: 1.5;
-    border-radius: .2rem;
+.btn-group-sm-bcc>.a,
+.btn-group-sm-bcc>.btn,
+.btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
+    padding: .25rem .5rem!important;
+    font-size: .875rem!important;
+    line-height: 1.5!important;
+    border-radius: .2rem!important;
 }
 
 // main menu colors
@@ -1128,11 +1130,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
 
-    .btn-group-sm-bcc>.btn, .btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        border-radius: .25rem;
+    .btn-group-sm-bcc>.btn,
+    .btn-group-sm-bcc>.a,
+    .btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
+        padding: .375rem .75rem!important;
+        font-size: 1rem!important;
+        line-height: 1.5!important;
+        border-radius: .25rem!important;
     }
 
     #wrapper-announce a {
