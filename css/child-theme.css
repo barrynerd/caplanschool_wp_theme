@@ -703,6 +703,37 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-descriptions .twostep02-row-01 {
   margin-top: 3rem; }
 
+.twostep02-descriptions .row.ethics {
+  background-color: #BBDFAB; }
+
+.twostep02-descriptions .row.ethics .card-body:first-of-type {
+  height: 21rem; }
+
+.twostep02-descriptions .row.core .card-body:first-of-type {
+  height: 28rem; }
+
+.twostep02-descriptions .row.elective .card-body:first-of-type {
+  height: 31rem; }
+
+.twostep02-descriptions .row.designation .card-body:first-of-type {
+  height: 39rem; }
+
+.twostep02-descriptions .row .card-body:last-of-type {
+  text-align: center; }
+
+.twostep02-descriptions .row.core {
+  background-color: #fffbad; }
+
+.twostep02-descriptions .row.elective {
+  background-color: #eee; }
+
+.twostep02-descriptions .row.designation {
+  background-color: #fffff6; }
+
+.twostep02-descriptions .row {
+  pading-top: 1.2rem; }
+
+.twostep02-descriptions h1,
 .twostep02 .twostep02-descriptions h3 {
   font-weight: bold;
   text-align: center; }
@@ -718,6 +749,7 @@ ul.products .yith-wcdp {
           align-items: stretch;
   margin-top: 1.5rem; }
 
+.twostep02-descriptions .twostep02-row-02 .card,
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card {
   margin: 0 .5rem 1rem;
   width: 19rem; }
@@ -725,6 +757,7 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:first-of-type {
   height: 19rem; }
 
+.twostep02-descriptions .twostep02-row-02 h5,
 .twostep02 .twostep02-descriptions .twostep02-row-02 h5 {
   color: #84D263;
   font-weight: bold;
