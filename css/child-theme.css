@@ -618,6 +618,15 @@ ul.products .yith-wcdp {
           align-items: center;
   background: antiquewhite; }
 
+.twostep01 .twostep01-jumbotron.upcoming-ce .row {
+  height: 100vh; }
+
+.twostep01 .twostep01-jumbotron.upcoming-ce h1 {
+  font-size: 1.2rem; }
+
+.twostep01 .twostep01-jumbotron.upcoming-ce h5 {
+  font-size: 1rem; }
+
 .twostep01 .twostep01-jumbotron h1 {
   text-transform: uppercase;
   font-size: 1.6rem;
@@ -968,7 +977,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #navigation-buttons {
     height: 16rem; }
   #navigation-buttons h2 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  .twostep01 .twostep01-jumbotron.upcoming-ce .row {
+    height: 100vh; }
+  .twostep01 .twostep01-jumbotron.upcoming-ce h1 {
+    font-size: 2.5rem; }
+  .twostep01 .twostep01-jumbotron.upcoming-ce h5 {
+    font-size: 1.25rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
