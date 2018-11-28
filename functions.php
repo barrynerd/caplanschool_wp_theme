@@ -412,6 +412,7 @@ function bc_ce_classes_by_month($atts){
 		$result .= "</div>";
 	} else {
 		// no posts found
+		$result = '<div class="woocommerce "></div>';
 	}
 
 
