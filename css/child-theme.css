@@ -741,6 +741,9 @@ ul.products .yith-wcdp {
 .twostep02-descriptions .row.hondros .card-body:first-of-type {
   height: 32.5rem; }
 
+.twostep02-descriptions.members-ce .row .card-body:first-of-type {
+  height: 30.5rem; }
+
 .twostep02-descriptions .row.core .card-body:first-of-type {
   height: 28rem; }
 
@@ -853,6 +856,14 @@ ul.products .yith-wcdp {
 
 #navigation-buttons .button-set h5 {
   font-weight: bold; }
+
+.members-ce ul.products li.product {
+  width: 100% !important;
+  border: none; }
+
+.members-ce ul.products li.product a img,
+.members-ce ul.products li.product a h2 {
+  display: none; }
 
 /*
 ####################################################
