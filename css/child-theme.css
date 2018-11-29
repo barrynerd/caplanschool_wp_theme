@@ -865,6 +865,12 @@ ul.products .yith-wcdp {
 .members-ce ul.products li.product a h2 {
   display: none; }
 
+.members-ce .banner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 2rem; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
