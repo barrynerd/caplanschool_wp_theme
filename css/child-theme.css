@@ -1,4 +1,7 @@
 @charset "UTF-8";
+.btn, .wpcf7 input[type=submit] {
+  white-space: normal !important; }
+
 .btn.btn-primary, .wpcf7 input.btn-primary[type=submit] {
   background-color: #2a8700 !important;
   border: 1px solid #2f3e48 !important;

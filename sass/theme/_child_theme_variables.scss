@@ -57,6 +57,10 @@ $bcc_alert_info_color: #3e2e4c;
 $bcc_alert_dark_background_color: #ecfde4;
 
 // bootstrap overrides
+.btn {
+    white-space: normal!important;
+}
+
 .btn.btn-primary {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
