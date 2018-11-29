@@ -29,6 +29,7 @@ $bcc_medium_light_green: #ebf0e8;
 $bcc_extra_light_green: #fffff6;
 
 $bcc_lime_green: #84D263;
+$bcc_orange: #FE9328;
 
 $bcc_menu_bg: #777;
 $bcc_menu_text: #777;
@@ -96,6 +97,12 @@ $bcc_alert_dark_background_color: #ecfde4;
     font-size: .875rem!important;
     line-height: 1.5!important;
     border-radius: .2rem!important;
+}
+
+// bcc utilities
+.kicker {
+    background: $bcc_orange;
+    padding: .5rem;
 }
 
 // main menu colors
@@ -1085,6 +1092,27 @@ ul.products .yith-wcdp {
 .members-ce .banner {
     justify-content: center;
     margin: 0 0 2rem;
+}
+
+.members-ce .details {
+    justify-content: center;
+    align-items: flex-start!important;
+}
+
+.members-ce .details h1{
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.members-ce .details h6{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.members-ce .card {
+    width: 23rem;
 }
 
 /*

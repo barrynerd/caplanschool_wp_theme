@@ -41,6 +41,10 @@
   line-height: 1.5 !important;
   border-radius: 0.2rem !important; }
 
+.kicker {
+  background: #FE9328;
+  padding: .5rem; }
+
 #main-menu {
   background-color: #FFEE5D !important;
   font-family: "Open Sans";
@@ -870,6 +874,27 @@ ul.products .yith-wcdp {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 0 2rem; }
+
+.members-ce .details {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important; }
+
+.members-ce .details h1 {
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: -2px;
+  text-transform: uppercase; }
+
+.members-ce .details h6 {
+  font-weight: bold;
+  font-style: italic; }
+
+.members-ce .card {
+  width: 23rem; }
 
 /*
 ####################################################
