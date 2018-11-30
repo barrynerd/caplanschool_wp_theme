@@ -43,7 +43,8 @@
 
 .kicker {
   background: #FE9328;
-  padding: .5rem; }
+  padding: .5rem;
+  font-weight: bold; }
 
 #main-menu {
   background-color: #FFEE5D !important;
@@ -890,11 +891,21 @@ ul.products .yith-wcdp {
   text-transform: uppercase; }
 
 .members-ce .details h6 {
+  font-style: italic;
   font-weight: bold;
-  font-style: italic; }
+  text-align: center; }
 
-.members-ce .card {
-  width: 23rem; }
+.members-ce .details p {
+  display: none; }
+
+.members-ce .details .card {
+  width: 100%; }
+
+.members-ce .details .card img {
+  display: none; }
+
+.members-ce .details .card p {
+  display: none; }
 
 /*
 ####################################################
@@ -1038,7 +1049,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep01 .twostep01-jumbotron.upcoming-ce h1 {
     font-size: 2.5rem; }
   .twostep01 .twostep01-jumbotron.upcoming-ce h5 {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+  .members-ce .details p {
+    display: block; }
+  .members-ce .details h6 {
+    text-align: left; }
+  .members-ce .details .card {
+    width: 23rem; }
+  .members-ce .details .card img {
+    display: block; }
+  .members-ce .details .card p {
+    font-size: inherit; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

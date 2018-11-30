@@ -103,6 +103,7 @@ $bcc_alert_dark_background_color: #ecfde4;
 .kicker {
     background: $bcc_orange;
     padding: .5rem;
+    font-weight:bold;
 }
 
 // main menu colors
@@ -1107,12 +1108,25 @@ ul.products .yith-wcdp {
 }
 
 .members-ce .details h6{
-    font-weight: bold;
     font-style: italic;
+    font-weight: bold;
+    text-align: center;
 }
 
-.members-ce .card {
-    width: 23rem;
+.members-ce .details p{
+    display: none;
+}
+
+.members-ce .details .card {
+    width: 100%;
+}
+
+.members-ce .details .card img{
+    display: none;
+}
+
+.members-ce .details .card p{
+    display: none;
 }
 
 /*
@@ -1341,6 +1355,26 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .twostep01 .twostep01-jumbotron.upcoming-ce h5{
         font-size: 1.25rem;
+    }
+
+    .members-ce .details p{
+        display: block;
+    }
+
+    .members-ce .details h6{
+        text-align: left;
+    }
+
+    .members-ce .details .card {
+        width: 23rem;
+    }
+
+    .members-ce .details .card img{
+        display: block;
+    }
+
+    .members-ce .details .card p{
+        font-size: inherit;
     }
 
 
