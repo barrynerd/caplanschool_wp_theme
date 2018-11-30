@@ -1129,6 +1129,25 @@ ul.products .yith-wcdp {
     display: none;
 }
 
+.page-about .card {
+    flex-direction: column;
+    margin: 0 0 1.5rem;
+    padding:0;
+
+}
+
+.page-about .card img{
+    height:200px;
+    width: auto;
+}
+
+.page-about .card .card-subtitle{
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: .75rem;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -1375,6 +1394,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .members-ce .details .card p{
         font-size: inherit;
+    }
+
+    .page-about .card {
+        flex-direction: row;
     }
 
 

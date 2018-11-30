@@ -907,6 +907,24 @@ ul.products .yith-wcdp {
 .members-ce .details .card p {
   display: none; }
 
+.page-about .card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 1.5rem;
+  padding: 0; }
+
+.page-about .card img {
+  height: 200px;
+  width: auto; }
+
+.page-about .card .card-subtitle {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: -0.5rem;
+  margin-bottom: .75rem; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -1059,7 +1077,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .members-ce .details .card img {
     display: block; }
   .members-ce .details .card p {
-    font-size: inherit; } }
+    font-size: inherit; }
+  .page-about .card {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
