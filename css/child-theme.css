@@ -913,11 +913,20 @@ ul.products .yith-wcdp {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 0 1.5rem;
-  padding: 0; }
+  padding: 0;
+  border: none; }
 
 .page-about .card img {
-  height: 200px;
-  width: auto; }
+  height: calc(100vh * 15 / 32);
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 20%;
+     object-position: 0 20%; }
+
+.page-about .card.dnicklus img {
+  -o-object-position: 0 0%;
+     object-position: 0 0%; }
 
 .page-about .card .card-subtitle {
   font-style: italic;
@@ -1082,7 +1091,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+    margin: 0 0 3.5rem; }
+  .page-about .card-body {
+    padding: 0 1.25rem; }
+  .page-about .card.dnicklus img {
+    -o-object-position: 0 20%;
+       object-position: 0 20%; }
+  .page-about .card img {
+    height: 16rem;
+    -o-object-position: 50% 50%;
+       object-position: 50% 50%; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

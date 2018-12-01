@@ -1133,12 +1133,18 @@ ul.products .yith-wcdp {
     flex-direction: column;
     margin: 0 0 1.5rem;
     padding:0;
-
+    border: none;
 }
 
 .page-about .card img{
-    height:200px;
+    height: calc(100vh * 15 / 32);
     width: auto;
+    object-fit: cover;
+    object-position: 0 20%;
+}
+
+.page-about .card.dnicklus img{
+    object-position: 0 0%;
 }
 
 .page-about .card .card-subtitle{
@@ -1398,8 +1404,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .page-about .card {
         flex-direction: row;
+        margin: 0 0 3.5rem;
     }
 
+    .page-about .card-body{
+        padding: 0 1.25rem;
+    }
+
+    .page-about .card.dnicklus img{
+        object-position: 0 20%;
+    }
+
+    .page-about .card img{
+        height: 16rem;
+        object-position: 50% 50%;
+    }
 
 }
 
