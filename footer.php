@@ -28,7 +28,7 @@ $container = get_theme_mod('understrap_container_type');
 
 					<div class="site-info">
 
-						<div class="card-collection d-sm-flex justify-content-around flex-sm-column flex-md-row">
+						<div class="card-collection">
 
 					        <div class="card">
 					            <ul class="card-body">
