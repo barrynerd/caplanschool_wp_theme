@@ -1,4 +1,7 @@
 @charset "UTF-8";
+figcaption {
+  font-size: .85rem; }
+
 .btn, .wpcf7 input[type=submit] {
   white-space: normal !important; }
 
@@ -933,6 +936,10 @@ ul.products .yith-wcdp {
   font-size: 1rem;
   margin-top: -0.5rem;
   margin-bottom: .75rem; }
+
+.card figure img {
+  width: 100% !important;
+  height: auto !important; }
 
 /*
 ####################################################
