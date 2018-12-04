@@ -225,7 +225,7 @@ figcaption {
 
 #wrapper-footer {
   background-color: #58535C;
-  padding-top: 2rem; }
+  padding-top: 2rem !important; }
 
 #wrapper-footer .box {
   background-color: white;
