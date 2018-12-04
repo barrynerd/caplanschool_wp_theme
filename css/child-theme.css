@@ -227,14 +227,29 @@ figcaption {
   background-color: #58535C;
   padding-top: 2rem !important; }
 
-#wrapper-footer .box {
+#wrapper-footer .card-collection {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+#wrapper-footer .card {
   background-color: white;
   border: 1px solid #2a8700;
   color: #84D263;
   font-size: .9rem;
   font-weight: bold;
-  padding: 1rem 4rem;
-  text-align: center; }
+  padding: 1rem 1rem;
+  text-align: center;
+  width: 18rem; }
 
 #wrapper-footer ul {
   list-style-type: none;
@@ -1014,6 +1029,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     border-radius: 0.25rem !important; }
   #wrapper-announce a {
     font-size: 1rem; }
+  #wrapper-footer .card-collection {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  #wrapper-footer .card {
+    padding: 1rem 4rem;
+    width: 23rem; }
   .home .feature01-row h5 {
     font-size: 1.5rem; }
   .home .feature01-row p {

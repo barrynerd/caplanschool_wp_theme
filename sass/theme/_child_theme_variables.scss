@@ -329,14 +329,22 @@ figcaption {
         padding-top: 2rem!important;
 }
 
-#wrapper-footer  .box {
+#wrapper-footer .card-collection {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+#wrapper-footer  .card{
     background-color: white;
     border: 1px solid $bcc_green;
     color: $bcc_lime_green;
     font-size: .9rem;
     font-weight: bold;
-    padding: 1rem 4rem;
+    padding: 1rem 1rem;
     text-align: center;
+    width: 18rem;
 }
 
 #wrapper-footer  ul {
@@ -1266,6 +1274,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     #wrapper-announce a {
         font-size: 1rem;
+    }
+
+    #wrapper-footer .card-collection {
+        flex-direction: row;
+    }
+
+    #wrapper-footer .card{
+        padding: 1rem 4rem;
+        width: 23rem;
     }
 
     .home .feature01-row h5 {

@@ -28,10 +28,10 @@ $container = get_theme_mod('understrap_container_type');
 
 					<div class="site-info">
 
-						<div class="d-sm-flex justify-content-around flex-sm-column flex-md-row">
+						<div class="card-collection d-sm-flex justify-content-around flex-sm-column flex-md-row">
 
-					        <div class="box">
-					            <ul class="d-flex flex-column">
+					        <div class="card">
+					            <ul class="card-body">
 					                <li>3455 State Route 66</li>
 					                <li>Neptune, NJ 07753</li>
 							<li>&nbsp;</li>
@@ -39,9 +39,9 @@ $container = get_theme_mod('understrap_container_type');
 					                <li>Stout & O'Hagan Building)</li>
 					                </ul>
 					            </div>
-					        <div class="box">
+					        <div class="card">
 
-                                <ul class="d-flex flex-column">
+                                <ul class="card-body">
 					                <li> Questions?</li>
 							<li>&nbsp;</li>
 					                <li> CALL 732-918-1300</li>
