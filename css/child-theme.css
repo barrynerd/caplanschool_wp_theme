@@ -228,6 +228,9 @@ figcaption {
   padding-top: 2rem !important; }
 
 #wrapper-footer .card-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -235,9 +238,20 @@ figcaption {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+#wrapper-footer #footer-summary {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
@@ -250,6 +264,16 @@ figcaption {
   padding: 1rem 1rem;
   text-align: center;
   width: 18rem; }
+
+#wrapper-footer #footer-summary .card {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: .9rem;
+  font-weight: bold;
+  padding: 1rem 1rem;
+  text-align: center;
+  width: 100vw; }
 
 #wrapper-footer ul {
   list-style-type: none;

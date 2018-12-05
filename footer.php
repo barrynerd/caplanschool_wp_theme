@@ -51,24 +51,25 @@ $container = get_theme_mod('understrap_container_type');
 					            </div>
 					        </div>
 
-					    <div id="footer-summary" class="d-flex flex-column">
+					    <div id="footer-summary">
+                            <div class="card">
 
-					        <ul class="d-flex flex-column">
-					           <li class="left"><a href="<?php bloginfo('url') ?>/about">About Caplan School Of Real Estate</a></li>
-					           <li class="left"><a href="<?php bloginfo('url') ?>/photo-attribution">Photo Attribution</a></li>
-					           <li class="left">
-                                   <a href="/feed/"><i class="fa fa-rss" aria-hidden="true"></i></a>
-					                </li>
-					            </ul>
+    					        <ul class="card-body">
+    					           <li class="left"><a href="<?php bloginfo('url') ?>/about">About Caplan School Of Real Estate</a></li>
+    					           <li class="left"><a href="<?php bloginfo('url') ?>/photo-attribution">Photo Attribution</a></li>
+    					           <li class="left">
+                                       <a href="/feed/"><i class="fa fa-rss" aria-hidden="true"></i></a>
+    					                </li>
+    					            </ul>
+                                </div>
+                            <div class="card">
+                                <ul class="card-body">
+                                    <li class="foot">Owned and operated by: Caplan School of Real Estate LLC</li>
+                                    <li class="left">© <?php echo date("Y") ?>  Caplan School of Real Estate LLC. All Rights Reserved.</li>
+                                    </ul>
+                                </div>
+                            </div>
 
-
-                            <ul class="d-flex flex-column">
-                                <li class="foot">Owned and operated by: Caplan School of Real Estate LLC</li>
-                                <li class="left">© <?php echo date("Y") ?>  Caplan School of Real Estate LLC. All Rights Reserved.</li>
-                            </ul>
-                        </div>
-
-					    </div>
 
 					</div><!-- .site-info -->
 

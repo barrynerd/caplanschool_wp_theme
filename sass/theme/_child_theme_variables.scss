@@ -330,9 +330,16 @@ figcaption {
 }
 
 #wrapper-footer .card-collection {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+}
+
+#wrapper-footer #footer-summary {
+    align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
 }
 
@@ -346,6 +353,18 @@ figcaption {
     text-align: center;
     width: 18rem;
 }
+
+#wrapper-footer  #footer-summary .card{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: .9rem;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    text-align: center;
+    width: 100vw;
+}
+
 
 #wrapper-footer  ul {
   list-style-type: none;
