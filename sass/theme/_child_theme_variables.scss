@@ -236,6 +236,18 @@ figcaption {
     margin: 0 auto 1.2rem;
 }
 
+.home .hlrow {
+    background: $bcc_green;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: calc(1rem/16);
+    line-height: 1.4;
+    margin: 0;
+    padding: .5rem;
+    text-align: center;
+}
+
 // end of new home page layout
 .home #wrapper-announce {
     display:block;
