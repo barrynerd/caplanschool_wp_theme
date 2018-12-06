@@ -265,6 +265,7 @@ figcaption {
     width: 18rem;
     text-align: center;
     margin: .5rem;
+    color:#444;
 }
 
 .home .row-course-card .course-card .card-icon{
@@ -285,6 +286,8 @@ figcaption {
 }
 
 .home .row-course-card .course-card .card-title{
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
 

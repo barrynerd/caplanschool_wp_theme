@@ -183,7 +183,8 @@ figcaption {
 .home .row-course-card .course-card {
   width: 18rem;
   text-align: center;
-  margin: .5rem; }
+  margin: .5rem;
+  color: #444; }
 
 .home .row-course-card .course-card .card-icon {
   background: #ebf0e8;
@@ -198,6 +199,10 @@ figcaption {
 .home .row-course-card .course-card .card-body:first-of-type {
   height: 11.25rem;
   padding-top: 0; }
+
+.home .row-course-card .course-card .card-title {
+  font-weight: bold;
+  text-transform: capitalize; }
 
 .home #wrapper-announce {
   display: block; }
