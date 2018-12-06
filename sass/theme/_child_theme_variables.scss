@@ -268,13 +268,20 @@ figcaption {
 }
 
 .home .row-course-card .course-card .card-icon{
-    font-size: 7rem;
-    color:$bcc_green;
     background: $bcc_medium_light_green;
+    color:$bcc_green;
+    font-size: 6rem;
+    padding:0;
+}
+
+.home .row-course-card .course-card.ce .card-icon{
+    font-size: 5rem;
+    padding:.5rem 0;
 }
 
 .home .row-course-card .course-card .card-body:first-of-type{
-    height: 12.5rem;
+    height: 11.25rem;
+    padding-top:0;
 }
 
 .home .row-course-card .course-card .card-title{

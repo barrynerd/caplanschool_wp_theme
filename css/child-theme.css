@@ -186,12 +186,18 @@ figcaption {
   margin: .5rem; }
 
 .home .row-course-card .course-card .card-icon {
-  font-size: 7rem;
+  background: #ebf0e8;
   color: #2a8700;
-  background: #ebf0e8; }
+  font-size: 6rem;
+  padding: 0; }
+
+.home .row-course-card .course-card.ce .card-icon {
+  font-size: 5rem;
+  padding: .5rem 0; }
 
 .home .row-course-card .course-card .card-body:first-of-type {
-  height: 12.5rem; }
+  height: 11.25rem;
+  padding-top: 0; }
 
 .home #wrapper-announce {
   display: block; }
