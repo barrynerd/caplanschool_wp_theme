@@ -255,16 +255,17 @@ figcaption {
     padding:1.25em;
 }
 
-.home .row-course-card .hlrow{
-    color: $bcc_green;
+.home .row-course-card .hlrow,
+.home .row-downloads .hlrow{
     background: transparent;
+    color: $bcc_green;
 }
 
 .home .row-course-card .course-card{
-    width: 18rem;
-    text-align: center;
-    margin: .5rem;
     color:#444;
+    margin: .5rem;
+    text-align: center;
+    width: 18rem;
 }
 
 .home .row-course-card .course-card .card-icon{
@@ -287,6 +288,12 @@ figcaption {
 .home .row-course-card .course-card .card-title{
     font-weight: bold;
     text-transform: capitalize;
+}
+
+.home .row-downloads{
+    background: $bcc_medium_light_green;
+    padding: 2rem 0 3rem;
+    text-align: center;
 }
 
 
