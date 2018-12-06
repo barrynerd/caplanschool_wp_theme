@@ -165,7 +165,33 @@ figcaption {
   line-height: 1.4;
   margin: 0;
   padding: .5rem;
-  text-align: center; }
+  text-align: center;
+  width: 100vw; }
+
+.home .row-course-card {
+  background: #fffff6;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 1.25em; }
+
+.home .row-course-card .hlrow {
+  color: #2a8700;
+  background: transparent; }
+
+.home .row-course-card .course-card {
+  width: 18rem;
+  text-align: center;
+  margin: .5rem; }
+
+.home .row-course-card .course-card .card-icon {
+  font-size: 7rem;
+  color: #2a8700;
+  background: #ebf0e8; }
+
+.home .row-course-card .course-card .card-body:first-of-type {
+  height: 12.5rem; }
 
 .home #wrapper-announce {
   display: block; }

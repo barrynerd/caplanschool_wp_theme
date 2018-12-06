@@ -246,7 +246,40 @@ figcaption {
     margin: 0;
     padding: .5rem;
     text-align: center;
+    width: 100vw;
 }
+
+.home .row-course-card{
+    background: $bcc_extra_light_green;
+    justify-content: center;
+    margin: 0;
+    padding:1.25em;
+}
+
+.home .row-course-card .hlrow{
+    color: $bcc_green;
+    background: transparent;
+}
+
+.home .row-course-card .course-card{
+    width: 18rem;
+    text-align: center;
+    margin: .5rem;
+}
+
+.home .row-course-card .course-card .card-icon{
+    font-size: 7rem;
+    color:$bcc_green;
+    background: $bcc_medium_light_green;
+}
+
+.home .row-course-card .course-card .card-body:first-of-type{
+    height: 12.5rem;
+}
+
+.home .row-course-card .course-card .card-title{
+}
+
 
 // end of new home page layout
 .home #wrapper-announce {
