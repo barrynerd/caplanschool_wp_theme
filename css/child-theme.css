@@ -175,6 +175,7 @@ figcaption {
   margin: 0;
   padding: 1.25em; }
 
+.home .row-upcoming-courses .hlrow,
 .home .row-course-card .hlrow,
 .home .row-downloads .hlrow {
   background: transparent;
@@ -208,6 +209,37 @@ figcaption {
   background: #ebf0e8;
   padding: 2rem 0 3rem;
   text-align: center; }
+
+.home .row-downloads a {
+  max-width: 80vw;
+  margin: 0 auto; }
+
+.home .row-upcoming-courses ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+  padding: 0; }
+
+.home .row-upcoming-courses ul li {
+  margin: .5rem;
+  width: 80vw; }
+
+.home .row-upcoming-courses ul li a img {
+  width: 80vh; }
+
+.home .row-upcoming-courses ul li h3 {
+  color: #2a8700;
+  font-size: 1rem;
+  margin: 1.25rem 1.75rem 1.5rem; }
+
+.home .row-upcoming-courses ul li h3 a {
+  color: #2a8700; }
 
 .home #wrapper-announce {
   display: block; }
@@ -1265,7 +1297,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .page-about .card img {
     height: 16rem;
     -o-object-position: 50% 50%;
-       object-position: 50% 50%; } }
+       object-position: 50% 50%; }
+  .home .row-upcoming-courses ul li {
+    width: 18rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
