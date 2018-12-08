@@ -30,6 +30,7 @@ $bcc_extra_light_green: #fffff6;
 
 $bcc_lime_green: #84D263;
 $bcc_orange: #FE9328;
+$bcc_medium_blue: #614b75;
 
 $bcc_menu_bg: #777;
 $bcc_menu_text: #777;
@@ -45,6 +46,8 @@ $bcc_light_gray: #eee;
 
 $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
+$navbar-light-color: blue;
+$navbar-light-hover-color: purple;
 $font-family-base: "Open Sans";
 
 $bcc_button_border: #2f3e48;
@@ -62,6 +65,14 @@ figcaption {
 }
 
 // bootstrap overrides
+.navbar-dark .navbar-nav .show>.nav-link {
+    color:$bcc_medium_blue!important;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: $bcc_medium_blue!important;
+}
+
 .btn {
     white-space: normal!important;
 }
