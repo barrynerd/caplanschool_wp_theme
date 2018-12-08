@@ -116,7 +116,12 @@ figcaption {
     font-family: $font-family-base;
     font-size: 1.125rem;
     font-weight: bold;
+    padding:.5rem 0;
     text-transform: uppercase;
+}
+
+#main-menu .navbar-brand {
+    padding: .5rem 1rem;
 }
 
 #main-menu .dropdown-toggle:after {
@@ -125,6 +130,32 @@ figcaption {
 
 #main-menu .dropdown-toggle {
     text-align: center;
+}
+
+#main-menu ul.dropdown-menu {
+    background:$bcc_light_yellow;
+    text-align: center;
+}
+
+#main-menu  li.dropdown{
+    width:100%;
+}
+
+#main-menu ul.dropdown-menu .dropdown-item {
+    color: $bcc_green!important;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: normal;
+}
+
+#main-menu ul.dropdown-menu .dropdown-item:focus,
+#main-menu ul.dropdown-menu .dropdown-item:hover {
+    background-color: $bcc_yellow;
+    text-decoration: none;
+}
+
+#main-menu ul.dropdown-menu li.nav-item {
+    // width: 100vw;
 }
 
 .nav-item::after {
@@ -1495,6 +1526,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         width: 18rem;
     }
 
+    #main-menu ul.dropdown-menu li.nav-item {
+        width: 30vw;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */

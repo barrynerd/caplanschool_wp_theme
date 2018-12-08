@@ -54,13 +54,35 @@ figcaption {
   font-family: "Open Sans";
   font-size: 1.125rem;
   font-weight: bold;
+  padding: .5rem 0;
   text-transform: uppercase; }
+
+#main-menu .navbar-brand {
+  padding: .5rem 1rem; }
 
 #main-menu .dropdown-toggle:after {
   display: none; }
 
 #main-menu .dropdown-toggle {
   text-align: center; }
+
+#main-menu ul.dropdown-menu {
+  background: #fffbad;
+  text-align: center; }
+
+#main-menu li.dropdown {
+  width: 100%; }
+
+#main-menu ul.dropdown-menu .dropdown-item {
+  color: #2a8700 !important;
+  font-weight: bold;
+  line-height: 1.2;
+  white-space: normal; }
+
+#main-menu ul.dropdown-menu .dropdown-item:focus,
+#main-menu ul.dropdown-menu .dropdown-item:hover {
+  background-color: #FFEE5D;
+  text-decoration: none; }
 
 .nav-item::after {
   content: '';
@@ -1186,7 +1208,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     -o-object-position: 50% 50%;
        object-position: 50% 50%; }
   .home .row-upcoming-courses ul li {
-    width: 18rem; } }
+    width: 18rem; }
+  #main-menu ul.dropdown-menu li.nav-item {
+    width: 30vw; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
