@@ -65,6 +65,10 @@ figcaption {
 }
 
 // bootstrap overrides
+.navbar-toggler {
+    font-size: 1.75rem!important;
+}
+
 .navbar-dark .navbar-nav .show>.nav-link {
     color:$bcc_medium_blue!important;
 }
