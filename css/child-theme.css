@@ -70,6 +70,10 @@ figcaption {
   background: #fffbad;
   text-align: center; }
 
+#main-menu li.menu-useful-links ul.dropdown-menu {
+  right: 0;
+  left: auto; }
+
 #main-menu li.dropdown {
   width: 100%; }
 
