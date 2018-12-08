@@ -186,12 +186,12 @@ figcaption {
 
 
 .home .jumbotron-fluid {
+    align-items: flex-start;
     background: url("/wordpress/wp-content/uploads/Adult_Learner_shutterstock_200562314_0.jpg");
-    background-size: cover;
-    height: 66vmax;
-    display:flex;
-    align-items: center;
     background-position: center right;
+    background-size: cover;
+    display:flex;
+    height: 66vmax;
 }
 
 .home .home-card {
