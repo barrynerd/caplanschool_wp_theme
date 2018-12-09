@@ -1076,6 +1076,25 @@ ul.products .yith-wcdp {
   min-width: 0;
   padding: 0.25rem 0.5rem !important; }
 
+.online-license.ny .twostep01-jumbotron {
+  background-image: url(/wordpress/wp-content/uploads/banner01.jpg); }
+
+.online-license .twostep01-jumbotron {
+  opacity: .9;
+  background-color: rgba(42, 135, 0, 0.2);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center; }
+
+.online-license h1 {
+  color: white;
+  font-weight: bold;
+  font-style: italic; }
+
+.online-license h5 {
+  color: white;
+  font-variant: italic; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -1119,7 +1138,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .home .feature01-row .sow-features-feature .textwidget {
     margin: 0.5rem 0 3rem !important; }
   .home .feature01-row .sow-features-feature .sow-icon-container {
-    width: 6rem;
+    \width: 6rem;
     height: 6rem;
     font-size: 6rem; }
   .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {

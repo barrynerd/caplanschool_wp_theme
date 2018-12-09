@@ -41,6 +41,7 @@ $bcc_menu_sub_bg: #ddd;
 $bcc_menu_text: #777;
 $bcc_menu_underline: #2a8700;
 
+$bcc-white: white;
 $bcc_gray: #ddd;
 $bcc_light_gray: #eee;
 
@@ -85,7 +86,7 @@ figcaption {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
-    color: white!important;
+    color: $bcc-white!important;
     font-size: 1.25rem!important;
     font-weight: bold!important;
     line-height: 1.5!important;
@@ -106,7 +107,7 @@ figcaption {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
-    color: white!important;
+    color: $bcc-white!important;
 }
 
 .btn-group-sm-bcc>.a,
@@ -254,7 +255,7 @@ figcaption {
 
 .home .home-card .card-title{
     background: $bcc_green;
-    color:white;
+    color:$bcc-white;
     font-size: 1rem;
     font-weight: bold;
     padding: .75rem;
@@ -288,7 +289,7 @@ figcaption {
 
 .home .hlrow {
     background: $bcc_green;
-    color: white;
+    color: $bcc-white;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: calc(1rem/16);
@@ -400,7 +401,7 @@ figcaption {
 }
 
 #wrapper-footer  .card{
-    background-color: white;
+    background-color: $bcc-white;
     border: 1px solid $bcc_green;
     color: $bcc_lime_green;
     font-size: .9rem;
@@ -413,7 +414,7 @@ figcaption {
 #wrapper-footer  #footer-summary .card{
     background-color: transparent;
     border: none;
-    color: white;
+    color: $bcc-white;
     font-size: .9rem;
     font-weight: bold;
     padding: 1rem 1rem;
@@ -428,14 +429,14 @@ figcaption {
 }
 
 #wrapper-footer  #footer-summary {
-    color: white;
+    color: $bcc-white;
     font-size: .8rem;
     padding: 1rem 4rem 0;
     text-align: center;
 }
 
 #wrapper-footer  #footer-summary ul a {
-    color: white;
+    color: $bcc-white;
 }
 
 .logo-row {
@@ -518,7 +519,7 @@ figcaption {
 
 .xoo-wsc-basket .xoo-wsc-items-count{
     background-color: $bcc_green;
-    color: white;
+    color: $bcc-white;
 }
 
 .xoo-wsc-basket  .xoo-wsc-icon-basket1{
@@ -622,7 +623,7 @@ figcaption {
 #add_payment_method #payment,
 .woocommerce-cart #payment,
 .woocommerce-checkout #payment {
-    background: white;
+    background: $bcc-white;
 }
 
 #add_payment_method #payment div.payment_box,
@@ -951,7 +952,7 @@ ul.products .yith-wcdp {
 
 .course-cards  .woocommerce ul.products li{
     margin: 2rem .25rem 0!important;
-    background: white;
+    background: $bcc-white;
     width: 100%!important;
 }
 
@@ -1290,6 +1291,31 @@ ul.products .yith-wcdp {
     min-width: 0;
     padding: .25rem .5rem!important;
 }
+
+.online-license.ny .twostep01-jumbotron{
+    background-image: url(/wordpress/wp-content/uploads/banner01.jpg);
+}
+
+.online-license .twostep01-jumbotron{
+    opacity: .9;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+}
+
+.online-license h1{
+    color: $bcc-white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.online-license h5{
+    color: $bcc-white;
+    font-variant: italic;
+}
+
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -1357,7 +1383,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .home .feature01-row .sow-features-feature .sow-icon-container{
-        width: 6rem;
+        \width: 6rem;
         height: 6rem;
         font-size: 6rem;
         }
