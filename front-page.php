@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Default, No Featured Image Template
+/* Template Name: Front-page Default, No Featured Image Template
 Template Post Type: post, page, product
 */
 /**
