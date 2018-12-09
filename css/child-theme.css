@@ -1059,6 +1059,23 @@ ul.products .yith-wcdp {
 .about-text .row p {
   line-height: 1.3; }
 
+.header-announce {
+  background-color: #BBDFAB; }
+
+.header-announce h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: .25rem;
+  text-transform: capitalize; }
+
+.header-announce .btn-sm, .header-announce .btn-group-sm > .btn, .header-announce .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .header-announce .btn-group-sm > input[type=submit] {
+  border-radius: 0.2rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  margin-bottom: .35rem;
+  min-width: 0;
+  padding: 0.25rem 0.5rem !important; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S

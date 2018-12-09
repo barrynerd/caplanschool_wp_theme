@@ -17,6 +17,11 @@ if (! defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
+?>
+<div class="header-announce">
+    <?php dynamic_sidebar( 'Announce Sidebar' ); ?>
+</div>
+<?php
 get_header("no_featured_img");
 
 $container   = get_theme_mod('understrap_container_type');
