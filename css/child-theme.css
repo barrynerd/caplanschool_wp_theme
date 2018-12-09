@@ -1095,6 +1095,11 @@ ul.products .yith-wcdp {
   color: white;
   font-variant: italic; }
 
+.online-license .card {
+  border: none;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
