@@ -1033,6 +1033,19 @@ ul.products .yith-wcdp {
   width: 100% !important;
   height: auto !important; }
 
+.about-text .row {
+  padding: 35vh 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.about-text .row h1,
+.about-text .row h5 {
+  color: #2a8700;
+  font-weight: bold; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
