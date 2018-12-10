@@ -1292,6 +1292,8 @@ ul.products .yith-wcdp {
     padding: .25rem .5rem!important;
 }
 
+.online-license.pa .twostep01-jumbotron,
+.online-license.fl .twostep01-jumbotron,
 .online-license.ny .twostep01-jumbotron{
     background-image: url(/wordpress/wp-content/uploads/banner01.jpg);
 }
@@ -1304,15 +1306,15 @@ ul.products .yith-wcdp {
     background-position: center center;
 }
 
-.online-license h1{
+.online-license .hl-text h1{
     color: $bcc-white;
     font-weight: bold;
     font-style: italic;
 }
 
-.online-license h5{
+.online-license .hl-text h5{
     color: $bcc-white;
-    font-variant: italic;
+    font-style: italic;
 }
 
 .online-license .card {
@@ -1321,6 +1323,18 @@ ul.products .yith-wcdp {
     border-top-right-radius: 1.2rem;
 }
 
+.online-license .card .action-button{
+    text-align: center;
+}
+
+.online-license .card-body h5{
+    color:$bcc_green;
+    font-weight: bold;
+}
+
+.twostep02-descriptions.online-ce.pa .card-body:first-of-type {
+    height: 27rem;
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S

@@ -1076,6 +1076,8 @@ ul.products .yith-wcdp {
   min-width: 0;
   padding: 0.25rem 0.5rem !important; }
 
+.online-license.pa .twostep01-jumbotron,
+.online-license.fl .twostep01-jumbotron,
 .online-license.ny .twostep01-jumbotron {
   background-image: url(/wordpress/wp-content/uploads/banner01.jpg); }
 
@@ -1086,19 +1088,29 @@ ul.products .yith-wcdp {
   background-size: cover;
   background-position: center center; }
 
-.online-license h1 {
+.online-license .hl-text h1 {
   color: white;
   font-weight: bold;
   font-style: italic; }
 
-.online-license h5 {
+.online-license .hl-text h5 {
   color: white;
-  font-variant: italic; }
+  font-style: italic; }
 
 .online-license .card {
   border: none;
   border-top-left-radius: 1.2rem;
   border-top-right-radius: 1.2rem; }
+
+.online-license .card .action-button {
+  text-align: center; }
+
+.online-license .card-body h5 {
+  color: #2a8700;
+  font-weight: bold; }
+
+.twostep02-descriptions.online-ce.pa .card-body:first-of-type {
+  height: 27rem; }
 
 /*
 ####################################################
