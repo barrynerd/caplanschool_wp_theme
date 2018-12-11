@@ -795,6 +795,15 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-jumbotron {
   background: #fffbad; }
 
+.twostep02 .twostep02-jumbotron.prelicense-day {
+  opacity: 1;
+  color: white;
+  background: url("/wordpress/wp-content/uploads/crop02-flipped.png");
+  background-size: cover;
+  background-position: center center;
+  background-color: rgba(42, 135, 0, 0.2);
+  background-blend-mode: overlay; }
+
 .twostep02 .twostep02-jumbotron .twostep02-row-01 {
   height: 53vh;
   padding: 0 1rem;

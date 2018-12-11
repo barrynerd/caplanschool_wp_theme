@@ -954,6 +954,7 @@ ul.products .yith-wcdp {
     margin: 2rem .25rem 0!important;
     background: $bcc-white;
     width: 100%!important;
+
 }
 
 .course-cards .woocommerce ul.products li:nth-of-type(4n){
@@ -973,6 +974,19 @@ ul.products .yith-wcdp {
 
 .twostep02 .twostep02-jumbotron{
     background: $bcc_light_yellow;
+}
+
+.twostep02 .twostep02-jumbotron.prelicense-day{
+    opacity: 1;
+    color:white;
+    background:url("/wordpress/wp-content/uploads/crop02-flipped.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+}
+
+.twostep02 .twostep02-jumbotron::before{
 }
 
 .twostep02 .twostep02-jumbotron .twostep02-row-01{
