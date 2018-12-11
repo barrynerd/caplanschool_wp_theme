@@ -986,6 +986,18 @@ ul.products .yith-wcdp {
     background-blend-mode: overlay;
 }
 
+.twostep02 .twostep02-jumbotron.brokers-day{
+    opacity: 1;
+    color:white;
+    background:url("/wordpress/wp-content/uploads/2009/11/crop03.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+}
+
+
 .twostep02 .twostep02-jumbotron::before{
 }
 
