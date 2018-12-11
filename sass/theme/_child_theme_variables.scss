@@ -898,29 +898,29 @@ ul.products .yith-wcdp {
 }
 
 
-.twostep01 .twostep01-jumbotron.upcoming-ce .row{
+.twostep01 .twostep01-jumbotron .row{
     align-content: center;
     align-items: center;
     height:100vh;
     justify-content: center;
 }
 
-.twostep01 .twostep01-jumbotron.upcoming-ce .row .left-col{
+.twostep01 .twostep01-jumbotron .row .left-col{
     width: 18rem;
     margin: 0 auto;
 }
 
-.twostep01 .twostep01-jumbotron.upcoming-ce .row .right-col{
+.twostep01 .twostep01-jumbotron .row .right-col{
     width: 18rem;
     margin: 0 auto;
 }
 
 
-.twostep01 .twostep01-jumbotron.upcoming-ce h1{
+.twostep01 .twostep01-jumbotron h1{
     font-size: 1.2rem;
 }
 
-.twostep01 .twostep01-jumbotron.upcoming-ce h5{
+.twostep01 .twostep01-jumbotron h5{
     font-size: 1rem;
 }
 
@@ -1673,23 +1673,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         font-size: 2rem;
     }
 
-    .twostep01 .twostep01-jumbotron.upcoming-ce .row{
+    .twostep01 .twostep01-jumbotron .row{
         height: auto;
         align-items: flex-start;
     }
 
-    .twostep01 .twostep01-jumbotron.upcoming-ce .row .left-col {
+    .twostep01 .twostep01-jumbotron .row .left-col {
         width: 23rem;
         margin:0;
         margin-right: .5rem;
     }
 
-    .twostep01 .twostep01-jumbotron.upcoming-ce .row .right-col {
+    .twostep01 .twostep01-jumbotron .row .right-col {
         width: 23rem;
         margin:0;
         margin-left: .5rem;
     }
-    .twostep01 .twostep01-jumbotron.upcoming-ce h5{
+    .twostep01 .twostep01-jumbotron h5{
         font-size: 1.25rem;
     }
 
