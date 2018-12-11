@@ -61,6 +61,9 @@ figcaption {
   padding: .5rem;
   font-weight: bold; }
 
+p:empty {
+  display: none; }
+
 #main-menu {
   background-color: #FFEE5D !important;
   font-family: "Open Sans";
@@ -725,7 +728,23 @@ ul.products .yith-wcdp {
   background: antiquewhite; }
 
 .twostep01 .twostep01-jumbotron.upcoming-ce .row {
-  height: 100vh; }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.twostep01 .twostep01-jumbotron.upcoming-ce .row .left-col {
+  width: 18rem;
+  margin: 0 auto; }
+
+.twostep01 .twostep01-jumbotron.upcoming-ce .row .right-col {
+  width: 18rem;
+  margin: 0 auto; }
 
 .twostep01 .twostep01-jumbotron.upcoming-ce h1 {
   font-size: 1.2rem; }
@@ -745,7 +764,9 @@ ul.products .yith-wcdp {
   display: none; }
 
 .twostep01 .twostep01-jumbotron h5.card-title {
-  text-align: center; }
+  text-align: center;
+  color: #2a8700;
+  font-weight: bold; }
 
 .twostep01 .twostep01-jumbotron ul.card-text {
   list-style-position: inside;
@@ -1331,11 +1352,20 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   #navigation-buttons h2 {
     font-size: 2rem; }
   .twostep01 .twostep01-jumbotron.upcoming-ce .row {
-    height: 100vh; }
+    height: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .twostep01 .twostep01-jumbotron.upcoming-ce .row .left-col {
+    width: 23rem;
+    margin: 0;
+    margin-right: .5rem; }
+  .twostep01 .twostep01-jumbotron.upcoming-ce .row .right-col {
+    width: 23rem;
+    margin: 0;
+    margin-left: .5rem; }
   .twostep01 .twostep01-jumbotron.upcoming-ce h5 {
     font-size: 1.25rem; }
-  .twostep01 .twostep01-jumbotron.upcoming-ce .card h5 {
-    color: #2a8700; }
   .members-ce .details p {
     display: block; }
   .members-ce .details h6 {

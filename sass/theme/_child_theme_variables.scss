@@ -133,6 +133,10 @@ figcaption {
     font-weight:bold;
 }
 
+p:empty {
+    display:none;
+}
+
 // main menu colors
 #main-menu {
     background-color: $bcc_yellow!important;
@@ -895,8 +899,22 @@ ul.products .yith-wcdp {
 
 
 .twostep01 .twostep01-jumbotron.upcoming-ce .row{
+    align-content: center;
+    align-items: center;
     height:100vh;
+    justify-content: center;
 }
+
+.twostep01 .twostep01-jumbotron.upcoming-ce .row .left-col{
+    width: 18rem;
+    margin: 0 auto;
+}
+
+.twostep01 .twostep01-jumbotron.upcoming-ce .row .right-col{
+    width: 18rem;
+    margin: 0 auto;
+}
+
 
 .twostep01 .twostep01-jumbotron.upcoming-ce h1{
     font-size: 1.2rem;
@@ -923,6 +941,8 @@ ul.products .yith-wcdp {
 
 .twostep01 .twostep01-jumbotron h5.card-title{
     text-align: center;
+    color: $bcc_green;
+    font-weight: bold;
 }
 
 .twostep01 .twostep01-jumbotron ul.card-text{
@@ -1654,15 +1674,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .twostep01 .twostep01-jumbotron.upcoming-ce .row{
-        height: 100vh;
+        height: auto;
+        align-items: flex-start;
     }
 
+    .twostep01 .twostep01-jumbotron.upcoming-ce .row .left-col {
+        width: 23rem;
+        margin:0;
+        margin-right: .5rem;
+    }
+
+    .twostep01 .twostep01-jumbotron.upcoming-ce .row .right-col {
+        width: 23rem;
+        margin:0;
+        margin-left: .5rem;
+    }
     .twostep01 .twostep01-jumbotron.upcoming-ce h5{
         font-size: 1.25rem;
-    }
-
-    .twostep01 .twostep01-jumbotron.upcoming-ce .card h5{
-        color: $bcc_green;
     }
 
     .members-ce .details p{
