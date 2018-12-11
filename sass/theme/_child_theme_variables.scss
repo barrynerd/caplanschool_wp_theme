@@ -44,6 +44,7 @@ $bcc_menu_underline: #2a8700;
 $bcc-white: white;
 $bcc_gray: #ddd;
 $bcc_light_gray: #eee;
+$bcc_dark_gray_text:#212529;
 
 $navbar-dark-color: #2a8700;
 $navbar-dark-hover-color: #2a8700;
@@ -61,11 +62,17 @@ $bcc_alert_info_color: #3e2e4c;
 
 $bcc_alert_dark_background_color: #ecfde4;
 
+$bcc_body_text_color: $bcc_dark_gray_text;
+
 figcaption {
     font-size: .85rem;
 }
 
 // bootstrap overrides
+.card-body {
+    color:$bcc_dark_gray_text;
+}
+
 .navbar-toggler {
     font-size: 1.75rem!important;
 }
@@ -208,7 +215,7 @@ figcaption {
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: #212529;
+    color: $bcc_body_text_color;
 }
 
 .dropdown-item:focus,
@@ -997,6 +1004,28 @@ ul.products .yith-wcdp {
     box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
 }
 
+.twostep02 .twostep02-jumbotron.brokers-day{
+    opacity: 1;
+    color:white;
+    background:url("/wordpress/wp-content/uploads/2009/11/crop03.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+}
+
+.twostep01 .twostep01-jumbotron.upcoming-ce{
+    opacity: 1;
+    color:white;
+    background:url("/wordpress/wp-content/uploads/2009/11/crop04.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+}
+
 
 .twostep02 .twostep02-jumbotron::before{
 }
@@ -1618,6 +1647,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .twostep01 .twostep01-jumbotron.upcoming-ce h5{
         font-size: 1.25rem;
+    }
+
+    .twostep01 .twostep01-jumbotron.upcoming-ce .card h5{
+        color: $bcc_green;
     }
 
     .members-ce .details p{
