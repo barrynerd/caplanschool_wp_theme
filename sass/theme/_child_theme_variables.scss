@@ -1026,9 +1026,17 @@ ul.products .yith-wcdp {
     box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
 }
 
-
-.twostep02 .twostep02-jumbotron::before{
+.twostep01 .twostep01-jumbotron.online-ce{
+    opacity: 1;
+    color:white;
+    background:url("/wordpress/wp-content/uploads/adult-business-businesswoman-265036-converted.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
 }
+
 
 .twostep02 .twostep02-jumbotron .twostep02-row-01{
     height: 53vh;
