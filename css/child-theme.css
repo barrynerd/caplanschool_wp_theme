@@ -860,6 +860,7 @@ ul.products .yith-wcdp {
   height: 25vh;
   text-align: center; }
 
+.twostep01 .twostep01-jumbotron .hl-text h1,
 .twostep02 .twostep02-jumbotron .hl-text h1 {
   font-size: 1.6rem;
   font-weight: bold;
@@ -867,6 +868,7 @@ ul.products .yith-wcdp {
   letter-spacing: -2px;
   text-transform: uppercase; }
 
+.twostep01 .twostep01-jumbotron .hl-text h5,
 .twostep02 .twostep02-jumbotron .hl-text h5 {
   font-style: italic; }
 
@@ -1225,7 +1227,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-left: 0 !important; } }
+    padding-left: 0 !important; }
+  .twostep02 .twostep02-jumbotron .hl-text h1 {
+    font-size: 2.6rem; } }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
@@ -1307,6 +1311,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 53vh;
     padding: 0;
     text-align: left; }
+  .twostep01 .twostep01-jumbotron .hl-text h1,
   .twostep02 .twostep02-jumbotron .hl-text h1 {
     font-size: 2.6rem; }
   .twostep02 .twostep02-jumbotron .twostep02-row-02 {
@@ -1327,8 +1332,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     font-size: 2rem; }
   .twostep01 .twostep01-jumbotron.upcoming-ce .row {
     height: 100vh; }
-  .twostep01 .twostep01-jumbotron.upcoming-ce h1 {
-    font-size: 2.5rem; }
   .twostep01 .twostep01-jumbotron.upcoming-ce h5 {
     font-size: 1.25rem; }
   .twostep01 .twostep01-jumbotron.upcoming-ce .card h5 {
