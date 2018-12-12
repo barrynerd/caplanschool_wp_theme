@@ -890,18 +890,21 @@ ul.products .yith-wcdp {
 }
 
 .twostep01 .twostep01-jumbotron{
-    display:flex;
     align-content:center;
-    justify-items:center;
     align-items:center;
     background: antiquewhite;
+    display:flex;
+    height: auto;
+    min-height: 100vh;
+    justify-items:center;
+    padding: 1rem 0;
 }
 
 
 .twostep01 .twostep01-jumbotron .row{
     align-content: center;
     align-items: center;
-    height:100vh;
+    min-height: 100vh;
     justify-content: center;
 }
 
@@ -1679,6 +1682,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .twostep01 .twostep01-jumbotron .row{
         height: auto;
         align-items: flex-start;
+        min-height:0;
     }
 
     .twostep01 .twostep01-jumbotron .row .left-col {

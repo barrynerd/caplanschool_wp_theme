@@ -716,16 +716,19 @@ ul.products .yith-wcdp {
           align-items: flex-start; }
 
 .twostep01 .twostep01-jumbotron {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
-  justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: antiquewhite; }
+  background: antiquewhite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  min-height: 100vh;
+  justify-items: center;
+  padding: 1rem 0; }
 
 .twostep01 .twostep01-jumbotron .row {
   -ms-flex-line-pack: center;
@@ -733,7 +736,7 @@ ul.products .yith-wcdp {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
@@ -1358,7 +1361,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    min-height: 0; }
   .twostep01 .twostep01-jumbotron .row .left-col {
     width: 21em;
     margin: 0;
