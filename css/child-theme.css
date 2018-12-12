@@ -1360,7 +1360,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         -ms-flex-align: start;
             align-items: flex-start; }
   .twostep01 .twostep01-jumbotron .row .left-col {
-    width: 23rem;
+    width: 21em;
     margin: 0;
     margin-right: .5rem; }
   .twostep01 .twostep01-jumbotron .row .right-col {
