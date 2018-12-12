@@ -1176,6 +1176,9 @@ ul.products .yith-wcdp {
   color: white;
   font-style: italic; }
 
+.online-ce .card,
+.upcoming-ce .card,
+.upcoming-ce-bydate .card,
 .online-license .card {
   border: none;
   border-top-left-radius: 1.2rem;
