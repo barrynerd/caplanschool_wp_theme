@@ -1161,8 +1161,14 @@ ul.products .yith-wcdp {
 .online-license.pa .twostep01-jumbotron,
 .online-license.fl .twostep01-jumbotron,
 .online-license.ny .twostep01-jumbotron {
-  background-image: url(/wordpress/wp-content/uploads/banner01.jpg); }
+  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
+.online-ce.pa .twostep01-jumbotron,
+.online-ce.fl .twostep01-jumbotron,
+.online-ce.ny .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
+
+.online-ce .twostep01-jumbotron,
 .online-license .twostep01-jumbotron {
   opacity: .9;
   background-color: rgba(42, 135, 0, 0.2);
