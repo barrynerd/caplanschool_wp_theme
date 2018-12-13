@@ -1364,6 +1364,26 @@ ul.products .yith-wcdp {
     background-color: $bcc_light_green;
 }
 
+.header-announce .header-scholarship {
+    padding: 0;
+    background: $bcc_orange;
+}
+
+.header-announce .header-scholarship img{
+    background: white;
+    margin-right: 1rem;
+}
+
+.header-announce .header-scholarship a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-announce .widget {
+    padding:0;
+}
+
 .header-announce h5 {
     font-size: 1rem;
     font-weight: bold;
