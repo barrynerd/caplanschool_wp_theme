@@ -1361,7 +1361,11 @@ ul.products .yith-wcdp {
 }
 
 .header-announce {
-    background-color: $bcc_light_green;
+    // background-color: $bcc_light_green;
+}
+
+.header-announce .widget {
+    padding:0;
 }
 
 .header-announce .header-scholarship {
@@ -1380,18 +1384,19 @@ ul.products .yith-wcdp {
     text-decoration: none;
 }
 
-.header-announce .widget {
-    padding:0;
+.header-announce .header-online-ce {
+    padding: 0;
+    background: $bcc_light_green;
 }
 
-.header-announce h5 {
+.header-announce .header-online-ce h5 {
     font-size: 1rem;
     font-weight: bold;
     padding-top: .25rem;
     text-transform: capitalize;
 }
 
-.header-announce .btn-sm {
+.header-announce .header-online-ce .btn-sm {
     border-radius: .2rem!important;
     font-size: .875rem!important;
     line-height: 1.5!important;

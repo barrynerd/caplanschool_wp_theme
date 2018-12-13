@@ -1141,8 +1141,8 @@ ul.products .yith-wcdp {
 .about-text .row p {
   line-height: 1.3; }
 
-.header-announce {
-  background-color: #BBDFAB; }
+.header-announce .widget {
+  padding: 0; }
 
 .header-announce .header-scholarship {
   padding: 0;
@@ -1157,16 +1157,17 @@ ul.products .yith-wcdp {
   font-weight: bold;
   text-decoration: none; }
 
-.header-announce .widget {
-  padding: 0; }
+.header-announce .header-online-ce {
+  padding: 0;
+  background: #BBDFAB; }
 
-.header-announce h5 {
+.header-announce .header-online-ce h5 {
   font-size: 1rem;
   font-weight: bold;
   padding-top: .25rem;
   text-transform: capitalize; }
 
-.header-announce .btn-sm, .header-announce .btn-group-sm > .btn, .header-announce .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .header-announce .btn-group-sm > input[type=submit] {
+.header-announce .header-online-ce .btn-sm, .header-announce .header-online-ce .btn-group-sm > .btn, .header-announce .header-online-ce .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .header-announce .header-online-ce .btn-group-sm > input[type=submit] {
   border-radius: 0.2rem !important;
   font-size: 0.875rem !important;
   line-height: 1.5 !important;
