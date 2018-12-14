@@ -30,11 +30,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="hfeed site" id="page">
 
-	<?php if ( is_active_sidebar( 'Announce Sidebar' ) ) : ?>
-		<div id="wrapper-announce" class="header-announce">
-			<?php dynamic_sidebar( 'Announce Sidebar' ); ?>
-			</div>
-	<?php endif; ?>
+
+	<?php
+		if (is_front_page()) :
+			if ( is_active_sidebar( 'Announce Sidebar' ) ) : ?>
+				<div id="wrapper-announce" class="header-announce">
+					<?php dynamic_sidebar( 'Announce Sidebar' ); ?>
+				</div>
+	<?php
+			endif;
+		endif; ?>
 
 
 	<!-- ******************* The Navbar Area ******************* -->
