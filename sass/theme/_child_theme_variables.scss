@@ -1394,6 +1394,10 @@ ul.products .yith-wcdp {
     text-decoration: none;
 }
 
+.header-announce .header-scholarship .body img{
+    display: none;
+}
+
 .header-announce .header-scholarship .body a{
     color:white;
     line-height: 1.2;
@@ -1807,7 +1811,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         line-height: 1.5;
     }
 
+    .header-announce .header-scholarship .body{
+        text-align: center;
+    }
 
+    .header-announce .header-scholarship .logo{
+        display:none;
+    }
+
+    .header-announce .header-scholarship .body img{
+        display: inline;
+        background: white;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
