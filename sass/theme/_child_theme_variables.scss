@@ -1369,20 +1369,36 @@ ul.products .yith-wcdp {
 }
 
 .header-announce .header-scholarship {
-    padding: 0;
     background: $bcc_orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding:0;
 }
 
-.header-announce .header-scholarship img{
+.header-announce .header-scholarship .logo{
+    padding:0;
+    text-align: right;
+}
+
+.header-announce .header-scholarship .logo img{
     background: white;
-    margin-right: 1rem;
 }
 
-.header-announce .header-scholarship a{
+.header-announce .header-scholarship .body{
     color: white;
     font-weight: bold;
+    padding: 0 0 0 .5rem;
+    text-align: left;
     text-decoration: none;
 }
+
+.header-announce .header-scholarship .body a{
+    color:white;
+    line-height: 1.2;
+}
+
 
 .header-announce .header-online-ce {
     padding: 0;
