@@ -308,14 +308,19 @@ p:empty {
       justify-content: space-around; }
 
 #wrapper-footer .card {
-  background-color: white;
+  background-color: #fffff6;
   border: 1px solid #2a8700;
-  color: #84D263;
   font-size: .9rem;
   font-weight: bold;
   padding: 1rem 1rem;
   text-align: center;
   width: 18rem; }
+
+#wrapper-footer .card-body {
+  color: #84D263; }
+
+#wrapper-footer .card-body a {
+  color: #84D263; }
 
 #wrapper-footer #footer-summary .card {
   background-color: transparent;

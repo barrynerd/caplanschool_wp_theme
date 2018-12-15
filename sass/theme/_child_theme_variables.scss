@@ -403,14 +403,21 @@ p:empty {
 }
 
 #wrapper-footer  .card{
-    background-color: $bcc-white;
+    background-color: $bcc_extra_light_green;
     border: 1px solid $bcc_green;
-    color: $bcc_lime_green;
     font-size: .9rem;
     font-weight: bold;
     padding: 1rem 1rem;
     text-align: center;
     width: 18rem;
+}
+
+#wrapper-footer  .card-body{
+    color: $bcc_lime_green;
+}
+
+#wrapper-footer  .card-body a{
+    color: $bcc_lime_green;
 }
 
 #wrapper-footer  #footer-summary .card{
