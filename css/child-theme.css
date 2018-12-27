@@ -782,7 +782,7 @@ ul.products .yith-wcdp {
   display: none; }
 
 .course-cards {
-  background: #eee;
+  background: transparent;
   padding: 0 1rem 1.5rem; }
 
 .course-description-card {
@@ -928,7 +928,7 @@ ul.products .yith-wcdp {
   height: 28rem; }
 
 .twostep02-descriptions .row.elective .card-body:first-of-type {
-  height: 31rem; }
+  height: 32rem; }
 
 .twostep02-descriptions .row.designation .card-body:first-of-type {
   height: 39rem; }
