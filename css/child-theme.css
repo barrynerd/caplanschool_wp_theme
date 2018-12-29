@@ -824,6 +824,9 @@ ul.products .yith-wcdp {
   background: #BBDFAB;
   background-image: url("/wordpress/wp-content/uploads/handshake01.jpg");
   background-size: cover;
+  background-position: left;
+  background-color: rgba(42, 135, 0, 0.2);
+  background-blend-mode: overlay;
   color: white; }
 
 .twostep02 .twostep02-jumbotron.prelicense-day {

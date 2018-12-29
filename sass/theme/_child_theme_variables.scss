@@ -1008,6 +1008,10 @@ ul.products .yith-wcdp {
     background: $bcc_light_green;
     background-image: url("/wordpress/wp-content/uploads/handshake01.jpg");
     background-size: cover;
+    background-position: left;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+
     color: white;
 }
 
