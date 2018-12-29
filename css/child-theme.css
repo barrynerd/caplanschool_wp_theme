@@ -843,8 +843,8 @@ ul.products .yith-wcdp {
   opacity: 1;
   color: white;
   background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-02.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 260vh;
+  background-position: 10% 32%;
   background-color: rgba(42, 135, 0, 0.2);
   background-blend-mode: overlay; }
 
