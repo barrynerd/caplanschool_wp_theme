@@ -820,6 +820,12 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-jumbotron {
   background: #fffbad; }
 
+.twostep02 .twostep02-jumbotron.about-us {
+  background: #BBDFAB;
+  background-image: url("/wordpress/wp-content/uploads/handshake01.jpg");
+  background-size: cover;
+  color: white; }
+
 .twostep02 .twostep02-jumbotron.prelicense-day {
   opacity: 1;
   color: white;
