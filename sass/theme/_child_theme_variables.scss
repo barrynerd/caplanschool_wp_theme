@@ -1019,10 +1019,11 @@ ul.products .yith-wcdp {
     opacity: 1;
     color:white;
     background:url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01small.jpg");
-    background-size: cover;
-    background-position: left;
+    background-size: unset;
+    background-position: 14% -12%;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
+    background-attachment: fixed;
 }
 
 .twostep02 .twostep02-jumbotron.prelicense-eve{
@@ -1868,7 +1869,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     .twostep02 .twostep02-jumbotron.prelicense-day{
-        background:url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");
+        background:url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");background-position: 10% 29%;
+        background-color: rgba(42,135,0,.2);
+        background-blend-mode: overlay;
     }
 
     .twostep02 .twostep02-jumbotron.brokers-eve{
