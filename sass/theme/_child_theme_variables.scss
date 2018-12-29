@@ -1340,12 +1340,17 @@ ul.products .yith-wcdp {
     height: auto!important;
 }
 
+.about-text {
+    background: $bcc_light_green;
+}
+
 .about-text .row {
-    align-content: center;
-    justify-content: center;
-    margin:0;
     align-items: center;
+    align-content: center;
     height: 100%;
+    justify-content: center;
+    margin:0 auto;
+    padding: 0;
 }
 
 .about-text .row h1 {
@@ -1353,12 +1358,16 @@ ul.products .yith-wcdp {
     font-size: 1.6rem;
     font-weight:bold;
     line-height: 1;
+    margin-bottom: 2.5rem;
+    text-align: center;
 }
 
 .about-text .row h5{
     color:$bcc_green;
     font-size: 1rem;
     font-weight:bold;
+    margin-bottom: 2.5rem;
+    text-align: center;
 }
 
 .about-text .row p{

@@ -1119,28 +1119,36 @@ ul.products .yith-wcdp {
   width: 100% !important;
   height: auto !important; }
 
+.about-text {
+  background: #BBDFAB; }
+
 .about-text .row {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%; }
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 0; }
 
 .about-text .row h1 {
   color: #2a8700;
   font-size: 1.6rem;
   font-weight: bold;
-  line-height: 1; }
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  text-align: center; }
 
 .about-text .row h5 {
   color: #2a8700;
   font-size: 1rem;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center; }
 
 .about-text .row p {
   line-height: 1.3; }
