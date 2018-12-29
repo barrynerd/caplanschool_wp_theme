@@ -832,7 +832,7 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-jumbotron.prelicense-day {
   opacity: 1;
   color: white;
-  background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");
+  background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01small.jpg");
   background-size: cover;
   background-position: left;
   background-color: rgba(42, 135, 0, 0.2);
@@ -859,7 +859,7 @@ ul.products .yith-wcdp {
 .twostep02 .twostep02-jumbotron.brokers-eve {
   opacity: 1;
   color: white;
-  background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02.jpg");
+  background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02small.jpg");
   background-size: cover;
   background-position: center;
   background-color: rgba(42, 135, 0, 0.2);
@@ -1494,7 +1494,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: none; }
   .header-announce .header-scholarship .body img {
     display: inline;
-    background: white; } }
+    background: white; }
+  .twostep02 .twostep02-jumbotron.prelicense-day {
+    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg"); }
+  .twostep02 .twostep02-jumbotron.brokers-eve {
+    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02.jpg"); } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
