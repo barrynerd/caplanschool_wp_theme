@@ -869,7 +869,7 @@ ul.products .yith-wcdp {
 .twostep01 .twostep01-jumbotron.upcoming-ce-bydate {
   opacity: 1;
   color: white;
-  background: url("/wordpress/wp-content/uploads/Continuing-Ed-01a.jpg");
+  background: url("/wordpress/wp-content/uploads/Continuing-Ed-02small.jpg");
   background-size: cover;
   background-position: left;
   background-color: rgba(42, 135, 0, 0.2);
@@ -1509,6 +1509,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep02 .twostep02-jumbotron.brokers-eve {
     background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
     background-position: 51% 29%;
+    background-color: rgba(42, 135, 0, 0.2);
+    background-blend-mode: overlay; }
+  .twostep01 .twostep01-jumbotron.upcoming-ce-bydate {
+    background: url("/wordpress/wp-content/uploads/Continuing-Ed-02large.jpg");
+    background-position: 18% 0%;
     background-color: rgba(42, 135, 0, 0.2);
     background-blend-mode: overlay; } }
 
