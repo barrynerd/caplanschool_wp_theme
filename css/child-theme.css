@@ -1507,7 +1507,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     background-color: rgba(42, 135, 0, 0.2);
     background-blend-mode: overlay; }
   .twostep02 .twostep02-jumbotron.brokers-eve {
-    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02.jpg"); } }
+    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
+    background-position: 51% 29%;
+    background-color: rgba(42, 135, 0, 0.2);
+    background-blend-mode: overlay; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
