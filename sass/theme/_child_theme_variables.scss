@@ -1012,7 +1012,7 @@ ul.products .yith-wcdp {
     background-position: left;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
-
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
     color: white;
 }
 
@@ -1024,6 +1024,7 @@ ul.products .yith-wcdp {
     background-position: 14% -12%;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 .twostep02 .twostep02-jumbotron.prelicense-eve{
@@ -1034,6 +1035,7 @@ ul.products .yith-wcdp {
     background-position: 64% 52%;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 .twostep02 .twostep02-jumbotron.brokers-day{
@@ -1044,6 +1046,7 @@ ul.products .yith-wcdp {
     background-position: 10% 32%;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 .twostep02 .twostep02-jumbotron.brokers-eve{
@@ -1054,6 +1057,7 @@ ul.products .yith-wcdp {
     background-position: center;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 .twostep01 .twostep01-jumbotron.upcoming-ce-bydate{
@@ -1064,7 +1068,7 @@ ul.products .yith-wcdp {
     background-position: left;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
-    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 .twostep01 .twostep01-jumbotron.upcoming-ce{
@@ -1075,7 +1079,7 @@ ul.products .yith-wcdp {
     background-position: center center;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
-    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 .twostep01 .twostep01-jumbotron.online-ce{
@@ -1086,7 +1090,7 @@ ul.products .yith-wcdp {
     background-position: center center;
     background-color: rgba(42,135,0,.2);
     background-blend-mode: overlay;
-    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+    box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
 }
 
 
@@ -1900,7 +1904,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         background-position: 75% 0%;
         background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
-        box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.25);
+        box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
     }
 
 }
