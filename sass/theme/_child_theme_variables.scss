@@ -1418,16 +1418,25 @@ ul.products .yith-wcdp {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    padding:0;
+    padding: .25rem 0.5em;
 }
 
 .header-announce .header-scholarship .logo{
-    padding:0;
     text-align: right;
+    background: white;
+    margin-right: 1rem;
+    padding: .25rem;
 }
 
 .header-announce .header-scholarship .logo img{
     background: white;
+}
+
+.header-announce .header-scholarship a{
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
 }
 
 .header-announce .header-scholarship .body{
@@ -1693,7 +1702,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     #wrapper-announce a {
-        font-size: 1rem;
+        // font-size: 1rem;
     }
 
     #wrapper-footer .card-collection {
@@ -1918,12 +1927,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         line-height: 1.5;
     }
 
+    .header-announce .header-scholarship a{
+        font-size: 1.2rem;
+    }
+
     .header-announce .header-scholarship .body{
         text-align: center;
     }
 
     .header-announce .header-scholarship .logo{
-        display:none;
+        // display:none;
     }
 
     .header-announce .header-scholarship .body img{
