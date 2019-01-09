@@ -1293,7 +1293,10 @@ ul.products .yith-wcdp {
 
 .members.course-description {
   margin-top: 2rem;
-  background: #fffbad; }
+  background: #fffee6; }
+
+.members.course-description:last-of-type {
+  margin-bottom: 2rem; }
 
 .members.course-description h3 {
   font-weight: bold;

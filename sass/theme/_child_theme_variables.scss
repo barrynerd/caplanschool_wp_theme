@@ -21,6 +21,7 @@
 
 $bcc_yellow: #FFEE5D;
 $bcc_light_yellow: #fffbad;
+$bcc_extra_light_yellow: #fffee6;
 
 $bcc_green: #2a8700;
 $bcc_dark_green: #366223;
@@ -1533,7 +1534,11 @@ ul.products .yith-wcdp {
 
 .members.course-description {
     margin-top: 2rem;
-    background: $bcc_light_yellow;
+    background: $bcc_extra_light_yellow;
+}
+
+.members.course-description:last-of-type {
+    margin-bottom:2rem;
 }
 
 .members.course-description h3{
