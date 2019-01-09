@@ -1288,6 +1288,31 @@ ul.products .yith-wcdp {
 #ce-schedule-by-date h2 {
   text-align: center; }
 
+.members.agency h3 {
+  background: #FE9328; }
+
+.members.course-description {
+  margin-top: 2rem;
+  background: #fffbad; }
+
+.members.course-description h3 {
+  font-weight: bold;
+  text-align: center; }
+
+.members.course-description a.course_link {
+  color: #2a8700;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.members.course-description .course_price {
+  color: #2a8700;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 2; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
