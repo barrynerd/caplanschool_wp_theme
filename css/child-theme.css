@@ -1288,12 +1288,16 @@ ul.products .yith-wcdp {
 #ce-schedule-by-date h2 {
   text-align: center; }
 
+.members.agency {
+  max-width: 800px; }
+
 .members.agency h3 {
   background: #FE9328; }
 
 .members.course-description {
-  margin-top: 2rem;
-  background: #fffee6; }
+  background: #fffee6;
+  margin: 2rem auto 0;
+  max-width: 800px; }
 
 .members.course-description:last-of-type {
   margin-bottom: 2rem; }
@@ -1301,6 +1305,22 @@ ul.products .yith-wcdp {
 .members.course-description h3 {
   font-weight: bold;
   text-align: center; }
+
+.members.course-description .card-body {
+  padding: inherit 0; }
+
+.members.course-description .card-text.date {
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: capitalize; }
+
+.members.course-description .card-text.time {
+  padding: 0;
+  margin-bottom: 0;
+  text-transform: lowercase; }
+
+.members.course-description .card-text.credit {
+  padding: 0; }
 
 .members.course-description a.course_link {
   color: #2a8700;
