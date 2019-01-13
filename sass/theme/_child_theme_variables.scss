@@ -1595,6 +1595,25 @@ ul.products .yith-wcdp {
     font-weight: bold;
     line-height: 2;
 }
+
+#testimonial-carousel .carousel-caption{
+    background: $bcc_green;
+    top: 0;
+    height: fit-content;
+    left: 0;
+    opacity: .8;
+    padding:.5rem;
+    width: 60vw;
+}
+
+#testimonial-carousel .carousel-caption p{
+    line-height: 1.3;
+}
+
+#testimonial-carousel .carousel-caption h5{
+    line-height: 1;
+}
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -1977,6 +1996,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
         box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
+    }
+
+    #testimonial-carousel .carousel-caption{
+        bottom: 33vh;
+        height: fit-content;
+        left: 33vw;
+        opacity: .85;
+        width: 33vw;
     }
 
 }
