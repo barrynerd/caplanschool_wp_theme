@@ -1346,19 +1346,22 @@ ul.products .yith-wcdp {
 
 #testimonial-carousel .carousel-caption {
   background: #2a8700;
-  top: 0;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   left: 0;
   opacity: .8;
-  padding: .5rem;
+  padding: 2rem 1rem;
+  top: 0;
   width: 60vw; }
 
 #testimonial-carousel .carousel-caption p {
-  line-height: 1.3; }
+  font-weight: bold;
+  line-height: 1.3;
+  margin: 0; }
 
 #testimonial-carousel .carousel-caption h5 {
+  font-weight: bold;
   line-height: 1; }
 
 /*
@@ -1600,18 +1603,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep01 .twostep01-jumbotron.online-ce {
     background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge.jpg");
     background-position: 75% 0%;
-    background-color: rgba(42, 135, 0, 0.2);
+    background-color: rgba(255, 135, 0, 0.2);
     background-blend-mode: overlay;
     -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
             box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
   #testimonial-carousel .carousel-caption {
-    bottom: 33vh;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    bottom: auto;
     left: 33vw;
-    opacity: .85;
-    width: 33vw; } }
+    width: 33vw;
+    top: 44vh;
+    padding: 2rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
