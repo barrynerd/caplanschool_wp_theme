@@ -167,7 +167,7 @@ p:empty {
 
 #main-menu ul.dropdown-menu {
     background:$bcc_light_yellow;
-    text-align: center;
+    text-align: left;
 }
 
 #main-menu li.menu-useful-links ul.dropdown-menu {
@@ -1957,7 +1957,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     #main-menu ul.dropdown-menu li.nav-item {
-        width: 30vw;
+        width: 20vw;
     }
 
     .about-text .row h1 {
