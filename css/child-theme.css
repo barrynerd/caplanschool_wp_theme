@@ -385,7 +385,8 @@ p:empty {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-top: 1.5rem; }
 
 .single-product .product h1 {
   display: none; }
