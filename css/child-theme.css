@@ -1649,8 +1649,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     bottom: auto;
     left: 33vw;
     width: 33vw;
-    top: 44vh;
-    padding: 2rem; } }
+    top: 44%;
+    padding: 2rem; }
+  #testimonial-carousel .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
