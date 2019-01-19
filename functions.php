@@ -78,11 +78,11 @@ function bcc_product_has_deposit($product){
     $product_id = $product->get_id();
     $deposit_enabled = get_post_meta( $product_id, "_enable_deposit" );
     $has_deposit = false;
-    if ($deposit_enabled == "yes"){
+    if ($deposit_enabled[0] == "yes"){
         $has_deposit = true;
         }
     if (current_user_can('administrator')){
-        // echo "<pre>";
+        // echo "<pre> sdfasdfsa";
         // $print_r( $deposit_enabled);
         // echo "</pre>";
     }
