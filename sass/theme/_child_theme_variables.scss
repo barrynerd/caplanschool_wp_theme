@@ -2063,6 +2063,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         padding: 2rem;
     }
 
+    #testimonial-carousel .carousel-item {
+        height: 75vh;
+    }
+    
     #testimonial-carousel .carousel-item img{
         object-fit: cover;
     }
