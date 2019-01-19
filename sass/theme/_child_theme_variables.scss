@@ -196,6 +196,34 @@ p:empty {
     // width: 100vw;
 }
 
+#main-menu li.menu-about ul {
+    width: 14.5rem;
+}
+
+#main-menu li.menu-courses ul {
+    width: 17rem;
+}
+
+#main-menu li.menu-broker ul {
+    width: 19rem;
+}
+
+#main-menu li.menu-continuing-ed ul {
+    width: 22rem;
+}
+
+#main-menu li.menu-continuing-ed ul .menu-highlight01{
+    text-align: center;
+}
+
+#main-menu li.menu-members ul {
+    width: 17rem;
+}
+
+#main-menu li.menu-useful-links ul {
+    width: 23rem;
+}
+
 .nav-item::after {
     content: '';
     display: block;
@@ -1958,7 +1986,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
 
     #main-menu ul.dropdown-menu li.nav-item {
-        width: 20vw;
+        // width: 20vw;
     }
 
     .about-text .row h1 {
