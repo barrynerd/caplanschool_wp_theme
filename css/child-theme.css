@@ -1073,6 +1073,9 @@ ul.products .yith-wcdp {
 #navigation-buttons .button-set h5 {
   font-weight: bold; }
 
+.twostep01-jumbotron.members-ce {
+  background: #fffee6; }
+
 .members-ce ul.products li.product {
   width: 100% !important;
   border: none; }
@@ -1106,17 +1109,30 @@ ul.products .yith-wcdp {
   font-weight: bold;
   text-align: center; }
 
-.members-ce .details p {
-  display: none; }
-
 .members-ce .details .card {
   width: 100%; }
 
 .members-ce .details .card img {
   display: none; }
 
+.members-ce-jack-green .details .card img {
+  padding: 1rem 1rem 0;
+  display: block; }
+
+.members-ce ul {
+  list-style-type: none;
+  padding: 0; }
+
 .members-ce .details .card p {
   display: none; }
+
+.members-ce .details .card p.hilite {
+  background: #FE9328;
+  display: block;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize; }
 
 .page-about .card {
   -webkit-box-orient: vertical;
@@ -1543,8 +1559,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     text-align: left; }
   .members-ce .details .card {
     width: 23rem; }
-  .members-ce .details .card img {
-    display: block; }
   .members-ce .details .card p {
     font-size: inherit; }
   .page-about .card {

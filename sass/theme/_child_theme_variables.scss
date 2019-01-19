@@ -1291,6 +1291,10 @@ ul.products .yith-wcdp {
     font-weight: bold;
 }
 
+.twostep01-jumbotron.members-ce {
+    background: $bcc_extra_light_yellow;
+}
+
 .members-ce ul.products li.product {
     width: 100%!important;
     border: none;
@@ -1325,7 +1329,7 @@ ul.products .yith-wcdp {
 }
 
 .members-ce .details p{
-    display: none;
+    // display: none;
 }
 
 .members-ce .details .card {
@@ -1336,8 +1340,27 @@ ul.products .yith-wcdp {
     display: none;
 }
 
+.members-ce-jack-green .details .card img{
+    padding: 1rem 1rem 0;
+    display: block;
+}
+
+.members-ce ul {
+    list-style-type: none;
+    padding:0;
+}
+
 .members-ce .details .card p{
     display: none;
+}
+
+.members-ce .details .card p.hilite{
+    background: $bcc_orange;
+    display: block;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 .page-about .card {
@@ -1542,7 +1565,7 @@ ul.products .yith-wcdp {
 }
 
 .members.agency h3 {
-    background: #FE9328;
+    background: $bcc_orange;
 }
 
 .members.course-description {
@@ -1901,10 +1924,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .members-ce .details .card {
         width: 23rem;
-    }
-
-    .members-ce .details .card img{
-        display: block;
     }
 
     .members-ce .details .card p{
