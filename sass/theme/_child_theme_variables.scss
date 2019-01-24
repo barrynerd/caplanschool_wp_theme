@@ -526,16 +526,34 @@ p:empty {
 }
 
 .single-product .product .summary {
+    float:none!important;
     max-width: 960px;
-    width: auto!important;
-    margin-top: 4.75rem;
+    margin-top: 2.75rem;
+    width: 100%!important;
 }
 
 .single-product .product .woocommerce-product-details__short-description {
+    background: $bcc_light_yellow;
     font-size: 1rem;
     line-height: 1.428571429;
+    margin:0;
+    max-width: 100%;
+}
+
+.single-product .product .product-description{
     margin: 0 auto;
-    max-width: 700px;
+    padding: 3rem 0;
+}
+
+.single-product .product .product-description h4{
+    text-align: center;
+}
+
+.single-product .product  p.pay-deposit-now{
+    background: white;
+    text-align: center;
+    font-style: italic;
+    padding-top: 2rem;
 }
 
 .single-product .product .price{
@@ -2066,7 +2084,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     #testimonial-carousel .carousel-item {
         height: 75vh;
     }
-    
+
     #testimonial-carousel .carousel-item img{
         object-fit: cover;
     }
