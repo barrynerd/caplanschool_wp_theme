@@ -91,6 +91,7 @@ figcaption {
     white-space: normal!important;
 }
 
+.xoo-wsc-footer-b .btn,
 .btn.btn-primary {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
@@ -104,6 +105,7 @@ figcaption {
     padding: .375rem .75rem!important;
 }
 
+.xoo-wsc-footer-b .btn:hover,
 .btn.btn-primary:hover,
  .btn.btn-secondary:hover{
     background-color: $bcc_yellow!important;
