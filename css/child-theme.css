@@ -76,11 +76,13 @@ p:empty {
   font-family: "Open Sans";
   font-size: 1.125rem;
   font-weight: bold;
-  padding: .5rem 0;
   text-transform: uppercase; }
 
 #main-menu .navbar-brand {
-  padding: .5rem 1rem; }
+  padding-left: .3125rem; }
+
+#main-menu .navbar-brand img {
+  min-width: 140px; }
 
 #main-menu .dropdown-toggle:after {
   display: none; }
@@ -648,9 +650,7 @@ p.members-ce-product {
   border: none !important;
   padding: 0 !important; }
 
-/*
-shop page formattingS
-*/
+p.members-ce-product >
 ul.products li.product a h2 {
   font-size: 1.1em !important;
   min-height: 6.4em;
@@ -1720,7 +1720,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     top: 44%;
     padding: 2rem; }
   #testimonial-carousel .carousel-item {
-    height: 75vh; } }
+    height: 75vh; }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.35rem !important;
+    padding-left: 0.35rem !important; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

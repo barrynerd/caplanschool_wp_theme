@@ -152,12 +152,15 @@ p:empty {
     font-family: $font-family-base;
     font-size: 1.125rem;
     font-weight: bold;
-    padding:.5rem 0;
     text-transform: uppercase;
 }
 
 #main-menu .navbar-brand {
-    padding: .5rem 1rem;
+    padding-left: .3125rem;
+}
+
+#main-menu .navbar-brand img {
+    min-width: 140px;
 }
 
 #main-menu .dropdown-toggle:after {
@@ -809,7 +812,7 @@ p.members-ce-product {
     padding: 0!important;
 }
 
-
+p.members-ce-product >
 
 /*
 shop page formattingS
@@ -2146,7 +2149,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         height: 75vh;
     }
 
-
+    .navbar-expand-md .navbar-nav .nav-link {
+        padding-right: .35rem!important;
+        padding-left: .35rem!important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
