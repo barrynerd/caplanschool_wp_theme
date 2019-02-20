@@ -1725,6 +1725,11 @@ ul.products .yith-wcdp {
     height: 100%;
 }
 
+#testimonial-carousel .carousel-control-next-icon,
+#testimonial-carousel .carousel-control-prev-icon {
+    background-color: $bcc_green!important;
+    padding: 1.5em;
+}
 
 /*
 ####################################################

@@ -1450,6 +1450,11 @@ ul.products .yith-wcdp {
      object-fit: cover;
   height: 100%; }
 
+#testimonial-carousel .carousel-control-next-icon,
+#testimonial-carousel .carousel-control-prev-icon {
+  background-color: #2a8700 !important;
+  padding: 1.5em; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
