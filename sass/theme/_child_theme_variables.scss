@@ -797,6 +797,19 @@ p:empty {
     display: none;
 }
 
+/*
+member product formattingS
+*/
+p.members-ce-product {
+    color: $bcc_green!important;
+    font-size: 2em!important;
+    font-weight: bold!important;
+    text-align: center;
+    border: none!important;
+    padding: 0!important;
+}
+
+
 
 /*
 shop page formattingS
@@ -815,6 +828,7 @@ ul.products li.product a span.price{
     font-weight: bold!important;
     text-align: center;
 }
+
 
 ul.products li.product:last-of-type {
     margin-bottom: 0!important;

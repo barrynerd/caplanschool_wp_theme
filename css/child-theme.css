@@ -638,6 +638,17 @@ p:empty {
   display: none; }
 
 /*
+member product formattingS
+*/
+p.members-ce-product {
+  color: #2a8700 !important;
+  font-size: 2em !important;
+  font-weight: bold !important;
+  text-align: center;
+  border: none !important;
+  padding: 0 !important; }
+
+/*
 shop page formattingS
 */
 ul.products li.product a h2 {
