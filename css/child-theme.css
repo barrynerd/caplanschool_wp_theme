@@ -1459,6 +1459,10 @@ ul.products .yith-wcdp {
   background-color: #2a8700 !important;
   padding: 1.5em; }
 
+.course-description-basic .card-subtitle {
+  font-style: normal !important;
+  font-weight: bold; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
