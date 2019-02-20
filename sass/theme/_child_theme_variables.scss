@@ -8,11 +8,11 @@
 // Color system
 //
 
-// #pg-11009-0,
 // #pg-11009-1,
 // #pg-11009-2,
 // #pg-11009-3,
 // #pg-11009-4,
+// #pg-11009-0,
 // #pg-11009-5,
 // #pg-11009-6
 // {
@@ -418,6 +418,22 @@ p:empty {
 
 .home .row-upcoming-courses ul li h3 a{
     color: $bcc_green;
+}
+
+.out-of-state-online-courses {
+    justify-content: center!important;
+}
+
+.out-of-state-online-courses .btn-group{
+    margin-right: .5em;
+}
+
+.out-of-state-online-courses .btn-group:last-of-type{
+    margin-right: 0;
+}
+
+.out-of-state-online-courses .btn-group .btn:first-of-type{
+    margin-right: .25em;
 }
 
 #wrapper-footer {

@@ -303,6 +303,20 @@ p:empty {
 .home .row-upcoming-courses ul li h3 a {
   color: #2a8700; }
 
+.out-of-state-online-courses {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important; }
+
+.out-of-state-online-courses .btn-group {
+  margin-right: .5em; }
+
+.out-of-state-online-courses .btn-group:last-of-type {
+  margin-right: 0; }
+
+.out-of-state-online-courses .btn-group .btn:first-of-type, .out-of-state-online-courses .btn-group .wpcf7 input:first-of-type[type=submit], .wpcf7 .out-of-state-online-courses .btn-group input:first-of-type[type=submit] {
+  margin-right: .25em; }
+
 #wrapper-footer {
   background-color: #58535C;
   padding-top: 2rem !important; }
