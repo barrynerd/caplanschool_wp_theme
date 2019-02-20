@@ -359,10 +359,10 @@ p:empty {
   width: 18rem; }
 
 #wrapper-footer .card-body {
-  color: #84D263; }
+  color: #2a8700; }
 
 #wrapper-footer .card-body a {
-  color: #84D263; }
+  color: #2a8700; }
 
 #wrapper-footer #footer-summary .card {
   background-color: transparent;
@@ -385,6 +385,9 @@ p:empty {
   text-align: center; }
 
 #wrapper-footer #footer-summary ul a {
+  color: white; }
+
+#wrapper-footer #footer-summary .card-body {
   color: white; }
 
 .logo-row {

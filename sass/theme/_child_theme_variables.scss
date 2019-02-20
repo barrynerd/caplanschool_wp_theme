@@ -466,11 +466,11 @@ p:empty {
 }
 
 #wrapper-footer  .card-body{
-    color: $bcc_lime_green;
+    color: $bcc_green;
 }
 
 #wrapper-footer  .card-body a{
-    color: $bcc_lime_green;
+    color: $bcc_green;
 }
 
 #wrapper-footer  #footer-summary .card{
@@ -498,6 +498,10 @@ p:empty {
 }
 
 #wrapper-footer  #footer-summary ul a {
+    color: $bcc-white;
+}
+
+#wrapper-footer  #footer-summary .card-body {
     color: $bcc-white;
 }
 
