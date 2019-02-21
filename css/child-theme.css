@@ -492,7 +492,9 @@ p:empty {
   background-color: #FFEE5D;
   border: 2px solid #2a8700;
   border-radius: .5rem;
-  padding: .375rem .75rem .625rem .5rem; }
+  bottom: 1rem;
+  padding: .375rem .75rem .625rem .5rem;
+  right: 1rem; }
 
 .xoo-wsc-icon-basket1:before {
   font-family: FontAwesome;
