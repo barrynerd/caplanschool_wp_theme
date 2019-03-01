@@ -19,3 +19,11 @@ package.json
 package-lock.json
 
 README.md
+
+gulpconfig.json
+
+/sass/
+
+gulpfile.js
+
+composer.json
