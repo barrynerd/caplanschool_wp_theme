@@ -17,7 +17,10 @@ figcaption {
 .btn, .wpcf7 input[type=submit] {
   white-space: normal !important; }
 
-.xoo-wsc-footer-b .btn, .xoo-wsc-footer-b .wpcf7 input[type=submit], .wpcf7 .xoo-wsc-footer-b input[type=submit],
+button#place_order,
+.xoo-wsc-footer-b .btn,
+.xoo-wsc-footer-b .wpcf7 input[type=submit],
+.wpcf7 .xoo-wsc-footer-b input[type=submit],
 .btn.btn-primary,
 .wpcf7 input.btn-primary[type=submit] {
   background-color: #2a8700 !important;
@@ -32,7 +35,10 @@ figcaption {
   text-transform: uppercase !important;
   padding: 0.375rem 0.75rem !important; }
 
-.xoo-wsc-footer-b .btn:hover, .xoo-wsc-footer-b .wpcf7 input:hover[type=submit], .wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
+button#place_order:hover,
+.xoo-wsc-footer-b .btn:hover,
+.xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
+.wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
 .btn.btn-primary:hover,
 .wpcf7 input.btn-primary:hover[type=submit],
 .btn.btn-secondary:hover,
