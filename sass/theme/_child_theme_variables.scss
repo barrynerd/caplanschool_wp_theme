@@ -1619,12 +1619,14 @@ ul.products .yith-wcdp {
     background-position: center center;
 }
 
+.online-ce .hl-text h1,
 .online-license .hl-text h1{
     color: $bcc-white;
     font-weight: bold;
     font-style: italic;
 }
 
+.online-ce .hl-text h5,
 .online-license .hl-text h5{
     color: $bcc-white;
     font-style: italic;
@@ -1639,10 +1641,12 @@ ul.products .yith-wcdp {
     border-top-right-radius: 1.2rem;
 }
 
+.online-ce .card .action-button,
 .online-license .card .action-button{
     text-align: center;
 }
 
+.online-ce .card-body h5,
 .online-license .card-body h5{
     color:$bcc_green;
     font-weight: bold;
