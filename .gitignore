@@ -13,3 +13,9 @@ dist-product
 npm-debug.log
 
 /vendor/
+
+package.json
+
+package-lock.json
+
+README.md
