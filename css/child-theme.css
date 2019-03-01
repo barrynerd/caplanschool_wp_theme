@@ -1486,6 +1486,12 @@ ul.products .yith-wcdp {
   font-style: normal !important;
   font-weight: bold; }
 
+h2.woocommerce-loop-product__title {
+  color: #2a8700;
+  text-align: center;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important; }
+
 /*
 ####################################################
 M E D I A  Q U E R I E S
