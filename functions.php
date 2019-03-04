@@ -132,26 +132,6 @@ function bcc_woocommerce_form_field ($key,$field, $fields, $checkout){
 	woocommerce_form_field( $key, $field, $checkout->get_value( $key ) );
 }
 #----------------------------------------------------
-// see code example at bottom of https://docs.woocommerce.com/document/woocommerce-shortcodes/#section-11
-// add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby',10, 3  );
-
-function woocommerce_shortcode_products_orderby( $query_args,  $atts, $loop_name ) {
-
-	// echo "<pre>";
-	// print_r($args);
-	// echo "</pre>";
-
-	$standard_array = array('menu_order','title','date','rand','id');
-
-    if( isset( $query_args['orderby'] ) && !in_array( $query_args['orderby'], $standard_array ) ) {
-		$my_sort_key = $query_args['orderby'];
-        $query_args[$my_sort_key] = $query_args['orderby'];
-        $query_args['orderby']  = 'meta_value_num';
-    }
-
-    return $query_args;
-}
-#----------------------------------------------------
 // based on answer #1 here:
 // https://stackoverflow.com/questions/48302186/woocommerce-only-show-products-between-start-and-end-dates
 
@@ -437,6 +417,25 @@ add_shortcode('bc_ce_classes_by_month', 'bc_ce_classes_by_month');
 add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
 #----------------------------------------------------
+#https://docs.woocommerce.com/document/woocommerce-shortcodes/
+#https://stackoverflow.com/questions/28063244/woocommerce-shortcode-orderby-price-is-not-working
+# note that you have rto make a selection in the cusotmizer for this to work:
+#	https://wordpress.stackexchange.com/questions/321186/woocommerce-order-by-random-with-1-hour-seed-refresh
+add_filter( 'woocommerce_shortcode_products_query', 'woocommerce_shortcode_products_orderby' );
+
+function woocommerce_shortcode_products_orderby( $args ) {
+
+   $standard_array = array('menu_order','title','date','rand','id');
+
+   if( isset( $args['orderby'] ) && !in_array( $args['orderby'], $standard_array ) ) {
+	   $args['meta_key'] = "start_date";
+	   $args['orderby']  = 'meta_value';
+   }
+
+   return $args;
+
+}
+
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
