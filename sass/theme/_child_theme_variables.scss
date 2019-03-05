@@ -1061,7 +1061,11 @@ ul.products .yith-wcdp {
 
 .course-cards {
     background: transparent;
-    padding: 0 1rem 1.5rem;
+    padding: 0;
+}
+
+.course-cards .woocommerce{
+    padding: 0 1rem  1.5rem;
 }
 
 .course-description-card {
@@ -2179,6 +2183,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .course-cards h2{
         min-height: 5.75rem;
     }
+
+    // #main-menu .navbar-collapse{
+    //     flex-grow: 0;
+    //     margin:0 auto;
+    // }
 
 
 }

@@ -864,7 +864,10 @@ ul.products .yith-wcdp {
 
 .course-cards {
   background: transparent;
-  padding: 0 1rem 1.5rem; }
+  padding: 0; }
+
+.course-cards .woocommerce {
+  padding: 0 1rem  1.5rem; }
 
 .course-description-card {
   margin: 0; }
