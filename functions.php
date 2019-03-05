@@ -428,7 +428,7 @@ function woocommerce_shortcode_products_orderby( $args ) {
    $standard_array = array('menu_order','title','date','rand','id');
 
    if( isset( $args['orderby'] ) && !in_array( $args['orderby'], $standard_array ) ) {
-	   $args['meta_key'] = "start_date";
+	   $args['meta_key'] = (string) $args['orderby'];
 	   $args['orderby']  = 'meta_value';
    }
 
