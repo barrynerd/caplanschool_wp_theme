@@ -1029,26 +1029,8 @@ ul.products .yith-wcdp {
 .twostep02-descriptions .twostep02-row-02 h3 {
   text-align: center; }
 
-.twostep02-descriptions .row.ethics .card-body:first-of-type {
-  height: 21rem; }
-
-.twostep02-descriptions .row.hondros #course-description-painless .card-body:first-of-type {
-  height: 42.5rem; }
-
-.twostep02-descriptions .row.hondros .card-body:first-of-type {
-  height: 32.5rem; }
-
-.twostep02-descriptions.members-ce .row .card-body:first-of-type {
-  height: 30.5rem; }
-
-.twostep02-descriptions .row.core .card-body:first-of-type {
-  height: 28rem; }
-
-.twostep02-descriptions .row.elective .card-body:first-of-type {
-  height: 32rem; }
-
-.twostep02-descriptions .row.designation .card-body:first-of-type {
-  height: 39rem; }
+.twostep02-descriptions .row .card-body:first-of-type {
+  height: auto; }
 
 .twostep02-descriptions .row .card-body:last-of-type {
   text-align: center; }
@@ -1741,7 +1723,21 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 75vh; }
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.35rem !important;
-    padding-left: 0.35rem !important; } }
+    padding-left: 0.35rem !important; }
+  .twostep02-descriptions .row.ethics .card-body:first-of-type {
+    height: 21rem; }
+  .twostep02-descriptions .row.hondros #course-description-painless .card-body:first-of-type {
+    height: 42.5rem; }
+  .twostep02-descriptions .row.hondros .card-body:first-of-type {
+    height: 32.5rem; }
+  .twostep02-descriptions.members-ce .row .card-body:first-of-type {
+    height: 30.5rem; }
+  .twostep02-descriptions .row.core .card-body:first-of-type {
+    height: 31rem; }
+  .twostep02-descriptions .row.elective .card-body:first-of-type {
+    height: 32rem; }
+  .twostep02-descriptions .row.designation .card-body:first-of-type {
+    height: 39rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
