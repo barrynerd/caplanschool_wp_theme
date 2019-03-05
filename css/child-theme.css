@@ -1743,7 +1743,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep02-descriptions .row.designation .card-body:first-of-type {
     height: 39rem; }
   .course-cards h2 {
-    min-height: 5.75rem; } }
+    min-height: 5.75rem; }
+  #main-menu .navbar-collapse {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    margin: 0 auto; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */

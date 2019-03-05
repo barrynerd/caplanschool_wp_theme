@@ -2184,10 +2184,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         min-height: 5.75rem;
     }
 
-    // #main-menu .navbar-collapse{
-    //     flex-grow: 0;
-    //     margin:0 auto;
-    // }
+    #main-menu .navbar-collapse{
+        flex-grow: 0;
+        margin:0 auto;
+    }
 
 
 }
