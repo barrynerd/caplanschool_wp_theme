@@ -1634,8 +1634,9 @@ ul.products .yith-wcdp {
     height: 27rem;
 }
 
-#ce-schedule-by-date h2{
+.course-cards h2{
     text-align: center;
+    min-height: auto;
 }
 
 .members.agency {
@@ -2174,6 +2175,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .twostep02-descriptions .row.designation .card-body:first-of-type {
         height: 39rem;
     }
+
+    .course-cards h2{
+        min-height: 5.75rem;
+    }
+
 
 }
 

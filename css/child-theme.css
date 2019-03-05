@@ -1377,8 +1377,9 @@ ul.products .yith-wcdp {
 .twostep02-descriptions.online-ce.ny .card-body:first-of-type {
   height: 27rem; }
 
-#ce-schedule-by-date h2 {
-  text-align: center; }
+.course-cards h2 {
+  text-align: center;
+  min-height: auto; }
 
 .members.agency {
   max-width: 800px; }
@@ -1737,7 +1738,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .twostep02-descriptions .row.elective .card-body:first-of-type {
     height: 32rem; }
   .twostep02-descriptions .row.designation .card-body:first-of-type {
-    height: 39rem; } }
+    height: 39rem; }
+  .course-cards h2 {
+    min-height: 5.75rem; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
