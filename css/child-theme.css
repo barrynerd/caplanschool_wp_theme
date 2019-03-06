@@ -1075,6 +1075,10 @@ ul.products .yith-wcdp {
   margin: 0 .5rem 1rem;
   width: 19rem; }
 
+.twostep02-descriptions.members-ce-diane-turton .twostep02-row-02 .card {
+  width: 100%;
+  max-width: 960px; }
+
 .twostep02 .twostep02-descriptions .twostep02-row-02 .card .card-body:first-of-type {
   height: 19rem; }
 
@@ -1182,13 +1186,18 @@ ul.products .yith-wcdp {
 .members-ce .details .card img {
   display: none; }
 
-.members-ce-jack-green .details .card img {
+.members-ce.members-ce-diane-turton .details .card img,
+.members-ce.members-ce-jack-green .details .card img {
   padding: 1rem 1rem 0;
   display: block; }
 
 .members-ce ul {
   list-style-type: none;
   padding: 0; }
+
+.members-ce .course-description ul {
+  list-style-type: disc;
+  list-style-position: inside; }
 
 .members-ce .details .card p {
   display: none; }
@@ -1734,6 +1743,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 42.5rem; }
   .twostep02-descriptions .row.hondros .card-body:first-of-type {
     height: 32.5rem; }
+  .twostep02-descriptions.members-ce.members-ce-diane-turton .row .card-body {
+    height: auto !important; }
   .twostep02-descriptions.members-ce .row .card-body:first-of-type {
     height: 30.5rem; }
   .twostep02-descriptions .row.core .card-body:first-of-type {
