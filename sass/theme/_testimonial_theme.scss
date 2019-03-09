@@ -7,26 +7,32 @@
         padding: 2rem 1rem;
         top: 0;
         width: 60vw;
+
         h5 {
             font-weight: bold;
             line-height: 1;
         }
+
         p {
             font-weight: bold;
             line-height: 1.3;
             margin: 0;
         }
     }
+
     .carousel-control-next-icon,
     .carousel-control-prev-icon {
         background-color: $bcc_green!important;
         padding: 1.5em;
     }
+
     .carousel-inner {
         background: $bcc_medium_gray;
     }
+
     .carousel-item {
         height: 66vh;
+
         img {
             object-fit: cover;
             height: 100%;
