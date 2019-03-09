@@ -55,21 +55,17 @@ button#place_order:hover,
     flex-wrap: wrap;
     height: 24rem;
     justify-content: center;
-}
-
-#navigation-buttons .button-set{
-    margin-top: .75rem;
-    text-align: center;
-    width: 18rem;
-}
-
-#navigation-buttons h2{
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
-
-#navigation-buttons .button-set h5{
-    font-weight: bold;
-}
+    .button-set{
+        margin-top: .75rem;
+        text-align: center;
+        width: 18rem;
+        h5{
+            font-weight: bold;
+            }
+        }
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        }
