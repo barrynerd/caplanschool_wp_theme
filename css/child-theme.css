@@ -11017,6 +11017,17 @@ a.skip-link {
     font-weight: bold;
     padding: 0.75rem; }
 
+.home .hlrow {
+  background: #2a8700;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: calc(1rem/16);
+  margin: 0;
+  padding: 0.5rem;
+  text-align: center;
+  width: 100vw; }
+
 .home .jumbotron-fluid {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -11029,17 +11040,6 @@ a.skip-link {
   display: flex;
   height: 66vmax; }
 
-.home .hlrow {
-  background: #2a8700;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  letter-spacing: calc(1rem/16);
-  margin: 0;
-  padding: .5rem;
-  text-align: center;
-  width: 100vw; }
-
 .home .row-course-card {
   background: #fffff6;
   -webkit-box-pack: center;
@@ -11048,44 +11048,45 @@ a.skip-link {
   margin: 0;
   padding: 1.25em; }
 
-.home .row-upcoming-courses .hlrow,
-.home .row-course-card .hlrow,
-.home .row-downloads .hlrow {
-  background: transparent;
-  color: #2a8700; }
-
 .home .row-course-card .course-card {
   color: #444;
-  margin: .5rem;
+  margin: 0.5rem;
   text-align: center;
   width: 18rem; }
-
-.home .row-course-card .course-card .card-icon {
-  background: #ebf0e8;
-  color: #2a8700;
-  font-size: 6rem;
-  padding: 0; }
+  .home .row-course-card .course-card .card-body:first-of-type {
+    height: 11.25rem;
+    padding-top: 0; }
+  .home .row-course-card .course-card .card-icon {
+    background: #ebf0e8;
+    color: #2a8700;
+    font-size: 6rem;
+    padding: 0; }
+  .home .row-course-card .course-card .card-title {
+    font-weight: bold;
+    text-transform: capitalize; }
 
 .home .row-course-card .course-card.ce .card-icon {
   font-size: 5rem;
-  padding: .5rem 0; }
+  padding: 0.5rem 0; }
 
-.home .row-course-card .course-card .card-body:first-of-type {
-  height: 11.25rem;
-  padding-top: 0; }
-
-.home .row-course-card .course-card .card-title {
-  font-weight: bold;
-  text-transform: capitalize; }
+.home .row-course-card .hlrow {
+  background: transparent;
+  color: #2a8700; }
 
 .home .row-downloads {
   background: #ebf0e8;
   padding: 2rem 0 3rem;
   text-align: center; }
+  .home .row-downloads a {
+    max-width: 80vw;
+    margin: 0 auto; }
+  .home .row-downloads .hlrow {
+    background: transparent;
+    color: #2a8700; }
 
-.home .row-downloads a {
-  max-width: 80vw;
-  margin: 0 auto; }
+.home .row-upcoming-courses .hlrow {
+  background: transparent;
+  color: #2a8700; }
 
 .home .row-upcoming-courses ul {
   display: -webkit-box;
@@ -11098,21 +11099,17 @@ a.skip-link {
           justify-content: center;
   list-style-type: none;
   padding: 0; }
-
-.home .row-upcoming-courses ul li {
-  margin: .5rem;
-  width: 80vw; }
-
-.home .row-upcoming-courses ul li a img {
-  width: 80vh; }
-
-.home .row-upcoming-courses ul li h3 {
-  color: #2a8700;
-  font-size: 1rem;
-  margin: 1.25rem 1.75rem 1.5rem; }
-
-.home .row-upcoming-courses ul li h3 a {
-  color: #2a8700; }
+  .home .row-upcoming-courses ul li {
+    margin: 0.5rem;
+    width: 80vw; }
+    .home .row-upcoming-courses ul li a img {
+      width: 80vh; }
+    .home .row-upcoming-courses ul li h3 {
+      color: #2a8700;
+      font-size: 1rem;
+      margin: 1.25rem 1.75rem 1.5rem; }
+      .home .row-upcoming-courses ul li h3 a {
+        color: #2a8700; }
 
 .home .video-row01 {
   display: -webkit-box;
