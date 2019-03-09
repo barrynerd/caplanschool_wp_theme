@@ -11252,19 +11252,16 @@ button#place_order,
   min-width: 5rem;
   text-transform: uppercase !important;
   padding: 0.375rem 0.75rem !important; }
-
-button#place_order:hover,
-.xoo-wsc-footer-b .btn:hover,
-.xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
-.wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
-.btn.btn-primary:hover,
-.wpcf7 input.btn-primary:hover[type=submit],
-.btn.btn-secondary:hover,
-.wpcf7 input.btn-secondary:hover[type=submit] {
-  background-color: #FFEE5D !important;
-  border: 1px solid #2f3e48 !important;
-  color: #2a8700 !important;
-  border-color: #2f3e48 !important; }
+  button#place_order:hover,
+  .xoo-wsc-footer-b .btn:hover,
+  .xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
+  .wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
+  .btn.btn-primary:hover,
+  .wpcf7 input.btn-primary:hover[type=submit] {
+    background-color: #FFEE5D !important;
+    border: 1px solid #2f3e48 !important;
+    color: #2a8700 !important;
+    border-color: #2f3e48 !important; }
 
 .btn.btn-secondary, .wpcf7 input.btn-secondary[type=submit] {
   background-color: #2a8700 !important;
@@ -11273,10 +11270,12 @@ button#place_order:hover,
           box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
   color: white !important; }
 
+.btn-sm, .btn-group-sm > .btn,
+.wpcf7 .btn-group-sm > input[type=submit],
 .btn-group-sm-bcc > .a,
 .btn-group-sm-bcc > .btn,
-.wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
-.wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+.wpcf7 .btn-group-sm-bcc > input[type=submit],
+.wpcf7 .btn-group-sm-bcc > input[type=submit] {
   padding: 0.25rem 0.5rem !important;
   font-size: 0.875rem !important;
   line-height: 1.5 !important;

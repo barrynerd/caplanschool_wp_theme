@@ -1,10 +1,4 @@
-.btn {
-    white-space: normal!important;
-}
-
-button#place_order,
-.xoo-wsc-footer-b .btn,
-.btn.btn-primary {
+@mixin primary_button_format(){
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
@@ -15,37 +9,60 @@ button#place_order,
     min-width: 5rem;
     text-transform: uppercase!important;
     padding: .375rem .75rem!important;
-}
+    }
 
-button#place_order:hover,
-.xoo-wsc-footer-b .btn:hover,
-.btn.btn-primary:hover,
- .btn.btn-secondary:hover{
+@mixin primary_button_hover_format(){
     background-color: $bcc_yellow!important;
     border: 1px solid $bcc_button_border!important;
     color: $bcc_green!important;
-    border-color: #2f3e48!important;
-}
+    border-color: #2f3e48!important
+    }
 
-.btn.btn-secondary {
+@mixin secondary_button_format(){
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
     color: $bcc-white!important;
-}
+    }
 
-.btn-group-sm-bcc>.a,
-.btn-group-sm-bcc>.btn,
-.btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
+@mixin small_button_format(){
     padding: .25rem .5rem!important;
     font-size: .875rem!important;
     line-height: 1.5!important;
     border-radius: .2rem!important;
-}
+    }
 
-.btn-group-vertical br {
-    display: none;
-}
+////------------------------------------------
+.btn {
+    white-space: normal!important;
+    }
+
+
+button#place_order,
+.xoo-wsc-footer-b .btn,
+.btn.btn-primary {
+    @include primary_button_format();
+    &:hover {
+        @include primary_button_hover_format();
+        }
+    }
+
+.btn.btn-secondary {
+    @include secondary_button_format();
+    }
+
+.btn-sm,
+.btn-group-sm-bcc>.a,
+.btn-group-sm-bcc>.btn,
+.wpcf7 .btn-group-sm-bcc>input[type=submit] {
+    @include small_button_format();
+    }
+
+.btn-group-vertical {
+    br {
+        display: none;
+        }
+    }
 
 #navigation-buttons {
     align-content: center;
