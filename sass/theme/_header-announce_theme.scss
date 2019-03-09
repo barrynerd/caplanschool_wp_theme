@@ -1,73 +1,61 @@
 .header-announce {
     // background-color: $bcc_light_green;
-}
-
-.header-announce .widget {
-    padding:0;
-}
-
-.header-announce .header-scholarship {
-    background: $bcc_orange;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: .25rem 0.5em;
-}
-
-.header-announce .header-scholarship .logo{
-    text-align: right;
-    background: white;
-    margin-right: 1rem;
-    padding: .25rem;
-}
-
-.header-announce .header-scholarship .logo img{
-    background: white;
-}
-
-.header-announce .header-scholarship a{
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1;
-}
-
-.header-announce .header-scholarship .body{
-    color: white;
-    font-weight: bold;
-    padding: 0 0 0 .5rem;
-    text-align: left;
-    text-decoration: none;
-}
-
-.header-announce .header-scholarship .body img{
-    display: none;
-}
-
-.header-announce .header-scholarship .body a{
-    color:white;
-    line-height: 1.2;
-}
-
-
-.header-announce .header-online-ce {
-    padding: 0;
-    background: $bcc_light_green;
-}
-
-.header-announce .header-online-ce h5 {
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: .25rem;
-    text-transform: capitalize;
-}
-
-.header-announce .header-online-ce .btn-sm {
-    border-radius: .2rem!important;
-    font-size: .875rem!important;
-    line-height: 1.5!important;
-    margin-bottom: .35rem;
-    min-width: 0;
-    padding: .25rem .5rem!important;
+    .header-online-ce {
+        padding: 0;
+        background: $bcc_light_green;
+        .btn-sm {
+            border-radius: .2rem!important;
+            font-size: .875rem!important;
+            line-height: 1.5!important;
+            margin-bottom: .35rem;
+            min-width: 0;
+            padding: .25rem .5rem!important;
+        }
+        h5 {
+            font-size: 1rem;
+            font-weight: bold;
+            padding-top: .25rem;
+            text-transform: capitalize;
+        }
+    }
+    .header-scholarship {
+        background: $bcc_orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: .25rem 0.5em;
+        a{
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            line-height: 1;
+        }
+        .body{
+            color: white;
+            font-weight: bold;
+            padding: 0 0 0 .5rem;
+            text-align: left;
+            text-decoration: none;
+            a{
+                color:white;
+                line-height: 1.2;
+            }
+            img{
+                display: none;
+            }
+        }
+        .logo{
+            text-align: right;
+            background: white;
+            margin-right: 1rem;
+            padding: .25rem;
+            img{
+                background: white;
+            }
+        }
+    }
+    .widget {
+        padding:0;
+    }
 }
