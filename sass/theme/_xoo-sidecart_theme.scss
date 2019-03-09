@@ -1,12 +1,3 @@
-.xoo-wsc-basket .xoo-wsc-items-count{
-    background-color: $bcc_green;
-    color: $bcc-white;
-}
-
-.xoo-wsc-basket  .xoo-wsc-icon-basket1{
-    color: $bcc_green;
-}
-
 .xoo-wsc-basket {
     background-color: $bcc_yellow;
     border: 2px solid $bcc_green;
@@ -14,10 +5,17 @@
     bottom: 1rem;
     padding: .375rem .75rem .625rem .5rem;
     right: 1rem;
-}
+    .xoo-wsc-icon-basket1{
+        color: $bcc_green;
+        &:before {
+            font-family: FontAwesome;
+            content: "\f07a";
+            font-size:2.5rem;
+        }
+    }
 
-.xoo-wsc-icon-basket1:before {
-    font-family: FontAwesome;
-    content: "\f07a";
-    font-size:2.5rem;
+    .xoo-wsc-items-count{
+        background-color: $bcc_green;
+        color: $bcc-white;
+    }
 }
