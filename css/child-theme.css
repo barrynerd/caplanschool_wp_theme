@@ -11547,128 +11547,105 @@ button#place_order,
 .twostep01 {
   margin-right: 0;
   margin-left: 0; }
-
-.twostep01 .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.twostep01 .twostep01-jumbotron {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: antiquewhite;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: auto;
-  min-height: 100vh;
-  justify-items: center;
-  padding: 1rem 0; }
-
-.twostep01 .twostep01-jumbotron .row {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.twostep01 .twostep01-jumbotron .row .left-col {
-  width: 18rem;
-  margin: 0 auto; }
-
-.twostep01 .twostep01-jumbotron .row .right-col {
-  width: 18rem;
-  margin: 0 auto; }
-
-.twostep01 .twostep01-jumbotron h1 {
-  font-size: 1.2rem; }
-
-.twostep01 .twostep01-jumbotron h5 {
-  font-size: 1rem; }
-
-.twostep01 .twostep01-jumbotron h1 {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  text-align: center; }
-
-.twostep01 .twostep01-jumbotron h5 {
-  text-align: center; }
-
-.twostep01 .twostep01-jumbotron .card-img-top + p {
-  display: none; }
-
-.twostep01 .twostep01-jumbotron h5.card-title {
-  text-align: center;
-  color: #2a8700;
-  font-weight: bold; }
-
-.twostep01 .twostep01-jumbotron ul.card-text {
-  list-style-position: inside;
-  list-style-type: none;
-  padding: 0;
-  text-align: center; }
-
-.twostep01 .twostep01-btn-group-vertical {
-  width: 100%; }
-
-.twostep01 .twostep01-btn-group-vertical br {
-  display: none; }
-
-.twostep01 .twostep01-jumbotron.upcoming-ce-bydate {
-  opacity: 1;
-  color: white;
-  background: url("/wordpress/wp-content/uploads/Continuing-Ed-02small.jpg");
-  background-size: cover;
-  background-position: left;
-  background-color: rgba(42, 135, 0, 0.2);
-  background-blend-mode: overlay;
-  -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
-
-.twostep01 .twostep01-jumbotron.upcoming-ce {
-  opacity: 1;
-  color: white;
-  background: url("/wordpress/wp-content/uploads/2009/11/crop04.png");
-  background-size: cover;
-  background-position: center center;
-  background-color: rgba(42, 135, 0, 0.2);
-  background-blend-mode: overlay;
-  -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
-
-.twostep01 .twostep01-jumbotron.online-ce {
-  opacity: 1;
-  color: white;
-  background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge-1200x800.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-color: rgba(42, 135, 0, 0.2);
-  background-blend-mode: overlay;
-  -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
-
-.twostep01 .twostep01-jumbotron .hl-text h5 {
-  font-style: italic; }
-
-.twostep01 .twostep01-jumbotron .hl-text h1 {
-  font-size: 1.6rem;
-  font-weight: bold;
-  font-style: italic;
-  letter-spacing: -2px;
-  text-transform: uppercase; }
-
-.twostep01-jumbotron.members-ce {
-  background: #fffee6; }
+  .twostep01 .row {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .twostep01 .twostep01-btn-group-vertical {
+    width: 100%; }
+    .twostep01 .twostep01-btn-group-vertical br {
+      display: none; }
+  .twostep01 .twostep01-jumbotron {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: antiquewhite;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
+    min-height: 100vh;
+    justify-items: center;
+    padding: 1rem 0; }
+    .twostep01 .twostep01-jumbotron .card-img-top + p {
+      display: none; }
+    .twostep01 .twostep01-jumbotron h1 {
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      text-align: center; }
+    .twostep01 .twostep01-jumbotron h5 {
+      font-size: 1rem;
+      text-align: center; }
+    .twostep01 .twostep01-jumbotron h5.card-title {
+      text-align: center;
+      color: #2a8700;
+      font-weight: bold; }
+    .twostep01 .twostep01-jumbotron .hl-text h1 {
+      font-size: 1.6rem;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: -2px;
+      text-transform: uppercase; }
+    .twostep01 .twostep01-jumbotron .hl-text h5 {
+      font-style: italic; }
+    .twostep01 .twostep01-jumbotron .row {
+      -ms-flex-line-pack: center;
+          align-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      min-height: 100vh;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .twostep01 .twostep01-jumbotron .row .left-col {
+        width: 18rem;
+        margin: 0 auto; }
+      .twostep01 .twostep01-jumbotron .row .right-col {
+        width: 18rem;
+        margin: 0 auto; }
+    .twostep01 .twostep01-jumbotron ul.card-text {
+      list-style-position: inside;
+      list-style-type: none;
+      padding: 0;
+      text-align: center; }
+  .twostep01 .twostep01-jumbotron.members-ce {
+    background: #fffee6; }
+  .twostep01 .twostep01-jumbotron.online-ce {
+    opacity: 1;
+    color: white;
+    background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge-1200x800.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42, 135, 0, 0.2);
+    background-blend-mode: overlay;
+    -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
+  .twostep01 .twostep01-jumbotron.upcoming-ce {
+    opacity: 1;
+    color: white;
+    background: url("/wordpress/wp-content/uploads/2009/11/crop04.png");
+    background-size: cover;
+    background-position: center center;
+    background-color: rgba(42, 135, 0, 0.2);
+    background-blend-mode: overlay;
+    -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
+  .twostep01 .twostep01-jumbotron.upcoming-ce-bydate {
+    opacity: 1;
+    color: white;
+    background: url("/wordpress/wp-content/uploads/Continuing-Ed-02small.jpg");
+    background-size: cover;
+    background-position: left;
+    background-color: rgba(42, 135, 0, 0.2);
+    background-blend-mode: overlay;
+    -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
+            box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
 
 .twostep02 {
   margin-right: 0;
