@@ -11274,20 +11274,6 @@ button#place_order,
     text-align: center;
     width: 100%; }
 
-.out-of-state-online-courses {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important; }
-
-.out-of-state-online-courses .btn-group {
-  margin-right: .5em; }
-
-.out-of-state-online-courses .btn-group:last-of-type {
-  margin-right: 0; }
-
-.out-of-state-online-courses .btn-group .btn:first-of-type, .out-of-state-online-courses .btn-group .wpcf7 input:first-of-type[type=submit], .wpcf7 .out-of-state-online-courses .btn-group input:first-of-type[type=submit] {
-  margin-right: .25em; }
-
 #wrapper-footer {
   background-color: #58535E;
   padding-top: 2rem !important; }
@@ -12102,9 +12088,25 @@ button#place_order,
 .header-announce .widget {
   padding: 0; }
 
+.out-of-state-online-courses {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important; }
+  .out-of-state-online-courses .btn-group {
+    margin-right: 0.5em; }
+    .out-of-state-online-courses .btn-group:last-of-type {
+      margin-right: 0; }
+    .out-of-state-online-courses .btn-group .btn:first-of-type, .out-of-state-online-courses .btn-group .wpcf7 input:first-of-type[type=submit], .wpcf7 .out-of-state-online-courses .btn-group input:first-of-type[type=submit] {
+      margin-right: 0.25em; }
+
 .online-license.fl .twostep01-jumbotron,
 .online-license.ny .twostep01-jumbotron,
 .online-license.pa .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
+
+.online-ce.fl .twostep01-jumbotron,
+.online-ce.ny .twostep01-jumbotron,
+.online-ce.pa .twostep01-jumbotron {
   background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
 .online-license .card {
@@ -12169,11 +12171,6 @@ button#place_order,
   border: none;
   border-top-right-radius: 1.2rem;
   border-top-left-radius: 1.2rem; }
-
-.online-ce.fl .twostep01-jumbotron,
-.online-ce.ny .twostep01-jumbotron,
-.online-ce.pa .twostep01-jumbotron {
-  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
 .twostep02-descriptions.online-ce.ny .card-body:first-of-type,
 .twostep02-descriptions.online-ce.pa .card-body:first-of-type {

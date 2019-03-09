@@ -1,7 +1,35 @@
-.online-license.fl .twostep01-jumbotron,
-.online-license.ny .twostep01-jumbotron,
-.online-license.pa .twostep01-jumbotron {
-    background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+.out-of-state-online-courses {
+    justify-content: center!important;
+
+    .btn-group {
+        margin-right: 0.5em;
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        .btn {
+            &:first-of-type {
+                margin-right: 0.25em;
+            }
+        }
+    }
+}
+
+.online-license.fl,
+.online-license.ny,
+.online-license.pa {
+    .twostep01-jumbotron {
+        background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+    }
+}
+
+.online-ce.fl,
+.online-ce.ny,
+.online-ce.pa {
+    .twostep01-jumbotron {
+        background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+    }
 }
 
 .online-license {
@@ -89,24 +117,20 @@
     }
 }
 
-.upcoming-ce .card,
-.upcoming-ce-bydate .card {
-    border: none;
-    border-top-right-radius: 1.2rem;
-    border-top-left-radius: 1.2rem;
-}
-
-.online-ce.fl,
-.online-ce.ny,
-.online-ce.pa {
-    .twostep01-jumbotron {
-        background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+.upcoming-ce,
+.upcoming-ce-bydate {
+    .card {
+        border: none;
+        border-top-right-radius: 1.2rem;
+        border-top-left-radius: 1.2rem;
     }
 }
 
 .twostep02-descriptions.online-ce.ny,
 .twostep02-descriptions.online-ce.pa {
-    .card-body:first-of-type {
-        height: 27rem;
+    .card-body {
+        &:first-of-type {
+            height: 27rem;
+        }
     }
 }
