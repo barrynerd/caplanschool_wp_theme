@@ -1,0 +1,75 @@
+.btn {
+    white-space: normal!important;
+}
+
+button#place_order,
+.xoo-wsc-footer-b .btn,
+.btn.btn-primary {
+    background-color: $bcc_green!important;
+    border: 1px solid $bcc_button_border!important;
+    box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
+    color: $bcc-white!important;
+    font-size: 1.25rem!important;
+    font-weight: bold!important;
+    line-height: 1.5!important;
+    min-width: 5rem;
+    text-transform: uppercase!important;
+    padding: .375rem .75rem!important;
+}
+
+button#place_order:hover,
+.xoo-wsc-footer-b .btn:hover,
+.btn.btn-primary:hover,
+ .btn.btn-secondary:hover{
+    background-color: $bcc_yellow!important;
+    border: 1px solid $bcc_button_border!important;
+    color: $bcc_green!important;
+    border-color: #2f3e48!important;
+}
+
+.btn.btn-secondary {
+    background-color: $bcc_green!important;
+    border: 1px solid $bcc_button_border!important;
+    box-shadow: 0 0 0 0.2rem rgba(42,135,0,.25)!important;
+    color: $bcc-white!important;
+}
+
+.btn-group-sm-bcc>.a,
+.btn-group-sm-bcc>.btn,
+.btn-sm, .wpcf7 .btn-group-sm-bcc>input[type=submit] {
+    padding: .25rem .5rem!important;
+    font-size: .875rem!important;
+    line-height: 1.5!important;
+    border-radius: .2rem!important;
+}
+
+.btn-group-vertical br {
+    display: none;
+}
+
+#navigation-buttons {
+    align-content: center;
+    align-items: center;
+    background: $bcc_medium_light_green;
+    display: flex;
+    flex-wrap: wrap;
+    height: 24rem;
+    justify-content: center;
+}
+
+#navigation-buttons .button-set{
+    margin-top: .75rem;
+    text-align: center;
+    width: 18rem;
+}
+
+#navigation-buttons h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#navigation-buttons .button-set h5{
+    font-weight: bold;
+}

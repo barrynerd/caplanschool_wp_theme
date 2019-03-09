@@ -1,0 +1,39 @@
+#testimonial-carousel .carousel-inner{
+    background: $bcc_medium_gray;
+}
+
+#testimonial-carousel .carousel-caption{
+    background: $bcc_green;
+    height: fit-content;
+    left: 0;
+    opacity: .8;
+    padding: 2rem 1rem;
+    top: 0;
+    width: 60vw;
+}
+
+#testimonial-carousel .carousel-caption p{
+    font-weight: bold;
+    line-height: 1.3;
+    margin:0;
+}
+
+#testimonial-carousel .carousel-caption h5{
+    font-weight:bold;
+    line-height: 1;
+}
+
+#testimonial-carousel .carousel-item {
+    height: 66vh;
+}
+
+#testimonial-carousel .carousel-item img{
+    object-fit: cover;
+    height: 100%;
+}
+
+#testimonial-carousel .carousel-control-next-icon,
+#testimonial-carousel .carousel-control-prev-icon {
+    background-color: $bcc_green!important;
+    padding: 1.5em;
+}

@@ -1,0 +1,98 @@
+.online-license.pa .twostep01-jumbotron,
+.online-license.fl .twostep01-jumbotron,
+.online-license.ny .twostep01-jumbotron{
+    background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+}
+
+.online-license .twostep01-jumbotron{
+    opacity: .9;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+}
+
+.online-license .hl-text h1{
+    color: $bcc-white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.online-license .hl-text h5{
+    color: $bcc-white;
+    font-style: italic;
+}
+
+.online-ce .card,
+.upcoming-ce .card,
+.upcoming-ce-bydate .card,
+.online-license .card {
+    border: none;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+.online-ce .card .action-button,
+.online-license .card .action-button{
+    text-align: center;
+}
+
+.online-ce .card-body h5,
+.online-license .card-body h5{
+    color:$bcc_green;
+    font-weight: bold;
+}
+
+
+
+
+.online-ce.pa .twostep01-jumbotron,
+.online-ce.fl .twostep01-jumbotron,
+.online-ce.ny .twostep01-jumbotron{
+    background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+}
+
+.online-ce .twostep01-jumbotron{
+    opacity: .9;
+    background-color: rgba(42,135,0,.2);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: center center;
+}
+
+.online-ce .hl-text h1{
+    color: $bcc-white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.online-ce .hl-text h5,
+.online-license .hl-text h5{
+    color: $bcc-white;
+    font-style: italic;
+}
+
+.online-ce .card,
+.upcoming-ce .card,
+.upcoming-ce-bydate .card,
+.online-license .card {
+    border: none;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem;
+}
+
+.online-ce .card .action-button,
+.online-license .card .action-button{
+    text-align: center;
+}
+
+.online-ce .card-body h5,
+.online-license .card-body h5{
+    color:$bcc_green;
+    font-weight: bold;
+}
+
+.twostep02-descriptions.online-ce.pa .card-body:first-of-type,
+.twostep02-descriptions.online-ce.ny .card-body:first-of-type {
+    height: 27rem;
+}
