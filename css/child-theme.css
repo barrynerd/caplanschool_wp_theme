@@ -11602,29 +11602,26 @@ button#place_order,
 .course-cards {
   background: transparent;
   padding: 0; }
-
-.course-cards .woocommerce {
-  padding: 0 1rem  1.5rem; }
+  .course-cards .woocommerce {
+    padding: 0 1rem  1.5rem; }
+    .course-cards .woocommerce ul.products {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .course-cards .woocommerce ul.products li {
+        margin: 2rem 0.25rem 0 !important;
+        background: white;
+        width: 100% !important; }
 
 .course-description-card {
   margin: 0; }
-
-.course-cards .woocommerce ul.products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.course-cards .woocommerce ul.products li {
-  margin: 2rem 0.25rem 0 !important;
-  background: white;
-  width: 100% !important; }
 
 .twostep01 {
   margin-right: 0;

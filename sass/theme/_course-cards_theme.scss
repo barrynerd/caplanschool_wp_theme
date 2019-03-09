@@ -1,31 +1,27 @@
 .course-cards {
     background: transparent;
     padding: 0;
+    .woocommerce{
+        padding: 0 1rem  1.5rem;
+        ul.products {
+            display:flex;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin:0 auto;
+            justify-content: center;
+            li{
+                margin: 2rem .25rem 0!important;
+                background: $bcc-white;
+                width: 100%!important;
+                &:nth-of-type(4n){
+                    // margin-right:0!important;
+                }
+            }
+        }
+    }
 }
 
-.course-cards .woocommerce{
-    padding: 0 1rem  1.5rem;
-}
 
 .course-description-card {
     margin: 0;
-}
-
-.course-cards .woocommerce ul.products {
-    display:flex;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin:0 auto;
-    justify-content: center;
-}
-
-.course-cards  .woocommerce ul.products li{
-    margin: 2rem .25rem 0!important;
-    background: $bcc-white;
-    width: 100%!important;
-
-}
-
-.course-cards .woocommerce ul.products li:nth-of-type(4n){
-    // margin-right:0!important;
 }
