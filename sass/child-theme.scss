@@ -9,16 +9,16 @@
 
 
 //bcc files
-@import "theme/home-card_theme";
-@import "theme/homepage_theme";
-@import "theme/navbar_theme";
-@import "theme/button_theme";
-@import "theme/footer_theme";
-@import "theme/single-product-page_theme";
-@import "theme/xoo-sidecart_theme";
-@import "theme/woocommerce-overrides_theme";
-@import "theme/course-description-card_theme";
-@import "theme/course-cards_theme.scss";
+@import "theme/_home-card_theme";
+@import "theme/_homepage_theme";
+@import "theme/_navbar_theme";
+@import "theme/_button_theme";
+@import "theme/_footer_theme";
+@import "theme/_single-product-page_theme";
+@import "theme/_xoo-sidecart_theme";
+@import "theme/_woocommerce-overrides_theme";
+@import "theme/_course-description-card_theme";
+@import "theme/_course-cards_theme.scss";
 @import "theme/_twostep01_theme.scss";
 @import "theme/_twostep02_theme.scss";
 @import "theme/_testimonial_theme.scss";
@@ -26,6 +26,7 @@
 @import "theme/_about-page_theme.scss";
 @import "theme/_header-announce_theme.scss";
 @import "theme/_online-ce_theme.scss";
+@import "theme/_media-queries_theme.scss";
 
 // Any additional imported files //
 @import "theme/child_theme";  // <--------- Add your styles into this file

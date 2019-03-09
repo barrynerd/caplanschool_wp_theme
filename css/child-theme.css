@@ -12133,256 +12133,6 @@ button#place_order,
 .twostep02-descriptions.online-ce.pa .card-body:first-of-type {
   height: 27rem; }
 
-figcaption {
-  font-size: .85rem; }
-
-.card-body {
-  color: #212529; }
-
-.kicker {
-  background: #FE9328;
-  padding: .5rem;
-  font-weight: bold; }
-
-p:empty {
-  display: none; }
-
-.wrapper {
-  padding: 0 !important; }
-
-.page-template-front-page .wrapper,
-.post-template-page-no_featured_img .wrapper,
-.page-template-page-no_featured_img .wrapper {
-  padding: 0 0 0px !important; }
-
-.logo-row {
-  margin-right: 0 !important; }
-
-#bcc-slider {
-  width: 100vw !important; }
-
-#bcc-slider .slider-logo .slider-logo-overlay {
-  margin: 0;
-  padding: 0;
-  padding-top: calc(180px - 60px);
-  padding-left: calc(50vw - 104px); }
-
-#bcc-slider .slider-logo .slider-logo-overlay img {
-  height: auto;
-  width: 75%; }
-
-.feature01-row {
-  padding-left: 0 !important; }
-
-.page .alert-info {
-  background-color: rgba(142, 20, 255, 0.06);
-  border-color: rgba(142, 20, 255, 0.2);
-  font-size: 1.1rem;
-  color: #3e2e4c;
-  text-align: center; }
-
-.page .alert-dark {
-  background-color: #ecfde4; }
-
-.page .alert-dark h5 {
-  text-align: center; }
-
-#authnet-card-number,
-#authnet-card-expiry,
-#authnet-card-cvc {
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
-  border-radius: .25rem;
-  color: #495057;
-  display: block;
-  font-size: 1rem !important;
-  height: calc(2.25rem + 2px);
-  line-height: 1.5;
-  padding: .375rem .75rem;
-  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  width: 100%; }
-
-#authnet-card-number:focus,
-#authnet-card-expiry:focus,
-#authnet-card-cvc:focus {
-  color: #495057;
-  background-color: #fff;
-  border-color: #80bdff;
-  outline: 0;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-
-.bc_ce_classes_by_month p {
-  display: inline; }
-
-#course-descriptions-list br {
-  display: none; }
-
-/*
-member product formattingS
-*/
-p.members-ce-product {
-  color: #2a8700 !important;
-  font-size: 2em !important;
-  font-weight: bold !important;
-  text-align: center;
-  border: none !important;
-  padding: 0 !important; }
-
-p.members-ce-product >
-ul.products li.product a h2 {
-  font-size: 1.1em !important;
-  min-height: 6.4em;
-  padding: 0.5em 0.5em 0 !important;
-  text-align: center; }
-
-ul.products li.product a span.price {
-  color: #2a8700 !important;
-  font-size: 2em !important;
-  font-weight: bold !important;
-  text-align: center; }
-
-ul.products li.product:last-of-type {
-  margin-bottom: 0 !important; }
-
-ul.products li.product {
-  border: 1px solid #ddd;
-  margin-right: 1% !important;
-  width: 100% !important;
-  float: left !important; }
-
-ul.products li.product .yith-wcdp,
-ul.products li.product .add-to-cart-container {
-  margin: 0 auto;
-  padding: 0 .5em 1em; }
-
-ul.products li.product form.cart button {
-  margin: 0 auto .5em; }
-
-ul.products li.product .button {
-  margin-top: 0 !important; }
-
-ul.products li.product del .woocommerce-Price-amount {
-  font-size: .6em; }
-
-ul.products li.product ins {
-  text-decoration: none; }
-
-ul.products span.cart-buttons,
-ul.products .add-to-cart-container,
-ul.products .yith-wcdp {
-  display: none; }
-
-.page-link {
-  color: #2a8700 !important; }
-
-.page-item.active .page-link {
-  background-color: #fffbad !important;
-  border-color: #fffbad !important; }
-
-.woocommerce-product-details__short-description .card {
-  background-color: #dad6dd;
-  padding: 1rem 3rem; }
-
-.woocommerce-product-details__short-description .card ul {
-  margin-bottom: 1.5rem; }
-
-.jumbotron-fluid {
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 0; }
-
-.jumbotron-fluid.about {
-  background-image: url("/wordpress/wp-content/uploads/Classroom01.jpg");
-  background-position: 75% center; }
-
-.jumbotron-fluid.about .about-content,
-.jumbotron-fluid.prelicense-courses .about-content {
-  color: #f5f5f5;
-  font-size: 1.5rem;
-  background: rgba(42, 135, 0, 0.6);
-  line-height: 1.2;
-  font-size: 1rem; }
-
-.jumbotron-fluid.about h3 {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 1rem 0 0.75rem; }
-
-.jumbotron-fluid.prelicense-courses {
-  background-image: url("/wordpress/wp-content/uploads/Classroom01.jpg");
-  background-position: 75% center; }
-
-.jumbotron-fluid.prelicense-courses .card {
-  background: transparent;
-  border-radius: 0;
-  border: none;
-  color: inherit; }
-
-.jumbotron-fluid.prelicense-courses .card .hilight {
-  background: #fffbad;
-  color: #2a8700;
-  font-weight: 500;
-  margin-top: .75rem;
-  padding: 1rem; }
-
-.card figure img {
-  width: 100% !important;
-  height: auto !important; }
-
-.about-text {
-  background: #BBDFAB; }
-
-.about-text .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  padding: 0; }
-
-.about-text .row h1 {
-  color: #2a8700;
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 1;
-  margin-bottom: 2.5rem;
-  text-align: center; }
-
-.about-text .row h5 {
-  color: #2a8700;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 2.5rem;
-  text-align: center; }
-
-.about-text .row p {
-  line-height: 1.3; }
-
-.course-cards h2 {
-  text-align: center;
-  min-height: auto; }
-
-.course-description-basic .card-subtitle {
-  font-style: normal !important;
-  font-weight: bold; }
-
-h2.woocommerce-loop-product__title {
-  color: #2a8700;
-  text-align: center;
-  padding-left: 0.5rem !important;
-  padding-right: 0.5rem !important; }
-
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -12657,5 +12407,254 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+figcaption {
+  font-size: .85rem; }
+
+.card-body {
+  color: #212529; }
+
+.kicker {
+  background: #FE9328;
+  padding: .5rem;
+  font-weight: bold; }
+
+p:empty {
+  display: none; }
+
+.wrapper {
+  padding: 0 !important; }
+
+.page-template-front-page .wrapper,
+.post-template-page-no_featured_img .wrapper,
+.page-template-page-no_featured_img .wrapper {
+  padding: 0 0 0px !important; }
+
+.logo-row {
+  margin-right: 0 !important; }
+
+#bcc-slider {
+  width: 100vw !important; }
+
+#bcc-slider .slider-logo .slider-logo-overlay {
+  margin: 0;
+  padding: 0;
+  padding-top: calc(180px - 60px);
+  padding-left: calc(50vw - 104px); }
+
+#bcc-slider .slider-logo .slider-logo-overlay img {
+  height: auto;
+  width: 75%; }
+
+.feature01-row {
+  padding-left: 0 !important; }
+
+.page .alert-info {
+  background-color: rgba(142, 20, 255, 0.06);
+  border-color: rgba(142, 20, 255, 0.2);
+  font-size: 1.1rem;
+  color: #3e2e4c;
+  text-align: center; }
+
+.page .alert-dark {
+  background-color: #ecfde4; }
+
+.page .alert-dark h5 {
+  text-align: center; }
+
+#authnet-card-number,
+#authnet-card-expiry,
+#authnet-card-cvc {
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  color: #495057;
+  display: block;
+  font-size: 1rem !important;
+  height: calc(2.25rem + 2px);
+  line-height: 1.5;
+  padding: .375rem .75rem;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  width: 100%; }
+
+#authnet-card-number:focus,
+#authnet-card-expiry:focus,
+#authnet-card-cvc:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+
+.bc_ce_classes_by_month p {
+  display: inline; }
+
+#course-descriptions-list br {
+  display: none; }
+
+/*
+member product formattingS
+*/
+p.members-ce-product {
+  color: #2a8700 !important;
+  font-size: 2em !important;
+  font-weight: bold !important;
+  text-align: center;
+  border: none !important;
+  padding: 0 !important; }
+
+p.members-ce-product >
+ul.products li.product a h2 {
+  font-size: 1.1em !important;
+  min-height: 6.4em;
+  padding: 0.5em 0.5em 0 !important;
+  text-align: center; }
+
+ul.products li.product a span.price {
+  color: #2a8700 !important;
+  font-size: 2em !important;
+  font-weight: bold !important;
+  text-align: center; }
+
+ul.products li.product:last-of-type {
+  margin-bottom: 0 !important; }
+
+ul.products li.product {
+  border: 1px solid #ddd;
+  margin-right: 1% !important;
+  width: 100% !important;
+  float: left !important; }
+
+ul.products li.product .yith-wcdp,
+ul.products li.product .add-to-cart-container {
+  margin: 0 auto;
+  padding: 0 .5em 1em; }
+
+ul.products li.product form.cart button {
+  margin: 0 auto .5em; }
+
+ul.products li.product .button {
+  margin-top: 0 !important; }
+
+ul.products li.product del .woocommerce-Price-amount {
+  font-size: .6em; }
+
+ul.products li.product ins {
+  text-decoration: none; }
+
+ul.products span.cart-buttons,
+ul.products .add-to-cart-container,
+ul.products .yith-wcdp {
+  display: none; }
+
+.page-link {
+  color: #2a8700 !important; }
+
+.page-item.active .page-link {
+  background-color: #fffbad !important;
+  border-color: #fffbad !important; }
+
+.woocommerce-product-details__short-description .card {
+  background-color: #dad6dd;
+  padding: 1rem 3rem; }
+
+.woocommerce-product-details__short-description .card ul {
+  margin-bottom: 1.5rem; }
+
+.jumbotron-fluid {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0; }
+
+.jumbotron-fluid.about {
+  background-image: url("/wordpress/wp-content/uploads/Classroom01.jpg");
+  background-position: 75% center; }
+
+.jumbotron-fluid.about .about-content,
+.jumbotron-fluid.prelicense-courses .about-content {
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  background: rgba(42, 135, 0, 0.6);
+  line-height: 1.2;
+  font-size: 1rem; }
+
+.jumbotron-fluid.about h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0 0.75rem; }
+
+.jumbotron-fluid.prelicense-courses {
+  background-image: url("/wordpress/wp-content/uploads/Classroom01.jpg");
+  background-position: 75% center; }
+
+.jumbotron-fluid.prelicense-courses .card {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  color: inherit; }
+
+.jumbotron-fluid.prelicense-courses .card .hilight {
+  background: #fffbad;
+  color: #2a8700;
+  font-weight: 500;
+  margin-top: .75rem;
+  padding: 1rem; }
+
+.card figure img {
+  width: 100% !important;
+  height: auto !important; }
+
+.about-text {
+  background: #BBDFAB; }
+
+.about-text .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 0; }
+
+.about-text .row h1 {
+  color: #2a8700;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+  text-align: center; }
+
+.about-text .row h5 {
+  color: #2a8700;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 2.5rem;
+  text-align: center; }
+
+.about-text .row p {
+  line-height: 1.3; }
+
+.course-cards h2 {
+  text-align: center;
+  min-height: auto; }
+
+.course-description-basic .card-subtitle {
+  font-style: normal !important;
+  font-weight: bold; }
+
+h2.woocommerce-loop-product__title {
+  color: #2a8700;
+  text-align: center;
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important; }
 
 /*# sourceMappingURL=child-theme.css.map */
