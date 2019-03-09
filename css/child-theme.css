@@ -12109,24 +12109,22 @@ button#place_order:hover,
   margin: 0 0 1.5rem;
   padding: 0;
   border: none; }
-
-.page-about .card img {
-  height: calc(100vh * 15 / 32);
-  width: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 20%;
-     object-position: 0 20%; }
+  .page-about .card img {
+    height: calc(100vh * 15 / 32);
+    width: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 20%;
+       object-position: 0 20%; }
+  .page-about .card .card-subtitle {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: .75rem; }
 
 .page-about .card.dnicklus img {
   -o-object-position: 0 0%;
      object-position: 0 0%; }
-
-.page-about .card .card-subtitle {
-  font-style: italic;
-  font-size: 1rem;
-  margin-top: -0.5rem;
-  margin-bottom: .75rem; }
 
 .header-announce .widget {
   padding: 0; }
