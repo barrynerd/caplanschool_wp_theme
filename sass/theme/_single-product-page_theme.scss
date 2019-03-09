@@ -1,61 +1,63 @@
-.single-product .product {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.5rem;
-}
+.single-product {
+    .product {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.5rem;
 
-.single-product .product h1{
-    display:none
-}
+        .btn-primary {
+            font-size: 2rem!important;
+            margin: 1rem auto 0;
+            max-width: 700px;
+            width: auto;
+        }
 
-.single-product .product .summary {
-    float:none!important;
-    max-width: 960px;
-    margin-top: 2.75rem;
-    width: 100%!important;
-}
+        del {
+            font-size: 2rem;
+        }
 
-.single-product .product .woocommerce-product-details__short-description {
-    background: $bcc_light_yellow;
-    font-size: 1rem;
-    line-height: 1.428571429;
-    margin:0;
-    max-width: 100%;
-}
+        h1 {
+            display: none;
+        }
 
-.single-product .product .product-description{
-    margin: 0 auto;
-    padding: 3rem 0;
-}
+        .product-description {
+            margin: 0 auto;
+            padding: 3rem 0;
 
-.single-product .product .product-description h4{
-    text-align: center;
-}
+            h4 {
+                text-align: center;
+            }
+        }
 
-.single-product .product  p.pay-deposit-now{
-    background: white;
-    text-align: center;
-    font-style: italic;
-    padding-top: 2rem;
-}
+        p.pay-deposit-now {
+            background: white;
+            text-align: center;
+            font-style: italic;
+            padding-top: 2rem;
+        }
 
-.single-product .product .price{
-    color: $bcc_green!important;
-    font-size: 4rem!important;
-    font-weight: bold;
-    line-height: 1.428571429;
-    text-align: center;
-    margin: 1rem 0 0;
-}
+        .price {
+            color: $bcc_green!important;
+            font-size: 4rem!important;
+            font-weight: bold;
+            line-height: 1.428571429;
+            text-align: center;
+            margin: 1rem 0 0;
+        }
 
-.single-product .product .btn-primary {
-    font-size: 2rem!important;
-    margin:1rem auto 0;
-    max-width: 700px;
-    width: auto;
-}
+        .summary {
+            float: none!important;
+            max-width: 960px;
+            margin-top: 2.75rem;
+            width: 100%!important;
+        }
 
-.single-product .product del{
-    font-size: 2rem;
+        .woocommerce-product-details__short-description {
+            background: $bcc_light_yellow;
+            font-size: 1rem;
+            line-height: 1.428571429;
+            margin: 0;
+            max-width: 100%;
+        }
+    }
 }
