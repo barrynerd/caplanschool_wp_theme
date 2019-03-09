@@ -1,139 +1,149 @@
-.members-ce ul.products li.product {
-    width: 100%!important;
-    border: none;
-}
+.members-ce {
+    .banner {
+        justify-content: center;
+        margin: 0 0 2rem;
+    }
 
-.members-ce ul.products li.product a img,
-.members-ce ul.products li.product a h2{
-    display: none;
-}
+    .course-description {
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    }
 
-.members-ce .banner {
-    justify-content: center;
-    margin: 0 0 2rem;
-}
+    .details {
+        justify-content: center;
+        align-items: flex-start!important;
 
-.members-ce .details {
-    justify-content: center;
-    align-items: flex-start!important;
-}
+        .card {
+            width: 100%;
 
-.members-ce .details h1{
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: -2px;
-    text-transform: uppercase;
-}
+            img {
+                display: none;
+            }
 
-.members-ce .details h6{
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-}
+            p {
+                display: none;
+            }
 
-.members-ce .details p{
-    // display: none;
-}
+            p.hilite {
+                background: $bcc_orange;
+                display: block;
+                font-weight: bold;
+                padding: 1rem;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
 
-.members-ce .details .card {
-    width: 100%;
-}
+        h1 {
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+        }
 
-.members-ce .details .card img{
-    display: none;
+        h6 {
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            // display: none;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.products {
+            li.product {
+                width: 100%!important;
+                border: none;
+
+                a {
+                    h2,
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .members-ce.members-ce-diane-turton .details .card img,
-.members-ce.members-ce-jack-green .details .card img{
+.members-ce.members-ce-jack-green .details .card img {
     padding: 1rem 1rem 0;
     display: block;
 }
 
-.members-ce ul {
-    list-style-type: none;
-    padding:0;
-}
-
-.members-ce .course-description ul{
-    list-style-type: disc;
-    list-style-position: inside;
-}
-
-.members-ce .details .card p{
-    display: none;
-}
-
-.members-ce .details .card p.hilite{
-    background: $bcc_orange;
-    display: block;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    text-transform: capitalize;
-}
-
 .members.agency {
-    max-width:800px;
-}
+    max-width: 800px;
 
-.members.agency h3 {
-    background: $bcc_orange;
+    h3 {
+        background: $bcc_orange;
+    }
 }
 
 .members.course-description {
     background: $bcc_extra_light_yellow;
     margin: 2rem auto 0;
     max-width: 800px;
+
+    &:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    a.course_link {
+        color: $bcc_green;
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .card-body {
+        padding: inherit 0;
+    }
+
+    .card-text.credit {
+        padding: 0;
+    }
+
+    .card-text.date {
+        padding: 0;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+
+    .card-text.time {
+        padding: 0;
+        margin-bottom: 0;
+        text-transform: lowercase;
+    }
+
+    .course_price {
+        color: $bcc_green;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 2;
+    }
+
+    h3 {
+        font-weight: bold;
+        text-align: center;
+    }
 }
 
-.members.course-description:last-of-type {
-    margin-bottom:2rem;
-}
-
-.members.course-description h3{
-    font-weight: bold;
-    text-align: center;
-}
-
-.members.course-description .card-body{
-     padding: inherit 0;
- }
-
-.members.course-description .card-text.date {
- padding: 0;
- margin-bottom:0;
- text-transform: capitalize;
-}
-
-.members.course-description .card-text.time{
- padding: 0;
- margin-bottom:0;
- text-transform: lowercase;
-}
-
-.members.course-description .card-text.credit{
- padding: 0;
-}
-
-.members.course-description a.course_link{
-    color: $bcc_green;
-    font-size: 1.25rem;
-    font-weight: bold;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.members.course-description .course_price{
-    color: $bcc_green;
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 2;
-}
-
-.product_cat-srs-diane-turton img.wp-post-image,
-.product_cat-rsps-diane-turton img.wp-post-image,
-.product_cat-diane-turton.product_cat-ahwd img.wp-post-image,
-.product_cat-diane-turton.product_cat-abr img.wp-post-image{
-    display:none;
+.product_cat-diane-turton.product_cat-abr,
+.product_cat-diane-turton.product_cat-ahwd,
+.product_cat-rsps-diane-turton,
+.product_cat-srs-diane-turton {
+    img.wp-post-image {
+        display: none;
+    }
 }
