@@ -12403,7 +12403,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
             flex-grow: 0;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .single-product .product .summary {
+    width: 740px !important; } }
 
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
