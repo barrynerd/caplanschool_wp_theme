@@ -436,7 +436,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         margin:0 auto;
     }
 
-
+    .single-product .product .summary {
+        width: 740px!important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
