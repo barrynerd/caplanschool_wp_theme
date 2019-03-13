@@ -12438,16 +12438,21 @@ p:empty {
 
 #bcc-slider {
   width: 100vw !important; }
-
-#bcc-slider .slider-logo .slider-logo-overlay {
-  margin: 0;
-  padding: 0;
-  padding-top: calc(180px - 60px);
-  padding-left: calc(50vw - 104px); }
-
-#bcc-slider .slider-logo .slider-logo-overlay img {
-  height: auto;
-  width: 75%; }
+  #bcc-slider .slider-logo .slider-logo-overlay {
+    margin: 0;
+    padding: 0;
+    padding-top: calc(180px - 60px);
+    padding-left: calc(50vw - 104px); }
+    @media (min-width: 544px) {
+      #bcc-slider .slider-logo .slider-logo-overlay {
+        padding-top: calc(150px + 44px);
+        padding-left: calc(50vw - 150px); } }
+    #bcc-slider .slider-logo .slider-logo-overlay img {
+      height: auto;
+      width: 75%; }
+      @media (min-width: 544px) {
+        #bcc-slider .slider-logo .slider-logo-overlay img {
+          width: auto; } }
 
 .feature01-row {
   padding-left: 0 !important; }

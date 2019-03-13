@@ -39,19 +39,27 @@ p:empty {
 
 #bcc-slider {
     width: 100vw!important;
+    .slider-logo {
+        .slider-logo-overlay{
+        margin: 0;
+        padding: 0;
+        padding-top: calc(180px - 60px);
+        padding-left: calc(50vw - 104px);
+        @media (min-width: 544px) {
+            padding-top: calc(150px + 44px);
+            padding-left: calc(50vw - 150px);
+        }
+        img {
+            height: auto;
+            width: 75%;
+            @media (min-width: 544px) {
+                width: auto;
+                }
+            }
+        }
+    }
 }
 
-#bcc-slider .slider-logo .slider-logo-overlay{
-    margin: 0;
-    padding: 0;
-    padding-top: calc(180px - 60px);
-    padding-left: calc(50vw - 104px);
-}
-
-#bcc-slider .slider-logo .slider-logo-overlay img{
-    height: auto;
-    width: 75%;
-}
 
 
 .feature01-row {
