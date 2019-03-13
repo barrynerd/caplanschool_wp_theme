@@ -12157,41 +12157,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
-  #bcc-slider .slider-logo .slider-logo-overlay {
-    margin: 0;
-    padding: 0;
-    padding-top: calc(150px + 44px);
-    padding-left: calc(50vw - 150px); }
-  #bcc-slider .slider-logo .slider-logo-overlay img {
-    height: auto;
-    width: auto; }
-  .home .feature01-row p {
-    font-size: .85rem; }
-  .home .feature01-row .sow-features-feature {
-    width: 50% !important;
-    padding: 0 1.5rem 1.5rem !important;
-    margin: 0 auto; }
-  .home .feature01-row .sow-features-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-        -ms-flex-align: stretch;
-            align-items: stretch;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-  .home .feature01-row .sow-features-feature .textwidget {
-    margin: 0.5rem 0 3rem !important; }
-  .home .feature01-row .sow-features-feature .sow-icon-container {
-    \width: 6rem;
-    height: 6rem;
-    font-size: 6rem; }
-  .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
-    width: 6rem;
-    height: 6rem;
-    font-size: 3.5rem !important; }
-  .home .feature01-row .sow-features-feature .textwidget {
-    margin: 0.5rem 0 0 !important; }
   .home .video-row01 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -12456,6 +12421,30 @@ p:empty {
 
 .feature01-row {
   padding-left: 0 !important; }
+  @media (min-width: 544px) {
+    .feature01-row p {
+      font-size: .85rem; }
+    .feature01-row .sow-features-feature {
+      width: 50% !important;
+      padding: 0 1.5rem 1.5rem !important;
+      margin: 0 auto; }
+    .feature01-row .sow-features-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+    .feature01-row .sow-features-feature .sow-icon-container {
+      width: 6rem;
+      height: 6rem;
+      font-size: 6rem; }
+      .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
+        font-size: 3.5rem !important; }
+    .feature01-row .sow-features-feature .textwidget {
+      margin: 0.5rem 0 3rem !important; } }
 
 .page .alert-info {
   background-color: rgba(142, 20, 255, 0.06);

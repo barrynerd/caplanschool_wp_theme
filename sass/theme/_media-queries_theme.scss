@@ -17,65 +17,42 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
-    #bcc-slider .slider-logo .slider-logo-overlay{
-        margin: 0;
-        padding: 0;
-        padding-top: calc(150px + 44px);
-        padding-left: calc(50vw - 150px);
-    }
 
-    #bcc-slider .slider-logo .slider-logo-overlay img{
-        height: auto;
-        width: auto;
-    }
-
-    // .home .headline01-row,
-    // .home .headline02-row,
-    // .home .feature01-row,
-    // .home .video-row01,
-    // .home .upcomingclasses01-row,
-    // .home #flyer-row
-    // {
-    //     margin-right: 0!important;
-    //     width: 100vw;
-    //     padding-left: 0!important;
+    // .home .feature01-row p {
+    //     font-size: .85rem;
     // }
-
-    .home .feature01-row p {
-        font-size: .85rem;
-    }
-
-    .home .feature01-row .sow-features-feature {
-        width: 50%!important;
-        padding: 0 1.5rem 1.5rem!important;
-        margin:0 auto;
-    }
-
-    .home .feature01-row .sow-features-list{
-        display: flex;
-        align-items: stretch;
-        flex-wrap: wrap;
-        }
-
-    .home .feature01-row .sow-features-feature .textwidget {
-        margin: .5rem 0 3rem!important;
-    }
-
-    .home .feature01-row .sow-features-feature .sow-icon-container{
-        \width: 6rem;
-        height: 6rem;
-        font-size: 6rem;
-        }
-
-    .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"]{
-        width: 6rem;
-        height: 6rem;
-        font-size: 3.5rem!important;
-        }
-
-    .home .feature01-row .sow-features-feature .textwidget {
-        margin: .5rem 0 0!important;
-    }
+    //
+    // .home .feature01-row .sow-features-feature {
+    //     width: 50%!important;
+    //     padding: 0 1.5rem 1.5rem!important;
+    //     margin:0 auto;
+    // }
+    //
+    // .home .feature01-row .sow-features-list{
+    //     display: flex;
+    //     align-items: stretch;
+    //     flex-wrap: wrap;
+    //     }
+    //
+    // .home .feature01-row .sow-features-feature .textwidget {
+    //     margin: .5rem 0 3rem!important;
+    // }
+    //
+    // .home .feature01-row .sow-features-feature .sow-icon-container{
+    //     \width: 6rem;
+    //     height: 6rem;
+    //     font-size: 6rem;
+    //     }
+    //
+    // .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"]{
+    //     width: 6rem;
+    //     height: 6rem;
+    //     font-size: 3.5rem!important;
+    //     }
+    //
+    // .home .feature01-row .sow-features-feature .textwidget {
+    //     margin: .5rem 0 0!important;
+    // }
 
     .home .video-row01 {
         display: flex;

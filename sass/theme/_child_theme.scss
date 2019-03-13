@@ -64,7 +64,40 @@ p:empty {
 
 .feature01-row {
     padding-left: 0!important;
+    @media (min-width: 544px) {
+
+        p {
+            font-size: .85rem;
+        }
+
+        .sow-features-feature {
+            width: 50%!important;
+            padding: 0 1.5rem 1.5rem!important;
+            margin:0 auto;
+        }
+
+        .sow-features-list{
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+        }
+
+        .sow-features-feature {
+            .sow-icon-container{
+                width: 6rem;
+                height: 6rem;
+                font-size: 6rem;
+                & [class^="sow-icon-"]{
+                    font-size: 3.5rem!important;
+                }
+            }
+            .textwidget {
+                margin: .5rem 0 3rem!important;
+            }
+        }
+    }
 }
+
 
 
 .page .alert-info {
