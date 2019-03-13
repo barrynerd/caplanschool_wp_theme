@@ -98,6 +98,15 @@ p:empty {
     }
 }
 
+@media (min-width: 544px) {
+
+    .home .video-row01 {
+        display: flex;
+        padding-left: 0!important;
+    }
+
+}
+
 
 
 .page .alert-info {

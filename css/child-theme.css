@@ -12157,11 +12157,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
-  .home .video-row01 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 0 !important; }
   .twostep02 .twostep02-jumbotron .hl-text h1 {
     font-size: 2.6rem; } }
 
@@ -12445,6 +12440,13 @@ p:empty {
         font-size: 3.5rem !important; }
     .feature01-row .sow-features-feature .textwidget {
       margin: 0.5rem 0 3rem !important; } }
+
+@media (min-width: 544px) {
+  .home .video-row01 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0 !important; } }
 
 .page .alert-info {
   background-color: rgba(142, 20, 255, 0.06);
