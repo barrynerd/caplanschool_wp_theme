@@ -30,3 +30,5 @@ composer.json
 /src/
 package.json
 package-lock.json
+
+/tmp/
