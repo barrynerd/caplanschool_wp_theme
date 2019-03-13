@@ -17,9 +17,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
-    #main-menu {
-        font-size: 1rem;
-    }
     #bcc-slider .slider-logo .slider-logo-overlay{
         margin: 0;
         padding: 0;
@@ -309,10 +306,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         width: 18rem;
     }
 
-    #main-menu ul.dropdown-menu li.nav-item {
-        // width: 20vw;
-    }
-
     .about-text .row h1 {
         font-size: 2.5rem;
         line-height: 1.2;
@@ -429,11 +422,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     .course-cards h2{
         min-height: 5.75rem;
-    }
-
-    #main-menu .navbar-collapse{
-        flex-grow: 0;
-        margin:0 auto;
     }
 
     .single-product .product .summary {

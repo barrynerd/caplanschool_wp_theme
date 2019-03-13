@@ -11128,6 +11128,15 @@ a.skip-link {
   font-size: 1.125rem;
   font-weight: bold;
   text-transform: uppercase; }
+  @media (min-width: 544px) {
+    #main-menu {
+      font-size: 1rem; } }
+  @media (min-width: 768px) {
+    #main-menu .navbar-collapse {
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0;
+      margin: 0 auto; } }
   #main-menu .dropdown-toggle {
     text-align: center; }
     #main-menu .dropdown-toggle:after {
@@ -12148,8 +12157,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 */
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
-  #main-menu {
-    font-size: 1rem; }
   #bcc-slider .slider-logo .slider-logo-overlay {
     margin: 0;
     padding: 0;
@@ -12399,11 +12406,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 39rem; }
   .course-cards h2 {
     min-height: 5.75rem; }
-  #main-menu .navbar-collapse {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    margin: 0 auto; }
   .single-product .product .summary {
     width: 740px !important; } }
 
