@@ -17,6 +17,9 @@
 
         .card {
             width: 100%;
+            @media (min-width: 768px) {
+                width: 23rem;
+            }
 
             img {
                 display: none;
@@ -24,6 +27,9 @@
 
             p {
                 display: none;
+                @media (min-width: 768px) {
+                    font-size: inherit;
+                }
             }
 
             p.hilite {
@@ -47,10 +53,16 @@
             font-style: italic;
             font-weight: bold;
             text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+            }
         }
 
         p {
             // display: none;
+            @media (min-width: 768px) {
+                display: block;
+            }
         }
 
         ul {

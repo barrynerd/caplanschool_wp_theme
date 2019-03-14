@@ -12043,10 +12043,16 @@ button#place_order {
           align-items: flex-start !important; }
   .members-ce .details .card {
     width: 100%; }
+    @media (min-width: 768px) {
+      .members-ce .details .card {
+        width: 23rem; } }
     .members-ce .details .card img {
       display: none; }
     .members-ce .details .card p {
       display: none; }
+      @media (min-width: 768px) {
+        .members-ce .details .card p {
+          font-size: inherit; } }
     .members-ce .details .card p.hilite {
       background: #FE9328;
       display: block;
@@ -12063,6 +12069,12 @@ button#place_order {
     font-style: italic;
     font-weight: bold;
     text-align: center; }
+    @media (min-width: 768px) {
+      .members-ce .details h6 {
+        text-align: left; } }
+  @media (min-width: 768px) {
+    .members-ce .details p {
+      display: block; } }
   .members-ce .details ul {
     list-style-type: none;
     padding: 0; }
@@ -12309,14 +12321,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .members-ce .details p {
-    display: block; }
-  .members-ce .details h6 {
-    text-align: left; }
-  .members-ce .details .card {
-    width: 23rem; }
-  .members-ce .details .card p {
-    font-size: inherit; }
   .page-about .card {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
