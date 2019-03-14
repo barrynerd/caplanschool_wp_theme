@@ -11262,7 +11262,7 @@ button#place_order {
   line-height: 1.5 !important;
   min-width: 5rem;
   text-transform: uppercase !important;
-  padding: 0.375rem 0.75rem !important !important; }
+  padding: 0.375rem 0.75rem !important; }
   .btn.btn-primary:hover, .wpcf7 input.btn-primary:hover[type=submit],
   .xoo-wsc-footer-b .btn:hover,
   .xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
@@ -11285,7 +11285,7 @@ button#place_order {
 .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
 .wpcf7 .btn-group-sm > input[type=submit],
 .wpcf7 .btn-group-sm-bcc > input[type=submit] {
-  padding: 0.25rem 0.5rem !important !important;
+  padding: 0.25rem 0.5rem !important;
   font-size: 0.875rem !important;
   line-height: 1.5 !important;
   border-radius: 0.2rem !important; }
@@ -11295,7 +11295,7 @@ button#place_order {
     .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
     .wpcf7 .btn-group-sm > input[type=submit],
     .wpcf7 .btn-group-sm-bcc > input[type=submit] {
-      padding: 0.375rem 0.75rem !important !important;
+      padding: 0.375rem 0.75rem !important;
       font-size: 1rem !important;
       line-height: 1.5 !important;
       border-radius: 0.25rem !important; } }
@@ -12211,7 +12211,7 @@ button#place_order {
     line-height: 1.5 !important;
     margin-bottom: 0.35rem;
     min-width: 0;
-    padding: 0.25rem 0.5rem !important !important; }
+    padding: 0.25rem 0.5rem !important; }
   .header-announce .header-online-ce h5 {
     font-size: 1rem;
     font-weight: bold;
@@ -12421,7 +12421,7 @@ p:empty {
       font-size: 0.85rem; }
     .feature01-row .sow-features-feature {
       width: 50% !important;
-      padding: 0 1.5rem 1.5rem !important !important;
+      padding: 0 1.5rem 1.5rem !important;
       margin: 0 auto; }
     .feature01-row .sow-features-list {
       display: -webkit-box;
@@ -12439,7 +12439,7 @@ p:empty {
       .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
         font-size: 3.5rem !important; }
     .feature01-row .sow-features-feature .textwidget {
-      margin: 0.5rem 0 3rem !important !important; } }
+      margin: 0.5rem 0 3rem !important; } }
 
 @media (min-width: 544px) {
   .home .video-row01 {
@@ -12505,13 +12505,13 @@ p.members-ce-product {
   font-weight: bold !important;
   text-align: center;
   border: none !important;
-  padding: 0 !important !important; }
+  padding: 0 !important; }
 
 p.members-ce-product >
 ul.products li.product a h2 {
   font-size: 1.1em !important;
   min-height: 6.4em;
-  padding: 0.5em 0.5em 0 !important !important;
+  padding: 0.5em 0.5em 0 !important;
   text-align: center; }
 
 ul.products li.product a span.price {
