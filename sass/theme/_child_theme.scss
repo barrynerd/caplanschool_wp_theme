@@ -64,7 +64,7 @@ p:empty {
 
         .sow-features-feature {
             width: 50%!important;
-            padding: 0 1.5rem 1.5rem!important;
+            padding: 0 1.5rem 1.5rem!important !important;
             margin: 0 auto;
         }
 
@@ -86,7 +86,7 @@ p:empty {
             }
 
             .textwidget {
-                margin: 0.5rem 0 3rem!important;
+                margin: 0.5rem 0 3rem!important !important;
             }
         }
     }
@@ -106,12 +106,20 @@ p:empty {
     text-align: center;
 }
 
-.page .alert-dark {
-    background-color: $bcc_alert_dark_background_color;
-}
+.page {
+    .alert-dark {
+        background-color: $bcc_alert_dark_background_color;
+        margin: 0 auto;
+        h5 {
+            text-align: center;
+        }
 
-.page .alert-dark h5 {
-    text-align: center;
+        ol {
+            margin: 0 1em;
+            padding: 0 0 0 1rem;
+        }
+    }
+
 }
 
 #authnet-card-cvc,
@@ -162,7 +170,7 @@ p.members-ce-product {
     font-weight: bold!important;
     text-align: center!important;
     border: none!important;
-    padding: 0!important;
+    padding: 0!important !important;
 }
 p.members-ce-product >
 /*
@@ -171,7 +179,7 @@ shop page formattingS
 ul.products li.product a h2 {
     font-size: 1.1em!important;
     min-height: 6.4em;
-    padding: 0.5em 0.5em 0!important;
+    padding: 0.5em 0.5em 0!important !important;
     text-align: center;
 }
 
@@ -354,7 +362,6 @@ ul.products span.cart-buttons {
         }
     }
 }
-
 // .course-cards h2 {
 //     text-align: center;
 //     min-height: auto;
