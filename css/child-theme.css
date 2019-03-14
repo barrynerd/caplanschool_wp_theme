@@ -11669,20 +11669,39 @@ button#place_order,
       font-style: italic;
       letter-spacing: -2px;
       text-transform: uppercase; }
+      @media (min-width: 544px) {
+        .twostep02 .twostep02-jumbotron .hl-text h1 {
+          font-size: 2.6rem; } }
+      @media (min-width: 768px) {
+        .twostep02 .twostep02-jumbotron .hl-text h1 {
+          font-size: 2.6rem; } }
     .twostep02 .twostep02-jumbotron .hl-text h5 {
       font-style: italic; }
     .twostep02 .twostep02-jumbotron .twostep02-row-01 {
       height: 53vh;
       padding: 0 1rem;
       text-align: center; }
+      @media (min-width: 768px) {
+        .twostep02 .twostep02-jumbotron .twostep02-row-01 {
+          padding: 0;
+          text-align: left; } }
     .twostep02 .twostep02-jumbotron .twostep02-row-02 {
       height: 25vh;
       text-align: center; }
+      @media (min-width: 768px) {
+        .twostep02 .twostep02-jumbotron .twostep02-row-02 {
+          text-align: left;
+          height: 25vh;
+          padding: 0;
+          height: 40vh; } }
       .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
         font-size: 0.85rem;
         font-style: italic;
         margin-top: 1rem;
         padding: 0 0.75rem; }
+        @media (min-width: 768px) {
+          .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
+            padding: 0; } }
   .twostep02 .twostep02-jumbotron.about-us {
     background: #BBDFAB;
     background-image: url("/wordpress/wp-content/uploads/handshake01.jpg");
@@ -11703,6 +11722,10 @@ button#place_order,
     background-blend-mode: overlay;
     -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
             box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
+    @media (min-width: 768px) {
+      .twostep02 .twostep02-jumbotron.prelicense-day {
+        background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");
+        background-position: 10% 29%; } }
   .twostep02 .twostep02-jumbotron.prelicense-eve {
     opacity: 1;
     color: white;
@@ -11713,6 +11736,10 @@ button#place_order,
     background-blend-mode: overlay;
     -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
             box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
+    @media (min-width: 768px) {
+      .twostep02 .twostep02-jumbotron.prelicense-eve {
+        background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-02large.jpg");
+        background-position: 51% 29%; } }
   .twostep02 .twostep02-jumbotron.brokers-day {
     opacity: 1;
     color: white;
@@ -11733,6 +11760,10 @@ button#place_order,
     background-blend-mode: overlay;
     -webkit-box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1);
             box-shadow: inset 0 0 0 150vw rgba(0, 0, 0, 0.1); }
+    @media (min-width: 768px) {
+      .twostep02 .twostep02-jumbotron.brokers-eve {
+        background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
+        background-position: 51% 29%; } }
 
 .twostep02-descriptions h1 {
   font-weight: bold;
@@ -11767,15 +11798,33 @@ button#place_order,
 
 .twostep02-descriptions .row.core {
   background-color: #fffbad; }
+  @media (min-width: 768px) {
+    .twostep02-descriptions .row.core .card-body:first-of-type {
+      height: 31rem; } }
 
 .twostep02-descriptions .row.designation {
   background-color: #fffff6; }
+  @media (min-width: 768px) {
+    .twostep02-descriptions .row.designation .card-body:first-of-type {
+      height: 39rem; } }
 
 .twostep02-descriptions .row.elective {
   background-color: #eee; }
+  @media (min-width: 768px) {
+    .twostep02-descriptions .row.elective .card-body:first-of-type {
+      height: 32rem; } }
 
 .twostep02-descriptions .row.ethics {
   background-color: #BBDFAB; }
+  @media (min-width: 768px) {
+    .twostep02-descriptions .row.ethics .card-body:first-of-type {
+      height: 21rem; } }
+
+@media (min-width: 768px) {
+  .twostep02-descriptions .row.hondros .card-body:first-of-type {
+    height: 32.5rem; }
+  .twostep02-descriptions .row.hondros #course-description-painless .card-body:first-of-type {
+    height: 42.5rem; } }
 
 .twostep02-descriptions .twostep02-row-01 {
   margin-top: 3rem; }
@@ -11793,6 +11842,9 @@ button#place_order,
     font-weight: bold;
     text-align: center;
     font-size: 1.35rem; }
+    @media (min-width: 768px) {
+      .twostep02-descriptions .twostep02-row-02 h5 {
+        padding-top: 0.75rem; } }
   .twostep02-descriptions .twostep02-row-02 ul {
     color: #777;
     text-align: left; }
@@ -11806,8 +11858,15 @@ button#place_order,
 .twostep02-descriptions .woocommerce:empty:before {
   content: "No Courses Currently Scheduled"; }
 
+@media (min-width: 768px) {
+  .twostep02-descriptions.members-ce .row .card-body:first-of-type {
+    height: 30.5rem; } }
+
 .twostep02-descriptions.members-ce-diane-turton .row .card-body {
   text-align: left !important; }
+  @media (min-width: 768px) {
+    .twostep02-descriptions.members-ce-diane-turton .row .card-body {
+      height: auto !important; } }
 
 .twostep02-descriptions.members-ce-diane-turton .twostep02-row-02 .card {
   width: 100%;
@@ -12137,10 +12196,6 @@ Extra small devices (portrait phones, less than 544px)
 No media query since this is the default in Bootstrap because it is "mobile first"
 */
 /* Small devices (landscape phones, 544px and up) */
-@media (min-width: 544px) {
-  .twostep02 .twostep02-jumbotron .hl-text h1 {
-    font-size: 2.6rem; } }
-
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
   
@@ -12213,23 +12268,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     text-align: left; }
   .twostep01 .twostep01-jumbotron h5 {
     text-align: left; }
-  .twostep02 .twostep02-jumbotron .twostep02-row-01 {
-    height: 53vh;
-    padding: 0;
-    text-align: left; }
-  .twostep01 .twostep01-jumbotron .hl-text h1,
-  .twostep02 .twostep02-jumbotron .hl-text h1 {
+  .twostep01 .twostep01-jumbotron .hl-text h1 {
     font-size: 2.6rem; }
-  .twostep02 .twostep02-jumbotron .twostep02-row-02 {
-    text-align: left;
-    height: 25vh;
-    padding: 0; }
-  .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
-    padding: 0; }
-  .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02 {
-    height: 40vh; }
-  .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02 h5 {
-    padding-top: .75rem; }
   .course-cards .woocommerce ul.products li {
     width: 15rem !important; }
   #navigation-buttons {
@@ -12291,21 +12331,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .header-announce .header-scholarship .body img {
     display: inline;
     background: white; }
-  .twostep02 .twostep02-jumbotron.prelicense-day {
-    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");
-    background-position: 10% 29%;
-    background-color: rgba(42, 135, 0, 0.2);
-    background-blend-mode: overlay; }
-  .twostep02 .twostep02-jumbotron.prelicense-eve {
-    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-02large.jpg");
-    background-position: 51% 29%;
-    background-color: rgba(42, 135, 0, 0.2);
-    background-blend-mode: overlay; }
-  .twostep02 .twostep02-jumbotron.brokers-eve {
-    background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
-    background-position: 51% 29%;
-    background-color: rgba(42, 135, 0, 0.2);
-    background-blend-mode: overlay; }
   .twostep01 .twostep01-jumbotron.upcoming-ce-bydate {
     background: url("/wordpress/wp-content/uploads/Continuing-Ed-02large.jpg");
     background-position: 18% 0%;
@@ -12329,22 +12354,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.35rem !important;
     padding-left: 0.35rem !important; }
-  .twostep02-descriptions .row.ethics .card-body:first-of-type {
-    height: 21rem; }
-  .twostep02-descriptions .row.hondros #course-description-painless .card-body:first-of-type {
-    height: 42.5rem; }
-  .twostep02-descriptions .row.hondros .card-body:first-of-type {
-    height: 32.5rem; }
-  .twostep02-descriptions.members-ce.members-ce-diane-turton .row .card-body {
-    height: auto !important; }
-  .twostep02-descriptions.members-ce .row .card-body:first-of-type {
-    height: 30.5rem; }
-  .twostep02-descriptions .row.core .card-body:first-of-type {
-    height: 31rem; }
-  .twostep02-descriptions .row.elective .card-body:first-of-type {
-    height: 32rem; }
-  .twostep02-descriptions .row.designation .card-body:first-of-type {
-    height: 39rem; }
   .course-cards h2 {
     min-height: 5.75rem; }
   .single-product .product .summary {

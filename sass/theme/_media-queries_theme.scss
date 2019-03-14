@@ -18,11 +18,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
 
-    .twostep02 .twostep02-jumbotron .hl-text h1{
-        font-size: 2.6rem;
-    }
-
-
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -141,35 +136,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         text-align: left;
     }
 
-    .twostep02 .twostep02-jumbotron .twostep02-row-01{
-        height: 53vh;
-        padding:0;
-        text-align:left;
-    }
-
-    .twostep01 .twostep01-jumbotron .hl-text h1,
-    .twostep02 .twostep02-jumbotron .hl-text h1{
+    .twostep01 .twostep01-jumbotron .hl-text h1{
         font-size: 2.6rem;
     }
-
-    .twostep02 .twostep02-jumbotron .twostep02-row-02{
-        text-align: left;
-        height:25vh;
-        padding:0;
-    }
-
-    .twostep02 .twostep02-jumbotron .twostep02-row-02 h6 {
-        padding:0;
-    }
-
-    .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02{
-        height: 40vh;
-    }
-
-    .twostep02.upcoming .twostep02-jumbotron .twostep02-row-02 h5 {
-        padding-top: .75rem;
-    }
-
 
     .course-cards  .woocommerce ul.products li{
         width: 15rem!important;
@@ -272,25 +241,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         background: white;
     }
 
-    .twostep02 .twostep02-jumbotron.prelicense-day{
-        background:url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");background-position: 10% 29%;
-        background-color: rgba(42,135,0,.2);
-        background-blend-mode: overlay;
-    }
-
-    .twostep02 .twostep02-jumbotron.prelicense-eve{
-        background:url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-02large.jpg");
-        background-position: 51% 29%;
-        background-color: rgba(42,135,0,.2);
-        background-blend-mode: overlay;
-    }
-
-    .twostep02 .twostep02-jumbotron.brokers-eve{
-        background:url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
-        background-position: 51% 29%;
-        background-color: rgba(42,135,0,.2);
-        background-blend-mode: overlay;
-    }
 
     .twostep01 .twostep01-jumbotron.upcoming-ce-bydate{
         background:url("/wordpress/wp-content/uploads/Continuing-Ed-02large.jpg");
@@ -322,38 +272,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: .35rem!important;
         padding-left: .35rem!important;
-    }
-
-    .twostep02-descriptions .row.ethics .card-body:first-of-type {
-        height: 21rem;
-    }
-
-    .twostep02-descriptions .row.hondros #course-description-painless .card-body:first-of-type {
-        height: 42.5rem;
-    }
-
-    .twostep02-descriptions .row.hondros .card-body:first-of-type {
-        height: 32.5rem;
-    }
-
-    .twostep02-descriptions.members-ce.members-ce-diane-turton .row .card-body{
-        height: auto!important;
-    }
-
-    .twostep02-descriptions.members-ce .row .card-body:first-of-type {
-        height: 30.5rem;
-    }
-
-    .twostep02-descriptions .row.core .card-body:first-of-type {
-        height: 31rem;
-    }
-
-    .twostep02-descriptions .row.elective .card-body:first-of-type {
-        height: 32rem;
-    }
-
-    .twostep02-descriptions .row.designation .card-body:first-of-type {
-        height: 39rem;
     }
 
     .course-cards h2{

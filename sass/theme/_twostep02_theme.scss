@@ -22,6 +22,12 @@
                 font-style: italic;
                 letter-spacing: -2px;
                 text-transform: uppercase;
+                @media (min-width: 544px) {
+                    font-size: 2.6rem;
+                }
+                @media (min-width: 768px) {
+                    font-size: 2.6rem;
+                }
             }
 
             h5 {
@@ -33,17 +39,30 @@
             height: 53vh;
             padding: 0 1rem;
             text-align: center;
+            @media (min-width: 768px) {
+                padding: 0;
+                text-align: left;
+            }
         }
 
         .twostep02-row-02 {
             height: 25vh;
             text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+                height: 25vh;
+                padding: 0;
+                height: 40vh;
+            }
 
             h6 {
                 font-size: 0.85rem;
                 font-style: italic;
                 margin-top: 1rem;
                 padding: 0 0.75rem;
+                @media (min-width: 768px) {
+                    padding: 0;
+                }
             }
         }
     }
@@ -68,6 +87,10 @@
         background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
         box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-01.jpg");
+            background-position: 10% 29%;
+        }
     }
 
     .twostep02-jumbotron.prelicense-eve {
@@ -79,6 +102,10 @@
         background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
         box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/New-Real-Estate-Agent-02large.jpg");
+            background-position: 51% 29%;
+        }
     }
 
     .twostep02-jumbotron.brokers-day {
@@ -101,6 +128,10 @@
         background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
         box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
+            background-position: 51% 29%;
+        }
     }
 }
 
@@ -109,120 +140,200 @@
         font-weight: bold;
         text-align: center;
     }
-    h3{
+
+    h3 {
         font-weight: bold;
         text-align: center;
     }
+
     h6 {
         color: #777;
         margin-top: 1.5rem;
         text-align: center;
         align-items: stretch;
     }
+
     .card {
         margin: 0 0.5rem 1rem;
         width: 19rem;
-        .card-body{
+
+        .card-body {
             &:first-of-type {
                 height: 19rem;
             }
+
             &:last-of-type {
                 text-align: center;
             }
         }
     }
+
     .row {
         padding: 1rem 0;
+
         .card-body:first-of-type {
             height: auto;
         }
+
         .card-body:last-of-type {
             text-align: center;
         }
     }
+
     .row.core {
         background-color: $bcc_light_yellow;
+        @media (min-width: 768px) {
+            .card-body {
+                &:first-of-type {
+                    height: 31rem;
+                }
+            }
+        }
     }
+
     .row.designation {
         background-color: $bcc_extra_light_green;
+        @media (min-width: 768px) {
+            .card-body {
+                &:first-of-type {
+                    height: 39rem;
+                }
+            }
+        }
     }
+
     .row.elective {
         background-color: $bcc_light_gray;
+        @media (min-width: 768px) {
+            .card-body {
+                &:first-of-type {
+                    height: 32rem;
+                }
+            }
+        }
     }
+
     .row.ethics {
         background-color: $bcc_light_green;
+        @media (min-width: 768px) {
+            .card-body {
+                &:first-of-type {
+                    height: 21rem;
+                }
+            }
+        }
     }
+    @media (min-width: 768px) {
+        .row.hondros {
+            .card-body {
+                &:first-of-type {
+                    height: 32.5rem;
+                }
+            }
+
+            #course-description-painless {
+                .card-body:first-of-type {
+                    height: 42.5rem;
+                }
+            }
+        }
+    }
+
     .twostep02-row-01 {
         margin-top: 3rem;
     }
+
     .twostep02-row-02 {
         align-items: stretch;
+
         .card {
-            .card-body{
+            .card-body {
                 &:last-of-type h5 {
                     color: $bcc_green;
                 }
             }
         }
+
         h3 {
             text-align: center;
         }
+
         h5 {
             color: $bcc_lime_green;
             font-weight: bold;
             text-align: center;
             font-size: 1.35rem;
+            @media (min-width: 768px) {
+                padding-top: 0.75rem;
+            }
         }
+
         ul {
             color: #777;
             text-align: left;
         }
-        p{
+
+        p {
             color: #777;
             text-align: left;
         }
+
         #course-description-pre-license {
             .card-body {
                 text-align: left;
                 height: 23rem;
             }
         }
-
     }
-    .woocommerce{
+
+    .woocommerce {
         &:empty:before {
             content: "No Courses Currently Scheduled";
         }
     }
 }
-
-
-.twostep02-descriptions.members-ce-diane-turton {
-    .row {
-        .card-body {
-    text-align: left!important;
-        }
-    }
-    .twostep02-row-02 {
-        .card {
-        width: 100%;
-        max-width: 960px;
+@media (min-width: 768px) {
+    .twostep02-descriptions.members-ce {
+        .row {
+            .card-body {
+                &:first-of-type {
+                    height: 30.5rem;
+                }
+            }
         }
     }
 }
 
+.twostep02-descriptions.members-ce-diane-turton {
+    .row {
+        .card-body {
+            text-align: left!important;
+            @media (min-width: 768px) {
+                height: auto!important;
+            }
+        }
+    }
 
+    .twostep02-row-02 {
+        .card {
+            width: 100%;
+            max-width: 960px;
+        }
+    }
+}
 
 .twostep02.upcoming {
     .twostep02-jumbotron {
         .twostep02-row-01 {
             height: 45vh;
-            }
         }
-        .twostep02-row-02 {
-            height: 54vh;
-            h5 {
-                padding-top: 0.75rem;
-            }
+    }
+
+    .twostep02-row-02 {
+        height: 54vh;
+
+        h5 {
+            padding-top: 0.75rem;
         }
+    }
 }
