@@ -12260,8 +12260,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  ul.products li.product {
-    width: 24.25% !important; }
   .course-description-card h2 {
     font-size: 1.8rem; }
   .jumbotron-fluid.about .about-content {
@@ -12366,26 +12364,26 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 figcaption {
-  font-size: .85rem; }
+  font-size: 0.85rem; }
 
 .card-body {
   color: #212529; }
 
 .kicker {
   background: #FE9328;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: bold; }
 
 p:empty {
   display: none; }
 
 .wrapper {
-  padding: 0 !important; }
+  padding: 0 !important !important; }
 
 .page-template-front-page .wrapper,
-.post-template-page-no_featured_img .wrapper,
-.page-template-page-no_featured_img .wrapper {
-  padding: 0 0 0px !important; }
+.page-template-page-no_featured_img .wrapper,
+.post-template-page-no_featured_img .wrapper {
+  padding: 0; }
 
 .logo-row {
   margin-right: 0 !important; }
@@ -12394,9 +12392,7 @@ p:empty {
   width: 100vw !important; }
   #bcc-slider .slider-logo .slider-logo-overlay {
     margin: 0;
-    padding: 0;
-    padding-top: calc(180px - 60px);
-    padding-left: calc(50vw - 104px); }
+    padding: calc(180px - 60px) 0 0 calc(50vw - 104px); }
     @media (min-width: 544px) {
       #bcc-slider .slider-logo .slider-logo-overlay {
         padding-top: calc(150px + 44px);
@@ -12412,10 +12408,10 @@ p:empty {
   padding-left: 0 !important; }
   @media (min-width: 544px) {
     .feature01-row p {
-      font-size: .85rem; }
+      font-size: 0.85rem; }
     .feature01-row .sow-features-feature {
       width: 50% !important;
-      padding: 0 1.5rem 1.5rem !important;
+      padding: 0 1.5rem 1.5rem !important !important;
       margin: 0 auto; }
     .feature01-row .sow-features-list {
       display: -webkit-box;
@@ -12433,7 +12429,7 @@ p:empty {
       .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
         font-size: 3.5rem !important; }
     .feature01-row .sow-features-feature .textwidget {
-      margin: 0.5rem 0 3rem !important; } }
+      margin: 0.5rem 0 3rem !important !important; } }
 
 @media (min-width: 544px) {
   .home .video-row01 {
@@ -12455,28 +12451,28 @@ p:empty {
 .page .alert-dark h5 {
   text-align: center; }
 
-#authnet-card-number,
+#authnet-card-cvc,
 #authnet-card-expiry,
-#authnet-card-cvc {
+#authnet-card-number {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   color: #495057;
   display: block;
   font-size: 1rem !important;
   height: calc(2.25rem + 2px);
   line-height: 1.5;
-  padding: .375rem .75rem;
-  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
-  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  padding: 0.375rem 0.75rem;
+  transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
   width: 100%; }
 
-#authnet-card-number:focus,
+#authnet-card-cvc:focus,
 #authnet-card-expiry:focus,
-#authnet-card-cvc:focus {
+#authnet-card-number:focus {
   color: #495057;
   background-color: #fff;
   border-color: #80bdff;
@@ -12499,13 +12495,13 @@ p.members-ce-product {
   font-weight: bold !important;
   text-align: center;
   border: none !important;
-  padding: 0 !important; }
+  padding: 0 !important !important; }
 
 p.members-ce-product >
 ul.products li.product a h2 {
   font-size: 1.1em !important;
   min-height: 6.4em;
-  padding: 0.5em 0.5em 0 !important;
+  padding: 0.5em 0.5em 0 !important !important;
   text-align: center; }
 
 ul.products li.product a span.price {
@@ -12519,30 +12515,33 @@ ul.products li.product:last-of-type {
 
 ul.products li.product {
   border: 1px solid #ddd;
+  float: left !important;
   margin-right: 1% !important;
-  width: 100% !important;
-  float: left !important; }
+  width: 100% !important; }
+  @media (min-width: 768px) {
+    ul.products li.product {
+      width: 24.25% !important; } }
 
-ul.products li.product .yith-wcdp,
-ul.products li.product .add-to-cart-container {
+ul.products li.product .add-to-cart-container,
+ul.products li.product .yith-wcdp {
   margin: 0 auto;
-  padding: 0 .5em 1em; }
+  padding: 0 0.5em 1em; }
 
 ul.products li.product form.cart button {
-  margin: 0 auto .5em; }
+  margin: 0 auto 0.5em; }
 
 ul.products li.product .button {
   margin-top: 0 !important; }
 
 ul.products li.product del .woocommerce-Price-amount {
-  font-size: .6em; }
+  font-size: 0.6em; }
 
 ul.products li.product ins {
   text-decoration: none; }
 
-ul.products span.cart-buttons,
 ul.products .add-to-cart-container,
-ul.products .yith-wcdp {
+ul.products .yith-wcdp,
+ul.products span.cart-buttons {
   display: none; }
 
 .page-link {
@@ -12596,7 +12595,7 @@ ul.products .yith-wcdp {
   background: #fffbad;
   color: #2a8700;
   font-weight: 500;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
   padding: 1rem; }
 
 .card figure img {
