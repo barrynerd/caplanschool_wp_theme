@@ -11606,9 +11606,12 @@ button#place_order {
 .course-cards {
   background: transparent;
   padding: 0; }
-  @media (min-width: 768px) {
-    .course-cards h2 {
-      min-height: 5.75rem; } }
+  .course-cards h2 {
+    text-align: center;
+    min-height: auto; }
+    @media (min-width: 768px) {
+      .course-cards h2 {
+        min-height: 5.75rem; } }
   .course-cards .woocommerce {
     padding: 0 1rem 1.5rem; }
     .course-cards .woocommerce ul.products {
@@ -12662,10 +12665,6 @@ ul.products span.cart-buttons {
     @media (min-width: 768px) {
       .about-text .row p {
         line-height: 1.5; } }
-
-.course-cards h2 {
-  text-align: center;
-  min-height: auto; }
 
 .course-description-basic .card-subtitle {
   font-style: normal !important;

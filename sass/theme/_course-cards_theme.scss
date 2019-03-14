@@ -2,7 +2,10 @@
     background: transparent;
     padding: 0;
 
+
     h2 {
+        text-align: center;
+        min-height: auto;
         @media (min-width: 768px) {
             min-height: 5.75rem;
         }
