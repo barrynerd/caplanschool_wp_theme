@@ -32,13 +32,21 @@
         h1 {
             // font-size: 1.2rem;
             font-size: 1.6rem;
-            text-transform: uppercase;
             text-align: center;
+            text-transform: uppercase;
+            @media (min-width: 768px) {
+                font-size: 2.5rem;
+                text-align: left;
+            }
         }
 
         h5 {
             font-size: 1rem;
             text-align: center;
+            @media (min-width: 768px) {
+                font-size: 1.25rem;
+                text-align: left;
+            }
         }
 
         h5.card-title {
@@ -50,10 +58,13 @@
         .hl-text {
             h1 {
                 font-size: 1.6rem;
-                font-weight: bold;
                 font-style: italic;
+                font-weight: bold;
                 letter-spacing: -2px;
                 text-transform: uppercase;
+                @media (min-width: 768px) {
+                    font-size: 2.6rem;
+                }
             }
 
             h5 {
@@ -66,15 +77,28 @@
             align-items: center;
             min-height: 100vh;
             justify-content: center;
+            @media (min-width: 768px) {
+                align-items: flex-start;
+                height: auto;
+                min-height: 0;
+            }
 
             .left-col {
-                width: 18rem;
                 margin: 0 auto;
+                width: 18rem;
+                @media (min-width: 768px) {
+                    margin: 0 0.5rem 0 0;
+                    width: 21em;
+                }
             }
 
             .right-col {
-                width: 18rem;
                 margin: 0 auto;
+                width: 18rem;
+                @media (min-width: 768px) {
+                    margin: 0 0 0 0.5rem;
+                    width: 23rem;
+                }
             }
         }
 
@@ -89,15 +113,20 @@
     .twostep01-jumbotron.members-ce {
         background: $bcc_extra_light_yellow;
     }
+
     .twostep01-jumbotron.online-ce {
-        opacity: 1;
-        color: white;
         background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge-1200x800.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
+        background-color: rgba(42,135,0,.2);
+        background-position: center center;
+        background-size: cover;
         box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        color: white;
+        opacity: 1;
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge.jpg");
+            background-position: 75% 0;
+        }
     }
 
     .twostep01-jumbotron.upcoming-ce {
@@ -112,13 +141,17 @@
     }
 
     .twostep01-jumbotron.upcoming-ce-bydate {
-        opacity: 1;
-        color: white;
         background: url("/wordpress/wp-content/uploads/Continuing-Ed-02small.jpg");
-        background-size: cover;
-        background-position: left;
-        background-color: rgba(42,135,0,.2);
         background-blend-mode: overlay;
+        background-color: rgba(42,135,0,.2);
+        background-position: left;
+        background-size: cover;
         box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        color: white;
+        opacity: 1;
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/Continuing-Ed-02large.jpg");
+            background-position: 18% 0;
+        }
     }
 }

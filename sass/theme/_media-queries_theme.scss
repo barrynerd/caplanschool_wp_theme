@@ -22,19 +22,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    .twostep01 .twostep01-jumbotron h1{
-        font-size: 2.5rem;
-        text-align: left;
-    }
-
-    .twostep01 .twostep01-jumbotron h5{
-        text-align: left;
-    }
-
-    .twostep01 .twostep01-jumbotron .hl-text h1{
-        font-size: 2.6rem;
-    }
-
     .course-cards  .woocommerce ul.products li{
         width: 15rem!important;
     }
@@ -45,27 +32,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
     #navigation-buttons h2{
         font-size: 2rem;
-    }
-
-    .twostep01 .twostep01-jumbotron .row{
-        height: auto;
-        align-items: flex-start;
-        min-height:0;
-    }
-
-    .twostep01 .twostep01-jumbotron .row .left-col {
-        width: 21em;
-        margin:0;
-        margin-right: .5rem;
-    }
-
-    .twostep01 .twostep01-jumbotron .row .right-col {
-        width: 23rem;
-        margin:0;
-        margin-left: .5rem;
-    }
-    .twostep01 .twostep01-jumbotron h5{
-        font-size: 1.25rem;
     }
 
     .members-ce .details p{
@@ -131,21 +97,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         background: white;
     }
 
-
-    .twostep01 .twostep01-jumbotron.upcoming-ce-bydate{
-        background:url("/wordpress/wp-content/uploads/Continuing-Ed-02large.jpg");
-        background-position: 18% 0%;
-        background-color: rgba(42,135,0,.2);
-        background-blend-mode: overlay;
-    }
-
-    .twostep01 .twostep01-jumbotron.online-ce{
-        background:url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge.jpg");
-        background-position: 75% 0%;
-        background-color: rgba(422,135,0,.2);
-        background-blend-mode: overlay;
-        box-shadow:inset 0 0 0 150vw rgba(0,0,0,0.1);
-    }
 
     #testimonial-carousel .carousel-caption{
         bottom: auto;
