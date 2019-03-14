@@ -11296,11 +11296,15 @@ button#place_order {
   #wrapper-footer .card {
     background-color: #fffff6;
     border: 1px solid #2a8700;
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: bold;
-    padding: 1rem 1rem;
+    padding: 1rem;
     text-align: center;
     width: 18rem; }
+    @media (min-width: 768px) {
+      #wrapper-footer .card {
+        padding: 1rem 4rem;
+        width: 23rem; } }
   #wrapper-footer .card-body {
     color: #2a8700; }
     #wrapper-footer .card-body a {
@@ -11318,6 +11322,12 @@ button#place_order {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+    @media (min-width: 768px) {
+      #wrapper-footer .card-collection {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
   #wrapper-footer #footer-summary {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -11330,7 +11340,7 @@ button#place_order {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    font-size: .8rem;
+    font-size: 0.8rem;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 1rem 4rem 0;
@@ -11339,9 +11349,9 @@ button#place_order {
       background-color: transparent;
       border: none;
       color: white;
-      font-size: .9rem;
+      font-size: 0.9rem;
       font-weight: bold;
-      padding: 1rem 1rem;
+      padding: 1rem;
       text-align: center;
       width: 100vw; }
     #wrapper-footer #footer-summary .card-body {
@@ -12205,14 +12215,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  #wrapper-footer .card-collection {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row; }
-  #wrapper-footer .card {
-    padding: 1rem 4rem;
-    width: 23rem; }
   .home-card {
     max-width: 30rem;
     min-width: 25rem;
