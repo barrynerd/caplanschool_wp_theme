@@ -11598,8 +11598,11 @@ button#place_order {
 .course-cards {
   background: transparent;
   padding: 0; }
+  @media (min-width: 768px) {
+    .course-cards h2 {
+      min-height: 5.75rem; } }
   .course-cards .woocommerce {
-    padding: 0 1rem  1.5rem; }
+    padding: 0 1rem 1.5rem; }
     .course-cards .woocommerce ul.products {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -11612,9 +11615,12 @@ button#place_order {
           -ms-flex-pack: center;
               justify-content: center; }
       .course-cards .woocommerce ul.products li {
-        margin: 2rem 0.25rem 0 !important;
+        margin: 2rem 0.25rem 0 !important !important;
         background: white;
         width: 100% !important; }
+        @media (min-width: 768px) {
+          .course-cards .woocommerce ul.products li {
+            width: 15rem !important; } }
 
 .twostep01 {
   margin-right: 0;
@@ -12303,8 +12309,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .course-cards .woocommerce ul.products li {
-    width: 15rem !important; }
   .members-ce .details p {
     display: block; }
   .members-ce .details h6 {
@@ -12353,8 +12357,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.35rem !important;
     padding-left: 0.35rem !important; }
-  .course-cards h2 {
-    min-height: 5.75rem; }
   .single-product .product .summary {
     width: 740px !important; } }
 

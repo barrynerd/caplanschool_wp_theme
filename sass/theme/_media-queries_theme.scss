@@ -22,10 +22,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    .course-cards  .woocommerce ul.products li{
-        width: 15rem!important;
-    }
-
     .members-ce .details p{
         display: block;
     }
@@ -105,10 +101,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: .35rem!important;
         padding-left: .35rem!important;
-    }
-
-    .course-cards h2{
-        min-height: 5.75rem;
     }
 
     .single-product .product .summary {

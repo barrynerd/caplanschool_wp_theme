@@ -1,19 +1,32 @@
 .course-cards {
     background: transparent;
     padding: 0;
-    .woocommerce{
-        padding: 0 1rem  1.5rem;
+
+    h2 {
+        @media (min-width: 768px) {
+            min-height: 5.75rem;
+        }
+    }
+
+    .woocommerce {
+        padding: 0 1rem 1.5rem;
+
         ul.products {
-            display:flex;
+            display: flex;
             flex-wrap: wrap;
             max-width: 1200px;
-            margin:0 auto;
+            margin: 0 auto;
             justify-content: center;
-            li{
-                margin: 2rem .25rem 0!important;
+
+            li {
+                margin: 2rem 0.25rem 0!important !important;
                 background: $bcc-white;
                 width: 100%!important;
-                &:nth-of-type(4n){
+                @media (min-width: 768px) {
+                    width: 15rem!important;
+                }
+
+                &:nth-of-type(4n) {
                     // margin-right:0!important;
                 }
             }
