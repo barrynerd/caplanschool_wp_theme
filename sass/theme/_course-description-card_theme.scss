@@ -17,6 +17,9 @@
         font-size: 1.5rem;
         font-weight: bold;
         padding: .75rem .5rem;
+        @media (min-width: 768px) {
+            font-size: 1.8rem;
+        }
     }
     ul {
         line-height: 1.2;

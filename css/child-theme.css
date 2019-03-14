@@ -11581,6 +11581,9 @@ button#place_order {
     font-size: 1.5rem;
     font-weight: bold;
     padding: .75rem .5rem; }
+    @media (min-width: 768px) {
+      .course-description-card h2 {
+        font-size: 1.8rem; } }
   .course-description-card ul {
     line-height: 1.2;
     list-style: none;
@@ -12260,8 +12263,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .course-description-card h2 {
-    font-size: 1.8rem; }
   .jumbotron-fluid.about .about-content {
     font-size: 1.2rem; }
   .jumbotron-fluid.about h3 {
