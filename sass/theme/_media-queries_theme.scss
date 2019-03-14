@@ -22,23 +22,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    .page-about .card {
-        flex-direction: row;
-        margin: 0 0 3.5rem;
-    }
-
-    .page-about .card-body{
-        padding: 0 1.25rem;
-    }
-
-    .page-about .card.dnicklus img{
-        object-position: 0 20%;
-    }
-
-    .page-about .card img{
-        height: 16rem;
-        object-position: 50% 50%;
-    }
     .about-text .row h1 {
         font-size: 2.5rem;
         line-height: 1.2;

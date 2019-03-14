@@ -12136,29 +12136,49 @@ button#place_order {
   display: none; }
 
 .page-about .card {
+  border: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0 0 1.5rem;
-  padding: 0;
-  border: none; }
+  padding: 0; }
+  @media (min-width: 768px) {
+    .page-about .card {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin: 0 0 3.5rem; } }
   .page-about .card img {
     height: calc(100vh * 15 / 32);
-    width: auto;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: 0 20%;
-       object-position: 0 20%; }
+       object-position: 0 20%;
+    width: auto; }
+    @media (min-width: 768px) {
+      .page-about .card img {
+        height: 16rem;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%; } }
   .page-about .card .card-subtitle {
     font-style: italic;
     font-size: 1rem;
     margin-top: -0.5rem;
-    margin-bottom: .75rem; }
+    margin-bottom: 0.75rem; }
 
 .page-about .card.dnicklus img {
-  -o-object-position: 0 0%;
-     object-position: 0 0%; }
+  -o-object-position: 0 0;
+     object-position: 0 0; }
+  @media (min-width: 768px) {
+    .page-about .card.dnicklus img {
+      -o-object-position: 0 20%;
+         object-position: 0 20%; } }
+
+@media (min-width: 768px) {
+  .page-about .card-body {
+    padding: 0 1.25rem; } }
 
 .header-announce .header-online-ce {
   padding: 0;
@@ -12321,21 +12341,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .page-about .card {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin: 0 0 3.5rem; }
-  .page-about .card-body {
-    padding: 0 1.25rem; }
-  .page-about .card.dnicklus img {
-    -o-object-position: 0 20%;
-       object-position: 0 20%; }
-  .page-about .card img {
-    height: 16rem;
-    -o-object-position: 50% 50%;
-       object-position: 50% 50%; }
   .about-text .row h1 {
     font-size: 2.5rem;
     line-height: 1.2; }
