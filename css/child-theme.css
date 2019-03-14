@@ -11479,9 +11479,15 @@ button#place_order {
 
 .woocommerce-cart table.cart td.product-thumbnail {
   width: 30vw; }
+  @media (min-width: 768px) {
+    .woocommerce-cart table.cart td.product-thumbnail {
+      display: block; } }
 
 .woocommerce-cart table.cart td.product-name {
   width: auto; }
+  @media (min-width: 768px) {
+    .woocommerce-cart table.cart td.product-name {
+      width: 30vw; } }
 
 .woocommerce-checkout button {
   min-width: 280px;
@@ -11527,6 +11533,9 @@ button#place_order {
 
 .woocommerce-message {
   font-size: 0.75rem; }
+  @media (min-width: 768px) {
+    .woocommerce-message {
+      font-size: 0.85rem; } }
 
 #add_payment_method #payment,
 .woocommerce-cart #payment,
@@ -12251,12 +12260,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .woocommerce-message {
-    font-size: .85rem; }
-  .woocommerce-cart table.cart td.product-thumbnail {
-    display: block; }
-  .woocommerce-cart table.cart td.product-name {
-    width: 30vw; }
   ul.products li.product {
     width: 24.25% !important; }
   .course-description-card h2 {

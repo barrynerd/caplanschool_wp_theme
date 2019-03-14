@@ -19,11 +19,18 @@
 
         td.product-thumbnail {
             width: 30vw;
+            @media (min-width: 768px) {
+                display: block;
+                }
         }
 
         td.product-name {
             width: auto;
+            @media (min-width: 768px) {
+                width: 30vw;
+            }
         }
+
     }
 }
 
@@ -92,6 +99,9 @@
 
 .woocommerce-message {
     font-size: 0.75rem;
+    @media (min-width: 768px) {
+        font-size: 0.85rem;
+    }
 }
 
 #add_payment_method,

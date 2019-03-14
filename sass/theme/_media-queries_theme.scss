@@ -22,17 +22,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    .woocommerce-message {
-        font-size: .85rem;
-    }
-
-    .woocommerce-cart table.cart td.product-thumbnail {
-        display: block;
-    }
-    .woocommerce-cart table.cart td.product-name {
-        width: 30vw;
-    }
-
     ul.products li.product {
         width:24.25%!important;
     }
