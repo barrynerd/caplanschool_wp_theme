@@ -22,16 +22,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-
-
-    #testimonial-carousel .carousel-caption{
-        bottom: auto;
-        left: 33vw;
-        width: 33vw;
-        top: 44%;
-        padding: 2rem;
-    }
-
     #testimonial-carousel .carousel-item {
         height: 75vh;
     }

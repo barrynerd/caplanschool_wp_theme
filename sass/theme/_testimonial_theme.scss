@@ -7,6 +7,13 @@
         padding: 2rem 1rem;
         top: 0;
         width: 60vw;
+        @media (min-width: 768px) {
+            bottom: auto;
+            left: 33vw;
+            padding: 2rem;
+            top: 44%;
+            width: 33vw;
+        }
 
         h5 {
             font-weight: bold;
@@ -32,6 +39,9 @@
 
     .carousel-item {
         height: 66vh;
+        @media (min-width: 768px) {
+            height: 75vh;
+        }
 
         img {
             object-fit: cover;

@@ -12001,6 +12001,13 @@ button#place_order {
   padding: 2rem 1rem;
   top: 0;
   width: 60vw; }
+  @media (min-width: 768px) {
+    #testimonial-carousel .carousel-caption {
+      bottom: auto;
+      left: 33vw;
+      padding: 2rem;
+      top: 44%;
+      width: 33vw; } }
   #testimonial-carousel .carousel-caption h5 {
     font-weight: bold;
     line-height: 1; }
@@ -12019,6 +12026,9 @@ button#place_order {
 
 #testimonial-carousel .carousel-item {
   height: 66vh; }
+  @media (min-width: 768px) {
+    #testimonial-carousel .carousel-item {
+      height: 75vh; } }
   #testimonial-carousel .carousel-item img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -12351,12 +12361,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  #testimonial-carousel .carousel-caption {
-    bottom: auto;
-    left: 33vw;
-    width: 33vw;
-    top: 44%;
-    padding: 2rem; }
   #testimonial-carousel .carousel-item {
     height: 75vh; }
   .navbar-expand-md .navbar-nav .nav-link {
