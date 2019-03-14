@@ -12503,7 +12503,7 @@ p.members-ce-product {
   color: #2a8700 !important;
   font-size: 2em !important;
   font-weight: bold !important;
-  text-align: center;
+  text-align: center !important;
   border: none !important;
   padding: 0 !important; }
 
