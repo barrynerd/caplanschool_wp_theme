@@ -11314,6 +11314,9 @@ button#place_order {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (min-width: 768px) {
+    #navigation-buttons {
+      height: 16rem; } }
   #navigation-buttons .button-set {
     margin-top: 0.75rem;
     text-align: center;
@@ -11325,6 +11328,9 @@ button#place_order {
     font-weight: bold;
     text-align: center;
     width: 100%; }
+    @media (min-width: 768px) {
+      #navigation-buttons h2 {
+        font-size: 2rem; } }
 
 #wrapper-footer {
   background-color: #58535E;
@@ -12299,10 +12305,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 768px) {
   .course-cards .woocommerce ul.products li {
     width: 15rem !important; }
-  #navigation-buttons {
-    height: 16rem; }
-  #navigation-buttons h2 {
-    font-size: 2rem; }
   .members-ce .details p {
     display: block; }
   .members-ce .details h6 {
