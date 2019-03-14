@@ -11031,6 +11031,22 @@ a.skip-link {
     font-weight: bold;
     padding: 0.75rem; }
 
+@media (min-width: 768px) {
+  .home .feature01-row h5 {
+    font-size: 1.5rem; }
+  .home .feature01-row p {
+    font-size: 1rem; }
+  .home .feature01-row .sow-features-feature {
+    width: 25% !important; }
+  .home .feature01-row .sow-features-feature .sow-icon-container {
+    width: 7.5rem;
+    height: 7.5rem;
+    font-size: 7.5rem; }
+    .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
+      width: 7.5rem;
+      height: 7.5rem;
+      font-size: 4rem !important; } }
+
 .home .hlrow {
   background: #2a8700;
   color: white;
@@ -11124,6 +11140,12 @@ a.skip-link {
       margin: 1.25rem 1.75rem 1.5rem; }
       .home .row-upcoming-courses ul li h3 a {
         color: #2a8700; }
+
+@media (min-width: 768px) {
+  .home .upcomingclasses01-row ul li {
+    width: 18rem; }
+    .home .upcomingclasses01-row ul li h3 a {
+      font-size: 1.375rem; } }
 
 .home .video-row01 {
   display: -webkit-box;
@@ -12229,28 +12251,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .home .feature01-row h5 {
-    font-size: 1.5rem; }
-  .home .feature01-row p {
-    font-size: 1rem; }
-  .home .feature01-row .sow-features-feature {
-    width: 25% !important; }
-  .home .feature01-row .sow-features-feature .sow-icon-container {
-    width: 7.5rem;
-    height: 7.5rem;
-    font-size: 7.5rem; }
-  .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
-    width: 7.5rem;
-    height: 7.5rem;
-    font-size: 4rem !important; }
-  .home .video-row01 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-left: 0 !important;
-    margin-right: 0 !important; }
-  .home .upcomingclasses01-row ul li h3 a {
-    font-size: 1.375rem; }
   .woocommerce-message {
     font-size: .85rem; }
   .woocommerce-cart table.cart td.product-thumbnail {
@@ -12318,8 +12318,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     height: 16rem;
     -o-object-position: 50% 50%;
        object-position: 50% 50%; }
-  .home .row-upcoming-courses ul li {
-    width: 18rem; }
   .about-text .row h1 {
     font-size: 2.5rem;
     line-height: 1.2; }

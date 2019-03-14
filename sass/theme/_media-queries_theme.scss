@@ -22,39 +22,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-    .home .feature01-row h5 {
-        font-size: 1.5rem;
-    }
-    .home .feature01-row p {
-        font-size: 1rem;
-    }
-
-    .home .feature01-row .sow-features-feature {
-        width: 25%!important;
-    }
-
-    .home .feature01-row .sow-features-feature .sow-icon-container{
-        width: 7.5rem;
-        height: 7.5rem;
-        font-size: 7.5rem;
-        }
-
-    .home .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"]{
-        width: 7.5rem;
-        height: 7.5rem;
-        font-size: 4rem!important;
-        }
-
-    .home .video-row01 {
-        display: flex;
-        padding-left: 0!important;
-        margin-right:0!important;
-    }
-
-    .home .upcomingclasses01-row ul li h3 a {
-        font-size: 1.375rem;
-    }
-
     .woocommerce-message {
         font-size: .85rem;
     }
@@ -162,11 +129,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
         height: 16rem;
         object-position: 50% 50%;
     }
-
-    .home .row-upcoming-courses ul li{
-        width: 18rem;
-    }
-
     .about-text .row h1 {
         font-size: 2.5rem;
         line-height: 1.2;

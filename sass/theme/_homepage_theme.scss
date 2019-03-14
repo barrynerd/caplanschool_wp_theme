@@ -1,4 +1,34 @@
 .home {
+    .feature01-row {
+        @media (min-width: 768px) {
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .sow-features-feature {
+                width: 25%!important;
+            }
+
+            .sow-features-feature {
+                .sow-icon-container {
+                    width: 7.5rem;
+                    height: 7.5rem;
+                    font-size: 7.5rem;
+
+                    & [class^="sow-icon-"] {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        font-size: 4rem!important;
+                    }
+                }
+            }
+        }
+    }
+
     .hlrow {
         background: $bcc_green;
         color: $bcc-white;
@@ -113,6 +143,21 @@
 
                     a {
                         color: $bcc_green;
+                    }
+                }
+            }
+        }
+    }
+
+    .upcomingclasses01-row {
+        @media (min-width: 768px) {
+            ul {
+                li {
+                    width: 18rem;
+                    h3 {
+                        a {
+                            font-size: 1.375rem;
+                        }
                     }
                 }
             }
