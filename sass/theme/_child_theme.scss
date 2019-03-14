@@ -2,10 +2,12 @@ figcaption {
     font-size: 0.85rem;
 }
 // bootstrap overrides
+
 .card-body {
     color: $bcc_dark_gray_text;
 }
 // bcc utilities
+
 .kicker {
     background: $bcc_orange;
     padding: 0.5rem;
@@ -143,6 +145,7 @@ p:empty {
     box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
 }
 // ce pages by date shortcode
+
 .bc_ce_classes_by_month p {
     display: inline;
 }
@@ -252,19 +255,35 @@ ul.products span.cart-buttons {
     background-position: 75% center;
 }
 
-.jumbotron-fluid.about .about-content,
+.jumbotron-fluid.about {
+    .about-content {
+        background: rgba(42, 135, 0, .6);
+        color: #f5f5f5;
+        font-size: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.2;
+        @media (min-width: 768px) {
+            font-size: 1.2rem;
+        }
+    }
+}
+
 .jumbotron-fluid.prelicense-courses .about-content {
+    background: rgba(42, 135, 0, .6);
     color: #f5f5f5;
     font-size: 1.5rem;
-    background: rgba(42, 135, 0, .6);
-    line-height: 1.2;
     font-size: 1rem;
+    line-height: 1.2;
 }
 
 .jumbotron-fluid.about h3 {
     font-size: 1.5rem;
-    text-align: center;
     margin: 1rem 0 0.75rem;
+    text-align: center;
+    @media (min-width: 768px) {
+        font-size: 2.5rem;
+        margin: 1rem 0 2rem;
+    }
 }
 
 .jumbotron-fluid.prelicense-courses {
