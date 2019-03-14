@@ -147,7 +147,7 @@
     }
 
     h6 {
-        color: #777;
+        color: $bcc_dark_gray_text;
         margin-top: 1.5rem;
         text-align: center;
         align-items: stretch;
@@ -269,12 +269,12 @@
         }
 
         ul {
-            color: #777;
+            color: $bcc_medium_gray;
             text-align: left;
         }
 
         p {
-            color: #777;
+            color: $bcc_medium_gray;
             text-align: left;
         }
 

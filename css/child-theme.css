@@ -11896,7 +11896,7 @@ button#place_order {
   text-align: center; }
 
 .twostep02-descriptions h6 {
-  color: #777;
+  color: #212529;
   margin-top: 1.5rem;
   text-align: center;
   -webkit-box-align: stretch;
@@ -11968,10 +11968,10 @@ button#place_order {
       .twostep02-descriptions .twostep02-row-02 h5 {
         padding-top: 0.75rem; } }
   .twostep02-descriptions .twostep02-row-02 ul {
-    color: #777;
+    color: #58535E;
     text-align: left; }
   .twostep02-descriptions .twostep02-row-02 p {
-    color: #777;
+    color: #58535E;
     text-align: left; }
   .twostep02-descriptions .twostep02-row-02 #course-description-pre-license .card-body {
     text-align: left;
