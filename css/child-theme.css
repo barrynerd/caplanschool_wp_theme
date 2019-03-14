@@ -11155,6 +11155,11 @@ a.skip-link {
   margin-right: 0 !important;
   width: 100vw !important; }
 
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.35rem !important;
+    padding-left: 0.35rem !important; } }
+
 .navbar-toggler {
   font-size: 1.75rem !important; }
 
@@ -12361,9 +12366,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  .navbar-expand-md .navbar-nav .nav-link {
-    padding-right: 0.35rem !important;
-    padding-left: 0.35rem !important; }
   .single-product .product .summary {
     width: 740px !important; } }
 

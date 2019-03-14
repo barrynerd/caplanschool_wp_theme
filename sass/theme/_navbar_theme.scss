@@ -1,4 +1,13 @@
-
+.navbar-expand-md {
+    .navbar-nav {
+        .nav-link {
+            @media (min-width: 768px) {
+                padding-right: 0.35rem!important;
+                padding-left: 0.35rem!important;
+            }
+        }
+    }
+}
 
 .navbar-toggler {
     font-size: 1.75rem!important;
@@ -11,14 +20,13 @@
     font-size: 1.125rem;
     font-weight: bold;
     text-transform: uppercase;
-
     @media (min-width: 544px) {
         font-size: 1rem;
-        }
+    }
     @media (min-width: 768px) {
-        .navbar-collapse{
+        .navbar-collapse {
             flex-grow: 0;
-            margin:0 auto;
+            margin: 0 auto;
         }
     }
 
