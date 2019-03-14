@@ -11285,7 +11285,7 @@ button#place_order {
     .woocommerce-cart table.cart td.product-name {
       width: 30vw; } }
 
-.woocommerce-checkout button {
+.woocommerce-checkout button#place_order {
   min-width: 280px;
   margin: 0 auto; }
 
