@@ -11206,12 +11206,11 @@ a.skip-link {
 .wpcf7 input[type=submit] {
   white-space: normal !important; }
 
-button#place_order,
+.btn.btn-primary, .wpcf7 input.btn-primary[type=submit],
 .xoo-wsc-footer-b .btn,
 .xoo-wsc-footer-b .wpcf7 input[type=submit],
 .wpcf7 .xoo-wsc-footer-b input[type=submit],
-.btn.btn-primary,
-.wpcf7 input.btn-primary[type=submit] {
+button#place_order {
   background-color: #2a8700 !important;
   border: 1px solid #2f3e48 !important;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
@@ -11222,13 +11221,12 @@ button#place_order,
   line-height: 1.5 !important;
   min-width: 5rem;
   text-transform: uppercase !important;
-  padding: 0.375rem 0.75rem !important; }
-  button#place_order:hover,
+  padding: 0.375rem 0.75rem !important !important; }
+  .btn.btn-primary:hover, .wpcf7 input.btn-primary:hover[type=submit],
   .xoo-wsc-footer-b .btn:hover,
   .xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
   .wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
-  .btn.btn-primary:hover,
-  .wpcf7 input.btn-primary:hover[type=submit] {
+  button#place_order:hover {
     background-color: #FFEE5D !important;
     border: 1px solid #2f3e48 !important;
     color: #2a8700 !important;
@@ -11241,16 +11239,25 @@ button#place_order,
           box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
   color: white !important; }
 
-.btn-sm, .btn-group-sm > .btn,
-.wpcf7 .btn-group-sm > input[type=submit],
 .btn-group-sm-bcc > .a,
 .btn-group-sm-bcc > .btn,
-.wpcf7 .btn-group-sm-bcc > input[type=submit],
+.wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
+.wpcf7 .btn-group-sm > input[type=submit],
 .wpcf7 .btn-group-sm-bcc > input[type=submit] {
-  padding: 0.25rem 0.5rem !important;
+  padding: 0.25rem 0.5rem !important !important;
   font-size: 0.875rem !important;
   line-height: 1.5 !important;
   border-radius: 0.2rem !important; }
+  @media (min-width: 768px) {
+    .btn-group-sm-bcc > .a,
+    .btn-group-sm-bcc > .btn,
+    .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
+    .wpcf7 .btn-group-sm > input[type=submit],
+    .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+      padding: 0.375rem 0.75rem !important !important;
+      font-size: 1rem !important;
+      line-height: 1.5 !important;
+      border-radius: 0.25rem !important; } }
 
 .btn-group-vertical br {
   display: none; }
@@ -11272,7 +11279,7 @@ button#place_order,
       -ms-flex-pack: center;
           justify-content: center; }
   #navigation-buttons .button-set {
-    margin-top: .75rem;
+    margin-top: 0.75rem;
     text-align: center;
     width: 18rem; }
     #navigation-buttons .button-set h5 {
@@ -12198,15 +12205,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
-  
-  .btn-group-sm-bcc > .btn,
-  .wpcf7 .btn-group-sm-bcc > input[type=submit],
-  .btn-group-sm-bcc > .a, .btn-sm, .btn-group-sm > .btn,
-  .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .btn-group-sm-bcc > input[type=submit] {
-    padding: 0.375rem 0.75rem !important;
-    font-size: 1rem !important;
-    line-height: 1.5 !important;
-    border-radius: 0.25rem !important; }
   #wrapper-footer .card-collection {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

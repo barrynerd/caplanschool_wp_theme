@@ -1,4 +1,4 @@
-@mixin primary_button_format(){
+@mixin primary_button_format() {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem $bcc_button_shadow-color!important;
@@ -8,61 +8,66 @@
     line-height: 1.5!important;
     min-width: 5rem;
     text-transform: uppercase!important;
-    padding: .375rem .75rem!important;
-    }
-
-@mixin primary_button_hover_format(){
+    padding: 0.375rem 0.75rem!important !important;
+}
+@mixin primary_button_hover_format() {
     background-color: $bcc_yellow!important;
     border: 1px solid $bcc_button_border!important;
     color: $bcc_green!important;
-    border-color: $bcc_button_border!important
-    }
-
-@mixin secondary_button_format(){
+    border-color: $bcc_button_border!important;
+}
+@mixin secondary_button_format() {
     background-color: $bcc_green!important;
     border: 1px solid $bcc_button_border!important;
     box-shadow: 0 0 0 0.2rem $bcc_button_shadow-color!important;
     color: $bcc-white!important;
-    }
-
-@mixin small_button_format(){
-    padding: .25rem .5rem!important;
-    font-size: .875rem!important;
+}
+@mixin small_button_format() {
+    padding: 0.25rem 0.5rem!important !important;
+    font-size: 0.875rem!important;
     line-height: 1.5!important;
-    border-radius: .2rem!important;
-    }
-
+    border-radius: 0.2rem!important;
+}
+@mixin small_button_format_md() {
+    padding: 0.375rem 0.75rem!important !important;
+    font-size: 1rem!important;
+    line-height: 1.5!important;
+    border-radius: 0.25rem!important;
+}
 ////------------------------------------------
 .btn {
     white-space: normal!important;
-    }
+}
 
-
-button#place_order,
+.btn.btn-primary,
 .xoo-wsc-footer-b .btn,
-.btn.btn-primary {
+button#place_order {
     @include primary_button_format();
+
     &:hover {
         @include primary_button_hover_format();
-        }
     }
+}
 
 .btn.btn-secondary {
     @include secondary_button_format();
-    }
+}
 
+.btn-group-sm-bcc > .a,
+.btn-group-sm-bcc > .btn,
 .btn-sm,
-.btn-group-sm-bcc>.a,
-.btn-group-sm-bcc>.btn,
-.wpcf7 .btn-group-sm-bcc>input[type=submit] {
+.wpcf7 .btn-group-sm-bcc > input[type=submit] {
     @include small_button_format();
+    @media (min-width: 768px) {
+        @include small_button_format_md();
     }
+}
 
 .btn-group-vertical {
     br {
         display: none;
-        }
     }
+}
 
 #navigation-buttons {
     align-content: center;
@@ -72,18 +77,21 @@ button#place_order,
     flex-wrap: wrap;
     height: 24rem;
     justify-content: center;
-    .button-set{
-        margin-top: .75rem;
+
+    .button-set {
+        margin-top: 0.75rem;
         text-align: center;
         width: 18rem;
-        h5{
+
+        h5 {
             font-weight: bold;
-            }
         }
+    }
+
     h2 {
         font-size: 1.5rem;
         font-weight: bold;
         text-align: center;
         width: 100%;
-        }
     }
+}
