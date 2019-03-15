@@ -11689,7 +11689,10 @@ button#place_order {
   margin: 0 0.5rem 1rem;
   width: 19rem; }
   .twostep02-descriptions .card .card-body:first-of-type {
-    height: 19rem; }
+    height: auto !important; }
+    @media (min-width: 768px) {
+      .twostep02-descriptions .card .card-body:first-of-type {
+        height: 19rem !important; } }
   .twostep02-descriptions .card .card-body:last-of-type {
     text-align: center; }
 
@@ -11704,25 +11707,25 @@ button#place_order {
   background-color: #fffbad; }
   @media (min-width: 768px) {
     .twostep02-descriptions .row.core .card-body:first-of-type {
-      height: 29rem; } }
+      height: 29rem !important; } }
 
 .twostep02-descriptions .row.designation {
   background-color: #fffff6; }
   @media (min-width: 768px) {
     .twostep02-descriptions .row.designation .card-body:first-of-type {
-      height: 36rem; } }
+      height: 36rem !important; } }
 
 .twostep02-descriptions .row.elective {
   background-color: #eee; }
   @media (min-width: 768px) {
     .twostep02-descriptions .row.elective .card-body:first-of-type {
-      height: 32rem; } }
+      height: 32rem !important; } }
 
 .twostep02-descriptions .row.ethics {
   background-color: #BBDFAB; }
   @media (min-width: 768px) {
     .twostep02-descriptions .row.ethics .card-body:first-of-type {
-      height: 21rem; } }
+      height: 21rem !important; } }
 
 @media (min-width: 768px) {
   .twostep02-descriptions .row.hondros .card-body:first-of-type {
