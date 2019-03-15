@@ -231,13 +231,13 @@
         .row.hondros {
             .card-body {
                 &:first-of-type {
-                    height: 32.5rem;
+                    height: 34!important;
                 }
             }
 
             #course-description-painless {
                 .card-body:first-of-type {
-                    height: 42.5rem;
+                    height: 42.5rem!important;
                 }
             }
         }
