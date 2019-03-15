@@ -11769,10 +11769,10 @@ button#place_order {
   .twostep02-descriptions.members-ce .row .card-body:first-of-type {
     height: 30.5rem; } }
 
-.twostep02-descriptions.members-ce-diane-turton .row .card-body {
+.twostep02-descriptions.members-ce-diane-turton .row.twostep02-row-02 .card-body {
   text-align: left !important; }
   @media (min-width: 768px) {
-    .twostep02-descriptions.members-ce-diane-turton .row .card-body {
+    .twostep02-descriptions.members-ce-diane-turton .row.twostep02-row-02 .card-body {
       height: auto !important; } }
 
 .twostep02-descriptions.members-ce-diane-turton .twostep02-row-02 .card {
