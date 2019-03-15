@@ -11760,7 +11760,7 @@ button#place_order {
     text-align: left; }
   .twostep02-descriptions .twostep02-row-02 #course-description-pre-license .card-body {
     text-align: left;
-    height: 23rem; }
+    height: 23rem !important; }
 
 .twostep02-descriptions .woocommerce:empty:before {
   content: "No Courses Currently Scheduled"; }
