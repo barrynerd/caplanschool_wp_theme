@@ -11729,7 +11729,7 @@ button#place_order {
 
 @media (min-width: 768px) {
   .twostep02-descriptions .row.hondros .card-body:first-of-type {
-    height: 34 !important; }
+    height: 34rem !important; }
   .twostep02-descriptions .row.hondros #course-description-painless .card-body:first-of-type {
     height: 42.5rem !important; } }
 
