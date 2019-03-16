@@ -10838,7 +10838,7 @@ a.skip-link {
   margin: 0;
   padding: 0.5rem;
   text-align: center;
-  width: 100vw; }
+  width: 100%; }
 
 .home .jumbotron-fluid {
   -webkit-box-align: center;
@@ -11182,7 +11182,7 @@ button#place_order {
       font-weight: bold;
       padding: 1rem;
       text-align: center;
-      width: 100vw; }
+      width: 100%; }
     #wrapper-footer #footer-summary .card-body {
       color: white; }
     #wrapper-footer #footer-summary ul a {
