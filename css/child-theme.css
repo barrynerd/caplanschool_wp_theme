@@ -10950,16 +10950,19 @@ a.skip-link {
   font-family: "Open Sans";
   font-size: 1.125rem;
   font-weight: bold;
+  padding: 0;
   text-transform: uppercase; }
   @media (min-width: 544px) {
     #main-menu {
       font-size: 1rem; } }
   @media (min-width: 768px) {
-    #main-menu .navbar-collapse {
-      -webkit-box-flex: 0;
-          -ms-flex-positive: 0;
-              flex-grow: 0;
-      margin: 0 auto; } }
+    #main-menu {
+      padding: 0.5rem 1rem; }
+      #main-menu .navbar-collapse {
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0;
+        margin: 0 auto; } }
   #main-menu .dropdown-toggle {
     text-align: center; }
     #main-menu .dropdown-toggle:after {
@@ -10970,25 +10973,34 @@ a.skip-link {
       min-width: 61px; }
   #main-menu li.dropdown {
     width: 100%; }
-  #main-menu li.menu-about ul {
-    width: 14.5rem; }
-  #main-menu li.menu-broker ul {
-    width: 19rem; }
-  #main-menu li.menu-continuing-ed ul {
-    width: 22rem; }
-    #main-menu li.menu-continuing-ed ul .menu-highlight01 {
-      text-align: center; }
-  #main-menu li.menu-courses ul {
-    width: 17rem; }
-  #main-menu li.menu-members ul {
-    width: 17rem; }
-  #main-menu li.menu-useful-links ul.dropdown-menu {
-    width: 23rem;
-    right: 0;
-    left: auto; }
+  @media (min-width: 768px) {
+    #main-menu li.menu-about ul {
+      width: 14.5rem; } }
+  @media (min-width: 768px) {
+    #main-menu li.menu-broker ul {
+      width: 19rem; } }
+  @media (min-width: 768px) {
+    #main-menu li.menu-continuing-ed ul {
+      width: 22rem; }
+      #main-menu li.menu-continuing-ed ul .menu-highlight01 {
+        text-align: center; } }
+  @media (min-width: 768px) {
+    #main-menu li.menu-courses ul {
+      width: 17rem; } }
+  @media (min-width: 768px) {
+    #main-menu li.menu-members ul {
+      width: 17rem; } }
+  @media (min-width: 768px) {
+    #main-menu li.menu-useful-links ul.dropdown-menu {
+      width: 23rem;
+      right: 0;
+      left: auto; } }
   #main-menu ul.dropdown-menu {
     background: #fffbad;
-    text-align: left; }
+    text-align: center; }
+    @media (min-width: 768px) {
+      #main-menu ul.dropdown-menu {
+        text-align: left; } }
     #main-menu ul.dropdown-menu .dropdown-item {
       color: #2a8700 !important;
       font-weight: bold;

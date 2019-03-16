@@ -19,11 +19,14 @@
     font-family: $font-family-base;
     font-size: 1.125rem;
     font-weight: bold;
+    padding: 0;
     text-transform: uppercase;
     @media (min-width: 544px) {
         font-size: 1rem;
     }
     @media (min-width: 768px) {
+        padding: 0.5rem 1rem;
+
         .navbar-collapse {
             flex-grow: 0;
             margin: 0 auto;
@@ -51,50 +54,65 @@
     }
 
     li.menu-about {
-        ul {
-            width: 14.5rem;
+        @media (min-width: 768px) {
+            ul {
+                width: 14.5rem;
+            }
         }
     }
 
     li.menu-broker {
-        ul {
-            width: 19rem;
+        @media (min-width: 768px) {
+            ul {
+                width: 19rem;
+            }
         }
     }
 
     li.menu-continuing-ed {
-        ul {
-            width: 22rem;
+        @media (min-width: 768px) {
+            ul {
+                width: 22rem;
 
-            .menu-highlight01 {
-                text-align: center;
+                .menu-highlight01 {
+                    text-align: center;
+                }
             }
         }
     }
 
     li.menu-courses {
-        ul {
-            width: 17rem;
+        @media (min-width: 768px) {
+            ul {
+                width: 17rem;
+            }
         }
     }
 
     li.menu-members {
-        ul {
-            width: 17rem;
+        @media (min-width: 768px) {
+            ul {
+                width: 17rem;
+            }
         }
     }
 
     li.menu-useful-links {
-        ul.dropdown-menu {
-            width: 23rem;
-            right: 0;
-            left: auto;
+        @media (min-width: 768px) {
+            ul.dropdown-menu {
+                width: 23rem;
+                right: 0;
+                left: auto;
+            }
         }
     }
 
     ul.dropdown-menu {
         background: $bcc_light_yellow;
-        text-align: left;
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: left;
+        }
 
         .dropdown-item {
             color: $bcc_green!important;
