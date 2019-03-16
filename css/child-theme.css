@@ -12173,7 +12173,7 @@ p:empty {
   display: none; }
 
 .wrapper {
-  padding: 0 !important !important; }
+  padding: 0 !important; }
 
 .page-template-front-page .wrapper,
 .page-template-page-no_featured_img .wrapper,
@@ -12206,7 +12206,7 @@ p:empty {
       font-size: 0.85rem; }
     .feature01-row .sow-features-feature {
       width: 50% !important;
-      padding: 0 1.5rem 1.5rem !important !important;
+      padding: 0 1.5rem 1.5rem !important;
       margin: 0 auto; }
     .feature01-row .sow-features-list {
       display: -webkit-box;
@@ -12224,7 +12224,7 @@ p:empty {
       .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
         font-size: 3.5rem !important; }
     .feature01-row .sow-features-feature .textwidget {
-      margin: 0.5rem 0 3rem !important !important; } }
+      margin: 0.5rem 0 3rem !important; } }
 
 @media (min-width: 544px) {
   .home .video-row01 {
@@ -12248,9 +12248,6 @@ p:empty {
   .page .alert-dark ol {
     margin: 0 1em;
     padding: 0 0 0 1rem; }
-
-.page.page-template-default main {
-  padding: 3rem; }
 
 #authnet-card-cvc,
 #authnet-card-expiry,
@@ -12296,13 +12293,13 @@ p.members-ce-product {
   font-weight: bold !important;
   text-align: center !important;
   border: none !important;
-  padding: 0 !important !important; }
+  padding: 0 !important; }
 
 p.members-ce-product >
 ul.products li.product a h2 {
   font-size: 1.1em !important;
   min-height: 6.4em;
-  padding: 0.5em 0.5em 0 !important !important;
+  padding: 0.5em 0.5em 0 !important;
   text-align: center; }
 
 ul.products li.product a span.price {
