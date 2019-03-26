@@ -10775,12 +10775,11 @@ a.skip-link {
   margin: 0 auto;
   padding: 0;
   background: rgba(255, 255, 255, 0.75);
-  border: none; }
+  border: none;
+  width: 17rem; }
   @media (min-width: 768px) {
     .home-card {
-      max-width: 30rem;
-      min-width: 25rem;
-      width: 52vh; } }
+      width: 25rem; } }
   .home-card .btn-group-sm-bcc {
     margin: 0 3rem 1.2rem; }
   .home-card .card-body {
@@ -10845,12 +10844,12 @@ a.skip-link {
       -ms-flex-align: center;
           align-items: center;
   background: url("/wordpress/wp-content/uploads/Adult_Learner_shutterstock_200562314_0.jpg");
-  background-position: center right;
+  background-position: center bottom;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 66vmax; }
+  height: auto; }
 
 .home .row-course-card {
   background: #fffff6;

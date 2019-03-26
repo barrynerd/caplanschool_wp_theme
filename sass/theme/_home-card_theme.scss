@@ -3,10 +3,11 @@
     padding: 0;
     background: rgba(255,255,255,.75);
     border: none;
+    width: 17rem;
     @media (min-width: 768px) {
-        max-width: 30rem;
-        min-width: 25rem;
-        width: 52vh;
+        // max-width: 30rem;
+        // min-width: 25rem;
+        width: 25rem;
     }
 
     .btn-group-sm-bcc {
