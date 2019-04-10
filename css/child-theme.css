@@ -12169,8 +12169,33 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+.blog .row {
+  padding: 5rem; }
+
+.blog p.has-drop-cap:not(:focus):first-letter {
+  float: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: inherit;
+  text-transform: inherit;
+  font-style: inherit; }
+
+.blog .card-subtitle {
+  font-size: .9rem; }
+
+#main article {
+  width: 250px;
+  margin-bottom: 10px; }
+
 figcaption {
   font-size: 0.85rem; }
+
+a {
+  color: #2a8700; }
+  a:hover {
+    color: #2a8700;
+    text-decoration: none; }
 
 .card-body {
   color: #212529; }
