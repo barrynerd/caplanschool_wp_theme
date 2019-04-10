@@ -1,0 +1,54 @@
+.blog {
+    .row {
+        padding: 5rem;
+    }
+
+    p.has-drop-cap:not(:focus):first-letter {
+        float: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: inherit;
+        margin: inherit;
+        text-transform: inherit;
+        font-style: inherit;
+    }
+
+    .card-subtitle {
+        font-size: .9rem;
+    }
+}
+
+#main article {
+    width: 250px;
+    margin-bottom: 10px;
+}
+// .masonry {
+//   display: flex;
+//   flex-flow: row wrap;
+//   margin-left: -8px; /* Adjustment for the gutter */
+// }
+//
+// .masonry article,
+// .masonry-brick {
+//   flex: auto;
+//   height: 250px;
+//   min-width: 150px;
+//   margin: 0 8px 8px 0; /* Some gutter */
+//   width: 250px;
+// }
+
+// .masonry article,
+// .masonry-brick {
+//   &:nth-child(4n+1){
+//      width: 250px;
+//   }
+//   &:nth-child(4n+2){
+//      width: 325px;
+//   }
+//   &:nth-child(4n+3){
+//      width: 180px;
+//   }
+//   &:nth-child(4n+4){
+//      width: 380px;
+//   }
+// }
