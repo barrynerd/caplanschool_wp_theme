@@ -12184,7 +12184,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .blog .card-subtitle {
   font-size: .9rem; }
 
-#main article {
+.blog #main article {
   width: 250px;
   margin-bottom: 10px; }
 
