@@ -3,7 +3,7 @@
 $(function() {
     // set the container that Masonry will be inside of in a var
     // adjust to match your own wrapper/container class/id name
-    var container = document.querySelector('#main');
+    var container = document.querySelector('.blog #main');
     //create empty var msnry
     var msnry;
     // initialize Masonry after all images have loaded
