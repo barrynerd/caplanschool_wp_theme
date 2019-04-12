@@ -43,17 +43,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<!-- ******************* The Navbar Area ******************* -->
-	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite">
+	<div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="row mx-0">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
+		<div id="the-logo" class="col-1 px-0 pl-2">
+			<?php the_custom_logo();  ?>
+		</div>
+	<div class="col-11 px-0">
 		<nav id="secondary-menu" class="navbar navbar-expand-md navbar-dark ">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container mx-0" >
 		<?php endif; ?>
 
-				<?php the_custom_logo();  ?>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
 					<span class="navbar-toggler-icon"></span>
@@ -68,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav ml-auto align-items-center text-nowrap',
 						'fallback_cb'     => '',
-						'menu_id'         => 'secondary-menu',
+						// 'menu_id'         => 'secondary-menu',
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
@@ -93,5 +96,5 @@ $container = get_theme_mod( 'understrap_container_type' );
 				)
 			); ?>
 		</nav><!-- .site-navigation -->
-
+</div>
 	</div><!-- #wrapper-navbar end -->

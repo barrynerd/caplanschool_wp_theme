@@ -10942,7 +10942,18 @@ a.skip-link {
     padding-left: 0.35rem !important; } }
 
 .navbar-toggler {
-  font-size: 1.75rem !important; }
+  font-size: 1.5rem !important; }
+
+#the-logo {
+  background-color: #FFEE5D !important; }
+
+#secondary-menu {
+  background-color: #FFEE5D !important;
+  font-size: .9rem;
+  padding: 0;
+  padding-right: .75rem; }
+  #secondary-menu .navbar-toggler {
+    margin-left: auto; }
 
 #main-menu {
   background-color: #FFEE5D !important;
@@ -10956,7 +10967,8 @@ a.skip-link {
       font-size: 1rem; } }
   @media (min-width: 768px) {
     #main-menu {
-      padding: 0.5rem 1rem; }
+      padding: 0.0rem 1rem;
+      height: 47px; }
       #main-menu .navbar-collapse {
         -webkit-box-flex: 0;
             -ms-flex-positive: 0;
@@ -11022,7 +11034,7 @@ a.skip-link {
   width: 100%; }
 
 .nav-link {
-  padding: 15px 5px;
+  padding: 0 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
 
