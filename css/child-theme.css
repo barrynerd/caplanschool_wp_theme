@@ -11043,6 +11043,11 @@ a.skip-link {
         background-color: #FFEE5D;
         text-decoration: none; }
 
+.nav-item.no-link {
+  cursor: text; }
+  .nav-item.no-link::after {
+    display: none; }
+
 .nav-item::after {
   content: '';
   display: block;
