@@ -10948,7 +10948,16 @@ a.skip-link {
   color: #2a8700; }
 
 #the-logo {
-  background-color: #FFEE5D !important; }
+  background-color: #FFEE5D !important;
+  text-align: center; }
+  #the-logo a.navbar-brand {
+    margin: 0; }
+  #the-logo img {
+    height: 36px;
+    width: auto; }
+    @media (min-width: 768px) {
+      #the-logo img {
+        height: 100%; } }
 
 #secondary-menu {
   background-color: #FFEE5D !important;

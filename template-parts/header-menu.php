@@ -1,17 +1,17 @@
+<?php if ( 'container' == $container ) : ?>
+    <div class="container mx-0" >
+    <?php endif; ?>
 <!-- ******************* The Navbar Area ******************* -->
 <div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="row mx-0">
 
     <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-    <div id="the-logo" class="col-1 px-0 pl-2">
+    <div id="the-logo" class="col-2 col-md-1 px-0">
         <?php the_custom_logo();  ?>
     </div>
-<div class="col-11 px-0">
+<div class="col-10 col-md-11 px-0">
     <nav id="secondary-menu" class="navbar navbar-expand-md navbar-dark ">
 
-    <?php if ( 'container' == $container ) : ?>
-        <div class="container mx-0" >
-    <?php endif; ?>
 
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
@@ -32,9 +32,6 @@
                     'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                 )
             ); ?>
-        <?php if ( 'container' == $container ) : ?>
-        </div><!-- .container -->
-        <?php endif; ?>
 
     </nav><!-- .site-navigation -->
 
@@ -44,7 +41,7 @@
                 'theme_location'  => 'primary',
                 'container_class' => 'collapse navbar-collapse',
                 'container_id'    => 'navbarNavDropdown',
-                'menu_class'      => 'navbar-nav mr-auto align-items-center text-nowrap',
+                'menu_class'      => 'navbar-nav mx-auto align-items-center text-nowrap',
                 'fallback_cb'     => '',
                 'menu_id'         => 'main-menu',
                 'depth'           => 2,
@@ -53,3 +50,7 @@
         ); ?>
     </nav><!-- .site-navigation -->
 </div>
+
+<?php if ( 'container' == $container ) : ?>
+</div><!-- .container -->
+<?php endif; ?>
