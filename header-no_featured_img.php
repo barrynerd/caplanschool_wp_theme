@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<!-- The WordPress Menu goes here -->
 				<?php wp_nav_menu(
 					array(
-						'menu'			=> "bootstrap-menu02",
+						'menu'			=> "bootstrap-menu02a",
 						// 'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'navbarNavDropdown',
