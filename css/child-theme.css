@@ -12192,9 +12192,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
-.blog .row {
-  padding: 5rem; }
-
 .blog p.has-drop-cap:not(:focus):first-letter {
   float: inherit;
   font-size: inherit;
