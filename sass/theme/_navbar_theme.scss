@@ -11,6 +11,9 @@
 
 .navbar-toggler {
     font-size: 1.5rem!important;
+    &:focus {
+        outline: none;
+    }
 }
 
 .navbar-dark .navbar-nav .show > .nav-link {
