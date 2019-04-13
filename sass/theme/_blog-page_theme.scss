@@ -1,8 +1,7 @@
 .blog {
-    .row {
-        // padding: 5rem;
+    h1 {
+        padding: 1.5rem 0 1rem;
     }
-
     p.has-drop-cap:not(:focus):first-letter {
         float: inherit;
         font-size: inherit;
@@ -16,9 +15,17 @@
     .card-subtitle {
         font-size: .9rem;
     }
-}
 
-.blog #main article {
-    width: 250px;
-    margin-bottom: 10px;
+    #index-wrapper {
+        margin:0 auto;
+        // width: 800px;
+    }
+    #main {
+        margin:0 auto;
+        article {
+            // width: 250px;
+            width: 320px;
+            margin-bottom: 10px;
+        }
+    }
 }

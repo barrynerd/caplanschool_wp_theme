@@ -33,7 +33,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<h1>Caplan School of Real Estate Blog</h1>
+			<h1><?php the_title() ?></h1>
+
 			<main class="site-main aaacard-columns" id="main">
 
 

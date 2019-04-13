@@ -14,7 +14,7 @@ $(function() {
             // option that allows for your website to center in the page
             isFitWidth: true,
             gutter: 10,
-            columnWidth: 250
+            // columnWidth: 250
         });
     });
 });
