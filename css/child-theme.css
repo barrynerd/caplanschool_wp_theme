@@ -12193,7 +12193,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
 .blog h1 {
-  padding: 1.5rem 0 1rem; }
+  padding: 1.5rem 0 1rem;
+  text-align: center; }
 
 .blog p.has-drop-cap:not(:focus):first-letter {
   float: inherit;
@@ -12213,8 +12214,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .blog #main {
   margin: 0 auto; }
   .blog #main article {
-    width: 320px;
+    width: calc(100vw - 50px);
+    max-width: 800px;
     margin-bottom: 10px; }
+
+.blog .pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 figcaption {
   font-size: 0.85rem; }
