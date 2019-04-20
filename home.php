@@ -16,8 +16,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-
 $container = get_theme_mod( 'understrap_container_type' );
+
 ?>
 
 <?php if ( is_front_page() && is_home() ) : ?>
@@ -26,14 +26,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="index-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr( $container ); ?> px-0" id="content" tabindex="-1">
 
-		<div class="row">
+		<div class="row mx-0">
 
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
-			<h1>Caplan School of Real Estate Blog</h1>
+			<h1><?php the_title() ?></h1>
+
 			<main class="site-main aaacard-columns" id="main">
 
 

@@ -10942,7 +10942,45 @@ a.skip-link {
     padding-left: 0.35rem !important; } }
 
 .navbar-toggler {
-  font-size: 1.75rem !important; }
+  font-size: 1.5rem !important; }
+  .navbar-toggler:focus {
+    outline: none; }
+
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #2a8700; }
+
+#the-logo {
+  background-color: #FFEE5D !important;
+  text-align: center; }
+  #the-logo a.navbar-brand {
+    margin: 0; }
+  #the-logo img {
+    height: 36px;
+    width: auto; }
+    @media (min-width: 768px) {
+      #the-logo img {
+        height: 100%; } }
+
+#secondary-menu {
+  background-color: #FFEE5D !important;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0 0.75rem 0 0; }
+  #secondary-menu .navbar-toggler {
+    margin-left: auto; }
+  @media (min-width: 768px) {
+    #secondary-menu li.menu-useful-links ul.dropdown-menu {
+      width: 18rem;
+      right: 0;
+      left: auto; } }
+  #secondary-menu ul.dropdown-menu {
+    background: #fffbad;
+    font-size: 0.9rem; }
+    #secondary-menu ul.dropdown-menu .dropdown-item {
+      color: #2a8700; }
+      #secondary-menu ul.dropdown-menu .dropdown-item:focus, #secondary-menu ul.dropdown-menu .dropdown-item:hover {
+        background: #FFEE5D;
+        outline: none; }
 
 #main-menu {
   background-color: #FFEE5D !important;
@@ -10956,7 +10994,8 @@ a.skip-link {
       font-size: 1rem; } }
   @media (min-width: 768px) {
     #main-menu {
-      padding: 0.5rem 1rem; }
+      padding: 0.0rem 1rem;
+      height: 47px; }
       #main-menu .navbar-collapse {
         -webkit-box-flex: 0;
             -ms-flex-positive: 0;
@@ -10964,8 +11003,6 @@ a.skip-link {
         margin: 0 auto; } }
   #main-menu .dropdown-toggle {
     text-align: center; }
-    #main-menu .dropdown-toggle:after {
-      display: none; }
   #main-menu .navbar-brand {
     padding-left: 0.3125rem; }
     #main-menu .navbar-brand img {
@@ -10988,11 +11025,8 @@ a.skip-link {
       width: 17rem; } }
   @media (min-width: 768px) {
     #main-menu li.menu-members ul {
-      width: 17rem; } }
-  @media (min-width: 768px) {
-    #main-menu li.menu-useful-links ul.dropdown-menu {
-      width: 23rem;
-      right: 0;
+      width: 17rem;
+      right: -60px;
       left: auto; } }
   #main-menu ul.dropdown-menu {
     background: #fffbad;
@@ -11009,6 +11043,11 @@ a.skip-link {
         background-color: #FFEE5D;
         text-decoration: none; }
 
+.nav-item.no-link {
+  cursor: text; }
+  .nav-item.no-link::after {
+    display: none; }
+
 .nav-item::after {
   content: '';
   display: block;
@@ -11022,7 +11061,7 @@ a.skip-link {
   width: 100%; }
 
 .nav-link {
-  padding: 15px 5px;
+  padding: 0 5px;
   -webkit-transition: 0.2s;
   transition: 0.2s; }
 
@@ -12169,8 +12208,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
-.blog .row {
-  padding: 5rem; }
+.blog h1 {
+  padding: 1.5rem 0 1rem;
+  text-align: center; }
 
 .blog p.has-drop-cap:not(:focus):first-letter {
   float: inherit;
@@ -12184,9 +12224,20 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .blog .card-subtitle {
   font-size: .9rem; }
 
-.blog #main article {
-  width: 250px;
-  margin-bottom: 10px; }
+.blog #index-wrapper {
+  margin: 0 auto; }
+
+.blog #main {
+  margin: 0 auto; }
+  .blog #main article {
+    width: calc(100vw - 50px);
+    max-width: 800px;
+    margin-bottom: 10px; }
+
+.blog .pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 figcaption {
   font-size: 0.85rem; }
@@ -12209,7 +12260,8 @@ p:empty {
   display: none; }
 
 .wrapper {
-  padding: 0 !important; }
+  padding: 0 !important;
+  width: 100%; }
 
 .page-template-front-page .wrapper,
 .page-template-page-no_featured_img .wrapper,
