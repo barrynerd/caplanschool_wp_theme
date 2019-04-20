@@ -3,6 +3,14 @@ figcaption {
 }
 // bootstrap overrides
 
+a {
+    color: $bcc_green;
+    &:hover {
+        color:$bcc_green;
+        text-decoration:none;
+    }
+}
+
 .card-body {
     color: $bcc_dark_gray_text;
 }
@@ -20,6 +28,7 @@ p:empty {
 
 .wrapper {
     padding: 0!important;
+    width: 100%;
 }
 
 .page-template-front-page .wrapper,

@@ -437,6 +437,124 @@ function woocommerce_shortcode_products_orderby( $args ) {
 }
 
 #----------------------------------------------------
+/**
+ * Jetpack development mode.
+ *
+ * Note: Required for infinite scroll to work on localhost.
+ */
+add_filter( 'jetpack_development_mode', '__return_true' );
+#----------------------------------------------------
+/**
+ * Add theme support for infinite scroll.
+ *
+ * @uses add_theme_support
+ * @return void
+ */
+// function primer_infinite_scroll_init() {
+//
+//     add_theme_support( 'infinite-scroll', array(
+//         'container'      => 'main',
+//         'wrapper'        => '.post',
+//         'footer_widgets' => array(
+//             'footer-1',
+//             'footer-2',
+//             'footer-3',
+//         ),
+//     ) );
+//
+// }
+// add_action( 'after_setup_theme', 'primer_infinite_scroll_init' );
+#----------------------------------------------------
+#see: https://wordpress.stackexchange.com/questions/175793/get-first-video-from-the-post-both-embed-and-video-shortcodes
+function theme_oembed_videos() {
+
+	$post = get_the_ID();
+
+    if ( $post && get_post($post)) {
+		$result="";
+		$pattern="/(https:\/\/www.youtube.com\/.*?)\"/i";
+        if ( preg_match( $pattern, get_the_content(), $matches ) ) {
+			$embed .= wp_oembed_get( $matches[1], array('width'=>"100%", 'class'=>'embed-responsive-item'));
+			$result =<<<END
+				<div  class="embed-responsive embed-responsive-16by9">$embed</div>
+END;
+	    }
+    }
+	return $result;
+}
+#----------------------------------------------------
+#----------------------------------------------------
+// see: https://lorut.no/responsive-vimeo-youtube-embed-wordpress/
+// Hook onto 'oembed_dataparse' and get 2 parameters
+// add_filter( 'oembed_dataparse','responsive_wrap_oembed_dataparse',0,2);
+
+function responsive_wrap_oembed_dataparse( $html, $data ) {
+	print "ccc";
+ // Verify oembed data (as done in the oEmbed data2html code)
+ if ( ! is_object( $data ) || empty( $data->type ) )
+ return $html;
+
+ // Verify that it is a video
+ if ( !($data->type == 'video') )
+ return $html;
+
+ // Calculate aspect ratio
+ $ar = $data->width / $data->height;
+
+ // Set the aspect ratio modifier
+ $ar_mod = ( abs($ar-(4/3)) < abs($ar-(16/9)) ? 'embed-responsive-4by3' : 'embed-responsive-16by9');
+
+ // Strip width and height from html
+ $html = preg_replace( '/(width|height)="\d*"\s/', "", $html );
+
+ // Return code
+ return '<div class="embed-responsive '.$ar_mod.'" data-aspectratio="'.number_format($ar, 5, '.').'">'.$html.'</div>';
+}
+#----------------------------------------------------
+// modified from parent theme
+function understrap_posted_on() {
+		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
+		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
+				$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s"></time>';
+		}
+		$time_string = sprintf( $time_string,
+				esc_attr( get_the_date( 'c' ) ),
+				esc_html( get_the_date() ),
+				esc_attr( get_the_modified_date( 'c' ) ),
+				esc_html( get_the_modified_date() )
+		);
+		$posted_on   = apply_filters(
+				'understrap_posted_on', sprintf(
+						'<span class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></span>',
+						esc_html_x( 'Posted on', 'post date', 'understrap' ),
+						esc_url( get_permalink() ),
+						apply_filters( 'understrap_posted_on_time', $time_string )
+				)
+		);
+		$byline      = apply_filters(
+				'understrap_posted_by', sprintf(
+						'<span class="byline"> %1$s<span class="author vcard"><a class="url fn n" href="%2$s"> %3$s</a></span></span>',
+						$posted_on ? esc_html_x( 'by', 'post author', 'understrap' ) : esc_html_x( 'Posted by', 'post author', 'understrap' ),
+						esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+						esc_html( get_the_author() )
+				)
+		);
+		echo $posted_on . $byline; // WPCS: XSS OK.
+}
+
+#----------------------------------------------------
+# see https://stackoverflow.com/questions/30254833/how-to-get-masonry-and-imagesloaded-to-work-with-wordpress
+function my_masonry(){
+	// wp_enqueue_script('jquery-masonry');
+	wp_enqueue_script('masonry');
+  	wp_enqueue_script('masonryloader', get_stylesheet_directory_uri() . '/js/TaS-masonryInitializer.js', array( 'masonry', 'jquery' ) );
+}
+add_action('wp_enqueue_scripts', 'my_masonry');
+
+
+#----------------------------------------------------
+#----------------------------------------------------
+#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------

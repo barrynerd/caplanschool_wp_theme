@@ -1,0 +1,38 @@
+.blog {
+    h1 {
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+    }
+    p.has-drop-cap:not(:focus):first-letter {
+        float: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: inherit;
+        margin: inherit;
+        text-transform: inherit;
+        font-style: inherit;
+    }
+
+    .card-subtitle {
+        font-size: .9rem;
+    }
+
+    #index-wrapper {
+        margin:0 auto;
+        // width: 800px;
+    }
+    #main {
+        margin:0 auto;
+        article {
+            // width: 250px;
+            // width: 320px;
+            width: calc(100vw - 50px);
+            max-width: 800px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+}
