@@ -38,7 +38,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 			    <p class="card-text entry-summary">
 					<?php the_excerpt(); ?>
 					</p>
-			    <a href="<?php esc_url( get_permalink() ); ?>" class="btn btn-primary"><?php the_title() ?></a>
 			  </div>
 
 		<?php endif; ?>
