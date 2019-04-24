@@ -11043,10 +11043,13 @@ a.skip-link {
         background-color: #FFEE5D;
         text-decoration: none; }
 
-.nav-item.no-link {
+.nav-item.no-link a {
   cursor: text; }
-  .nav-item.no-link::after {
+  .nav-item.no-link a::after {
     display: none; }
+
+.nav-item.no-link::after {
+  display: none; }
 
 .nav-item::after {
   content: '';

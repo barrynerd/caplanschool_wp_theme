@@ -185,8 +185,13 @@
     }
 }
 
-.nav-item.no-link {
+.nav-item.no-link a {
     cursor: text;
+    &::after {
+        display:none;
+    }
+}
+.nav-item.no-link {
     &::after {
         display:none;
     }
