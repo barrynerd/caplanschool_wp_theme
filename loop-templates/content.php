@@ -22,13 +22,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 				echo theme_oembed_videos();
 				?>
 			  <div class="card-body">
-			    <h5 class="card-title">		<?php
+			    <h4 class="card-title">		<?php
 						the_title(
 							sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
 							'</a>'
 						);
 						?>
-				</h5>
+				</h4>
 				<div class="card-subtitle mb-2 text-muted entry-meta">
 					<?php understrap_posted_on(); ?>
 				</div><!-- .entry-meta -->
