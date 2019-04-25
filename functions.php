@@ -572,48 +572,61 @@ function my_masonry()
 # based on https://premium.wpmudev.org/blog/one-category-wordpress-homepage/
 function my_home_category($query)
 {
-	$cat_name = "Elliott's Industry News";
+    $cat_name = "Elliott's Industry News";
     if ($query->is_home() && $query->is_main_query()) {
-		$id = get_cat_ID( $cat_name );
-		// print "aaa";
+        $id = get_cat_ID($cat_name);
+        // print "aaa";
         $query->set('cat', $id);
     }
 }
 add_action('pre_get_posts', 'my_home_category');
 #----------------------------------------------------
 #override parent theme
-function understrap_entry_footer() {
-	// Hide category and tag text for pages.
-	if ( 'post' === get_post_type() ) {
-		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'understrap' ) );
-		if ( $categories_list && understrap_categorized_blog() ) {
-			/* translators: %s: Categories of current post */
-			printf( '<span class="cat-links">' . esc_html__( '%s', 'understrap' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-		}
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'understrap' ) );
-		if ( $tags_list ) {
-			/* translators: %s: Tags of current post */
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %s', 'understrap' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-		}
-	}
-	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
-		comments_popup_link( esc_html__( 'Leave a comment', 'understrap' ), esc_html__( '1 Comment', 'understrap' ), esc_html__( '% Comments', 'understrap' ) );
-		echo '</span>';
-	}
-	// edit_post_link(
-	// 	sprintf(
-	// 		/* translators: %s: Name of current post */
-	// 		esc_html__( 'Edit %s', 'understrap' ),
-	// 		the_title( '<span class="screen-reader-text">"', '"</span>', false )
-	// 	),
-	// 	'<span class="edit-link">',
-	// 	'</span>'
-	// );
+function understrap_entry_footer()
+{
+    // Hide category and tag text for pages.
+    if ('post' === get_post_type()) {
+        /* translators: used between list items, there is a space after the comma */
+        $categories_list = get_the_category_list(esc_html__(', ', 'understrap'));
+        if ($categories_list && understrap_categorized_blog()) {
+            /* translators: %s: Categories of current post */
+            printf('<span class="cat-links">' . esc_html__('%s', 'understrap') . '</span>', $categories_list); // WPCS: XSS OK.
+        }
+        /* translators: used between list items, there is a space after the comma */
+        $tags_list = get_the_tag_list('', esc_html__(', ', 'understrap'));
+        if ($tags_list) {
+            /* translators: %s: Tags of current post */
+            printf('<span class="tags-links">' . esc_html__('Tagged %s', 'understrap') . '</span>', $tags_list); // WPCS: XSS OK.
+        }
+    }
+    if (! is_single() && ! post_password_required() && (comments_open() || get_comments_number())) {
+        echo '<span class="comments-link">';
+        comments_popup_link(esc_html__('Leave a comment', 'understrap'), esc_html__('1 Comment', 'understrap'), esc_html__('% Comments', 'understrap'));
+        echo '</span>';
+    }
+    // edit_post_link(
+    // 	sprintf(
+    // 		/* translators: %s: Name of current post */
+    // 		esc_html__( 'Edit %s', 'understrap' ),
+    // 		the_title( '<span class="screen-reader-text">"', '"</span>', false )
+    // 	),
+    // 	'<span class="edit-link">',
+    // 	'</span>'
+    // );
 }
 #----------------------------------------------------
+#https://wordpress.stackexchange.com/questions/179585/remove-category-tag-author-from-the-archive-title
+add_filter('get_the_archive_title', function ($title) {
+    if (is_category()) {
+        $title = single_cat_title('', false);
+    } elseif (is_tag()) {
+        $title = single_tag_title('', false);
+    } elseif (is_author()) {
+        $title = '<span class="vcard">' . get_the_author() . '</span>' ;
+    }
+
+    return $title;
+});
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
