@@ -12211,15 +12211,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+.blog h1,
 .category h1,
-.single h1,
-.blog h1 {
+.single h1 {
   padding: 1.5rem 0 1rem;
   text-align: center; }
 
+.blog p.has-drop-cap:not(:focus):first-letter,
 .category p.has-drop-cap:not(:focus):first-letter,
-.single p.has-drop-cap:not(:focus):first-letter,
-.blog p.has-drop-cap:not(:focus):first-letter {
+.single p.has-drop-cap:not(:focus):first-letter {
   float: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -12228,45 +12228,51 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   text-transform: inherit;
   font-style: inherit; }
 
+.blog .card-subtitle,
 .category .card-subtitle,
-.single .card-subtitle,
-.blog .card-subtitle {
-  font-size: .9rem; }
+.single .card-subtitle {
+  font-size: 0.9rem; }
 
+.blog #index-wrapper,
 .category #index-wrapper,
-.single #index-wrapper,
-.blog #index-wrapper {
+.single #index-wrapper {
   margin: 0 auto; }
 
+.blog #main,
 .category #main,
-.single #main,
-.blog #main {
+.single #main {
   margin: 0 auto; }
+  .blog #main article,
   .category #main article,
-  .single #main article,
-  .blog #main article {
+  .single #main article {
     margin: 0 auto;
     max-width: 800px;
     margin-bottom: 10px;
     width: calc(100vw - 50px); }
 
+.blog .pagination,
 .category .pagination,
-.single .pagination,
-.blog .pagination {
+.single .pagination {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
 
+.blog iframe,
 .category iframe,
-.single iframe,
-.blog iframe {
+.single iframe {
   width: 100%;
   height: calc((100vw - 50px) * 9 /16); }
   @media (min-width: 768px) {
+    .blog iframe,
     .category iframe,
-    .single iframe,
-    .blog iframe {
+    .single iframe {
       height: calc((800px - 50px) * 9 /16); } }
+
+.single article.category-ask-elliott img.wp-post-image {
+  display: none; }
+
+.category.category-ask-elliott article img {
+  display: none; }
 
 figcaption {
   font-size: 0.85rem; }
