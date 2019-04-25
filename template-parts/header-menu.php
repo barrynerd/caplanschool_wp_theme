@@ -1,5 +1,7 @@
-<?php if ( 'container' == $container ) : ?>
-    <div class="container mx-0" >
+<?php
+    $container   = get_theme_mod( 'understrap_container_type' );
+    if ( 'container' == $container ) : ?>
+        <div class="container mx-0" >
     <?php endif; ?>
 <!-- ******************* The Navbar Area ******************* -->
 <div id="wrapper-navbar" itemscope itemtype="http://schema.org/WebSite" class="row mx-0">
