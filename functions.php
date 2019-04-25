@@ -565,7 +565,7 @@ function my_masonry()
     wp_enqueue_script('masonry');
     wp_enqueue_script('masonryloader', get_stylesheet_directory_uri() . '/js/TaS-masonryInitializer.js', array( 'masonry', 'jquery' ));
 }
-add_action('wp_enqueue_scripts', 'my_masonry');
+// add_action('wp_enqueue_scripts', 'my_masonry');
 
 
 #----------------------------------------------------

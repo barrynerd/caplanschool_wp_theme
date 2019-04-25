@@ -11,48 +11,48 @@
     <div id="the-logo" class="col-2 col-md-1 px-0">
         <?php the_custom_logo();  ?>
     </div>
-<div class="col-10 col-md-11 px-0">
-    <nav id="secondary-menu" class="navbar navbar-expand-md navbar-dark ">
+    <div class="col-10 col-md-11 px-0">
+        <nav id="secondary-menu" class="navbar navbar-expand-md navbar-dark ">
 
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- The WordPress Menu goes here -->
+                <!-- The WordPress Menu goes here -->
+                <?php wp_nav_menu(
+                    array(
+                        'menu'			=> "bootstrap-menu02a",
+                        // 'theme_location'  => 'primary',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'navbarNavDropdown',
+                        'menu_class'      => 'navbar-nav ml-auto align-items-center text-nowrap',
+                        'fallback_cb'     => '',
+                        // 'menu_id'         => 'secondary-menu',
+                        'depth'           => 2,
+                        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+                    )
+                ); ?>
+
+        </nav><!-- .site-navigation -->
+
+        <nav id="main-menu" class="navbar navbar-expand-md navbar-dark ">
             <?php wp_nav_menu(
                 array(
-                    'menu'			=> "bootstrap-menu02a",
-                    // 'theme_location'  => 'primary',
+                    'theme_location'  => 'primary',
                     'container_class' => 'collapse navbar-collapse',
                     'container_id'    => 'navbarNavDropdown',
-                    'menu_class'      => 'navbar-nav ml-auto align-items-center text-nowrap',
+                    'menu_class'      => 'navbar-nav mx-auto align-items-center text-nowrap',
                     'fallback_cb'     => '',
-                    // 'menu_id'         => 'secondary-menu',
+                    'menu_id'         => 'main-menu',
                     'depth'           => 2,
                     'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
                 )
             ); ?>
-
-    </nav><!-- .site-navigation -->
-
-    <nav id="main-menu" class="navbar navbar-expand-md navbar-dark ">
-        <?php wp_nav_menu(
-            array(
-                'theme_location'  => 'primary',
-                'container_class' => 'collapse navbar-collapse',
-                'container_id'    => 'navbarNavDropdown',
-                'menu_class'      => 'navbar-nav mx-auto align-items-center text-nowrap',
-                'fallback_cb'     => '',
-                'menu_id'         => 'main-menu',
-                'depth'           => 2,
-                'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-            )
-        ); ?>
-    </nav><!-- .site-navigation -->
+        </nav><!-- .site-navigation -->
+    </div>
 </div>
-
 <?php if ( 'container' == $container ) : ?>
 </div><!-- .container -->
 <?php endif; ?>
