@@ -1,3 +1,4 @@
+.single,
 .blog {
     h1 {
         padding: 1.5rem 0 1rem;
@@ -35,5 +36,13 @@
 
     .pagination {
         justify-content: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: calc((100vw - 50px) * 9 /16);
+        @media (min-width: 768px) {
+            height: calc((800px - 50px) * 9 /16);
+        }
     }
 }

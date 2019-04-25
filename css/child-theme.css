@@ -12211,10 +12211,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+.single h1,
 .blog h1 {
   padding: 1.5rem 0 1rem;
   text-align: center; }
 
+.single p.has-drop-cap:not(:focus):first-letter,
 .blog p.has-drop-cap:not(:focus):first-letter {
   float: inherit;
   font-size: inherit;
@@ -12224,24 +12226,38 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   text-transform: inherit;
   font-style: inherit; }
 
+.single .card-subtitle,
 .blog .card-subtitle {
   font-size: .9rem; }
 
+.single #index-wrapper,
 .blog #index-wrapper {
   margin: 0 auto; }
 
+.single #main,
 .blog #main {
   margin: 0 auto; }
+  .single #main article,
   .blog #main article {
     margin: 0 auto;
     max-width: 800px;
     margin-bottom: 10px;
     width: calc(100vw - 50px); }
 
+.single .pagination,
 .blog .pagination {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+
+.single iframe,
+.blog iframe {
+  width: 100%;
+  height: calc((100vw - 50px) * 9 /16); }
+  @media (min-width: 768px) {
+    .single iframe,
+    .blog iframe {
+      height: calc((800px - 50px) * 9 /16); } }
 
 figcaption {
   font-size: 0.85rem; }
