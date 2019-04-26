@@ -584,6 +584,7 @@ add_action('pre_get_posts', 'my_home_category');
 #override parent theme
 function understrap_entry_footer()
 {
+
     // Hide category and tag text for pages.
     if ('post' === get_post_type()) {
         /* translators: used between list items, there is a space after the comma */
@@ -593,11 +594,13 @@ function understrap_entry_footer()
             printf('<span class="cat-links">' . esc_html__('%s', 'understrap') . '</span>', $categories_list); // WPCS: XSS OK.
         }
         /* translators: used between list items, there is a space after the comma */
-        $tags_list = get_the_tag_list('', esc_html__(', ', 'understrap'));
-        if ($tags_list) {
-            /* translators: %s: Tags of current post */
-            printf('<span class="tags-links">' . esc_html__('Tagged %s', 'understrap') . '</span>', $tags_list); // WPCS: XSS OK.
-        }
+
+        //barry - never show the tags
+        // $tags_list = get_the_tag_list('', esc_html__(', ', 'understrap'));
+        // if ($tags_list) {
+        //     /* translators: %s: Tags of current post */
+        //     printf('<span class="tags-links">' . esc_html__('Tagged %s', 'understrap') . '</span>', $tags_list); // WPCS: XSS OK.
+        // }
     }
     if (! is_single() && ! post_password_required() && (comments_open() || get_comments_number())) {
         echo '<span class="comments-link">';
