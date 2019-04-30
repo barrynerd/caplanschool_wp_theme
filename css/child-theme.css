@@ -12211,14 +12211,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
-.page-template-default h1,
 .blog h1,
 .category h1,
 .single h1 {
   padding: 1.5rem 0 1rem;
   text-align: center; }
 
-.page-template-default p.has-drop-cap:not(:focus):first-letter,
 .blog p.has-drop-cap:not(:focus):first-letter,
 .category p.has-drop-cap:not(:focus):first-letter,
 .single p.has-drop-cap:not(:focus):first-letter {
@@ -12230,24 +12228,20 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   text-transform: inherit;
   font-style: inherit; }
 
-.page-template-default .card-subtitle,
 .blog .card-subtitle,
 .category .card-subtitle,
 .single .card-subtitle {
   font-size: 0.9rem; }
 
-.page-template-default #index-wrapper,
 .blog #index-wrapper,
 .category #index-wrapper,
 .single #index-wrapper {
   margin: 0 auto; }
 
-.page-template-default #main,
 .blog #main,
 .category #main,
 .single #main {
   margin: 0 auto; }
-  .page-template-default #main article,
   .blog #main article,
   .category #main article,
   .single #main article {
@@ -12256,7 +12250,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-bottom: 10px;
     width: calc(100vw - 50px); }
 
-.page-template-default .pagination,
 .blog .pagination,
 .category .pagination,
 .single .pagination {
@@ -12264,14 +12257,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       -ms-flex-pack: center;
           justify-content: center; }
 
-.page-template-default iframe,
 .blog iframe,
 .category iframe,
 .single iframe {
   width: 100%;
   height: calc((100vw - 50px) * 9 /16); }
   @media (min-width: 768px) {
-    .page-template-default iframe,
     .blog iframe,
     .category iframe,
     .single iframe {
