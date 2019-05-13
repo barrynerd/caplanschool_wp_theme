@@ -12295,7 +12295,7 @@ p:empty {
   display: none; }
 
 .wrapper {
-  padding: 0 !important;
+  padding: 0 !important !important;
   width: 100%; }
 
 .page-template-front-page .wrapper,
@@ -12329,7 +12329,7 @@ p:empty {
       font-size: 0.85rem; }
     .feature01-row .sow-features-feature {
       width: 50% !important;
-      padding: 0 1.5rem 1.5rem !important;
+      padding: 0 1.5rem 1.5rem !important !important;
       margin: 0 auto; }
     .feature01-row .sow-features-list {
       display: -webkit-box;
@@ -12347,7 +12347,7 @@ p:empty {
       .feature01-row .sow-features-feature .sow-icon-container [class^="sow-icon-"] {
         font-size: 3.5rem !important; }
     .feature01-row .sow-features-feature .textwidget {
-      margin: 0.5rem 0 3rem !important; } }
+      margin: 0.5rem 0 3rem !important !important; } }
 
 @media (min-width: 544px) {
   .home .video-row01 {
@@ -12416,13 +12416,13 @@ p.members-ce-product {
   font-weight: bold !important;
   text-align: center !important;
   border: none !important;
-  padding: 0 !important; }
+  padding: 0 !important !important; }
 
 p.members-ce-product >
 ul.products li.product a h2 {
   font-size: 1.1em !important;
   min-height: 6.4em;
-  padding: 0.5em 0.5em 0 !important;
+  padding: 0.5em 0.5em 0 !important !important;
   text-align: center; }
 
 ul.products li.product a span.price {
@@ -12589,5 +12589,14 @@ h2.woocommerce-loop-product__title {
   text-align: center;
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important; }
+
+article .category-elliotts-industry-news img {
+  width: 100%;
+  margin-bottom: 1.5rem; }
+
+article .category-elliotts-industry-news h2 {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: 1.5rem; }
 
 /*# sourceMappingURL=child-theme.css.map */
