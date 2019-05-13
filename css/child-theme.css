@@ -12590,11 +12590,11 @@ h2.woocommerce-loop-product__title {
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important; }
 
-article .category-elliotts-industry-news img {
+article.category-elliotts-industry-news img {
   width: 100%;
   margin-bottom: 1.6rem; }
 
-article .category-elliotts-industry-news h2 {
+article.category-elliotts-industry-news h2 {
   text-align: center;
   margin: 0.5rem 0;
   font-size: 1.5rem; }
