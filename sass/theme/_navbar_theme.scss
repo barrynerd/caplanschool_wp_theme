@@ -84,6 +84,9 @@
         font-size: 1rem;
     }
     @media (min-width: 768px) {
+        margin-left: -35px;
+        background-color: transparent!important;
+
         padding: 0.0rem 1rem;
         height: 47px;
 
@@ -237,4 +240,8 @@
             color: $bcc_medium_blue;
         }
     }
+}
+
+.nav-inner-wrapper {
+    background: #ffee5d;
 }

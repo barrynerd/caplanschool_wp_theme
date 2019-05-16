@@ -10994,6 +10994,8 @@ a.skip-link {
       font-size: 1rem; } }
   @media (min-width: 768px) {
     #main-menu {
+      margin-left: -35px;
+      background-color: transparent !important;
       padding: 0.0rem 1rem;
       height: 47px; }
       #main-menu .navbar-collapse {
@@ -11077,6 +11079,9 @@ a.skip-link {
 
 .navbar-dark .navbar-nav .active > .nav-link {
   color: #614b75; }
+
+.nav-inner-wrapper {
+  background: #ffee5d; }
 
 .btn,
 .wpcf7 input[type=submit] {

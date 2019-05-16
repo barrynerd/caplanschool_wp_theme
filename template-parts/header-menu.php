@@ -11,7 +11,7 @@
     <div id="the-logo" class="col-2 col-md-1 px-0">
         <?php the_custom_logo();  ?>
     </div>
-    <div class="col-10 col-md-11 px-0">
+    <div class="nav-inner-wrapper col-10 col-md-11 px-0">
         <nav id="secondary-menu" class="navbar navbar-expand-md navbar-dark ">
 
 
