@@ -414,3 +414,25 @@ article.category-elliotts-industry-news {
         font-size: 1.5rem;
     }
 }
+
+.category-elliotts-industry-news {
+    .headline-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headline-logo {
+        padding-right: 0.6rem;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+        max-width: 120px;
+        @media (min-width: 768px) {
+            font-size: 2.5rem;
+            max-width: 100%;
+        }
+    }
+}

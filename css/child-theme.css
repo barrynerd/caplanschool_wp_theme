@@ -12599,4 +12599,28 @@ article.category-elliotts-industry-news h2 {
   margin: 0.5rem 0;
   font-size: 1.5rem; }
 
+.category-elliotts-industry-news .headline-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.category-elliotts-industry-news .headline-logo {
+  padding-right: 0.6rem; }
+
+.category-elliotts-industry-news .page-title {
+  font-size: 1.8rem;
+  max-width: 120px; }
+  @media (min-width: 768px) {
+    .category-elliotts-industry-news .page-title {
+      font-size: 2.5rem;
+      max-width: 100%; } }
+
 /*# sourceMappingURL=child-theme.css.map */
