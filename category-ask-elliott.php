@@ -21,6 +21,7 @@ $container = get_theme_mod('understrap_container_type');
 
 		<div class="row">
 
+
 			<!-- Do the left sidebar check -->
 			<?php get_template_part('global-templates/left-sidebar-check'); ?>
 
@@ -32,11 +33,20 @@ $container = get_theme_mod('understrap_container_type');
 						<div class="headline-wrapper">
 							<img class="headline-logo" src="/wordpress/wp-content/uploads/square-logo-caplanschool-61x60.png" />
 							<?php
-	                        the_archive_title('<h1 class="page-title">', '</h1>');
-	                        the_archive_description('<div class="taxonomy-description">', '</div>');
-	                        ?>
-						</div>
+                            the_archive_title('<h1 class="page-title">', '</h1>');
+                            the_archive_description('<div class="taxonomy-description">', '</div>');
+                            ?>
+
+                        			</div>
 					</header><!-- .page-header -->
+
+                    <?php if ( is_active_sidebar( 'bcc_widget_area_01' ) ) : ?>
+                        <div id="bcc_widget_area_01" class="bcc_widget_area_01 widget-area" role="complementary">
+                            <?php dynamic_sidebar( 'bcc_widget_area_01' ); ?>
+                        </div>
+
+                    <?php endif; ?>
+
 
 					<?php /* Start the Loop */ ?>
 					<?php while (have_posts()) : the_post(); ?>

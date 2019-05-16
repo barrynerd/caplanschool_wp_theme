@@ -12279,6 +12279,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .category.category-ask-elliott article img {
   display: none; }
 
+.category.category-ask-elliott .widget-area {
+  font-size: .9rem;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 10px;
+  width: calc(100vw - 50px); }
+
 figcaption {
   font-size: 0.85rem; }
 
