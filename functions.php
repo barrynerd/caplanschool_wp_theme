@@ -482,7 +482,7 @@ function theme_oembed_videos()
         $result="";
         $pattern="/(https:\/\/www.youtube.com\/.*?)\"/i";
         if (preg_match($pattern, get_the_content(), $matches)) {
-            $embed .= wp_oembed_get($matches[1], array('width'=>"100%", 'class'=>'embed-responsive-item'));
+            $embed = wp_oembed_get($matches[1], array('width'=>"100%", 'class'=>'embed-responsive-item'));
             $result =<<<END
 				<div  class="embed-responsive embed-responsive-16by9">$embed</div>
 END;
