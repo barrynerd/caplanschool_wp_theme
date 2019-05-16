@@ -12265,13 +12265,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .blog iframe,
 .category iframe,
 .single iframe {
-  width: 100%;
-  height: calc((100vw - 50px) * 9 /16); }
+  width: 100% !important;
+  height: calc((100vw - 50px) * 9 /16) !important; }
   @media (min-width: 768px) {
     .blog iframe,
     .category iframe,
     .single iframe {
-      height: calc((800px - 50px) * 9 /16); } }
+      height: calc((800px - 50px) * 9 /16) !important; } }
 
 .single article.category-ask-elliott img.wp-post-image {
   display: none; }
