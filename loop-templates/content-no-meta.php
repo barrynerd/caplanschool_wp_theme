@@ -33,13 +33,13 @@ if (! defined('ABSPATH')) {
                         ?>
 				</h4>
 				<div class="preview-wrapper">
-					<div class="col-5">
+					<div class="col col-md-5 p-0 m-0">
 						<?php
 						$my_embed = theme_oembed_videos();
 						print $my_embed;
 						?>
 					</div>
-					<div class="col-7 card-text entry-summary">
+					<div class="col col-md-7 pt-3 card-text entry-summary">
 						<?php
 						$my_excerpt = get_the_excerpt();
 						print $my_excerpt;
