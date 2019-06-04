@@ -437,8 +437,17 @@ article.category-elliotts-industry-news {
         }
     }
 
-    .embed-responsive iframe{
-        width: 270px!important;
-        height: calc( 270px * 9 / 16 )!important;
+    .preview-wrapper {
+        display: flex;
+    }
+    .embed-responsive {
+        width: 315px!important;
+        height: calc(315px * 9 / 16)!important;
+        position: static;
+
+        iframe {
+            width: 315px!important;
+            height: calc(315px * 9 / 16)!important;
+        }
     }
 }

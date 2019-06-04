@@ -12639,9 +12639,20 @@ article.category-elliotts-industry-news h2 {
       font-size: 2.5rem;
       max-width: 100%; } }
 
-.category-ask-elliott .embed-responsive iframe,
-.category-elliotts-industry-news .embed-responsive iframe {
-  width: 270px !important;
-  height: calc( 270px * 9 / 16) !important; }
+.category-ask-elliott .preview-wrapper,
+.category-elliotts-industry-news .preview-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.category-ask-elliott .embed-responsive,
+.category-elliotts-industry-news .embed-responsive {
+  width: 315px !important;
+  height: calc(315px * 9 / 16) !important;
+  position: static; }
+  .category-ask-elliott .embed-responsive iframe,
+  .category-elliotts-industry-news .embed-responsive iframe {
+    width: 315px !important;
+    height: calc(315px * 9 / 16) !important; }
 
 /*# sourceMappingURL=child-theme.css.map */
