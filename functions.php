@@ -480,8 +480,19 @@ function theme_oembed_videos()
 
     if ($post && get_post($post)) {
         $result="";
-        $pattern="/(https:\/\/www.youtube.com\/.*?)\"/i";
+        $pattern="/(https:\/\/youtu.be\/.+?|http[s]*:\/\/www.youtube.com\/.*)/i";
+        // $pattern="/(http:\/\/www.youtube.com\/.*)/i";
+        // if (current_user_can('administrator')) {
+        //     print_r($pattern);
+        //     print "<pre> Content:";
+        //     print get_the_content();
+        //     print "</pre>";
+        // }
+
         if (preg_match($pattern, get_the_content(), $matches)) {
+            // if (current_user_can('administrator')) {
+            //     print_r($matches);
+            // }
             $embed = wp_oembed_get($matches[1], array('width'=>"100%", 'class'=>'embed-responsive-item'));
             $result =<<<END
 				<div  class="embed-responsive embed-responsive-16by9">$embed</div>
@@ -631,19 +642,18 @@ add_filter('get_the_archive_title', function ($title) {
     return $title;
 });
 #----------------------------------------------------
-function bcc_widgets_init() {
-
-	register_sidebar( array(
-		'name'          => 'BCC widget area 01',
-		'id'            => 'bcc_widget_area_01',
-		'before_widget' => '<div>',
-		'after_widget'  => '</div>',
-		'before_title'  => '<h2 class="rounded">',
-		'after_title'   => '</h2>',
-	) );
-
+function bcc_widgets_init()
+{
+    register_sidebar(array(
+        'name'          => 'BCC widget area 01',
+        'id'            => 'bcc_widget_area_01',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
 }
-add_action( 'widgets_init', 'bcc_widgets_init' );
+add_action('widgets_init', 'bcc_widgets_init');
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
