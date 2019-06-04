@@ -12639,4 +12639,9 @@ article.category-elliotts-industry-news h2 {
       font-size: 2.5rem;
       max-width: 100%; } }
 
+.category-ask-elliott .embed-responsive iframe,
+.category-elliotts-industry-news .embed-responsive iframe {
+  width: 270px !important;
+  height: calc( 270px * 9 / 16) !important; }
+
 /*# sourceMappingURL=child-theme.css.map */
