@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					the_post_thumbnail('post-thumbnail',
 						['class' => 'card-img-top']);
 					}
-				echo theme_oembed_videos();
+				// echo theme_oembed_videos();
 				?>
 			  <div class="card-body">
 			    <h4 class="card-title">		<?php
@@ -29,6 +29,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 						);
 						?>
 				</h4>
+				<?php echo theme_oembed_videos(); ?>
 			    <p class="card-text entry-summary">
 					<?php the_excerpt(); ?>
 					</p>
