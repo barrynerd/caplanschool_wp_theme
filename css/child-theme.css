@@ -12639,6 +12639,10 @@ article.category-elliotts-industry-news h2 {
       font-size: 2.5rem;
       max-width: 100%; } }
 
+.category-ask-elliott .card,
+.category-elliotts-industry-news .card {
+  background: #fffbad; }
+
 @media (min-width: 768px) {
   .category-ask-elliott .preview-wrapper,
   .category-elliotts-industry-news .preview-wrapper {

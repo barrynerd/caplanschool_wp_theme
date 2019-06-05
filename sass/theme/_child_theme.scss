@@ -437,6 +437,10 @@ article.category-elliotts-industry-news {
         }
     }
 
+    .card {
+        background: $bcc_light_yellow;
+    }
+
     .preview-wrapper {
         // flex-direction: column;
         @media (min-width: 768px) {
