@@ -480,8 +480,7 @@ function theme_oembed_videos()
 
     if ($post && get_post($post)) {
         $result="";
-        $pattern="/(https:\/\/youtu.be\/[a-zA-Z0-9]*|http[s]*:\/\/www.youtube.com\/.*)/i";
-        $pattern1 ="https:\/\/youtu.be\/[a-zA-Z0-9]*";
+        $pattern1 ="https:\/\/youtu.be\/[a-zA-Z0-9_-]*";
         $pattern2 ="(http[sv]*:\/\/www.youtube.com\/.+?)\&";
         $pattern3 ="(http[sv]*:\/\/www.youtube.com\/watch\?v=[A-Za-z0-9_-]*)";
 
