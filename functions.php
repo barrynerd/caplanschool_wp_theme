@@ -675,6 +675,16 @@ function bcc_widgets_init()
         'before_title'  => '<h2 class="rounded">',
         'after_title'   => '</h2>',
     ));
+
+    register_sidebar(array(
+        'name'          => 'BCC widget area 02',
+        'id'            => 'bcc_widget_area_02',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));
+
 }
 add_action('widgets_init', 'bcc_widgets_init');
 #----------------------------------------------------
