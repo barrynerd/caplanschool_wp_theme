@@ -12751,7 +12751,10 @@ article.category-elliotts-industry-news h2 {
   font-size: 0.9rem; }
   .latest-posts .card-body .listing-item {
     text-indent: -1rem;
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem; }
 
 .latest-posts h2 {
   color: green;
