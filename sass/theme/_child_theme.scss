@@ -501,6 +501,9 @@ article.category-elliotts-industry-news {
     }
 
     .widget-wrapper-1 {
+        h3 {
+            padding: 0.3rem;
+        }
         order: 2;
         @media (min-width: 768px) {
             order: 1;
@@ -515,6 +518,9 @@ article.category-elliotts-industry-news {
     }
 
     .widget-wrapper-3 {
+        h3 {
+            padding: 0.3rem;
+        }
         order: 2;
         @media (min-width: 768px) {
             order: 2;
