@@ -501,8 +501,7 @@ function theme_oembed_videos()
             $my_embed = $matches[0];
             if (!empty($matches[1])) {
                 $my_embed = $matches[1];
-            }
-            elseif (!empty($matches[2])) {
+            } elseif (!empty($matches[2])) {
                 $my_embed = $matches[2];
             }
 
@@ -684,10 +683,25 @@ function bcc_widgets_init()
         'before_title'  => '<h2 class="rounded">',
         'after_title'   => '</h2>',
     ));
-
 }
 add_action('widgets_init', 'bcc_widgets_init');
 #----------------------------------------------------
+function ask_elliott_bold_title($title, $id = null)
+{
+    $result = $title;
+    if (in_category('ask-elliott', $id)) {
+
+        $limit=1;
+        $pattern = '/(Ask Elliott [0-9:]+)(\s[a-zA-Z0-9_])*/i';
+        $replacement = '<strong>${1}</strong>${2}';
+        $result = preg_replace($pattern, $replacement, $result, $limit);
+        return $result;
+    }
+
+    return $result;
+
+}
+add_filter('the_title', 'ask_elliott_bold_title', 10, 2);
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
