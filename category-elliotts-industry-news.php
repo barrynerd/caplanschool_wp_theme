@@ -33,9 +33,15 @@ $container = get_theme_mod('understrap_container_type');
 							<img class="headline-logo" src="/wordpress/wp-content/uploads/square-logo-caplanschool-61x60.png" />
 							<?php
 	                        the_archive_title('<h1 class="page-title">', '</h1>');
-	                        the_archive_description('<div class="taxonomy-description">', '</div>');
 	                        ?>
 						</div>
+                        <div class="card col-8">
+                            <div class="card-body>">
+                            <?php
+                                the_archive_description('<div class="taxonomy-description">', '</div>');
+                                ?>
+                            </div>
+                        </div>
 					</header><!-- .page-header -->
 
 					<?php /* Start the Loop */ ?>
