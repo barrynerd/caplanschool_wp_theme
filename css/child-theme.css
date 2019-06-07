@@ -12641,7 +12641,15 @@ article.category-elliotts-industry-news h2 {
 
 .category-ask-elliott .card,
 .category-elliotts-industry-news .card {
-  background: #fffbad; }
+  background: #fffbad;
+  margin: 0 auto;
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-bottom: 1rem; }
+
+.category-ask-elliott .page-header .card,
+.category-elliotts-industry-news .page-header .card {
+  background: #ddd; }
 
 @media (min-width: 768px) {
   .category-ask-elliott .preview-wrapper,
