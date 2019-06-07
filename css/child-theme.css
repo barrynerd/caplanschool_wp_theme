@@ -10789,9 +10789,9 @@ a.skip-link {
     padding: 0 1rem; }
     @media (min-width: 768px) {
       .home-card .card-body {
-        line-height: 1.5;
+        line-height: 1.2;
         font-size: 1rem;
-        padding: 0 1rem 1rem; } }
+        padding: 0 1rem; } }
   .home-card .card-body.cta {
     color: #2a8700;
     font-weight: bold;
@@ -10803,7 +10803,7 @@ a.skip-link {
     padding: 0 1rem 1rem; }
     @media (min-width: 768px) {
       .home-card .card-subtitle {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 0 1rem 1rem; } }
   .home-card .card-title {
     background: #2a8700;
@@ -10811,6 +10811,20 @@ a.skip-link {
     font-size: 1rem;
     font-weight: bold;
     padding: 0.75rem; }
+  @media (min-width: 768px) {
+    .home-card .btn-group-sm-bcc > .a,
+    .home-card .btn-group-sm-bcc > .btn,
+    .home-card .wpcf7 .btn-group-sm-bcc > input[type=submit],
+    .wpcf7 .home-card .btn-group-sm-bcc > input[type=submit],
+    .home-card .btn-sm,
+    .home-card .btn-group-sm > .btn,
+    .home-card .wpcf7 .btn-group-sm > input[type=submit],
+    .wpcf7 .home-card .btn-group-sm > input[type=submit],
+    .home-card .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+      padding: 0.3rem 0 !important;
+      font-size: 0.9em !important;
+      line-height: 1.5 !important;
+      border-radius: 0.25rem !important; } }
 
 @media (min-width: 768px) {
   .home .feature01-row h5 {
