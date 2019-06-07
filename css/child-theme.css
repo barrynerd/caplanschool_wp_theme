@@ -10864,6 +10864,12 @@ a.skip-link {
   display: -ms-flexbox;
   display: flex;
   height: auto; }
+  @media (min-width: 768px) {
+    .home .jumbotron-fluid {
+      height: 500px;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
 
 .home .row-course-card {
   background: #fffff6;

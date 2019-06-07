@@ -44,10 +44,15 @@
     .jumbotron-fluid {
         align-items: center;
         background: url("/wordpress/wp-content/uploads/Adult_Learner_shutterstock_200562314_0.jpg");
-        background-position: center bottom; 
+        background-position: center bottom;
         background-size: cover;
         display: flex;
         height: auto;
+        @media (min-width: 768px) {
+            height: 500px;
+            align-items: flex-start;
+        }
+
     }
 
     .row-course-card {
