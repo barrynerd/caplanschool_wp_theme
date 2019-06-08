@@ -12136,11 +12136,18 @@ button#place_order {
       -ms-flex-pack: center !important;
           justify-content: center !important; }
   .out-of-state-online-courses .btn-group {
-    margin-right: 0.5em; }
+    margin-right: 1.5em; }
+    .out-of-state-online-courses .btn-group:first-of-type {
+      margin-left: 1.5rem; }
     .out-of-state-online-courses .btn-group:last-of-type {
       margin-right: 0; }
     .out-of-state-online-courses .btn-group .btn:first-of-type, .out-of-state-online-courses .btn-group .wpcf7 input:first-of-type[type=submit], .wpcf7 .out-of-state-online-courses .btn-group input:first-of-type[type=submit] {
       margin-right: 0.25em; }
+    @media (min-width: 768px) {
+      .out-of-state-online-courses .btn-group {
+        margin-right: 1.5rem; }
+        .out-of-state-online-courses .btn-group:first-of-type {
+          margin-left: 0; } }
 
 .online-license.fl .twostep01-jumbotron,
 .online-license.ny .twostep01-jumbotron,
@@ -12669,7 +12676,7 @@ article.category-elliotts-industry-news h2 {
 
 .category-ask-elliott .page-header .card,
 .category-elliotts-industry-news .page-header .card {
-  background: #ddd; }
+  background: #fffff6; }
 
 @media (min-width: 768px) {
   .category-ask-elliott .preview-wrapper,

@@ -2,7 +2,11 @@
     justify-content: center!important;
 
     .btn-group {
-        margin-right: 0.5em;
+        margin-right: 1.5em;
+
+        &:first-of-type {
+            margin-left: 1.5rem;
+        }
 
         &:last-of-type {
             margin-right: 0;
@@ -11,6 +15,13 @@
         .btn {
             &:first-of-type {
                 margin-right: 0.25em;
+            }
+        }
+        @media (min-width: 768px) {
+            margin-right: 1.5rem;
+
+            &:first-of-type {
+                margin-left: 0;
             }
         }
     }
