@@ -415,6 +415,13 @@ article.category-elliotts-industry-news {
     }
 }
 
+.entry-header,
+.page-header {
+    .card.description {
+        background: $bcc_extra_light_green;
+    }
+}
+
 .category-ask-elliott,
 .category-elliotts-industry-news {
     .headline-wrapper {
@@ -437,18 +444,18 @@ article.category-elliotts-industry-news {
         }
     }
 
+    .page-header {
+        .card {
+            background: $bcc_extra_light_green;
+        }
+    }
+
     .card {
         background: $bcc_light_yellow;
         margin: 0 auto;
         font-style: italic;
         font-size: 0.9rem;
         margin-bottom: 1rem;
-    }
-
-    .page-header {
-        .card {
-            background: $bcc_extra_light_green;
-        }
     }
 
     .preview-wrapper {
