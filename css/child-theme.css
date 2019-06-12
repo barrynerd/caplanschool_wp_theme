@@ -10983,7 +10983,7 @@ a.skip-link {
 
 #secondary-menu {
   background-color: #FFEE5D !important;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: bold;
   padding: 0 0.75rem 0 0; }
   #secondary-menu .navbar-toggler {
@@ -12334,6 +12334,35 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
+#secondary-menu {
+  padding: 0.25rem 0;
+  background: #fffbad !important; }
+
+.search-menu .btn-group-sm > .btn,
+.search-menu .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .search-menu .btn-group-sm > input[type=submit],
+.search-menu .btn-group-sm-bcc > .a,
+.search-menu .btn-group-sm-bcc > .btn,
+.search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit],
+.wpcf7 .search-menu .btn-group-sm-bcc > input[type=submit],
+.search-menu .btn-sm,
+.search-menu .btn-group-sm > .btn,
+.search-menu .wpcf7 .btn-group-sm > input[type=submit],
+.wpcf7 .search-menu .btn-group-sm > input[type=submit],
+.search-menu .wpcf7 .btn-group-sm > input[type=submit],
+.search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+  font-size: 0.8rem !important;
+  height: 100%;
+  padding: 0 !important;
+  margin-top: -.15rem; }
+
+.search-menu #searchbox {
+  border: none;
+  padding: 0;
+  width: 6rem; }
+
+.nav-item.search-menu:after {
+  display: none; }
 
 figcaption {
   font-size: 0.85rem; }

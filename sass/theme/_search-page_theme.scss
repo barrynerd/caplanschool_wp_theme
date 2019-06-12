@@ -30,3 +30,41 @@
         }
     }
 }
+
+#secondary-menu {
+    padding: 0.25rem 0;
+    background: $bcc_light_yellow!important;
+}
+
+#menu-bootstrap-menu02a {
+    @media (min-width: 768px) {
+        // align-items: flex-ensd!important;
+        li {
+            // display: flex;
+        }
+    }
+}
+
+.search-menu {
+    .btn-group-sm > .btn,
+    .btn-group-sm-bcc > .a,
+    .btn-group-sm-bcc > .btn,
+    .btn-sm,
+    .wpcf7 .btn-group-sm > input[type=submit],
+    .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+        font-size: 0.8rem!important;
+        height: 100%;
+        padding: 0!important;
+        margin-top: -.15rem;
+    }
+
+    #searchbox {
+        border: none;
+        padding: 0;
+        width: 6rem;
+    }
+}
+
+.nav-item.search-menu:after{
+    display:none;
+}

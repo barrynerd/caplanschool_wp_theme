@@ -706,6 +706,15 @@ add_filter('the_title', 'ask_elliott_bold_title', 10, 2);
 # from https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/
 add_post_type_support( 'page', 'excerpt' );
 #----------------------------------------------------
+# add search to menus
+# from https://www.isitwp.com/add-search-form-to-specific-wp-nav-menu/
+add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
+function add_search_form($items, $args) {
+if( $args->theme_location == 'secondary' )
+        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="'.home_url( '/' ).'"><input type="text" value="search" name="s" id="s" /><input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" /></form></li>';
+        return $items;
+}
+
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
