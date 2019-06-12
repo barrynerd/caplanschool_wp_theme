@@ -711,7 +711,10 @@ add_post_type_support( 'page', 'excerpt' );
 add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 function add_search_form($items, $args) {
 if( $args->theme_location == 'secondary' )
-        $items .= '<li class="search"><form role="search" method="get" id="searchform" action="'.home_url( '/' ).'"><input type="text" value="search" name="s" id="s" /><input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" /></form></li>';
+
+        $new_item = '<li class="search-menu"><form role="search" method="get" id="searchform" class="searchform" action="'.home_url( '/' ).'">     	<div> 		<label class="screen-reader-text" for="s">Search for:</label> 		<input type="text" id="searchbox" value="" name="s" id="s"> 		<input type="submit" id="searchsubmit" class="btn btn-primary btn-sm" value="'. esc_attr__('Search') .'"> 	</div> </form>';
+
+        $items .= $new_item;
         return $items;
 }
 
