@@ -703,6 +703,8 @@ function ask_elliott_bold_title($title, $id = null)
 }
 add_filter('the_title', 'ask_elliott_bold_title', 10, 2);
 #----------------------------------------------------
+# from https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/
+add_post_type_support( 'page', 'excerpt' );
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------

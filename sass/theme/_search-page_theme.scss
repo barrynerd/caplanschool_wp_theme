@@ -1,0 +1,32 @@
+.search-results {
+    .content-area {
+        max-width: 630px;
+
+        article {
+            max-width: 600px;
+            margin-bottom: 1.75rem;
+
+            .entry-header {
+                h2.entry-title {
+                    color: $bcc_green;
+                    font-size: 1.1rem;
+                    letter-spacing: -.25px;
+                    line-height: 1.33;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+
+            .entry-summary {
+                font-size: small;
+                line-height: 1.54;
+            }
+        }
+
+        ul.pagination {
+            justify-content: center;
+        }
+    }
+}

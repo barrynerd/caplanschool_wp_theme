@@ -12313,6 +12313,28 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   margin-bottom: 10px;
   width: calc(100vw - 50px); }
 
+.search-results .content-area {
+  max-width: 630px; }
+  .search-results .content-area article {
+    max-width: 600px;
+    margin-bottom: 1.75rem; }
+    .search-results .content-area article .entry-header h2.entry-title {
+      color: #2a8700;
+      font-size: 1.1rem;
+      letter-spacing: -.25px;
+      line-height: 1.33;
+      margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .search-results .content-area article .entry-summary {
+      font-size: small;
+      line-height: 1.54; }
+  .search-results .content-area ul.pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
 figcaption {
   font-size: 0.85rem; }
 
