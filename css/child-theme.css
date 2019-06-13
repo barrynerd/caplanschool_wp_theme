@@ -12325,6 +12325,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       line-height: 1.33;
       margin: 0;
       overflow: hidden;
+      text-align: left;
       text-overflow: ellipsis;
       white-space: nowrap; }
     .search-results .content-area article .entry-summary {
