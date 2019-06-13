@@ -1,0 +1,63 @@
+@mixin plain_text() {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+@mixin amended_text() {
+    display: block;
+    font-style: italic;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+@mixin section_header_text() {
+    display: block;
+    font-weight: bold;
+    margin: 0.75rem 0 0.5rem;
+}
+
+@mixin hidden_text() {
+    display: none;
+}
+
+.category-rules-and-regulations {
+    #title45 #t65_28,
+    #title45 #t83_31,
+    #title45 #t84_31,
+    #title45 #t109s_31,
+    #title45 #t89_38,
+    #title45 #t89_38,
+    #title45 #t58_42,
+    #title45 #t90_42,
+    #title45 #t96_42,
+    #title45 #t99_42,
+    #title45 #t45_64,
+    #title45 #t47_64,
+    #title45 #t56_64,
+    #title45 #t65_64,
+    #title45 #t45_65,
+    #title45 #t47_65,
+    .doc_style007 + div,
+    .doc_style038 {
+        @include section_header_text();
+    }
+
+    #title45 #t4_58,
+    #title45 #t30_58,
+    #title45 #t3_25,
+    #title45 #t58_27,
+    .doc_style024,
+    .doc_style038 + .doc_style038 {
+        @include plain_text();
+    }
+
+    .doc_style005,
+    .doc_style007 {
+        @include amended_text();
+    }
+
+    #title45 #t114_57,
+    #title45 #t113_55 {
+        @include hidden_text();
+    }
+
+}

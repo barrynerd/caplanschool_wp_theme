@@ -12367,6 +12367,49 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .nav-item.search-menu:after {
   display: none; }
 
+.category-rules-and-regulations #title45 #t65_28,
+.category-rules-and-regulations #title45 #t83_31,
+.category-rules-and-regulations #title45 #t84_31,
+.category-rules-and-regulations #title45 #t109s_31,
+.category-rules-and-regulations #title45 #t89_38,
+.category-rules-and-regulations #title45 #t89_38,
+.category-rules-and-regulations #title45 #t58_42,
+.category-rules-and-regulations #title45 #t90_42,
+.category-rules-and-regulations #title45 #t96_42,
+.category-rules-and-regulations #title45 #t99_42,
+.category-rules-and-regulations #title45 #t45_64,
+.category-rules-and-regulations #title45 #t47_64,
+.category-rules-and-regulations #title45 #t56_64,
+.category-rules-and-regulations #title45 #t65_64,
+.category-rules-and-regulations #title45 #t45_65,
+.category-rules-and-regulations #title45 #t47_65,
+.category-rules-and-regulations .doc_style007 + div,
+.category-rules-and-regulations .doc_style038 {
+  display: block;
+  font-weight: bold;
+  margin: 0.75rem 0 0.5rem; }
+
+.category-rules-and-regulations #title45 #t4_58,
+.category-rules-and-regulations #title45 #t30_58,
+.category-rules-and-regulations #title45 #t3_25,
+.category-rules-and-regulations #title45 #t58_27,
+.category-rules-and-regulations .doc_style024,
+.category-rules-and-regulations .doc_style038 + .doc_style038 {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0.5rem; }
+
+.category-rules-and-regulations .doc_style005,
+.category-rules-and-regulations .doc_style007 {
+  display: block;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: normal; }
+
+.category-rules-and-regulations #title45 #t114_57,
+.category-rules-and-regulations #title45 #t113_55 {
+  display: none; }
+
 figcaption {
   font-size: 0.85rem; }
 
