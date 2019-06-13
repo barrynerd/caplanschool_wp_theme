@@ -12399,6 +12399,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   font-weight: normal;
   margin-bottom: 0.5rem; }
 
+.category-rules-and-regulations .doc_15_style004,
 .category-rules-and-regulations .doc_style005,
 .category-rules-and-regulations .doc_style007 {
   display: block;
@@ -12409,6 +12410,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .category-rules-and-regulations #title45 #t114_57,
 .category-rules-and-regulations #title45 #t113_55 {
   display: none; }
+
+.category-rules-and-regulations .doc_15_style007 {
+  display: block;
+  font-weight: normal;
+  margin: 0.75rem 0 0.5rem; }
 
 figcaption {
   font-size: 0.85rem; }
