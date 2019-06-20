@@ -70,7 +70,9 @@
     }
 }
 
-.license-act.list-group {
+.license-act.list-group,
+.rules-regs.list-group,
+.rules-regs-index.list-group {
     font-size: 0.9rem;
     line-height: 1.2;
     margin: 0 auto;
@@ -79,12 +81,36 @@
     @media (min-width: 768px) {
         font-size: 1rem;
     }
+
     a {
-        padding: .25rem;
+        border:none;
+        padding: 0.25rem;
     }
+
     .section,
     .title {
         padding-left: 0;
         padding-right: 0;
     }
+
+    .toc_description {
+        font-size: .9rem;
+    }
+}
+
+h2.toc_title {
+    font-size: 1.5rem;
+}
+
+h3.toc_title {
+    font-size: 1.4rem;
+}
+
+h4.toc_title {
+    font-size: 1.2rem;
+}
+
+h5.toc_subchapter {
+    font-size: 1.1rem;
+    margin: 1rem;
 }
