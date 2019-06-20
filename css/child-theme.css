@@ -10971,7 +10971,8 @@ a.skip-link {
 
 #the-logo {
   background-color: #FFEE5D !important;
-  text-align: center; }
+  text-align: center;
+  z-index: 999; }
   #the-logo a.navbar-brand {
     margin: 0; }
   #the-logo img {
@@ -10987,7 +10988,7 @@ a.skip-link {
   font-weight: bold;
   padding: 0 0.75rem 0 0; }
   #secondary-menu .navbar-toggler {
-    margin-left: auto; }
+    margin-left: calc(100% - 8.33333%); }
   @media (min-width: 768px) {
     #secondary-menu li.menu-useful-links ul.dropdown-menu {
       width: 18rem;
@@ -10995,7 +10996,11 @@ a.skip-link {
       left: auto; } }
   #secondary-menu ul.dropdown-menu {
     background: #fffbad;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    border: none; }
+    @media (min-width: 768px) {
+      #secondary-menu ul.dropdown-menu {
+        border: 1px solid #BBDFAB; } }
     #secondary-menu ul.dropdown-menu .dropdown-item {
       color: #2a8700; }
       #secondary-menu ul.dropdown-menu .dropdown-item:focus, #secondary-menu ul.dropdown-menu .dropdown-item:hover {
@@ -11005,7 +11010,7 @@ a.skip-link {
 #main-menu {
   background-color: #FFEE5D !important;
   font-family: "Open Sans";
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: bold;
   padding: 0;
   text-transform: uppercase; }
@@ -11014,10 +11019,11 @@ a.skip-link {
       font-size: 1rem; } }
   @media (min-width: 768px) {
     #main-menu {
-      margin-left: -35px;
       background-color: transparent !important;
-      padding: 0.0rem 1rem;
-      height: 47px; }
+      font-size: 1.125rem;
+      height: 47px;
+      margin-left: -35px;
+      padding: 0.0rem 1rem; }
       #main-menu .navbar-collapse {
         -webkit-box-flex: 0;
             -ms-flex-positive: 0;
@@ -11052,9 +11058,11 @@ a.skip-link {
       left: auto; } }
   #main-menu ul.dropdown-menu {
     background: #fffbad;
+    border: none;
     text-align: center; }
     @media (min-width: 768px) {
       #main-menu ul.dropdown-menu {
+        border: 1px solid #BBDFAB;
         text-align: left; } }
     #main-menu ul.dropdown-menu .dropdown-item {
       color: #2a8700 !important;
@@ -11082,8 +11090,9 @@ a.skip-link {
   -webkit-transition: 0.05s;
   transition: 0.05s; }
 
-.nav-item:hover::after {
-  width: 100%; }
+@media (min-width: 768px) {
+  .nav-item:hover::after {
+    width: 100%; } }
 
 .nav-link {
   padding: 0 5px;
@@ -11102,6 +11111,11 @@ a.skip-link {
 
 .nav-inner-wrapper {
   background: #ffee5d; }
+  .nav-inner-wrapper nav {
+    margin-right: 16.66667%; }
+    @media (min-width: 768px) {
+      .nav-inner-wrapper nav {
+        margin-right: 0; } }
 
 .btn,
 .wpcf7 input[type=submit] {
