@@ -12481,8 +12481,9 @@ h4.toc_title {
   font-size: 1.2rem; }
 
 h5.toc_subchapter {
-  font-size: 1.1rem;
-  margin: 1rem; }
+  font-size: 1rem;
+  padding: 0;
+  margin: 1rem auto .5rem; }
 
 figcaption {
   font-size: 0.85rem; }
