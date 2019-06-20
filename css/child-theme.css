@@ -12357,7 +12357,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit] {
     font-size: 0.8rem !important;
     height: 100%;
-    padding: 0 !important !important;
+    padding: 0 !important;
     margin-top: -.15rem; }
   .search-menu #searchbox {
     border: none;
