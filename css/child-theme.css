@@ -12521,6 +12521,14 @@ p:empty {
   color: #3e2e4c;
   text-align: center; }
 
+.page h1,
+.page h2,
+.page h3,
+.page h4,
+.page h5,
+.page h6 {
+  text-align: center; }
+
 .page .alert-dark {
   background-color: #ecfde4;
   margin: 0 auto; }
@@ -12744,7 +12752,6 @@ ul.products span.cart-buttons {
 
 h2.woocommerce-loop-product__title {
   color: #2a8700;
-  text-align: center;
   padding-left: 0.5rem !important;
   padding-right: 0.5rem !important; }
 

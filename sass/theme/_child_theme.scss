@@ -117,6 +117,15 @@ p:empty {
 }
 
 .page {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-align: center;
+    }
+
     .alert-dark {
         background-color: $bcc_alert_dark_background_color;
         margin: 0 auto;
@@ -396,7 +405,6 @@ ul.products span.cart-buttons {
 
 h2.woocommerce-loop-product__title {
     color: $bcc_green;
-    text-align: center;
     padding-left: 0.5rem!important;
     padding-right: 0.5rem!important;
 }
