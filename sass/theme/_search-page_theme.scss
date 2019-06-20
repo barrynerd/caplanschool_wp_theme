@@ -34,7 +34,9 @@
 
 #secondary-menu {
     padding: 0.25rem 0;
-    background: $bcc_light_yellow!important;
+    @media (min-width: 768px) {
+        background: $bcc_light_yellow!important;
+    }
 }
 
 #menu-bootstrap-menu02a {
@@ -47,8 +49,7 @@
 }
 
 .search-menu {
-
-    padding-left: .25rem;
+    padding-left: 0.25rem;
     padding-right: 0.4rem;
 
     .btn-group-sm > .btn,

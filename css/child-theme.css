@@ -12337,11 +12337,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             justify-content: center; }
 
 #secondary-menu {
-  padding: 0.25rem 0;
-  background: #fffbad !important; }
+  padding: 0.25rem 0; }
+  @media (min-width: 768px) {
+    #secondary-menu {
+      background: #fffbad !important; } }
 
 .search-menu {
-  padding-left: .25rem;
+  padding-left: 0.25rem;
   padding-right: 0.4rem; }
   .search-menu .btn-group-sm > .btn,
   .search-menu .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .search-menu .btn-group-sm > input[type=submit],
