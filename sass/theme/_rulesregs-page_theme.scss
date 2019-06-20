@@ -14,11 +14,9 @@
     font-weight: bold;
     margin: 0.75rem 0 0.5rem;
 }
-
 @mixin hidden_text() {
     display: none;
 }
-
 @mixin spacing_only_text() {
     display: block;
     font-weight: normal;
@@ -26,30 +24,30 @@
 }
 
 .category-rules-and-regulations {
+    #title45 #t109s_31,
+    #title45 #t45_64,
+    #title45 #t45_65,
+    #title45 #t47_64,
+    #title45 #t47_65,
+    #title45 #t56_64,
+    #title45 #t58_42,
     #title45 #t65_28,
+    #title45 #t65_64,
     #title45 #t83_31,
     #title45 #t84_31,
-    #title45 #t109s_31,
     #title45 #t89_38,
     #title45 #t89_38,
-    #title45 #t58_42,
     #title45 #t90_42,
     #title45 #t96_42,
     #title45 #t99_42,
-    #title45 #t45_64,
-    #title45 #t47_64,
-    #title45 #t56_64,
-    #title45 #t65_64,
-    #title45 #t45_65,
-    #title45 #t47_65,
     .doc_style007 + div,
     .doc_style038 {
         @include section_header_text();
     }
 
-    #title45 #t4_58,
     #title45 #t30_58,
     #title45 #t3_25,
+    #title45 #t4_58,
     #title45 #t58_27,
     .doc_style024,
     .doc_style038 + .doc_style038 {
@@ -62,13 +60,31 @@
         @include amended_text();
     }
 
-    #title45 #t114_57,
-    #title45 #t113_55 {
+    #title45 #t113_55,
+    #title45 #t114_57 {
         @include hidden_text();
     }
 
     .doc_15_style007 {
         @include spacing_only_text();
+    }
+}
 
+.license-act.list-group {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    @media (min-width: 768px) {
+        font-size: 1rem;
+    }
+    a {
+        padding: .25rem;
+    }
+    .section,
+    .title {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
