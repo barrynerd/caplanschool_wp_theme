@@ -12343,8 +12343,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       background: #fffbad !important; } }
 
 .search-menu {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
   padding-left: 0.25rem;
   padding-right: 0.4rem; }
+  @media (min-width: 768px) {
+    .search-menu {
+      -webkit-box-ordinal-group: 1000;
+          -ms-flex-order: 999;
+              order: 999; } }
   .search-menu .btn-group-sm > .btn,
   .search-menu .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .search-menu .btn-group-sm > input[type=submit],
   .search-menu .btn-group-sm-bcc > .a,
