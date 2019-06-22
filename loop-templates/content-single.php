@@ -16,14 +16,18 @@ if (! defined('ABSPATH')) {
 
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
+        <?php
+            $excluded_categories =  array( ' the-new-jersey-real-estate-license-act ', 'rules-and-regulations'  );
+            if (! in_category($excluded_categories)) : ?>
 		<div class="entry-meta">
 
 			<?php understrap_posted_on();?>
 
 		</div><!-- .entry-meta -->
-
+        <?php endif; ?>
 		<?php
         $categories = get_the_terms($id, 'category');
+        // print_r($categories);
         if (! $categories || is_wp_error($categories)) {
             $categories = array();
         }
@@ -33,14 +37,14 @@ if (! defined('ABSPATH')) {
             $my_category = $categories[$key]->slug;
             switch ($my_category) {
                 case "elliotts-industry-news":
-				case "ask-elliott": {
+                case "ask-elliott": {
                     // print($my_category);
                     print <<< END
 					<div class="card col-8 description">
 						<div class="card-body>">
 END;
-						print category_description( get_category_by_slug($my_category)->term_id );
-					print <<< END
+                        print category_description(get_category_by_slug($my_category)->term_id);
+                    print <<< END
 						</div>
 					</div>
 END;
