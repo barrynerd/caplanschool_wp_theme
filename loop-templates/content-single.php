@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 
 		<div class="entry-meta">
 
-			<?php #understrap_posted_on();?>
+			<?php understrap_posted_on();?>
 
 		</div><!-- .entry-meta -->
 

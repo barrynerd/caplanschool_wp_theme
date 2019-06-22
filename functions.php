@@ -572,7 +572,7 @@ function understrap_posted_on()
     $posted_on   = apply_filters(
                 'understrap_posted_on',
             sprintf(
-                        '<span class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></span>',
+                        '<div class="posted-on">%1$s <a href="%2$s" rel="bookmark">%3$s</a></div>',
                         esc_html_x('Posted', 'post date', 'understrap'),
                         esc_url(get_permalink()),
                         apply_filters('understrap_posted_on_time', $time_string)
@@ -581,8 +581,8 @@ function understrap_posted_on()
     $byline      = apply_filters(
                 'understrap_posted_by',
             sprintf(
-                        '<span class="byline"> %1$s<span class="author vcard"><a class="url fn n" href="%2$s"> %3$s</a></span></span>',
-                        $posted_on ? esc_html_x('by', 'post author', 'understrap') : esc_html_x('Posted by', 'post author', 'understrap'),
+                        '<div class="byline"> %1$s<span class="author vcard"><a class="url fn n" href="%2$s"> %3$s</a></span></div>',
+                        $posted_on ? esc_html_x('By', 'post author', 'understrap') : esc_html_x('Posted by', 'post author', 'understrap'),
                         esc_url(get_author_posts_url(get_the_author_meta('ID'))),
                         esc_html(get_the_author())
                 )
