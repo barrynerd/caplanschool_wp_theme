@@ -13050,7 +13050,8 @@ article.category-elliotts-industry-news h2 {
     font-weight: bold; }
 
 .entry-meta {
+  color: #58535E;
   font-size: .9rem;
-  color: #58535E; }
+  padding-bottom: .9rem; }
 
 /*# sourceMappingURL=child-theme.css.map */

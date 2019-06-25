@@ -17,15 +17,6 @@ if (! defined('ABSPATH')) {
 		<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
 
         <?php
-            $excluded_categories =  array( ' the-new-jersey-real-estate-license-act ', 'rules-and-regulations'  );
-            if (! in_category($excluded_categories)) : ?>
-		<div class="entry-meta">
-
-			<?php understrap_posted_on();?>
-
-		</div><!-- .entry-meta -->
-        <?php endif; ?>
-		<?php
         $categories = get_the_terms($id, 'category');
         // print_r($categories);
         if (! $categories || is_wp_error($categories)) {
@@ -53,6 +44,16 @@ END;
             }
         }
         ?>
+
+        <?php
+            $excluded_categories =  array( ' the-new-jersey-real-estate-license-act ', 'rules-and-regulations'  );
+            if (! in_category($excluded_categories)) : ?>
+		<div class="entry-meta">
+
+			<?php understrap_posted_on();?>
+
+		</div><!-- .entry-meta -->
+        <?php endif; ?>
 
 				<!-- // the_archive_description('<div class="taxonomy-description">', '</div>'); -->
 		</header><!-- .entry-header -->
