@@ -10816,6 +10816,11 @@ a.skip-link {
   .page-about .card-body {
     padding: 0 1.25rem; } }
 
+.blog .container-fluid,
+.category .container-fluid,
+.single .container-fluid {
+  max-width: 960px; }
+
 .blog h1,
 .category h1,
 .single h1 {
@@ -10843,6 +10848,11 @@ a.skip-link {
 .single #index-wrapper {
   margin: 0 auto; }
 
+.blog #right-sidebar,
+.category #right-sidebar,
+.single #right-sidebar {
+  margin: 0 auto; }
+
 .blog #main,
 .category #main,
 .single #main {
@@ -10852,8 +10862,7 @@ a.skip-link {
   .single #main article {
     margin: 0 auto;
     max-width: 800px;
-    margin-bottom: 10px;
-    width: calc(100vw - 50px); }
+    margin-bottom: 10px; }
 
 .blog .pagination,
 .category .pagination,

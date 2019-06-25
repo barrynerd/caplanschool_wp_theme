@@ -3,6 +3,10 @@
 .blog,
 .category,
 .single {
+    .container-fluid {
+        max-width: 960px;
+    }
+    
     h1 {
         padding: 1.5rem 0 1rem;
         text-align: center;
@@ -27,6 +31,10 @@
         // width: 800px;
     }
 
+    #right-sidebar {
+        margin: 0 auto;
+    }
+
     #main {
         margin: 0 auto;
 
@@ -36,7 +44,7 @@
             margin: 0 auto;
             max-width: 800px;
             margin-bottom: 10px;
-            width: calc(100vw - 50px);
+            // width: calc(100vw - 50px);
         }
     }
 
