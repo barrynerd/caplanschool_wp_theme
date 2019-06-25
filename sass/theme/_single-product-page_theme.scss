@@ -20,6 +20,11 @@
             display: none;
         }
 
+        img {
+            width: auto;
+            width: 90%;
+        }
+
         .product-description {
             margin: 0 auto;
             padding: 3rem 0;
@@ -51,7 +56,7 @@
             max-width: 960px;
             width: 100%!important;
             @media (min-width: 768px) {
-                width: 740px!important;
+                // width: 740px!important;
             }
         }
 

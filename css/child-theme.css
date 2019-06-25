@@ -11304,6 +11304,9 @@ button#place_order {
     font-size: 2rem; }
   .single-product .product h1 {
     display: none; }
+  .single-product .product img {
+    width: auto;
+    width: 90%; }
   .single-product .product .product-description {
     margin: 0 auto;
     padding: 3rem 0; }
@@ -11326,9 +11329,6 @@ button#place_order {
     margin-top: 2.75rem;
     max-width: 960px;
     width: 100% !important; }
-    @media (min-width: 768px) {
-      .single-product .product .summary {
-        width: 740px !important; } }
   .single-product .product .woocommerce-product-details__short-description {
     background: #fffbad;
     font-size: 1rem;

@@ -16,4 +16,4 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 	<?php get_template_part( 'sidebar-templates/sidebar', 'left' ); ?>
 <?php endif; ?>
 
-<div class="col-md-8 mx-auto content-area" id="primary">
+<div class="col-md-8 mx-auto content-area zzz" id="primary">
