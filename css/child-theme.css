@@ -12318,6 +12318,47 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .single iframe {
       height: calc((800px - 50px) * 9 /16) !important; } }
 
+.blog #right-sidebar aside,
+.category #right-sidebar aside,
+.single #right-sidebar aside {
+  padding: 0 15px;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem; }
+
+.blog #right-sidebar h3.widget-title,
+.category #right-sidebar h3.widget-title,
+.single #right-sidebar h3.widget-title {
+  color: #58535E;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center; }
+
+.blog #right-sidebar h3.acf-rpw-title,
+.category #right-sidebar h3.acf-rpw-title,
+.single #right-sidebar h3.acf-rpw-title {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0 0.5rem 0.5rem;
+  text-align: center; }
+
+.blog #right-sidebar .acf-rpw-before-whole,
+.category #right-sidebar .acf-rpw-before-whole,
+.single #right-sidebar .acf-rpw-before-whole {
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center; }
+
+.blog #right-sidebar ul,
+.category #right-sidebar ul,
+.single #right-sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.25rem 0 0;
+  text-align: center; }
+
 .single article.category-ask-elliott img.wp-post-image {
   display: none; }
 

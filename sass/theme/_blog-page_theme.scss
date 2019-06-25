@@ -55,6 +55,46 @@
             height: calc((800px - 50px) * 9 /16)!important;
         }
     }
+
+    #right-sidebar {
+        // padding: 0;
+        aside {
+            padding: 0 15px;
+            border: 1px solid $bcc_gray;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        h3.widget-title {
+            color: $bcc_medium_gray;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h3.acf-rpw-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding: 0 0.5rem 0.5rem;
+            text-align: center;
+        }
+
+        .acf-rpw-before-whole {
+            padding: 0 0.5rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin: 0 auto;
+            text-align: center;
+            // width: 80%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0.25rem 0 0;
+            text-align: center;
+        }
+    }
 }
 
 .single {
