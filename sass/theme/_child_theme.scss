@@ -28,7 +28,7 @@ p:empty {
 }
 
 .wrapper {
-    padding: 0!important !important;
+    // padding: 0!important;
     width: 100%;
 }
 
@@ -469,21 +469,22 @@ article.category-elliotts-industry-news {
     .preview-wrapper {
         // flex-direction: column;
         @media (min-width: 768px) {
-            display: flex;
-            flex-direction: row;
+            // display: flex;
+            // flex-direction: row;
         }
     }
 
     .embed-responsive {
         width: 100%!important;
         @media (min-width: 768px) {
-            height: calc(315px * 9 / 16)!important;
+            height: calc(410px * 9 / 16)!important;
             position: static;
-            width: 315px!important;
+            width: 40px!important;
 
             iframe {
-                height: calc(315px * 9 / 16)!important;
-                width: 315px!important;
+                height: calc(410px * 9 / 16)!important;
+                width: 410px!important;
+                margin: 0px calc((100% - 410px)/2);
             }
         }
     }
