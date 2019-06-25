@@ -12315,6 +12315,13 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       -ms-flex-pack: center;
           justify-content: center; }
 
+.page .fluid-width-video-wrapper,
+.blog .fluid-width-video-wrapper,
+.category .fluid-width-video-wrapper,
+.single .fluid-width-video-wrapper {
+  margin-top: -56.25% !important;
+  position: static; }
+
 .page iframe,
 .blog iframe,
 .category iframe,
@@ -12326,7 +12333,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     .blog iframe,
     .category iframe,
     .single iframe {
-      height: calc((800px - 50px) * 9 /16) !important; } }
+      height: calc((800px - 50px) * 9 /16) !important;
+      max-height: 343px; } }
 
 .page #right-sidebar aside,
 .blog #right-sidebar aside,
