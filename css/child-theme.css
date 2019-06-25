@@ -10771,6 +10771,409 @@ a.skip-link {
 .gallery-caption {
   display: block; }
 
+.page-about .card {
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0 1.5rem;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .page-about .card {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      margin: 0 0 3.5rem; } }
+  .page-about .card img {
+    height: calc(100vh * 15 / 32);
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 20%;
+       object-position: 0 20%;
+    width: auto; }
+    @media (min-width: 768px) {
+      .page-about .card img {
+        height: 16rem;
+        -o-object-position: 50% 50%;
+           object-position: 50% 50%; } }
+  .page-about .card .card-subtitle {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem; }
+
+.page-about .card.dnicklus img {
+  -o-object-position: 0 0;
+     object-position: 0 0; }
+  @media (min-width: 768px) {
+    .page-about .card.dnicklus img {
+      -o-object-position: 0 20%;
+         object-position: 0 20%; } }
+
+@media (min-width: 768px) {
+  .page-about .card-body {
+    padding: 0 1.25rem; } }
+
+.blog h1,
+.category h1,
+.single h1 {
+  padding: 1.5rem 0 1rem;
+  text-align: center; }
+
+.blog p.has-drop-cap:not(:focus):first-letter,
+.category p.has-drop-cap:not(:focus):first-letter,
+.single p.has-drop-cap:not(:focus):first-letter {
+  float: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  margin: inherit;
+  text-transform: inherit;
+  font-style: inherit; }
+
+.blog .card-subtitle,
+.category .card-subtitle,
+.single .card-subtitle {
+  font-size: 0.9rem; }
+
+.blog #index-wrapper,
+.category #index-wrapper,
+.single #index-wrapper {
+  margin: 0 auto; }
+
+.blog #main,
+.category #main,
+.single #main {
+  margin: 0 auto; }
+  .blog #main article,
+  .category #main article,
+  .single #main article {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 10px;
+    width: calc(100vw - 50px); }
+
+.blog .pagination,
+.category .pagination,
+.single .pagination {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.blog iframe,
+.category iframe,
+.single iframe {
+  width: 100% !important;
+  height: calc((100vw - 50px) * 9 /16) !important; }
+  @media (min-width: 768px) {
+    .blog iframe,
+    .category iframe,
+    .single iframe {
+      height: calc((800px - 50px) * 9 /16) !important; } }
+
+.single article.category-ask-elliott img.wp-post-image {
+  display: none; }
+
+.category.category-ask-elliott article img {
+  display: none; }
+
+.category.category-ask-elliott .widget-area {
+  font-size: .9rem;
+  margin: 0 auto;
+  max-width: 800px;
+  margin-bottom: 10px;
+  width: calc(100vw - 50px); }
+
+.btn,
+.wpcf7 input[type=submit] {
+  white-space: normal !important; }
+
+.btn.btn-primary, .wpcf7 input.btn-primary[type=submit],
+.xoo-wsc-footer-b .btn,
+.xoo-wsc-footer-b .wpcf7 input[type=submit],
+.wpcf7 .xoo-wsc-footer-b input[type=submit],
+button#place_order {
+  background-color: #2a8700 !important;
+  border: 1px solid #2f3e48 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
+          box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
+  color: white !important;
+  font-size: 1.25rem !important;
+  font-weight: bold !important;
+  line-height: 1.5 !important;
+  min-width: 5rem;
+  text-transform: uppercase !important;
+  padding: 0.375rem 0.75rem !important; }
+  .btn.btn-primary:hover, .wpcf7 input.btn-primary:hover[type=submit],
+  .xoo-wsc-footer-b .btn:hover,
+  .xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
+  .wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
+  button#place_order:hover {
+    background-color: #FFEE5D !important;
+    border: 1px solid #2f3e48 !important;
+    color: #2a8700 !important;
+    border-color: #2f3e48 !important; }
+
+.btn.btn-secondary, .wpcf7 input.btn-secondary[type=submit] {
+  background-color: #2a8700 !important;
+  border: 1px solid #2f3e48 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
+          box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
+  color: white !important; }
+
+.btn-group-sm-bcc > .a,
+.btn-group-sm-bcc > .btn,
+.wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
+.wpcf7 .btn-group-sm > input[type=submit],
+.wpcf7 .btn-group-sm-bcc > input[type=submit] {
+  padding: 0.25rem 0.5rem !important;
+  font-size: 0.875rem !important;
+  line-height: 1.5 !important;
+  border-radius: 0.2rem !important; }
+  @media (min-width: 768px) {
+    .btn-group-sm-bcc > .a,
+    .btn-group-sm-bcc > .btn,
+    .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
+    .wpcf7 .btn-group-sm > input[type=submit],
+    .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+      padding: 0.375rem 0.75rem !important;
+      font-size: 1rem !important;
+      line-height: 1.5 !important;
+      border-radius: 0.25rem !important; } }
+
+.btn-group-vertical br {
+  display: none; }
+
+#navigation-buttons {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ebf0e8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 24rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 768px) {
+    #navigation-buttons {
+      height: 16rem; } }
+  #navigation-buttons .button-set {
+    margin-top: 0.75rem;
+    text-align: center;
+    width: 18rem; }
+    #navigation-buttons .button-set h5 {
+      font-weight: bold; }
+  #navigation-buttons h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%; }
+    @media (min-width: 768px) {
+      #navigation-buttons h2 {
+        font-size: 2rem; } }
+
+.course-cards {
+  background: transparent;
+  padding: 0; }
+  .course-cards h2 {
+    text-align: center;
+    min-height: auto; }
+    @media (min-width: 768px) {
+      .course-cards h2 {
+        min-height: 5.75rem; } }
+  .course-cards .woocommerce {
+    padding: 0 1rem 1.5rem; }
+    .course-cards .woocommerce ul.products {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .course-cards .woocommerce ul.products li {
+        margin: 2rem 0.25rem 0 !important;
+        background: white;
+        width: 100% !important; }
+        @media (min-width: 768px) {
+          .course-cards .woocommerce ul.products li {
+            width: 15rem !important; } }
+
+.course-description-card {
+  background-color: #fffbad !important;
+  margin: 1.5rem 0 1rem;
+  padding: 0 !important; }
+  .course-description-card .card-body {
+    padding: 0; }
+  .course-description-card .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 0;
+    padding: 0 .5rem .25rem; }
+  .course-description-card h2 {
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: .75rem .5rem; }
+    @media (min-width: 768px) {
+      .course-description-card h2 {
+        font-size: 1.8rem; } }
+  .course-description-card ul {
+    line-height: 1.2;
+    list-style: none;
+    padding: 0 .5rem; }
+
+#wrapper-footer {
+  background-color: #58535E;
+  padding-top: 2rem !important; }
+  #wrapper-footer .card {
+    background-color: #fffff6;
+    border: 1px solid #2a8700;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-align: center;
+    width: 18rem; }
+    @media (min-width: 768px) {
+      #wrapper-footer .card {
+        padding: 1rem 4rem;
+        width: 23rem; } }
+  #wrapper-footer .card-body {
+    color: #2a8700; }
+    #wrapper-footer .card-body a {
+      color: #2a8700; }
+  #wrapper-footer .card-collection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media (min-width: 768px) {
+      #wrapper-footer .card-collection {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; } }
+  #wrapper-footer #footer-summary {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 0.8rem;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1rem 4rem 0;
+    text-align: center; }
+    #wrapper-footer #footer-summary .card {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 0.9rem;
+      font-weight: bold;
+      padding: 1rem;
+      text-align: center;
+      width: 100%; }
+    #wrapper-footer #footer-summary .card-body {
+      color: white; }
+    #wrapper-footer #footer-summary ul a {
+      color: white; }
+  #wrapper-footer ul {
+    list-style-type: none;
+    padding: 0; }
+
+.header-announce .header-online-ce {
+  padding: 0;
+  background: #BBDFAB; }
+  .header-announce .header-online-ce .btn-sm, .header-announce .header-online-ce .btn-group-sm > .btn,
+  .header-announce .header-online-ce .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .header-announce .header-online-ce .btn-group-sm > input[type=submit] {
+    border-radius: 0.2rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 0.35rem;
+    min-width: 0;
+    padding: 0.25rem 0.5rem !important; }
+  .header-announce .header-online-ce h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 0.25rem;
+    text-transform: capitalize; }
+
+.header-announce .header-scholarship {
+  background: #FE9328;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  padding: 0.25rem 0.5em; }
+  .header-announce .header-scholarship a {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1; }
+    @media (min-width: 768px) {
+      .header-announce .header-scholarship a {
+        font-size: 1.2rem; } }
+  .header-announce .header-scholarship .body {
+    color: white;
+    font-weight: bold;
+    padding: 0 0 0 0.5rem;
+    text-align: left;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      .header-announce .header-scholarship .body {
+        text-align: center; } }
+    .header-announce .header-scholarship .body a {
+      color: white;
+      line-height: 1.2; }
+    .header-announce .header-scholarship .body img {
+      display: none; }
+      @media (min-width: 768px) {
+        .header-announce .header-scholarship .body img {
+          display: inline;
+          background: white; } }
+  .header-announce .header-scholarship .logo {
+    text-align: right;
+    background: white;
+    margin-right: 1rem;
+    padding: 0.25rem; }
+    .header-announce .header-scholarship .logo img {
+      background: white; }
+
+.header-announce .widget {
+  padding: 0; }
+
 .home-card {
   margin: 0 auto;
   padding: 0;
@@ -10956,6 +11359,134 @@ a.skip-link {
   margin-right: 0 !important;
   width: 100vw !important; }
 
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/*
+Extra small devices (portrait phones, less than 544px)
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 544px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+.members-ce .banner {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 2rem; }
+
+.members-ce .course-description ul {
+  list-style-type: disc;
+  list-style-position: inside; }
+
+.members-ce .details {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important; }
+  .members-ce .details .card {
+    width: 100%; }
+    @media (min-width: 768px) {
+      .members-ce .details .card {
+        width: 23rem; } }
+    .members-ce .details .card img {
+      display: none; }
+    .members-ce .details .card p {
+      display: none; }
+      @media (min-width: 768px) {
+        .members-ce .details .card p {
+          font-size: inherit; } }
+    .members-ce .details .card p.hilite {
+      background: #FE9328;
+      display: block;
+      font-weight: bold;
+      padding: 1rem;
+      text-align: center;
+      text-transform: capitalize; }
+  .members-ce .details h1 {
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: -2px;
+    text-transform: uppercase; }
+  .members-ce .details h6 {
+    font-style: italic;
+    font-weight: bold;
+    text-align: center; }
+    @media (min-width: 768px) {
+      .members-ce .details h6 {
+        text-align: left; } }
+  @media (min-width: 768px) {
+    .members-ce .details p {
+      display: block; } }
+  .members-ce .details ul {
+    list-style-type: none;
+    padding: 0; }
+  .members-ce .details ul.products li.product {
+    width: 100% !important;
+    border: none; }
+    .members-ce .details ul.products li.product a h2,
+    .members-ce .details ul.products li.product a img {
+      display: none; }
+
+.members-ce.members-ce-diane-turton .details .card img,
+.members-ce.members-ce-jack-green .details .card img {
+  padding: 1rem 1rem 0;
+  display: block; }
+
+.members.agency {
+  max-width: 800px; }
+  .members.agency h3 {
+    background: #FE9328; }
+
+.members.course-description {
+  background: #fffee6;
+  margin: 2rem auto 0;
+  max-width: 800px; }
+  .members.course-description:last-of-type {
+    margin-bottom: 2rem; }
+  .members.course-description a.course_link {
+    color: #2a8700;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .members.course-description .card-body {
+    padding: inherit 0; }
+  .members.course-description .card-text.credit {
+    padding: 0; }
+  .members.course-description .card-text.date {
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: capitalize; }
+  .members.course-description .card-text.time {
+    padding: 0;
+    margin-bottom: 0;
+    text-transform: lowercase; }
+  .members.course-description .course_price {
+    color: #2a8700;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 2; }
+  .members.course-description h3 {
+    font-weight: bold;
+    text-align: center; }
+
+.product_cat-diane-turton.product_cat-abr img.wp-post-image,
+.product_cat-diane-turton.product_cat-ahwd img.wp-post-image,
+.product_cat-rsps-diane-turton img.wp-post-image,
+.product_cat-srs-diane-turton img.wp-post-image {
+  display: none; }
+
 @media (min-width: 768px) {
   .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 0.35rem !important;
@@ -11117,171 +11648,258 @@ a.skip-link {
       .nav-inner-wrapper nav {
         margin-right: 0; } }
 
-.btn,
-.wpcf7 input[type=submit] {
-  white-space: normal !important; }
+.out-of-state-online-courses {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important; }
+  .out-of-state-online-courses .btn-group {
+    margin-right: 1.5em; }
+    .out-of-state-online-courses .btn-group:first-of-type {
+      margin-left: 1.5rem; }
+    .out-of-state-online-courses .btn-group:last-of-type {
+      margin-right: 0; }
+    .out-of-state-online-courses .btn-group .btn:first-of-type, .out-of-state-online-courses .btn-group .wpcf7 input:first-of-type[type=submit], .wpcf7 .out-of-state-online-courses .btn-group input:first-of-type[type=submit] {
+      margin-right: 0.25em; }
+    @media (min-width: 768px) {
+      .out-of-state-online-courses .btn-group {
+        margin-right: 1.5rem; }
+        .out-of-state-online-courses .btn-group:first-of-type {
+          margin-left: 0; } }
 
-.btn.btn-primary, .wpcf7 input.btn-primary[type=submit],
-.xoo-wsc-footer-b .btn,
-.xoo-wsc-footer-b .wpcf7 input[type=submit],
-.wpcf7 .xoo-wsc-footer-b input[type=submit],
-button#place_order {
-  background-color: #2a8700 !important;
-  border: 1px solid #2f3e48 !important;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
-          box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
-  color: white !important;
-  font-size: 1.25rem !important;
-  font-weight: bold !important;
-  line-height: 1.5 !important;
-  min-width: 5rem;
-  text-transform: uppercase !important;
-  padding: 0.375rem 0.75rem !important; }
-  .btn.btn-primary:hover, .wpcf7 input.btn-primary:hover[type=submit],
-  .xoo-wsc-footer-b .btn:hover,
-  .xoo-wsc-footer-b .wpcf7 input:hover[type=submit],
-  .wpcf7 .xoo-wsc-footer-b input:hover[type=submit],
-  button#place_order:hover {
-    background-color: #FFEE5D !important;
-    border: 1px solid #2f3e48 !important;
-    color: #2a8700 !important;
-    border-color: #2f3e48 !important; }
+.online-license.fl .twostep01-jumbotron,
+.online-license.ny .twostep01-jumbotron,
+.online-license.pa .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
-.btn.btn-secondary, .wpcf7 input.btn-secondary[type=submit] {
-  background-color: #2a8700 !important;
-  border: 1px solid #2f3e48 !important;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
-          box-shadow: 0 0 0 0.2rem rgba(42, 135, 0, 0.25) !important;
-  color: white !important; }
+.online-ce.fl .twostep01-jumbotron,
+.online-ce.ny .twostep01-jumbotron,
+.online-ce.pa .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
-.btn-group-sm-bcc > .a,
-.btn-group-sm-bcc > .btn,
-.wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
-.wpcf7 .btn-group-sm > input[type=submit],
-.wpcf7 .btn-group-sm-bcc > input[type=submit] {
-  padding: 0.25rem 0.5rem !important;
-  font-size: 0.875rem !important;
-  line-height: 1.5 !important;
-  border-radius: 0.2rem !important; }
-  @media (min-width: 768px) {
-    .btn-group-sm-bcc > .a,
-    .btn-group-sm-bcc > .btn,
-    .wpcf7 .btn-group-sm-bcc > input[type=submit], .btn-sm, .btn-group-sm > .btn,
-    .wpcf7 .btn-group-sm > input[type=submit],
-    .wpcf7 .btn-group-sm-bcc > input[type=submit] {
-      padding: 0.375rem 0.75rem !important;
-      font-size: 1rem !important;
-      line-height: 1.5 !important;
-      border-radius: 0.25rem !important; } }
+.online-license .card {
+  border: none;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem; }
+  .online-license .card .action-button {
+    text-align: center; }
 
-.btn-group-vertical br {
+.online-license .card-body h5 {
+  color: #2a8700;
+  font-weight: bold; }
+
+.online-license .hl-text h1 {
+  color: white;
+  font-weight: bold;
+  font-style: italic; }
+
+.online-license .hl-text h5 {
+  color: white;
+  font-style: italic; }
+
+.online-license .twostep01-jumbotron {
+  opacity: 0.9;
+  background-color: rgba(42, 135, 0, 0.2);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center; }
+
+.online-ce .card {
+  border: none;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem; }
+  .online-ce .card .action-button {
+    text-align: center; }
+  .online-ce .card h5 {
+    color: #2a8700;
+    font-weight: bold; }
+
+.online-ce .card-body h5 {
+  color: #2a8700;
+  font-weight: bold; }
+
+.online-ce .hl-text h1 {
+  color: white;
+  font-weight: bold;
+  font-style: italic; }
+
+.online-ce .hl-text h5 {
+  color: white;
+  font-style: italic; }
+
+.online-ce .twostep01-jumbotron {
+  opacity: 0.9;
+  background-color: rgba(42, 135, 0, 0.2);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center center; }
+
+.upcoming-ce .card,
+.upcoming-ce-bydate .card {
+  border: none;
+  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 1.2rem; }
+
+.twostep02-descriptions.online-ce.ny .card-body:first-of-type,
+.twostep02-descriptions.online-ce.pa .card-body:first-of-type {
+  height: 27rem; }
+
+.category-rules-and-regulations #title45 #t109s_31,
+.category-rules-and-regulations #title45 #t45_64,
+.category-rules-and-regulations #title45 #t45_65,
+.category-rules-and-regulations #title45 #t47_64,
+.category-rules-and-regulations #title45 #t47_65,
+.category-rules-and-regulations #title45 #t56_64,
+.category-rules-and-regulations #title45 #t58_42,
+.category-rules-and-regulations #title45 #t65_28,
+.category-rules-and-regulations #title45 #t65_64,
+.category-rules-and-regulations #title45 #t83_31,
+.category-rules-and-regulations #title45 #t84_31,
+.category-rules-and-regulations #title45 #t89_38,
+.category-rules-and-regulations #title45 #t89_38,
+.category-rules-and-regulations #title45 #t90_42,
+.category-rules-and-regulations #title45 #t96_42,
+.category-rules-and-regulations #title45 #t99_42,
+.category-rules-and-regulations .doc_style007 + div,
+.category-rules-and-regulations .doc_style038 {
+  display: block;
+  font-weight: bold;
+  margin: 0.75rem 0 0.5rem; }
+
+.category-rules-and-regulations #title45 #t30_58,
+.category-rules-and-regulations #title45 #t3_25,
+.category-rules-and-regulations #title45 #t4_58,
+.category-rules-and-regulations #title45 #t58_27,
+.category-rules-and-regulations .doc_style024,
+.category-rules-and-regulations .doc_style038 + .doc_style038 {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 0.5rem; }
+
+.category-rules-and-regulations .doc_15_style004,
+.category-rules-and-regulations .doc_style005,
+.category-rules-and-regulations .doc_style007 {
+  display: block;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: normal; }
+
+.category-rules-and-regulations #title45 #t113_55,
+.category-rules-and-regulations #title45 #t114_57 {
   display: none; }
 
-#navigation-buttons {
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #ebf0e8;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  height: 24rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  @media (min-width: 768px) {
-    #navigation-buttons {
-      height: 16rem; } }
-  #navigation-buttons .button-set {
-    margin-top: 0.75rem;
-    text-align: center;
-    width: 18rem; }
-    #navigation-buttons .button-set h5 {
-      font-weight: bold; }
-  #navigation-buttons h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-    width: 100%; }
-    @media (min-width: 768px) {
-      #navigation-buttons h2 {
-        font-size: 2rem; } }
+.category-rules-and-regulations .doc_15_style007 {
+  display: block;
+  font-weight: normal;
+  margin: 0.75rem 0 0.5rem; }
 
-#wrapper-footer {
-  background-color: #58535E;
-  padding-top: 2rem !important; }
-  #wrapper-footer .card {
-    background-color: #fffff6;
-    border: 1px solid #2a8700;
-    font-size: 0.9rem;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    width: 18rem; }
-    @media (min-width: 768px) {
-      #wrapper-footer .card {
-        padding: 1rem 4rem;
-        width: 23rem; } }
-  #wrapper-footer .card-body {
-    color: #2a8700; }
-    #wrapper-footer .card-body a {
-      color: #2a8700; }
-  #wrapper-footer .card-collection {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-    @media (min-width: 768px) {
-      #wrapper-footer .card-collection {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
-  #wrapper-footer #footer-summary {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    font-size: 0.8rem;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding: 1rem 4rem 0;
-    text-align: center; }
-    #wrapper-footer #footer-summary .card {
-      background-color: transparent;
-      border: none;
-      color: white;
-      font-size: 0.9rem;
-      font-weight: bold;
-      padding: 1rem;
-      text-align: center;
-      width: 100%; }
-    #wrapper-footer #footer-summary .card-body {
-      color: white; }
-    #wrapper-footer #footer-summary ul a {
-      color: white; }
-  #wrapper-footer ul {
-    list-style-type: none;
-    padding: 0; }
+.license-act.list-group,
+.rules-regs.list-group,
+.rules-regs-index.list-group {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0; }
+  @media (min-width: 768px) {
+    .license-act.list-group,
+    .rules-regs.list-group,
+    .rules-regs-index.list-group {
+      font-size: 1rem; } }
+  .license-act.list-group a,
+  .rules-regs.list-group a,
+  .rules-regs-index.list-group a {
+    border: none;
+    padding: 0.25rem; }
+  .license-act.list-group .section,
+  .license-act.list-group .title,
+  .rules-regs.list-group .section,
+  .rules-regs.list-group .title,
+  .rules-regs-index.list-group .section,
+  .rules-regs-index.list-group .title {
+    padding-left: 0;
+    padding-right: 0; }
+  .license-act.list-group .toc_description,
+  .rules-regs.list-group .toc_description,
+  .rules-regs-index.list-group .toc_description {
+    font-size: .9rem; }
+
+h2.toc_title {
+  font-size: 1.5rem; }
+
+h3.toc_title {
+  font-size: 1.4rem; }
+
+h4.toc_title {
+  font-size: 1.2rem; }
+
+h5.toc_subchapter {
+  font-size: 1rem;
+  padding: 0;
+  margin: 1rem auto .5rem; }
+
+.search-results .content-area {
+  max-width: 630px; }
+  .search-results .content-area article {
+    max-width: 600px;
+    margin-bottom: 1.75rem; }
+    .search-results .content-area article .entry-header h2.entry-title {
+      color: #2a8700;
+      font-size: 1.1rem;
+      letter-spacing: -.25px;
+      line-height: 1.33;
+      margin: 0;
+      overflow: hidden;
+      text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .search-results .content-area article .entry-summary {
+      font-size: small;
+      line-height: 1.54; }
+  .search-results .content-area ul.pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+#secondary-menu {
+  padding: 0.25rem 0; }
+  @media (min-width: 768px) {
+    #secondary-menu {
+      background: #fffbad !important; } }
+
+.search-menu {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  padding-left: 0.25rem;
+  padding-right: 0.4rem; }
+  @media (min-width: 768px) {
+    .search-menu {
+      -webkit-box-ordinal-group: 1000;
+          -ms-flex-order: 999;
+              order: 999; } }
+  .search-menu .btn-group-sm > .btn,
+  .search-menu .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .search-menu .btn-group-sm > input[type=submit],
+  .search-menu .btn-group-sm-bcc > .a,
+  .search-menu .btn-group-sm-bcc > .btn,
+  .search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit],
+  .wpcf7 .search-menu .btn-group-sm-bcc > input[type=submit],
+  .search-menu .btn-sm,
+  .search-menu .btn-group-sm > .btn,
+  .search-menu .wpcf7 .btn-group-sm > input[type=submit],
+  .wpcf7 .search-menu .btn-group-sm > input[type=submit],
+  .search-menu .wpcf7 .btn-group-sm > input[type=submit],
+  .search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+    font-size: 0.8rem !important;
+    height: 100%;
+    padding: 0 !important;
+    margin-top: -.15rem; }
+  .search-menu #searchbox {
+    border: none;
+    padding: 0;
+    width: 6rem; }
+
+.nav-item.search-menu:after {
+  display: none; }
 
 .single-product .product {
   -webkit-box-align: center;
@@ -11336,176 +11954,48 @@ button#place_order {
     margin: 0;
     max-width: 100%; }
 
-.xoo-wsc-basket {
-  background-color: #FFEE5D;
-  border: 2px solid #2a8700;
-  border-radius: .5rem;
-  bottom: 1rem;
-  padding: .375rem .75rem .625rem .5rem;
-  right: 1rem; }
-  .xoo-wsc-basket .xoo-wsc-icon-basket1 {
-    color: #2a8700; }
-    .xoo-wsc-basket .xoo-wsc-icon-basket1:before {
-      font-family: FontAwesome;
-      content: "\f07a";
-      font-size: 2.5rem; }
-  .xoo-wsc-basket .xoo-wsc-items-count {
-    background-color: #2a8700;
-    color: white; }
-
-.woocommerce-cart table.cart .cart_totals p {
-  font-size: 1.1rem;
-  font-weight: bold;
-  margin: 0 0.5rem 1rem;
-  text-align: center; }
-
-.woocommerce-cart table.cart img {
-  width: auto; }
-
-.woocommerce-cart table.cart td.product-remove {
-  width: 1rem; }
-
-.woocommerce-cart table.cart td.product-thumbnail {
-  width: 30vw; }
+#testimonial-carousel .carousel-caption {
+  background: #2a8700;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  opacity: 0.8;
+  padding: 2rem 1rem;
+  top: 0;
+  width: 60vw; }
   @media (min-width: 768px) {
-    .woocommerce-cart table.cart td.product-thumbnail {
-      display: block; } }
-
-.woocommerce-cart table.cart td.product-name {
-  width: auto; }
-  @media (min-width: 768px) {
-    .woocommerce-cart table.cart td.product-name {
-      width: 30vw; } }
-
-.woocommerce-checkout button#place_order {
-  min-width: 280px;
-  margin: 0 auto; }
-
-.woocommerce-checkout .entry-header {
-  display: none; }
-
-.woocommerce-checkout form fieldset {
-  border: 1px solid #BBDFAB; }
-
-.woocommerce-checkout form label.control-label {
-  display: inline-block !important; }
-
-.woocommerce-checkout form legend {
-  background: #BBDFAB;
-  font-size: 1.4rem;
-  margin-left: 0.5rem;
-  padding: 0.2rem 0.5rem;
-  text-transform: capitalize;
-  width: auto; }
-
-.woocommerce-checkout form .woocommerce-input-wrapper {
-  width: 100%; }
-
-.woocommerce-checkout form.checkout label {
-  text-transform: capitalize;
-  font-size: 0.85rem;
-  font-weight: bold;
-  margin-right: 0.4rem; }
-  .woocommerce-checkout form.checkout label .optional {
-    visibility: hidden; }
-  .woocommerce-checkout form.checkout label .required {
-    color: #2a8700; }
-
-.woocommerce-info {
-  border-top-color: rgba(142, 20, 255, 0.2);
-  color: #3e2e4c; }
-  .woocommerce-info::before {
-    color: #3b0c66; }
-  .woocommerce-info a {
-    color: rgba(142, 20, 255, 0.75); }
-
-.woocommerce-message {
-  font-size: 0.75rem; }
-  @media (min-width: 768px) {
-    .woocommerce-message {
-      font-size: 0.85rem; } }
-
-#add_payment_method #payment,
-.woocommerce-cart #payment,
-.woocommerce-checkout #payment {
-  background: white; }
-  #add_payment_method #payment div.form-row,
-  .woocommerce-cart #payment div.form-row,
-  .woocommerce-checkout #payment div.form-row {
-    padding-top: 0; }
-  #add_payment_method #payment div.payment_box,
-  .woocommerce-cart #payment div.payment_box,
-  .woocommerce-checkout #payment div.payment_box {
-    background-color: rgba(223, 221, 222, 0.3); }
-  #add_payment_method #payment ul.payment_methods,
-  .woocommerce-cart #payment ul.payment_methods,
-  .woocommerce-checkout #payment ul.payment_methods {
-    border-bottom: none; }
-
-.woocommerce .cart-collaterals .cart_totals,
-.woocommerce-page .cart-collaterals .cart_totals {
-  width: auto; }
-
-.woocommerce .cart-collaterals form .form-row-first,
-.woocommerce .cart-collaterals form .form-row-last,
-.woocommerce-page .cart-collaterals form .form-row-first,
-.woocommerce-page .cart-collaterals form .form-row-last {
-  width: 100%; }
-
-.course-description-card {
-  background-color: #fffbad !important;
-  margin: 1.5rem 0 1rem;
-  padding: 0 !important; }
-  .course-description-card .card-body {
-    padding: 0; }
-  .course-description-card .card-title {
-    font-size: 1.2rem;
+    #testimonial-carousel .carousel-caption {
+      bottom: auto;
+      left: 33vw;
+      padding: 2rem;
+      top: 44%;
+      width: 33vw; } }
+  #testimonial-carousel .carousel-caption h5 {
     font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 0;
-    padding: 0 .5rem .25rem; }
-  .course-description-card h2 {
-    background-color: rgba(0, 0, 0, 0.1);
-    font-size: 1.5rem;
+    line-height: 1; }
+  #testimonial-carousel .carousel-caption p {
     font-weight: bold;
-    padding: .75rem .5rem; }
-    @media (min-width: 768px) {
-      .course-description-card h2 {
-        font-size: 1.8rem; } }
-  .course-description-card ul {
-    line-height: 1.2;
-    list-style: none;
-    padding: 0 .5rem; }
+    line-height: 1.3;
+    margin: 0; }
 
-.course-cards {
-  background: transparent;
-  padding: 0; }
-  .course-cards h2 {
-    text-align: center;
-    min-height: auto; }
-    @media (min-width: 768px) {
-      .course-cards h2 {
-        min-height: 5.75rem; } }
-  .course-cards .woocommerce {
-    padding: 0 1rem 1.5rem; }
-    .course-cards .woocommerce ul.products {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
-      .course-cards .woocommerce ul.products li {
-        margin: 2rem 0.25rem 0 !important;
-        background: white;
-        width: 100% !important; }
-        @media (min-width: 768px) {
-          .course-cards .woocommerce ul.products li {
-            width: 15rem !important; } }
+#testimonial-carousel .carousel-control-next-icon,
+#testimonial-carousel .carousel-control-prev-icon {
+  background-color: #2a8700 !important;
+  padding: 1.5em; }
+
+#testimonial-carousel .carousel-inner {
+  background: #58535E; }
+
+#testimonial-carousel .carousel-item {
+  height: 66vh; }
+  @media (min-width: 768px) {
+    #testimonial-carousel .carousel-item {
+      height: 75vh; } }
+  #testimonial-carousel .carousel-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%; }
 
 .twostep01 {
   margin-right: 0;
@@ -11879,611 +12369,121 @@ button#place_order {
   .twostep02.upcoming .twostep02-row-02 h5 {
     padding-top: 0.75rem; }
 
-#testimonial-carousel .carousel-caption {
-  background: #2a8700;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  left: 0;
-  opacity: 0.8;
-  padding: 2rem 1rem;
-  top: 0;
-  width: 60vw; }
-  @media (min-width: 768px) {
-    #testimonial-carousel .carousel-caption {
-      bottom: auto;
-      left: 33vw;
-      padding: 2rem;
-      top: 44%;
-      width: 33vw; } }
-  #testimonial-carousel .carousel-caption h5 {
-    font-weight: bold;
-    line-height: 1; }
-  #testimonial-carousel .carousel-caption p {
-    font-weight: bold;
-    line-height: 1.3;
-    margin: 0; }
-
-#testimonial-carousel .carousel-control-next-icon,
-#testimonial-carousel .carousel-control-prev-icon {
-  background-color: #2a8700 !important;
-  padding: 1.5em; }
-
-#testimonial-carousel .carousel-inner {
-  background: #58535E; }
-
-#testimonial-carousel .carousel-item {
-  height: 66vh; }
-  @media (min-width: 768px) {
-    #testimonial-carousel .carousel-item {
-      height: 75vh; } }
-  #testimonial-carousel .carousel-item img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 100%; }
-
-.members-ce .banner {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 0 2rem; }
-
-.members-ce .course-description ul {
-  list-style-type: disc;
-  list-style-position: inside; }
-
-.members-ce .details {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start !important;
-      -ms-flex-align: start !important;
-          align-items: flex-start !important; }
-  .members-ce .details .card {
-    width: 100%; }
-    @media (min-width: 768px) {
-      .members-ce .details .card {
-        width: 23rem; } }
-    .members-ce .details .card img {
-      display: none; }
-    .members-ce .details .card p {
-      display: none; }
-      @media (min-width: 768px) {
-        .members-ce .details .card p {
-          font-size: inherit; } }
-    .members-ce .details .card p.hilite {
-      background: #FE9328;
-      display: block;
-      font-weight: bold;
-      padding: 1rem;
-      text-align: center;
-      text-transform: capitalize; }
-  .members-ce .details h1 {
-    font-weight: 700;
-    font-style: italic;
-    letter-spacing: -2px;
-    text-transform: uppercase; }
-  .members-ce .details h6 {
-    font-style: italic;
-    font-weight: bold;
-    text-align: center; }
-    @media (min-width: 768px) {
-      .members-ce .details h6 {
-        text-align: left; } }
-  @media (min-width: 768px) {
-    .members-ce .details p {
-      display: block; } }
-  .members-ce .details ul {
-    list-style-type: none;
-    padding: 0; }
-  .members-ce .details ul.products li.product {
-    width: 100% !important;
-    border: none; }
-    .members-ce .details ul.products li.product a h2,
-    .members-ce .details ul.products li.product a img {
-      display: none; }
-
-.members-ce.members-ce-diane-turton .details .card img,
-.members-ce.members-ce-jack-green .details .card img {
-  padding: 1rem 1rem 0;
-  display: block; }
-
-.members.agency {
-  max-width: 800px; }
-  .members.agency h3 {
-    background: #FE9328; }
-
-.members.course-description {
-  background: #fffee6;
-  margin: 2rem auto 0;
-  max-width: 800px; }
-  .members.course-description:last-of-type {
-    margin-bottom: 2rem; }
-  .members.course-description a.course_link {
-    color: #2a8700;
-    font-size: 1.25rem;
-    font-weight: bold;
-    line-height: 1;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .members.course-description .card-body {
-    padding: inherit 0; }
-  .members.course-description .card-text.credit {
-    padding: 0; }
-  .members.course-description .card-text.date {
-    padding: 0;
-    margin-bottom: 0;
-    text-transform: capitalize; }
-  .members.course-description .card-text.time {
-    padding: 0;
-    margin-bottom: 0;
-    text-transform: lowercase; }
-  .members.course-description .course_price {
-    color: #2a8700;
-    font-size: 2.5rem;
-    font-weight: bold;
-    line-height: 2; }
-  .members.course-description h3 {
-    font-weight: bold;
-    text-align: center; }
-
-.product_cat-diane-turton.product_cat-abr img.wp-post-image,
-.product_cat-diane-turton.product_cat-ahwd img.wp-post-image,
-.product_cat-rsps-diane-turton img.wp-post-image,
-.product_cat-srs-diane-turton img.wp-post-image {
-  display: none; }
-
-.page-about .card {
-  border: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 0 1.5rem;
-  padding: 0; }
-  @media (min-width: 768px) {
-    .page-about .card {
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      margin: 0 0 3.5rem; } }
-  .page-about .card img {
-    height: calc(100vh * 15 / 32);
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: 0 20%;
-       object-position: 0 20%;
-    width: auto; }
-    @media (min-width: 768px) {
-      .page-about .card img {
-        height: 16rem;
-        -o-object-position: 50% 50%;
-           object-position: 50% 50%; } }
-  .page-about .card .card-subtitle {
-    font-style: italic;
-    font-size: 1rem;
-    margin-top: -0.5rem;
-    margin-bottom: 0.75rem; }
-
-.page-about .card.dnicklus img {
-  -o-object-position: 0 0;
-     object-position: 0 0; }
-  @media (min-width: 768px) {
-    .page-about .card.dnicklus img {
-      -o-object-position: 0 20%;
-         object-position: 0 20%; } }
-
-@media (min-width: 768px) {
-  .page-about .card-body {
-    padding: 0 1.25rem; } }
-
-.header-announce .header-online-ce {
-  padding: 0;
-  background: #BBDFAB; }
-  .header-announce .header-online-ce .btn-sm, .header-announce .header-online-ce .btn-group-sm > .btn,
-  .header-announce .header-online-ce .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .header-announce .header-online-ce .btn-group-sm > input[type=submit] {
-    border-radius: 0.2rem !important;
-    font-size: 0.875rem !important;
-    line-height: 1.5 !important;
-    margin-bottom: 0.35rem;
-    min-width: 0;
-    padding: 0.25rem 0.5rem !important; }
-  .header-announce .header-online-ce h5 {
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: 0.25rem;
-    text-transform: capitalize; }
-
-.header-announce .header-scholarship {
-  background: #FE9328;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
-  padding: 0.25rem 0.5em; }
-  .header-announce .header-scholarship a {
-    color: white;
-    font-weight: bold;
-    text-align: left;
-    line-height: 1; }
-    @media (min-width: 768px) {
-      .header-announce .header-scholarship a {
-        font-size: 1.2rem; } }
-  .header-announce .header-scholarship .body {
-    color: white;
-    font-weight: bold;
-    padding: 0 0 0 0.5rem;
-    text-align: left;
-    text-decoration: none; }
-    @media (min-width: 768px) {
-      .header-announce .header-scholarship .body {
-        text-align: center; } }
-    .header-announce .header-scholarship .body a {
-      color: white;
-      line-height: 1.2; }
-    .header-announce .header-scholarship .body img {
-      display: none; }
-      @media (min-width: 768px) {
-        .header-announce .header-scholarship .body img {
-          display: inline;
-          background: white; } }
-  .header-announce .header-scholarship .logo {
-    text-align: right;
-    background: white;
-    margin-right: 1rem;
-    padding: 0.25rem; }
-    .header-announce .header-scholarship .logo img {
-      background: white; }
-
-.header-announce .widget {
-  padding: 0; }
-
-.out-of-state-online-courses {
-  -webkit-box-pack: center !important;
-      -ms-flex-pack: center !important;
-          justify-content: center !important; }
-  .out-of-state-online-courses .btn-group {
-    margin-right: 1.5em; }
-    .out-of-state-online-courses .btn-group:first-of-type {
-      margin-left: 1.5rem; }
-    .out-of-state-online-courses .btn-group:last-of-type {
-      margin-right: 0; }
-    .out-of-state-online-courses .btn-group .btn:first-of-type, .out-of-state-online-courses .btn-group .wpcf7 input:first-of-type[type=submit], .wpcf7 .out-of-state-online-courses .btn-group input:first-of-type[type=submit] {
-      margin-right: 0.25em; }
-    @media (min-width: 768px) {
-      .out-of-state-online-courses .btn-group {
-        margin-right: 1.5rem; }
-        .out-of-state-online-courses .btn-group:first-of-type {
-          margin-left: 0; } }
-
-.online-license.fl .twostep01-jumbotron,
-.online-license.ny .twostep01-jumbotron,
-.online-license.pa .twostep01-jumbotron {
-  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
-
-.online-ce.fl .twostep01-jumbotron,
-.online-ce.ny .twostep01-jumbotron,
-.online-ce.pa .twostep01-jumbotron {
-  background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
-
-.online-license .card {
-  border: none;
-  border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem; }
-  .online-license .card .action-button {
-    text-align: center; }
-
-.online-license .card-body h5 {
-  color: #2a8700;
-  font-weight: bold; }
-
-.online-license .hl-text h1 {
-  color: white;
+.woocommerce-cart table.cart .cart_totals p {
+  font-size: 1.1rem;
   font-weight: bold;
-  font-style: italic; }
-
-.online-license .hl-text h5 {
-  color: white;
-  font-style: italic; }
-
-.online-license .twostep01-jumbotron {
-  opacity: 0.9;
-  background-color: rgba(42, 135, 0, 0.2);
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-position: center center; }
-
-.online-ce .card {
-  border: none;
-  border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem; }
-  .online-ce .card .action-button {
-    text-align: center; }
-  .online-ce .card h5 {
-    color: #2a8700;
-    font-weight: bold; }
-
-.online-ce .card-body h5 {
-  color: #2a8700;
-  font-weight: bold; }
-
-.online-ce .hl-text h1 {
-  color: white;
-  font-weight: bold;
-  font-style: italic; }
-
-.online-ce .hl-text h5 {
-  color: white;
-  font-style: italic; }
-
-.online-ce .twostep01-jumbotron {
-  opacity: 0.9;
-  background-color: rgba(42, 135, 0, 0.2);
-  background-blend-mode: overlay;
-  background-size: cover;
-  background-position: center center; }
-
-.upcoming-ce .card,
-.upcoming-ce-bydate .card {
-  border: none;
-  border-top-right-radius: 1.2rem;
-  border-top-left-radius: 1.2rem; }
-
-.twostep02-descriptions.online-ce.ny .card-body:first-of-type,
-.twostep02-descriptions.online-ce.pa .card-body:first-of-type {
-  height: 27rem; }
-
-/*
-####################################################
-M E D I A  Q U E R I E S
-####################################################
-*/
-/*
-::::::::::::::::::::::::::::::::::::::::::::::::::::
-Bootstrap 4 breakpoints
-*/
-/*
-Extra small devices (portrait phones, less than 544px)
-No media query since this is the default in Bootstrap because it is "mobile first"
-*/
-/* Small devices (landscape phones, 544px and up) */
-/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-/* Large devices (desktops, 992px and up) */
-/* Extra large devices (large desktops, 1200px and up) */
-.blog h1,
-.category h1,
-.single h1 {
-  padding: 1.5rem 0 1rem;
+  margin: 0 0.5rem 1rem;
   text-align: center; }
 
-.blog p.has-drop-cap:not(:focus):first-letter,
-.category p.has-drop-cap:not(:focus):first-letter,
-.single p.has-drop-cap:not(:focus):first-letter {
-  float: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  font-weight: inherit;
-  margin: inherit;
-  text-transform: inherit;
-  font-style: inherit; }
+.woocommerce-cart table.cart img {
+  width: auto; }
 
-.blog .card-subtitle,
-.category .card-subtitle,
-.single .card-subtitle {
-  font-size: 0.9rem; }
+.woocommerce-cart table.cart td.product-remove {
+  width: 1rem; }
 
-.blog #index-wrapper,
-.category #index-wrapper,
-.single #index-wrapper {
+.woocommerce-cart table.cart td.product-thumbnail {
+  width: 30vw; }
+  @media (min-width: 768px) {
+    .woocommerce-cart table.cart td.product-thumbnail {
+      display: block; } }
+
+.woocommerce-cart table.cart td.product-name {
+  width: auto; }
+  @media (min-width: 768px) {
+    .woocommerce-cart table.cart td.product-name {
+      width: 30vw; } }
+
+.woocommerce-checkout button#place_order {
+  min-width: 280px;
   margin: 0 auto; }
 
-.blog #main,
-.category #main,
-.single #main {
-  margin: 0 auto; }
-  .blog #main article,
-  .category #main article,
-  .single #main article {
-    margin: 0 auto;
-    max-width: 800px;
-    margin-bottom: 10px;
-    width: calc(100vw - 50px); }
-
-.blog .pagination,
-.category .pagination,
-.single .pagination {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.blog iframe,
-.category iframe,
-.single iframe {
-  width: 100% !important;
-  height: calc((100vw - 50px) * 9 /16) !important; }
-  @media (min-width: 768px) {
-    .blog iframe,
-    .category iframe,
-    .single iframe {
-      height: calc((800px - 50px) * 9 /16) !important; } }
-
-.single article.category-ask-elliott img.wp-post-image {
+.woocommerce-checkout .entry-header {
   display: none; }
 
-.category.category-ask-elliott article img {
-  display: none; }
+.woocommerce-checkout form fieldset {
+  border: 1px solid #BBDFAB; }
 
-.category.category-ask-elliott .widget-area {
-  font-size: .9rem;
-  margin: 0 auto;
-  max-width: 800px;
-  margin-bottom: 10px;
-  width: calc(100vw - 50px); }
+.woocommerce-checkout form label.control-label {
+  display: inline-block !important; }
 
-.search-results .content-area {
-  max-width: 630px; }
-  .search-results .content-area article {
-    max-width: 600px;
-    margin-bottom: 1.75rem; }
-    .search-results .content-area article .entry-header h2.entry-title {
-      color: #2a8700;
-      font-size: 1.1rem;
-      letter-spacing: -.25px;
-      line-height: 1.33;
-      margin: 0;
-      overflow: hidden;
-      text-align: left;
-      text-overflow: ellipsis;
-      white-space: nowrap; }
-    .search-results .content-area article .entry-summary {
-      font-size: small;
-      line-height: 1.54; }
-  .search-results .content-area ul.pagination {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+.woocommerce-checkout form legend {
+  background: #BBDFAB;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  text-transform: capitalize;
+  width: auto; }
 
-#secondary-menu {
-  padding: 0.25rem 0; }
-  @media (min-width: 768px) {
-    #secondary-menu {
-      background: #fffbad !important; } }
+.woocommerce-checkout form .woocommerce-input-wrapper {
+  width: 100%; }
 
-.search-menu {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  padding-left: 0.25rem;
-  padding-right: 0.4rem; }
-  @media (min-width: 768px) {
-    .search-menu {
-      -webkit-box-ordinal-group: 1000;
-          -ms-flex-order: 999;
-              order: 999; } }
-  .search-menu .btn-group-sm > .btn,
-  .search-menu .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .search-menu .btn-group-sm > input[type=submit],
-  .search-menu .btn-group-sm-bcc > .a,
-  .search-menu .btn-group-sm-bcc > .btn,
-  .search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit],
-  .wpcf7 .search-menu .btn-group-sm-bcc > input[type=submit],
-  .search-menu .btn-sm,
-  .search-menu .btn-group-sm > .btn,
-  .search-menu .wpcf7 .btn-group-sm > input[type=submit],
-  .wpcf7 .search-menu .btn-group-sm > input[type=submit],
-  .search-menu .wpcf7 .btn-group-sm > input[type=submit],
-  .search-menu .wpcf7 .btn-group-sm-bcc > input[type=submit] {
-    font-size: 0.8rem !important;
-    height: 100%;
-    padding: 0 !important;
-    margin-top: -.15rem; }
-  .search-menu #searchbox {
-    border: none;
-    padding: 0;
-    width: 6rem; }
-
-.nav-item.search-menu:after {
-  display: none; }
-
-.category-rules-and-regulations #title45 #t109s_31,
-.category-rules-and-regulations #title45 #t45_64,
-.category-rules-and-regulations #title45 #t45_65,
-.category-rules-and-regulations #title45 #t47_64,
-.category-rules-and-regulations #title45 #t47_65,
-.category-rules-and-regulations #title45 #t56_64,
-.category-rules-and-regulations #title45 #t58_42,
-.category-rules-and-regulations #title45 #t65_28,
-.category-rules-and-regulations #title45 #t65_64,
-.category-rules-and-regulations #title45 #t83_31,
-.category-rules-and-regulations #title45 #t84_31,
-.category-rules-and-regulations #title45 #t89_38,
-.category-rules-and-regulations #title45 #t89_38,
-.category-rules-and-regulations #title45 #t90_42,
-.category-rules-and-regulations #title45 #t96_42,
-.category-rules-and-regulations #title45 #t99_42,
-.category-rules-and-regulations .doc_style007 + div,
-.category-rules-and-regulations .doc_style038 {
-  display: block;
+.woocommerce-checkout form.checkout label {
+  text-transform: capitalize;
+  font-size: 0.85rem;
   font-weight: bold;
-  margin: 0.75rem 0 0.5rem; }
+  margin-right: 0.4rem; }
+  .woocommerce-checkout form.checkout label .optional {
+    visibility: hidden; }
+  .woocommerce-checkout form.checkout label .required {
+    color: #2a8700; }
 
-.category-rules-and-regulations #title45 #t30_58,
-.category-rules-and-regulations #title45 #t3_25,
-.category-rules-and-regulations #title45 #t4_58,
-.category-rules-and-regulations #title45 #t58_27,
-.category-rules-and-regulations .doc_style024,
-.category-rules-and-regulations .doc_style038 + .doc_style038 {
-  display: block;
-  font-weight: normal;
-  margin-bottom: 0.5rem; }
+.woocommerce-info {
+  border-top-color: rgba(142, 20, 255, 0.2);
+  color: #3e2e4c; }
+  .woocommerce-info::before {
+    color: #3b0c66; }
+  .woocommerce-info a {
+    color: rgba(142, 20, 255, 0.75); }
 
-.category-rules-and-regulations .doc_15_style004,
-.category-rules-and-regulations .doc_style005,
-.category-rules-and-regulations .doc_style007 {
-  display: block;
-  font-style: italic;
-  font-size: 0.8rem;
-  font-weight: normal; }
-
-.category-rules-and-regulations #title45 #t113_55,
-.category-rules-and-regulations #title45 #t114_57 {
-  display: none; }
-
-.category-rules-and-regulations .doc_15_style007 {
-  display: block;
-  font-weight: normal;
-  margin: 0.75rem 0 0.5rem; }
-
-.license-act.list-group,
-.rules-regs.list-group,
-.rules-regs-index.list-group {
-  font-size: 0.9rem;
-  line-height: 1.2;
-  margin: 0 auto;
-  padding-left: 0;
-  padding-right: 0; }
+.woocommerce-message {
+  font-size: 0.75rem; }
   @media (min-width: 768px) {
-    .license-act.list-group,
-    .rules-regs.list-group,
-    .rules-regs-index.list-group {
-      font-size: 1rem; } }
-  .license-act.list-group a,
-  .rules-regs.list-group a,
-  .rules-regs-index.list-group a {
-    border: none;
-    padding: 0.25rem; }
-  .license-act.list-group .section,
-  .license-act.list-group .title,
-  .rules-regs.list-group .section,
-  .rules-regs.list-group .title,
-  .rules-regs-index.list-group .section,
-  .rules-regs-index.list-group .title {
-    padding-left: 0;
-    padding-right: 0; }
-  .license-act.list-group .toc_description,
-  .rules-regs.list-group .toc_description,
-  .rules-regs-index.list-group .toc_description {
-    font-size: .9rem; }
+    .woocommerce-message {
+      font-size: 0.85rem; } }
 
-h2.toc_title {
-  font-size: 1.5rem; }
+#add_payment_method #payment,
+.woocommerce-cart #payment,
+.woocommerce-checkout #payment {
+  background: white; }
+  #add_payment_method #payment div.form-row,
+  .woocommerce-cart #payment div.form-row,
+  .woocommerce-checkout #payment div.form-row {
+    padding-top: 0; }
+  #add_payment_method #payment div.payment_box,
+  .woocommerce-cart #payment div.payment_box,
+  .woocommerce-checkout #payment div.payment_box {
+    background-color: rgba(223, 221, 222, 0.3); }
+  #add_payment_method #payment ul.payment_methods,
+  .woocommerce-cart #payment ul.payment_methods,
+  .woocommerce-checkout #payment ul.payment_methods {
+    border-bottom: none; }
 
-h3.toc_title {
-  font-size: 1.4rem; }
+.woocommerce .cart-collaterals .cart_totals,
+.woocommerce-page .cart-collaterals .cart_totals {
+  width: auto; }
 
-h4.toc_title {
-  font-size: 1.2rem; }
+.woocommerce .cart-collaterals form .form-row-first,
+.woocommerce .cart-collaterals form .form-row-last,
+.woocommerce-page .cart-collaterals form .form-row-first,
+.woocommerce-page .cart-collaterals form .form-row-last {
+  width: 100%; }
 
-h5.toc_subchapter {
-  font-size: 1rem;
-  padding: 0;
-  margin: 1rem auto .5rem; }
+.xoo-wsc-basket {
+  background-color: #FFEE5D;
+  border: 2px solid #2a8700;
+  border-radius: .5rem;
+  bottom: 1rem;
+  padding: .375rem .75rem .625rem .5rem;
+  right: 1rem; }
+  .xoo-wsc-basket .xoo-wsc-icon-basket1 {
+    color: #2a8700; }
+    .xoo-wsc-basket .xoo-wsc-icon-basket1:before {
+      font-family: FontAwesome;
+      content: "\f07a";
+      font-size: 2.5rem; }
+  .xoo-wsc-basket .xoo-wsc-items-count {
+    background-color: #2a8700;
+    color: white; }
 
 figcaption {
   font-size: 0.85rem; }
