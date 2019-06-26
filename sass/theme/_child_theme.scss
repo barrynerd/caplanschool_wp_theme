@@ -433,10 +433,11 @@ article.category-elliotts-industry-news {
 .category-ask-elliott,
 .category-elliotts-industry-news {
     .headline-wrapper {
+        align-items: center;
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        align-items: center;
+        margin-bottom: 1rem;
     }
 
     .headline-logo {
@@ -445,7 +446,8 @@ article.category-elliotts-industry-news {
 
     .page-title {
         font-size: 1.8rem;
-        max-width: 120px;
+        // max-width: 120px;
+        padding: 0;
         @media (min-width: 768px) {
             font-size: 2.5rem;
             max-width: 100%;
