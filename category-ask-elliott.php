@@ -37,7 +37,7 @@ $container = get_theme_mod('understrap_container_type');
                             ?>
 
                         </div>
-                        <div class="card col-10 col-md-8">
+                        <div class="card col-11 col-md-8">
                             <div class="card-body">
                             <?php
                                 the_archive_description('<div class="taxonomy-description">', '</div>');

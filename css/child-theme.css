@@ -13040,6 +13040,12 @@ article.category-elliotts-industry-news h2 {
   .category-ask-elliott .page-header .card-body p,
   .category-elliotts-industry-news .page-header .card-body p {
     margin: 0; }
+  .category-ask-elliott .page-header .card-body p.privacy,
+  .category-elliotts-industry-news .page-header .card-body p.privacy {
+    font-size: 0.8rem;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 0.5rem; }
 
 .category-ask-elliott .card,
 .category-elliotts-industry-news .card {
