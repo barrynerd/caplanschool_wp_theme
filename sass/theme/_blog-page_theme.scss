@@ -1,9 +1,10 @@
 // .page-template-default,
-.search,
+
 .archive,
 .blog,
 .category,
 .page,
+.search,
 .single {
     .container-fluid {
         max-width: 960px;
@@ -156,6 +157,29 @@
 
         li {
             padding: 1rem 0;
+        }
+    }
+}
+
+.page-template-front-page {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .embed-responsive iframe {
+        height: 100%!important;
+        max-height: none;
+        width: 100%!important;
+    }
+
+    #main {
+        article {
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        .entry-meta {
+            display: none;
         }
     }
 }
