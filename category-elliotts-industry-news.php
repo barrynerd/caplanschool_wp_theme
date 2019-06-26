@@ -32,7 +32,7 @@ $container = get_theme_mod('understrap_container_type');
 						<div class="headline-wrapper">
 							<img class="headline-logo" src="/wordpress/wp-content/uploads/square-logo-caplanschool-61x60.png" />
 							<?php
-	                        the_archive_title('<h1 class="page-title">', '</h1>');
+	                        the_archive_title('<h1 class="page-title col-7 col-md-9">', '</h1>');
 	                        ?>
 						</div>
                         <div class="card col-11 col-md-8">
