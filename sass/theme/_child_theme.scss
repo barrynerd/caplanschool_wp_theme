@@ -432,14 +432,6 @@ article.category-elliotts-industry-news {
 
 .category-ask-elliott,
 .category-elliotts-industry-news {
-    .headline-wrapper {
-        align-items: center;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        margin-bottom: 1rem;
-    }
-
     .headline-logo {
         padding-right: 0.6rem;
     }
@@ -455,8 +447,24 @@ article.category-elliotts-industry-news {
     }
 
     .page-header {
+        .headline-wrapper {
+            align-items: center;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
         .card {
             background: $bcc_extra_light_green;
+        }
+
+        .card-body {
+            padding: 0.75rem;
+
+            p {
+                margin: 0;
+            }
         }
     }
 
@@ -486,7 +494,7 @@ article.category-elliotts-industry-news {
             iframe {
                 height: calc(410px * 9 / 16)!important;
                 width: 410px!important;
-                margin: 0px calc((100% - 410px)/2);
+                margin: 0 calc((100% - 410px)/2);
             }
         }
     }
@@ -614,6 +622,6 @@ article.category-elliotts-industry-news {
 
 .entry-meta {
     color: $bcc_medium_gray;
-    font-size: .9rem;
-    padding-bottom: .9rem;
+    font-size: 0.9rem;
+    padding-bottom: 0.9rem;
 }

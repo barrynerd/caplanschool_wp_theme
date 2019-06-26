@@ -13001,21 +13001,6 @@ article.category-elliotts-industry-news h2 {
 .page-header .card.description {
   background: #fffff6; }
 
-.category-ask-elliott .headline-wrapper,
-.category-elliotts-industry-news .headline-wrapper {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1rem; }
-
 .category-ask-elliott .headline-logo,
 .category-elliotts-industry-news .headline-logo {
   padding-right: 0.6rem; }
@@ -13030,9 +13015,31 @@ article.category-elliotts-industry-news h2 {
       font-size: 2.5rem;
       max-width: 100%; } }
 
+.category-ask-elliott .page-header .headline-wrapper,
+.category-elliotts-industry-news .page-header .headline-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem; }
+
 .category-ask-elliott .page-header .card,
 .category-elliotts-industry-news .page-header .card {
   background: #fffff6; }
+
+.category-ask-elliott .page-header .card-body,
+.category-elliotts-industry-news .page-header .card-body {
+  padding: 0.75rem; }
+  .category-ask-elliott .page-header .card-body p,
+  .category-elliotts-industry-news .page-header .card-body p {
+    margin: 0; }
 
 .category-ask-elliott .card,
 .category-elliotts-industry-news .card {
@@ -13055,7 +13062,7 @@ article.category-elliotts-industry-news h2 {
       .category-elliotts-industry-news .embed-responsive iframe {
         height: calc(410px * 9 / 16) !important;
         width: 410px !important;
-        margin: 0px calc((100% - 410px)/2); } }
+        margin: 0 calc((100% - 410px)/2); } }
 
 /* Grid style */
 .display-posts-listing.grid {
@@ -13165,7 +13172,7 @@ article.category-elliotts-industry-news h2 {
 
 .entry-meta {
   color: #58535E;
-  font-size: .9rem;
-  padding-bottom: .9rem; }
+  font-size: 0.9rem;
+  padding-bottom: 0.9rem; }
 
 /*# sourceMappingURL=child-theme.css.map */
