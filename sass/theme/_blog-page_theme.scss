@@ -1,8 +1,9 @@
 // .page-template-default,
-.error404,
+
 .archive,
 .blog,
 .category,
+.error404,
 .page,
 .search,
 .single {
@@ -181,5 +182,20 @@
         .entry-meta {
             display: none;
         }
+    }
+}
+
+.error404 {
+    .page-content {
+        margin-bottom: 2rem;
+    }
+
+    .btn.btn-primary,
+    .wpcf7 .xoo-wsc-footer-b input[type=submit],
+    .wpcf7 input.btn-primary[type=submit],
+    .xoo-wsc-footer-b .btn,
+    .xoo-wsc-footer-b .wpcf7 input[type=submit],
+    button#place_order {
+        font-size: 1rem!important;
     }
 }

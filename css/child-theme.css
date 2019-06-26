@@ -12257,29 +12257,29 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
-.error404 .container-fluid,
 .archive .container-fluid,
 .blog .container-fluid,
 .category .container-fluid,
+.error404 .container-fluid,
 .page .container-fluid,
 .search .container-fluid,
 .single .container-fluid {
   max-width: 960px; }
 
-.error404 h1,
 .archive h1,
 .blog h1,
 .category h1,
+.error404 h1,
 .page h1,
 .search h1,
 .single h1 {
   padding: 0 0 1rem;
   text-align: center; }
 
-.error404 p.has-drop-cap:not(:focus):first-letter,
 .archive p.has-drop-cap:not(:focus):first-letter,
 .blog p.has-drop-cap:not(:focus):first-letter,
 .category p.has-drop-cap:not(:focus):first-letter,
+.error404 p.has-drop-cap:not(:focus):first-letter,
 .page p.has-drop-cap:not(:focus):first-letter,
 .search p.has-drop-cap:not(:focus):first-letter,
 .single p.has-drop-cap:not(:focus):first-letter {
@@ -12291,36 +12291,36 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   text-transform: inherit;
   font-style: inherit; }
 
-.error404 .card-subtitle,
 .archive .card-subtitle,
 .blog .card-subtitle,
 .category .card-subtitle,
+.error404 .card-subtitle,
 .page .card-subtitle,
 .search .card-subtitle,
 .single .card-subtitle {
   font-size: 0.9rem; }
 
-.error404 #index-wrapper,
 .archive #index-wrapper,
 .blog #index-wrapper,
 .category #index-wrapper,
+.error404 #index-wrapper,
 .page #index-wrapper,
 .search #index-wrapper,
 .single #index-wrapper {
   margin: 0 auto; }
 
-.error404 #main,
 .archive #main,
 .blog #main,
 .category #main,
+.error404 #main,
 .page #main,
 .search #main,
 .single #main {
   margin: 0 auto; }
-  .error404 #main article,
   .archive #main article,
   .blog #main article,
   .category #main article,
+  .error404 #main article,
   .page #main article,
   .search #main article,
   .single #main article {
@@ -12328,10 +12328,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     max-width: 800px;
     margin-bottom: 10px; }
 
-.error404 .pagination,
 .archive .pagination,
 .blog .pagination,
 .category .pagination,
+.error404 .pagination,
 .page .pagination,
 .search .pagination,
 .single .pagination {
@@ -12339,40 +12339,40 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       -ms-flex-pack: center;
           justify-content: center; }
 
-.error404 .fluid-width-video-wrapper,
 .archive .fluid-width-video-wrapper,
 .blog .fluid-width-video-wrapper,
 .category .fluid-width-video-wrapper,
+.error404 .fluid-width-video-wrapper,
 .page .fluid-width-video-wrapper,
 .search .fluid-width-video-wrapper,
 .single .fluid-width-video-wrapper {
   margin-top: -56.25% !important;
   position: static; }
 
-.error404 iframe,
 .archive iframe,
 .blog iframe,
 .category iframe,
+.error404 iframe,
 .page iframe,
 .search iframe,
 .single iframe {
   width: 100% !important;
   height: calc((100vw - 50px) * 9 /16) !important; }
   @media (min-width: 768px) {
-    .error404 iframe,
     .archive iframe,
     .blog iframe,
     .category iframe,
+    .error404 iframe,
     .page iframe,
     .search iframe,
     .single iframe {
       height: calc((800px - 50px) * 9 /16) !important;
       max-height: 343px; } }
 
-.error404 #right-sidebar aside,
 .archive #right-sidebar aside,
 .blog #right-sidebar aside,
 .category #right-sidebar aside,
+.error404 #right-sidebar aside,
 .page #right-sidebar aside,
 .search #right-sidebar aside,
 .single #right-sidebar aside {
@@ -12381,10 +12381,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   border-radius: 0.25rem;
   margin-bottom: 1rem; }
 
-.error404 #right-sidebar h3.widget-title,
 .archive #right-sidebar h3.widget-title,
 .blog #right-sidebar h3.widget-title,
 .category #right-sidebar h3.widget-title,
+.error404 #right-sidebar h3.widget-title,
 .page #right-sidebar h3.widget-title,
 .search #right-sidebar h3.widget-title,
 .single #right-sidebar h3.widget-title {
@@ -12393,10 +12393,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   font-weight: bold;
   text-align: center; }
 
-.error404 #right-sidebar h3.acf-rpw-title,
 .archive #right-sidebar h3.acf-rpw-title,
 .blog #right-sidebar h3.acf-rpw-title,
 .category #right-sidebar h3.acf-rpw-title,
+.error404 #right-sidebar h3.acf-rpw-title,
 .page #right-sidebar h3.acf-rpw-title,
 .search #right-sidebar h3.acf-rpw-title,
 .single #right-sidebar h3.acf-rpw-title {
@@ -12405,10 +12405,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding: 0 0.5rem 0.5rem;
   text-align: center; }
 
-.error404 #right-sidebar .acf-rpw-before-whole,
 .archive #right-sidebar .acf-rpw-before-whole,
 .blog #right-sidebar .acf-rpw-before-whole,
 .category #right-sidebar .acf-rpw-before-whole,
+.error404 #right-sidebar .acf-rpw-before-whole,
 .page #right-sidebar .acf-rpw-before-whole,
 .search #right-sidebar .acf-rpw-before-whole,
 .single #right-sidebar .acf-rpw-before-whole {
@@ -12418,10 +12418,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   margin: 0 auto;
   text-align: center; }
 
-.error404 #right-sidebar ul,
 .archive #right-sidebar ul,
 .blog #right-sidebar ul,
 .category #right-sidebar ul,
+.error404 #right-sidebar ul,
 .page #right-sidebar ul,
 .search #right-sidebar ul,
 .single #right-sidebar ul {
@@ -12476,6 +12476,19 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 .page-template-front-page #main .entry-meta {
   display: none; }
+
+.error404 .page-content {
+  margin-bottom: 2rem; }
+
+.error404 .btn.btn-primary, .error404 .wpcf7 input.btn-primary[type=submit], .wpcf7 .error404 input.btn-primary[type=submit],
+.error404 .wpcf7 .xoo-wsc-footer-b input[type=submit],
+.error404 .wpcf7 input.btn-primary[type=submit],
+.error404 .xoo-wsc-footer-b .btn,
+.error404 .xoo-wsc-footer-b .wpcf7 input[type=submit],
+.wpcf7 .error404 .xoo-wsc-footer-b input[type=submit],
+.error404 .xoo-wsc-footer-b .wpcf7 input[type=submit],
+.error404 button#place_order {
+  font-size: 1rem !important; }
 
 .search-results .content-area {
   max-width: 630px; }
