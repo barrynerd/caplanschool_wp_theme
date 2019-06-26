@@ -1,7 +1,9 @@
 // .page-template-default,
-.page,
+
+.archive,
 .blog,
 .category,
+.page,
 .single {
     .container-fluid {
         max-width: 960px;
@@ -124,5 +126,36 @@
         max-width: 800px;
         margin-bottom: 10px;
         width: calc(100vw - 50px);
+    }
+}
+
+.author {
+    .card {
+        margin: 1rem 0;
+
+        h4.card-title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .posted-on {
+            color: $bcc_medium_gray;
+            font-size: 0.9rem;
+        }
+
+        .byline {
+            display: none;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0.25rem 0 0;
+
+        li {
+            padding: 1rem 0;
+        }
     }
 }
