@@ -12269,7 +12269,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .category h1,
 .page h1,
 .single h1 {
-  left-padding: 1.5rem 0 1rem;
+  padding: 0 0 1rem;
   text-align: center; }
 
 .archive p.has-drop-cap:not(:focus):first-letter,
