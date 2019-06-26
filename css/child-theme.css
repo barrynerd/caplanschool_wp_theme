@@ -11294,7 +11294,7 @@ button#place_order {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 1.5rem; }
+  margin-top: 0; }
   .single-product .product .btn-primary {
     font-size: 2rem !important;
     margin: 1rem auto 0;
