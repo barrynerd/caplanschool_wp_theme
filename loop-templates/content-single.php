@@ -31,11 +31,13 @@ if (! defined('ABSPATH')) {
                 case "ask-elliott": {
                     // print($my_category);
                     print <<< END
-					<div class="card col-8 description">
-						<div class="card-body>">
+					<div class="card col-11 col-md-8 description">
+						<div class="card-body">
+                            <div class="taxonomy-description">
 END;
                         print category_description(get_category_by_slug($my_category)->term_id);
                     print <<< END
+                            </div>
 						</div>
 					</div>
 END;

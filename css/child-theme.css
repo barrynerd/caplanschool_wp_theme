@@ -13015,7 +13015,9 @@ article.category-elliotts-industry-news h2 {
       font-size: 2.5rem;
       max-width: 100%; } }
 
+.category-ask-elliott .entry-header .headline-wrapper,
 .category-ask-elliott .page-header .headline-wrapper,
+.category-elliotts-industry-news .entry-header .headline-wrapper,
 .category-elliotts-industry-news .page-header .headline-wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -13030,17 +13032,25 @@ article.category-elliotts-industry-news h2 {
           justify-content: center;
   margin-bottom: 1rem; }
 
+.category-ask-elliott .entry-header .card,
 .category-ask-elliott .page-header .card,
+.category-elliotts-industry-news .entry-header .card,
 .category-elliotts-industry-news .page-header .card {
   background: #fffff6; }
 
+.category-ask-elliott .entry-header .card-body,
 .category-ask-elliott .page-header .card-body,
+.category-elliotts-industry-news .entry-header .card-body,
 .category-elliotts-industry-news .page-header .card-body {
   padding: 0.75rem; }
+  .category-ask-elliott .entry-header .card-body p,
   .category-ask-elliott .page-header .card-body p,
+  .category-elliotts-industry-news .entry-header .card-body p,
   .category-elliotts-industry-news .page-header .card-body p {
     margin: 0; }
+  .category-ask-elliott .entry-header .card-body p.privacy,
   .category-ask-elliott .page-header .card-body p.privacy,
+  .category-elliotts-industry-news .entry-header .card-body p.privacy,
   .category-elliotts-industry-news .page-header .card-body p.privacy {
     font-size: 0.8rem;
     width: 95%;
