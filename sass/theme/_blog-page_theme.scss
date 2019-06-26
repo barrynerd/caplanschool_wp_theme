@@ -105,6 +105,11 @@
             text-align: center;
         }
     }
+    article.page {
+        .entry-header {
+            display:none;
+        }
+    }
 }
 
 .single {

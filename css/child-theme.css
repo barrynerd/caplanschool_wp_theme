@@ -12430,6 +12430,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding: 0.25rem 0 0;
   text-align: center; }
 
+.archive article.page .entry-header,
+.blog article.page .entry-header,
+.category article.page .entry-header,
+.error404 article.page .entry-header,
+.page article.page .entry-header,
+.search article.page .entry-header,
+.single article.page .entry-header {
+  display: none; }
+
 .single article.category-ask-elliott img.wp-post-image {
   display: none; }
 
