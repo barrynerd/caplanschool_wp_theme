@@ -199,3 +199,15 @@
         font-size: 1rem!important;
     }
 }
+
+.page-template-page-no_featured_img {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    #main {
+        article {
+            max-width: 100%;
+        }
+    }
+}

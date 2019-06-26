@@ -25,8 +25,10 @@ $container   = get_theme_mod('understrap_container_type');
 
 <div class="wrapper" id="page-wrapper">
 
-	<div class="<?php echo esc_attr($container); ?> px-0" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
 
+        <div class="row">
+            <div class="col mx-auto content-area px-0" id="primary">
 
 		<main class="site-main" id="main">
 
@@ -36,7 +38,8 @@ $container   = get_theme_mod('understrap_container_type');
 			<?php endwhile; // end of the loop.?>
 
 		</main><!-- #main -->
-
+    </div>
+</div>
 </div><!-- Container end -->
 
 </div><!-- Wrapper end -->
