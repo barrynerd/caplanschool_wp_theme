@@ -12257,6 +12257,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 /* Large devices (desktops, 992px and up) */
 /* Extra large devices (large desktops, 1200px and up) */
+.error404 .container-fluid,
 .archive .container-fluid,
 .blog .container-fluid,
 .category .container-fluid,
@@ -12265,6 +12266,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .single .container-fluid {
   max-width: 960px; }
 
+.error404 h1,
 .archive h1,
 .blog h1,
 .category h1,
@@ -12274,6 +12276,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding: 0 0 1rem;
   text-align: center; }
 
+.error404 p.has-drop-cap:not(:focus):first-letter,
 .archive p.has-drop-cap:not(:focus):first-letter,
 .blog p.has-drop-cap:not(:focus):first-letter,
 .category p.has-drop-cap:not(:focus):first-letter,
@@ -12288,6 +12291,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   text-transform: inherit;
   font-style: inherit; }
 
+.error404 .card-subtitle,
 .archive .card-subtitle,
 .blog .card-subtitle,
 .category .card-subtitle,
@@ -12296,6 +12300,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .single .card-subtitle {
   font-size: 0.9rem; }
 
+.error404 #index-wrapper,
 .archive #index-wrapper,
 .blog #index-wrapper,
 .category #index-wrapper,
@@ -12304,6 +12309,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .single #index-wrapper {
   margin: 0 auto; }
 
+.error404 #main,
 .archive #main,
 .blog #main,
 .category #main,
@@ -12311,6 +12317,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 .search #main,
 .single #main {
   margin: 0 auto; }
+  .error404 #main article,
   .archive #main article,
   .blog #main article,
   .category #main article,
@@ -12321,6 +12328,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     max-width: 800px;
     margin-bottom: 10px; }
 
+.error404 .pagination,
 .archive .pagination,
 .blog .pagination,
 .category .pagination,
@@ -12331,6 +12339,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       -ms-flex-pack: center;
           justify-content: center; }
 
+.error404 .fluid-width-video-wrapper,
 .archive .fluid-width-video-wrapper,
 .blog .fluid-width-video-wrapper,
 .category .fluid-width-video-wrapper,
@@ -12340,6 +12349,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   margin-top: -56.25% !important;
   position: static; }
 
+.error404 iframe,
 .archive iframe,
 .blog iframe,
 .category iframe,
@@ -12349,6 +12359,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   width: 100% !important;
   height: calc((100vw - 50px) * 9 /16) !important; }
   @media (min-width: 768px) {
+    .error404 iframe,
     .archive iframe,
     .blog iframe,
     .category iframe,
@@ -12358,6 +12369,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
       height: calc((800px - 50px) * 9 /16) !important;
       max-height: 343px; } }
 
+.error404 #right-sidebar aside,
 .archive #right-sidebar aside,
 .blog #right-sidebar aside,
 .category #right-sidebar aside,
@@ -12369,6 +12381,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   border-radius: 0.25rem;
   margin-bottom: 1rem; }
 
+.error404 #right-sidebar h3.widget-title,
 .archive #right-sidebar h3.widget-title,
 .blog #right-sidebar h3.widget-title,
 .category #right-sidebar h3.widget-title,
@@ -12380,6 +12393,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   font-weight: bold;
   text-align: center; }
 
+.error404 #right-sidebar h3.acf-rpw-title,
 .archive #right-sidebar h3.acf-rpw-title,
 .blog #right-sidebar h3.acf-rpw-title,
 .category #right-sidebar h3.acf-rpw-title,
@@ -12391,6 +12405,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding: 0 0.5rem 0.5rem;
   text-align: center; }
 
+.error404 #right-sidebar .acf-rpw-before-whole,
 .archive #right-sidebar .acf-rpw-before-whole,
 .blog #right-sidebar .acf-rpw-before-whole,
 .category #right-sidebar .acf-rpw-before-whole,
@@ -12403,6 +12418,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   margin: 0 auto;
   text-align: center; }
 
+.error404 #right-sidebar ul,
 .archive #right-sidebar ul,
 .blog #right-sidebar ul,
 .category #right-sidebar ul,
