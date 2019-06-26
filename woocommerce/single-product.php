@@ -20,7 +20,10 @@ if (! defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-get_header('shop'); ?>
+get_header('shop');
+$container = get_theme_mod( 'understrap_container_type' );
+
+?>
 
 	<?php
         /**
@@ -33,7 +36,7 @@ get_header('shop'); ?>
     ?>
 
 	<div class="wrapper" id="product-wrapper">
-		<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
+		<div class="<?php echo esc_attr($container); ?> px-0" id="content" tabindex="-1">
 			<div class="row">
 				<div class="col-10 col-md-8 content-area p-0 mx-auto" id="primary">
 					<?php while (have_posts()) : the_post(); ?>
