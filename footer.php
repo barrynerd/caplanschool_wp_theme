@@ -46,7 +46,7 @@ $container = get_theme_mod('understrap_container_type');
 							<li>&nbsp;</li>
 					                <li> CALL 732-918-1300</li>
 					                <li> or</li>
-					                <li> <a href="mailto:info@caplanschool.com">email:info@CaplanSchool.com</a></li>
+					                <li> <a href="mailto:info@caplanschool.com">General email</a> &middot <a href="mailto:ecaplan@caplanschool.com">email Elliott Caplan</a></li>
 					                </ul>
 					            </div>
 					        </div>

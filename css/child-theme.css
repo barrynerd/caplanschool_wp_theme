@@ -11224,7 +11224,7 @@ button#place_order {
     width: 18rem; }
     @media (min-width: 768px) {
       #wrapper-footer .card {
-        padding: 1rem 4rem;
+        padding: 1rem 2rem;
         width: 23rem; } }
   #wrapper-footer .card-body {
     color: #2a8700; }
