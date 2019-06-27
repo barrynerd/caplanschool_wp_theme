@@ -633,3 +633,47 @@ article.category-elliotts-industry-news {
     font-size: 0.9rem;
     padding-bottom: 0.9rem;
 }
+
+blockquote {
+    background: $bcc_medium_light_gray;
+    border-radius: .25rem;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 1rem;
+    margin: 1rem auto 2rem;
+    width: 95%;
+}
+
+.blockquote {
+    background: $bcc_medium_light_gray;
+    border-radius: .25rem;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+    position: relative;  /*  <--- */
+    width: 80%;  /* create space for the quotes */
+}
+/* -- create the quotation marks -- */
+.blockquote:before,
+.blockquote:after{
+    font-family: FontAwesome;
+    position: absolute;
+    /* -- inside the relative position of blockquote -- */
+    top: 1rem;
+    color: #E8E8E8;
+    font-size: 1.5rem;
+    @media (min-width: 768px) {
+        font-size: 2rem;
+    }
+}
+.blockquote:before{
+    content: "\f10d";
+    // margin-right: 1rem;
+    right: 103%;
+}
+.blockquote:after{
+    content: "\f10e";
+    // margin-left: 1rem;
+    left: 102%;
+}
