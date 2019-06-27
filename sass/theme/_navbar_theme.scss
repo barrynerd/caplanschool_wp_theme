@@ -41,12 +41,23 @@
 
 #secondary-menu {
     background-color: $bcc_yellow!important;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     font-weight: bold;
     padding: 0 0.75rem 0 0;
+    @media (min-width: 544px) {
+        font-size: .85rem;
+    }
 
     .navbar-toggler {
         margin-left: calc(100% - 8.33333%);
+    }
+
+    .dropdown-toggle {
+        text-align: center;
+
+        &:after {
+            // display: none;
+        }
     }
 
     li.menu-useful-links {
@@ -59,21 +70,51 @@
         }
     }
 
+    li.search-menu {
+        margin-bottom: .5rem;
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+
+    // ul.dropdown-menu {
+    //     background: $bcc_light_yellow;
+    //     font-size: 0.9rem;
+    //     border: none;
+    //     @media (min-width: 768px) {
+    //         border: 1px solid $bcc_light_green;
+    //     }
+    //
+    //     .dropdown-item {
+    //         color: $bcc_green;
+    //
+    //         &:focus,
+    //         &:hover {
+    //             background: $bcc_yellow;
+    //             outline: none;
+    //         }
+    //     }
+    // }
     ul.dropdown-menu {
         background: $bcc_light_yellow;
-        font-size: 0.9rem;
         border: none;
+        font-size: 0.9rem;
+        text-align: center;
         @media (min-width: 768px) {
             border: 1px solid $bcc_light_green;
+            text-align: left;
         }
 
         .dropdown-item {
-            color: $bcc_green;
+            color: $bcc_green!important;
+            font-weight: bold;
+            line-height: 1.2;
+            white-space: normal;
 
             &:focus,
             &:hover {
-                background: $bcc_yellow;
-                outline: none;
+                background-color: $bcc_yellow;
+                text-decoration: none;
             }
         }
     }
@@ -168,6 +209,11 @@
         }
     }
 
+    li.menu-requirements {
+        font-size: .75rem;
+    }
+
+
     ul.dropdown-menu {
         background: $bcc_light_yellow;
         border: none;
@@ -197,7 +243,9 @@
 }
 
 .nav-item.no-link a {
+    background: $bcc_light_green;
     cursor: text;
+    padding: .25rem 1rem;
 
     &::after {
         display: none;
