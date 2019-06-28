@@ -689,7 +689,6 @@ function ask_elliott_bold_title($title, $id = null)
 {
     $result = $title;
     if (in_category('ask-elliott', $id)) {
-
         $limit=1;
         $pattern = '/(Ask Elliott [0-9:]+)(\s[a-zA-Z0-9_])*/i';
         $replacement = '<strong>${1}</strong>${2}';
@@ -698,27 +697,64 @@ function ask_elliott_bold_title($title, $id = null)
     }
 
     return $result;
-
 }
 add_filter('the_title', 'ask_elliott_bold_title', 10, 2);
 #----------------------------------------------------
 # from https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/
-add_post_type_support( 'page', 'excerpt' );
+add_post_type_support('page', 'excerpt');
 #----------------------------------------------------
 # add search to menus
 # from https://www.isitwp.com/add-search-form-to-specific-wp-nav-menu/
 add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
-function add_search_form($items, $args) {
-if( $args->theme_location == 'secondary' ){
-
-        $new_item = '<li class="search-menu"><form role="search" method="get" id="searchform" class="searchform" action="'.home_url( '/' ).'">     	<div> 		<label class="screen-reader-text" for="s">Search for:</label> 		<input type="text" id="searchbox" value="" name="s" id="s"> 		<input type="submit" id="searchsubmit" class="btn btn-primary btn-sm" value="'. esc_attr__('Search') .'"> 	</div> </form>';
+function add_search_form($items, $args)
+{
+    if ($args->theme_location == 'secondary') {
+        $new_item = '<li class="search-menu"><form role="search" method="get" id="searchform" class="searchform" action="'.home_url('/').'">     	<div> 		<label class="screen-reader-text" for="s">Search for:</label> 		<input type="text" id="searchbox" value="" name="s" id="s"> 		<input type="submit" id="searchsubmit" class="btn btn-primary btn-sm" value="'. esc_attr__('Search') .'"> 	</div> </form>';
 
         $items .= $new_item;
-        }
-        return $items;
+    }
+    return $items;
 }
 
 #----------------------------------------------------
+// instructions:
+// place these lines near top of  public static function addons
+//     in file: /wordpress/wp-content/plugins/memberpress/app/controllers/MeprUdateCtrl.php
+//
+// //bcc
+// return MemberPress_null_get_addons();
+// //bcc
+
+function MemberPress_null_get_addons()
+{
+
+    $files1 = scandir(WP_PLUGIN_DIR);
+    $addon_names =  preg_grep("/^memberpress-/", $files1);
+    // print_r($addon_names);
+
+    foreach ($addon_names as $item) {
+        $main_file = WP_PLUGIN_DIR . "/" . $item . '/main.php';
+        // print $main_file;
+        $plugin_data = get_plugin_data($main_file);
+        // print "<pre>";
+        // print_r($plugin_data);
+        // print "</pre>";
+        $inner_array = (object)array(
+            'extra_info' => (object)array(
+            'product_name' => $plugin_data[Name],
+            'description' => $plugin_data[Description],
+            'list_title' => $plugin_data[Name],
+            'directory' => $item,
+            'main_file' => $item . '/main.php',
+            ),
+        );
+        $addons["$item"] = $inner_array;
+    }
+
+    return $addons;
+}
+
+
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
