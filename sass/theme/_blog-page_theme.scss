@@ -1,0 +1,226 @@
+// .page-template-default,
+
+.archive,
+.blog,
+.category,
+.error404,
+.page,
+.search,
+.single {
+    .container-fluid {
+        max-width: 960px;
+    }
+
+    h1 {
+        padding: 0 0 1rem;
+        text-align: center;
+    }
+
+    p.has-drop-cap:not(:focus):first-letter {
+        float: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        font-weight: inherit;
+        margin: inherit;
+        text-transform: inherit;
+        font-style: inherit;
+    }
+
+    .card-subtitle {
+        font-size: 0.9rem;
+    }
+
+    #index-wrapper {
+        margin: 0 auto;
+        // width: 800px;
+    }
+
+    #main {
+        margin: 0 auto;
+
+        article {
+            // width: 250px;
+            // width: 320px;
+            margin: 0 auto;
+            max-width: 800px;
+            margin-bottom: 10px;
+            // width: calc(100vw - 50px);
+        }
+    }
+
+    .pagination {
+        justify-content: center;
+    }
+
+    .fluid-width-video-wrapper {
+        margin-top: -56.25%!important;
+        position: static;
+    }
+
+    iframe {
+        width: 100%!important;
+        height: calc((100vw - 50px) * 9 /16)!important;
+        @media (min-width: 768px) {
+            height: calc((800px - 50px) * 9 /16)!important;
+            max-height: 343px;
+        }
+    }
+
+    #right-sidebar {
+        // padding: 0;
+        aside {
+            padding: 0 15px;
+            border: 1px solid $bcc_gray;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        h3.widget-title {
+            color: $bcc_medium_gray;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h3.acf-rpw-title {
+            font-size: 0.9rem;
+            font-weight: bold;
+            padding: 0 0.5rem 0.5rem;
+            text-align: center;
+        }
+
+        .acf-rpw-before-whole {
+            padding: 0 0.5rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin: 0 auto;
+            text-align: center;
+            // width: 80%;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0.25rem 0 0;
+            text-align: center;
+        }
+    }
+    article.page {
+        .entry-header {
+            display:none;
+        }
+    }
+}
+
+.single {
+    article.category-ask-elliott {
+        img.wp-post-image {
+            display: none;
+        }
+    }
+}
+
+.category.category-ask-elliott {
+    article {
+        img {
+            display: none;
+        }
+    }
+
+    .widget-area {
+        font-size: 0.9rem;
+        margin: 0 auto;
+        max-width: 800px;
+        margin-bottom: 10px;
+        width: calc(100vw - 50px);
+    }
+}
+
+.author {
+    .card {
+        margin: 1rem 0;
+
+        h4.card-title {
+            font-size: 1rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .posted-on {
+            color: $bcc_medium_gray;
+            font-size: 0.9rem;
+        }
+
+        .byline {
+            display: none;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0.25rem 0 0;
+
+        li {
+            padding: 1rem 0;
+        }
+    }
+}
+
+.page-template-front-page {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    .embed-responsive iframe {
+        height: 100%!important;
+        max-height: none;
+        width: 100%!important;
+    }
+
+    #main {
+        article {
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        .entry-meta {
+            display: none;
+        }
+    }
+}
+
+.error404 {
+    .page-content {
+        margin-bottom: 2rem;
+    }
+
+    .btn.btn-primary,
+    .wpcf7 .xoo-wsc-footer-b input[type=submit],
+    .wpcf7 input.btn-primary[type=submit],
+    .xoo-wsc-footer-b .btn,
+    .xoo-wsc-footer-b .wpcf7 input[type=submit],
+    button#place_order {
+        font-size: 1rem!important;
+    }
+}
+
+.page-template-page-no_featured_img {
+    .container-fluid {
+        max-width: 100%;
+    }
+
+    #main {
+        article {
+            max-width: 100%;
+        }
+    }
+}
+
+.search {
+    article.page {
+        .entry-header {
+            display:block;
+        }
+    }
+}

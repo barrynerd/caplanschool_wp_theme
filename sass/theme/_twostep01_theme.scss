@@ -1,0 +1,157 @@
+.twostep01 {
+    margin-right: 0;
+    margin-left: 0;
+
+    .row {
+        align-items: center;
+        align-items: flex-start;
+    }
+
+    .twostep01-btn-group-vertical {
+        width: 100%;
+
+        br {
+            display: none;
+        }
+    }
+
+    .twostep01-jumbotron {
+        align-content: center;
+        align-items: center;
+        background: antiquewhite;
+        display: flex;
+        height: auto;
+        min-height: 100vh;
+        justify-items: center;
+        padding: 1rem 0;
+
+        .card-img-top + p {
+            display: none;
+        }
+
+        h1 {
+            // font-size: 1.2rem;
+            font-size: 1.6rem;
+            text-align: center;
+            text-transform: uppercase;
+            @media (min-width: 768px) {
+                font-size: 2.5rem;
+                text-align: left;
+            }
+        }
+
+        h5 {
+            font-size: 1rem;
+            text-align: center;
+            @media (min-width: 768px) {
+                font-size: 1.25rem;
+                text-align: left;
+            }
+        }
+
+        h5.card-title {
+            text-align: center;
+            color: $bcc_green;
+            font-weight: bold;
+        }
+
+        .hl-text {
+            h1 {
+                font-size: 1.6rem;
+                font-style: italic;
+                font-weight: bold;
+                letter-spacing: -2px;
+                text-transform: uppercase;
+                @media (min-width: 768px) {
+                    font-size: 2.6rem;
+                }
+            }
+
+            h5 {
+                font-style: italic;
+            }
+        }
+
+        .row {
+            align-content: center;
+            align-items: center;
+            min-height: 100vh;
+            justify-content: center;
+            @media (min-width: 768px) {
+                align-items: flex-start;
+                height: auto;
+                min-height: 0;
+            }
+
+            .left-col {
+                margin: 0 auto;
+                width: 18rem;
+                @media (min-width: 768px) {
+                    margin: 0 0.5rem 0 0;
+                    width: 21em;
+                }
+            }
+
+            .right-col {
+                margin: 0 auto;
+                width: 18rem;
+                @media (min-width: 768px) {
+                    margin: 0 0 0 0.5rem;
+                    width: 23rem;
+                }
+            }
+        }
+
+        ul.card-text {
+            list-style-position: inside;
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .twostep01-jumbotron.members-ce {
+        background: $bcc_extra_light_yellow;
+    }
+
+    .twostep01-jumbotron.online-ce {
+        background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge-1200x800.jpg");
+        background-blend-mode: overlay;
+        background-color: rgba(42,135,0,.2);
+        background-position: center center;
+        background-size: cover;
+        box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        color: white;
+        opacity: 1;
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/Continuing-Ed-Online-01flarge.jpg");
+            background-position: 75% 0;
+        }
+    }
+
+    .twostep01-jumbotron.upcoming-ce {
+        opacity: 1;
+        color: white;
+        background: url("/wordpress/wp-content/uploads/2009/11/crop04.png");
+        background-size: cover;
+        background-position: center center;
+        background-color: rgba(42,135,0,.2);
+        background-blend-mode: overlay;
+        box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+    }
+
+    .twostep01-jumbotron.upcoming-ce-bydate {
+        background: url("/wordpress/wp-content/uploads/Continuing-Ed-02small.jpg");
+        background-blend-mode: overlay;
+        background-color: rgba(42,135,0,.2);
+        background-position: left;
+        background-size: cover;
+        box-shadow: inset 0 0 0 150vw rgba(0,0,0,0.1);
+        color: white;
+        opacity: 1;
+        @media (min-width: 768px) {
+            background: url("/wordpress/wp-content/uploads/Continuing-Ed-02large.jpg");
+            background-position: 18% 0;
+        }
+    }
+}

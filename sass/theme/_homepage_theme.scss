@@ -1,0 +1,178 @@
+.home {
+    .feature01-row {
+        @media (min-width: 768px) {
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .sow-features-feature {
+                width: 25%!important;
+            }
+
+            .sow-features-feature {
+                .sow-icon-container {
+                    width: 7.5rem;
+                    height: 7.5rem;
+                    font-size: 7.5rem;
+
+                    & [class^="sow-icon-"] {
+                        width: 7.5rem;
+                        height: 7.5rem;
+                        font-size: 4rem!important;
+                    }
+                }
+            }
+        }
+    }
+
+    .hlrow {
+        background: $bcc_green;
+        color: $bcc-white;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: calc(1rem/16);
+        margin: 0;
+        padding: 0.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .jumbotron-fluid {
+        align-items: center;
+        background: url("/wordpress/wp-content/uploads/Adult_Learner_shutterstock_200562314_0.jpg");
+        background-position: center bottom;
+        background-size: cover;
+        display: flex;
+        height: auto;
+        @media (min-width: 768px) {
+            height: 500px;
+            align-items: flex-start;
+        }
+
+    }
+
+    .row-course-card {
+        background: $bcc_extra_light_green;
+        justify-content: center;
+        margin: 0;
+        padding: 1.25em;
+    }
+
+    .row-course-card {
+        .course-card {
+            color: #444;
+            margin: 0.5rem;
+            text-align: center;
+            width: 18rem;
+
+            .card-body {
+                &:first-of-type {
+                    height: 11.25rem;
+                    padding-top: 0;
+                }
+            }
+
+            .card-icon {
+                background: $bcc_medium_light_green;
+                color: $bcc_green;
+                font-size: 6rem;
+                padding: 0;
+            }
+
+            .card-title {
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+        }
+
+        .course-card.ce {
+            .card-icon {
+                font-size: 5rem;
+                padding: 0.5rem 0;
+            }
+        }
+
+        .hlrow {
+            background: transparent;
+            color: $bcc_green;
+        }
+    }
+
+    .row-downloads {
+        background: $bcc_medium_light_green;
+        padding: 2rem 0 3rem;
+        text-align: center;
+
+        a {
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+
+        .hlrow {
+            background: transparent;
+            color: $bcc_green;
+        }
+    }
+
+    .row-upcoming-courses {
+        .hlrow {
+            background: transparent;
+            color: $bcc_green;
+        }
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0;
+
+            li {
+                margin: 0.5rem;
+                width: 80vw;
+
+                a {
+                    img {
+                        width: 80vh;
+                    }
+                }
+
+                h3 {
+                    color: $bcc_green;
+                    font-size: 1rem;
+                    margin: 1.25rem 1.75rem 1.5rem;
+
+                    a {
+                        color: $bcc_green;
+                    }
+                }
+            }
+        }
+    }
+
+    .upcomingclasses01-row {
+        @media (min-width: 768px) {
+            ul {
+                li {
+                    width: 18rem;
+                    h3 {
+                        a {
+                            font-size: 1.375rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .video-row01 {
+        display: flex;
+        padding-left: 0!important;
+        margin-right: 0!important;
+        width: 100vw!important;
+    }
+}

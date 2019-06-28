@@ -1,0 +1,80 @@
+.search-results {
+    .content-area {
+        max-width: 630px;
+
+        article {
+            max-width: 600px;
+            margin-bottom: 1.75rem;
+
+            .entry-header {
+                h2.entry-title {
+                    color: $bcc_green;
+                    font-size: 1.1rem;
+                    letter-spacing: -.25px;
+                    line-height: 1.33;
+                    margin: 0;
+                    overflow: hidden;
+                    text-align: left;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+
+            .entry-summary {
+                font-size: small;
+                line-height: 1.54;
+            }
+        }
+
+        ul.pagination {
+            justify-content: center;
+        }
+    }
+}
+
+#secondary-menu {
+    padding: 0.25rem 0;
+    @media (min-width: 768px) {
+        background: $bcc_light_yellow!important;
+    }
+}
+
+#menu-bootstrap-menu02a {
+    @media (min-width: 768px) {
+        // align-items: flex-ensd!important;
+        li {
+            // display: flex;
+        }
+    }
+}
+
+.search-menu {
+    order: -1;
+    @media (min-width: 768px) {
+        order: 999;
+    }
+    padding-left: 0.25rem;
+    padding-right: 0.4rem;
+
+    .btn-group-sm > .btn,
+    .btn-group-sm-bcc > .a,
+    .btn-group-sm-bcc > .btn,
+    .btn-sm,
+    .wpcf7 .btn-group-sm > input[type=submit],
+    .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+        font-size: 0.8rem!important;
+        height: 100%;
+        padding: 0!important;
+        margin-top: -.15rem;
+    }
+
+    #searchbox {
+        border: none;
+        padding: 0;
+        width: 6rem;
+    }
+}
+
+.nav-item.search-menu:after {
+    display: none;
+}

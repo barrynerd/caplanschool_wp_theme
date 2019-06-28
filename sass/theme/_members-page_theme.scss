@@ -1,0 +1,161 @@
+.members-ce {
+    .banner {
+        justify-content: center;
+        margin: 0 0 2rem;
+    }
+
+    .course-description {
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+    }
+
+    .details {
+        justify-content: center;
+        align-items: flex-start!important;
+
+        .card {
+            width: 100%;
+            @media (min-width: 768px) {
+                width: 23rem;
+            }
+
+            img {
+                display: none;
+            }
+
+            p {
+                display: none;
+                @media (min-width: 768px) {
+                    font-size: inherit;
+                }
+            }
+
+            p.hilite {
+                background: $bcc_orange;
+                display: block;
+                font-weight: bold;
+                padding: 1rem;
+                text-align: center;
+                text-transform: capitalize;
+            }
+        }
+
+        h1 {
+            font-weight: 700;
+            font-style: italic;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+        }
+
+        h6 {
+            font-style: italic;
+            font-weight: bold;
+            text-align: center;
+            @media (min-width: 768px) {
+                text-align: left;
+            }
+        }
+
+        p {
+            // display: none;
+            @media (min-width: 768px) {
+                display: block;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul.products {
+            li.product {
+                width: 100%!important;
+                border: none;
+
+                a {
+                    h2,
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.members-ce.members-ce-diane-turton .details .card img,
+.members-ce.members-ce-jack-green .details .card img {
+    padding: 1rem 1rem 0;
+    display: block;
+}
+
+.members.agency {
+    max-width: 800px;
+
+    h3 {
+        background: $bcc_orange;
+    }
+}
+
+.members.course-description {
+    background: $bcc_extra_light_yellow;
+    margin: 2rem auto 0;
+    max-width: 800px;
+
+    &:last-of-type {
+        margin-bottom: 2rem;
+    }
+
+    a.course_link {
+        color: $bcc_green;
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    .card-body {
+        padding: inherit 0;
+    }
+
+    .card-text.credit {
+        padding: 0;
+    }
+
+    .card-text.date {
+        padding: 0;
+        margin-bottom: 0;
+        text-transform: capitalize;
+    }
+
+    .card-text.time {
+        padding: 0;
+        margin-bottom: 0;
+        text-transform: lowercase;
+    }
+
+    .course_price {
+        color: $bcc_green;
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 2;
+    }
+
+    h3 {
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.product_cat-diane-turton.product_cat-abr,
+.product_cat-diane-turton.product_cat-ahwd,
+.product_cat-rsps-diane-turton,
+.product_cat-srs-diane-turton {
+    img.wp-post-image {
+        display: none;
+    }
+}

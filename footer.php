@@ -37,6 +37,7 @@ $container = get_theme_mod('understrap_container_type');
 							<li>&nbsp;</li>
 					                <li>(Corner of Green Grove Road in</li>
 					                <li>Stout & O'Hagan Building)</li>
+                                    <li><a class="font-italic" href="/directions-and-map/">Directions and map</a></li>
 					                </ul>
 					            </div>
 					        <div class="card">
@@ -46,7 +47,7 @@ $container = get_theme_mod('understrap_container_type');
 							<li>&nbsp;</li>
 					                <li> CALL 732-918-1300</li>
 					                <li> or</li>
-					                <li> <a href="mailto:info@caplanschool.com">email:info@CaplanSchool.com</a></li>
+					                <li> <a class="font-italic"  href="mailto:info@caplanschool.com">General email</a> &middot <a class="font-italic"  href="mailto:ecaplan@caplanschool.com">email Elliott Caplan</a></li>
 					                </ul>
 					            </div>
 					        </div>

@@ -1,0 +1,147 @@
+.out-of-state-online-courses {
+    justify-content: center!important;
+
+    .btn-group {
+        margin-right: 1.5em;
+
+        &:first-of-type {
+            margin-left: 1.5rem;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        .btn {
+            &:first-of-type {
+                margin-right: 0.25em;
+            }
+        }
+        @media (min-width: 768px) {
+            margin-right: 1.5rem;
+
+            &:first-of-type {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.online-license.fl,
+.online-license.ny,
+.online-license.pa {
+    .twostep01-jumbotron {
+        background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+    }
+}
+
+.online-ce.fl,
+.online-ce.ny,
+.online-ce.pa {
+    .twostep01-jumbotron {
+        background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg");
+    }
+}
+
+.online-license {
+    .card {
+        border: none;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+
+        .action-button {
+            text-align: center;
+        }
+    }
+
+    .card-body {
+        h5 {
+            color: $bcc_green;
+            font-weight: bold;
+        }
+    }
+
+    .hl-text {
+        h1 {
+            color: $bcc-white;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h5 {
+            color: $bcc-white;
+            font-style: italic;
+        }
+    }
+
+    .twostep01-jumbotron {
+        opacity: 0.9;
+        background-color: rgba(42,135,0,.2);
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.online-ce {
+    .card {
+        border: none;
+        border-top-left-radius: 1.2rem;
+        border-top-right-radius: 1.2rem;
+
+        .action-button {
+            text-align: center;
+        }
+
+        h5 {
+            color: $bcc_green;
+            font-weight: bold;
+        }
+    }
+
+    .card-body {
+        h5 {
+            color: $bcc_green;
+            font-weight: bold;
+        }
+    }
+
+    .hl-text {
+        h1 {
+            color: $bcc-white;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h5 {
+            color: $bcc-white;
+            font-style: italic;
+        }
+    }
+
+    .twostep01-jumbotron {
+        opacity: 0.9;
+        background-color: rgba(42,135,0,.2);
+        background-blend-mode: overlay;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.upcoming-ce,
+.upcoming-ce-bydate {
+    .card {
+        border: none;
+        border-top-right-radius: 1.2rem;
+        border-top-left-radius: 1.2rem;
+    }
+}
+
+.twostep02-descriptions.online-ce.ny,
+.twostep02-descriptions.online-ce.pa {
+    .card-body {
+        &:first-of-type {
+            height: 27rem;
+        }
+    }
+}

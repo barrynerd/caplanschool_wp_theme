@@ -1,0 +1,69 @@
+@mixin tight_button_format_md() {
+    padding: .3rem .0!important;
+    font-size: .9em!important;
+    line-height: 1.5!important;
+    border-radius: .25rem!important
+}
+
+.home-card {
+    margin: 0 auto;
+    padding: 0;
+    background: rgba(255,255,255,.75);
+    border: none;
+    width: 17rem;
+    @media (min-width: 768px) {
+        // max-width: 30rem;
+        // min-width: 25rem;
+        width: 25rem;
+    }
+
+    .btn-group-sm-bcc {
+        margin: 0 3rem 1.2rem;
+    }
+
+    .card-body {
+        text-align: center;
+        line-height: 1.3;
+        font-size: 0.9rem;
+        padding: 0 1rem;
+        @media (min-width: 768px) {
+            line-height: 1.2;
+            font-size: 1rem;
+            padding: 0 1rem;
+        }
+    }
+
+    .card-body.cta {
+        color: $bcc_green;
+        font-weight: bold;
+        padding: 0 0.5rem 0.375rem;
+    }
+
+    .card-subtitle {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 1rem 1rem;
+        @media (min-width: 768px) {
+            font-size: 1.2rem;
+            padding: 0 1rem 1rem;
+        }
+    }
+
+    .card-title {
+        background: $bcc_green;
+        color: $bcc-white;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.75rem;
+    }
+
+    .btn-group-sm-bcc > .a,
+    .btn-group-sm-bcc > .btn,
+    .btn-sm,
+    .wpcf7 .btn-group-sm-bcc > input[type=submit] {
+        @media (min-width: 768px) {
+            @include tight_button_format_md();
+        }
+    }
+}

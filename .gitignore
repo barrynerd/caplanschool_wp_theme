@@ -13,3 +13,22 @@ dist-product
 npm-debug.log
 
 /vendor/
+
+package.json
+
+package-lock.json
+
+README.md
+
+gulpconfig.json
+
+
+gulpfile.js
+
+composer.json
+
+/src/
+package.json
+package-lock.json
+
+/tmp/

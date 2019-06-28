@@ -1,0 +1,71 @@
+.single-product {
+    .product {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+
+        .btn-primary {
+            font-size: 2rem!important;
+            margin: 1rem auto 0;
+            max-width: 700px;
+            width: auto;
+        }
+
+        del {
+            font-size: 2rem;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        img {
+            width: auto;
+            width: 90%;
+        }
+
+        .product-description {
+            margin: 0 auto;
+            padding: 3rem 0;
+
+            h4 {
+                text-align: center;
+            }
+        }
+
+        p.pay-deposit-now {
+            background: white;
+            text-align: center;
+            font-style: italic;
+            padding-top: 2rem;
+        }
+
+        .price {
+            color: $bcc_green!important;
+            font-size: 4rem!important;
+            font-weight: bold;
+            line-height: 1.428571429;
+            text-align: center;
+            margin: 1rem 0 0;
+        }
+
+        .summary {
+            float: none!important;
+            margin-top: 2.75rem;
+            max-width: 960px;
+            width: 100%!important;
+            @media (min-width: 768px) {
+                // width: 740px!important;
+            }
+        }
+
+        .woocommerce-product-details__short-description {
+            background: $bcc_light_yellow;
+            font-size: 1rem;
+            line-height: 1.428571429;
+            margin: 0;
+            max-width: 100%;
+        }
+    }
+}

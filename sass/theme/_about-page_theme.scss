@@ -1,0 +1,45 @@
+.page-about {
+    .card {
+        border: none;
+        flex-direction: column;
+        margin: 0 0 1.5rem;
+        padding: 0;
+        @media (min-width: 768px) {
+            flex-direction: row;
+            margin: 0 0 3.5rem;
+        }
+
+        img {
+            height: calc(100vh * 15 / 32);
+            object-fit: cover;
+            object-position: 0 20%;
+            width: auto;
+            @media (min-width: 768px) {
+                height: 16rem;
+                object-position: 50% 50%;
+            }
+        }
+
+        .card-subtitle {
+            font-style: italic;
+            font-size: 1rem;
+            margin-top: -0.5rem;
+            margin-bottom: 0.75rem;
+        }
+    }
+
+    .card.dnicklus {
+        img {
+            object-position: 0 0;
+            @media (min-width: 768px) {
+                object-position: 0 20%;
+            }
+        }
+    }
+
+    .card-body {
+        @media (min-width: 768px) {
+            padding: 0 1.25rem;
+        }
+    }
+}

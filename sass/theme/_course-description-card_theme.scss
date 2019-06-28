@@ -1,0 +1,29 @@
+.course-description-card {
+    background-color: $bcc_light_yellow!important;
+    margin: 1.5rem 0 1rem;
+    padding:0!important;
+    .card-body{
+        padding: 0;
+    }
+    .card-title{
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 0;
+        padding: 0 .5rem .25rem;
+    }
+    h2 {
+        background-color: $bcc_very_dark_gray;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: .75rem .5rem;
+        @media (min-width: 768px) {
+            font-size: 1.8rem;
+        }
+    }
+    ul {
+        line-height: 1.2;
+        list-style: none;
+        padding: 0 .5rem;
+    }
+}

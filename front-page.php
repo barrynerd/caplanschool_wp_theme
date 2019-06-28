@@ -17,8 +17,7 @@ if (! defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-?>
-<?php get_header("no_featured_img");
+get_header("no_featured_img");
 
 $container   = get_theme_mod('understrap_container_type');
 
@@ -30,20 +29,12 @@ $container   = get_theme_mod('understrap_container_type');
 
 
 		<main class="site-main" id="main">
-
-			<?php while (have_posts()) : the_post(); ?>
-
-				<?php get_template_part('loop-templates/content-no_featured_img', 'page'); ?>
-
-				<?php
-                // If comments are open or we have at least one comment, load up the comment template.
-                if (comments_open() || get_comments_number()) :
-                    comments_template();
-                endif;
-                ?>
-
-			<?php endwhile; // end of the loop.?>
-
+			<?php
+                while (have_posts()){
+                    the_post();
+                    get_template_part('loop-templates/content-no_featured_img', 'page');
+                }
+			?>
 		</main><!-- #main -->
 
 </div><!-- Container end -->
