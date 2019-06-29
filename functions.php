@@ -718,11 +718,93 @@ function add_search_form($items, $args)
 
 #----------------------------------------------------
 // refactor to include files here
-require_once dirname( __FILE__ ) . '/includes/functions/nulling.php';
+require_once dirname(__FILE__) . '/includes/functions/nulling.php';
 
 #----------------------------------------------------
+#force coupon usage for purchasing membership
+function bcc_force_coupon_usage_when_purchasing_membership()
+{
+    // print "<pre>";
+    // print "aaa";
+    // print "----------Coupon:";
+    $applied_coupons = WC()->cart->get_applied_coupons();
+    // print_r ($applied_coupons);
+    foreach (WC()->cart->get_cart() as $cart_item) {
+         // print_r($cart_item);
+        $product_id  = wc_get_product( $cart_item['product_id'] );
+        $product = $cart_item['data'];
+        $quantity = $cart_item['quantity'];
+        $item_name = $product->get_title();
+        $price = $product->get_price();
+        $my_id = $product->get_id();
+        $sku = $product->get_sku();
+        // print join("\n:", array($item_name, $quantity,$price, $sku));
+        $category_ids = $product->get_category_ids();
+        // print_r($category_ids);
+        // print "\n------";
+        // print "myid: " . $my_id;
+        // print_r($product_id);
+        $cat_names = get_the_terms( $my_id, 'product_cat' );
+        // print_r($cat_names);
+        // foreach ($cat_names as $cat_name) {
+        //     print $cat_name->slug . "\n";
+        // }
+        // print "\n------meta\n";
+        // $formatted_meta_data = $item->get_formatted_meta_data();
+        // $item_meta_data = $product->get_meta_data();
+        $item_meta_data = $product->get_meta("required_coupon");
+        // echo '<pre>'; print_r($item_meta_data); echo '</pre>';
+        // print "\n------end meta\n";
+
+        $result = true;
+
+        if (isset($item_meta_data)){
+            // print "Coupon is required";
+            if (in_array($item_meta_data, $applied_coupons)){
+                $msg =  "we have applied the correct coupon";
+                // print $msg;
+                wc_print_notice( $msg, "success" );
+                $result = true;
+
+            }
+            else {
+                $msg =  "we have NOT applied the correct coupon";
+                // print $msg;
+                wc_print_notice( $msg, "error" );
+                $result = false;
+
+                }
+            }
+
+        // if (empty($item_meta_data)){
+        //     print "empty";
+        // }
+        // if (is_null($item_meta_data)){
+        //     print "is_null";
+        // }
+
+
+    }
+
+
+    print "</pre>";
+    return $result;
+}
+
+// add_action('woocommerce_review_order_before_submit', 'bcc_force_coupon_usage_when_purchasing_membership', 10, 0);
 #----------------------------------------------------
-#----------------------------------------------------
+// Replacing the Place order button when total volume exceed 68 m3
+add_filter( 'woocommerce_order_button_html', 'replace_order_button_html', 10, 2 );
+function replace_order_button_html( $order_button ) {
+    // Only when total volume is up to 68
+
+    if (bcc_force_coupon_usage_when_purchasing_membership()) return $order_button;
+
+    $order_button_text = __( "Return to Shopping Cart", "woocommerce" );
+
+    $style = ' style="color:#fff;background-color:#999;"';
+    return '<a class="button alt"'.$style.' name="woocommerce_checkout_place_order" id="place_order" href="/cart">' . esc_html( $order_button_text ) . '</a>';
+}#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
