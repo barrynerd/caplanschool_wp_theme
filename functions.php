@@ -730,8 +730,8 @@ function bcc_force_coupon_usage_when_purchasing_membership()
     $applied_coupons = WC()->cart->get_applied_coupons();
     // print_r ($applied_coupons);
     foreach (WC()->cart->get_cart() as $cart_item) {
-         // print_r($cart_item);
-        $product_id  = wc_get_product( $cart_item['product_id'] );
+        // print_r($cart_item);
+        $product_id  = wc_get_product($cart_item['product_id']);
         $product = $cart_item['data'];
         $quantity = $cart_item['quantity'];
         $item_name = $product->get_title();
@@ -744,7 +744,7 @@ function bcc_force_coupon_usage_when_purchasing_membership()
         // print "\n------";
         // print "myid: " . $my_id;
         // print_r($product_id);
-        $cat_names = get_the_terms( $my_id, 'product_cat' );
+        $cat_names = get_the_terms($my_id, 'product_cat');
         // print_r($cat_names);
         // foreach ($cat_names as $cat_name) {
         //     print $cat_name->slug . "\n";
@@ -758,23 +758,20 @@ function bcc_force_coupon_usage_when_purchasing_membership()
 
         $result = true;
 
-        if (isset($item_meta_data)){
+        if (isset($item_meta_data)) {
             // print "Coupon is required";
-            if (in_array($item_meta_data, $applied_coupons)){
+            if (in_array($item_meta_data, $applied_coupons)) {
                 $msg =  "we have applied the correct coupon";
                 // print $msg;
-                wc_print_notice( $msg, "success" );
+                wc_print_notice($msg, "success");
                 $result = true;
-
-            }
-            else {
+            } else {
                 $msg =  "we have NOT applied the correct coupon";
                 // print $msg;
-                wc_print_notice( $msg, "error" );
+                wc_print_notice($msg, "error");
                 $result = false;
-
-                }
             }
+        }
 
         // if (empty($item_meta_data)){
         //     print "empty";
@@ -782,8 +779,6 @@ function bcc_force_coupon_usage_when_purchasing_membership()
         // if (is_null($item_meta_data)){
         //     print "is_null";
         // }
-
-
     }
 
 
@@ -794,17 +789,64 @@ function bcc_force_coupon_usage_when_purchasing_membership()
 // add_action('woocommerce_review_order_before_submit', 'bcc_force_coupon_usage_when_purchasing_membership', 10, 0);
 #----------------------------------------------------
 // Replacing the Place order button when total volume exceed 68 m3
-add_filter( 'woocommerce_order_button_html', 'replace_order_button_html', 10, 2 );
-function replace_order_button_html( $order_button ) {
+add_filter('woocommerce_order_button_html', 'replace_order_button_html', 10, 2);
+function replace_order_button_html($order_button)
+{
     // Only when total volume is up to 68
 
-    if (bcc_force_coupon_usage_when_purchasing_membership()) return $order_button;
+    if (bcc_force_coupon_usage_when_purchasing_membership()) {
+        return $order_button;
+    }
 
-    $order_button_text = __( "Return to Shopping Cart", "woocommerce" );
+    $order_button_text = __("Return to Shopping Cart", "woocommerce");
 
     $style = ' style="color:#fff;background-color:#999;"';
-    return '<a class="button alt"'.$style.' name="woocommerce_checkout_place_order" id="place_order" href="/cart">' . esc_html( $order_button_text ) . '</a>';
-}#----------------------------------------------------
+    return '<a class="button alt"'.$style.' name="woocommerce_checkout_place_order" id="place_order" href="/cart">' . esc_html($order_button_text) . '</a>';
+}
+#----------------------------------------------------
+add_action('woocommerce_before_calculate_totals', 'custom_cart_items_prices', 10, 1);
+function custom_cart_items_prices($cart)
+{
+    if (is_admin() && ! defined('DOING_AJAX')) {
+        return;
+    }
+
+    if (did_action('woocommerce_before_calculate_totals') >= 2) {
+        return;
+    }
+
+    if (!is_cart()){
+        return;
+    }
+
+    // Loop through cart items
+    foreach ($cart->get_cart() as $cart_item) {
+
+        // Get an instance of the WC_Product object
+        $product = $cart_item['data'];
+        // print "<pre>";
+        // print_r($product);
+        // print "</pre>";
+
+        $sku = method_exists($product, 'get_sku') ? $product->get_sku() : $product->post->sku;
+        print "SKU: $sku";
+
+        if (preg_match('/^membership-/', $sku)) {
+            // Get the product name (Added Woocommerce 3+ compatibility)
+            $original_name = method_exists($product, 'get_name') ? $product->get_name() : $product->post->post_title;
+
+            // SET THE NEW NAME
+            $new_name = $original_name . ': <div class="coupon-required">Coupon required to order this item</div>';
+
+            // Set the new name (WooCommerce versions 2.5.x to 3+)
+            if (method_exists($product, 'set_name')) {
+                $product->set_name($new_name);
+            } else {
+                $product->post->post_title = $new_name;
+            }
+        }
+    }
+}
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
