@@ -12052,6 +12052,46 @@ button#place_order {
 .product_cat-srs-diane-turton img.wp-post-image {
   display: none; }
 
+.mp_login_form {
+  width: 412px;
+  margin: 10vh auto;
+  background-color: #ffffff4d;
+  -webkit-box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .mp_login_form form {
+    width: 100%;
+    max-width: 410px;
+    padding: 1rem;
+    margin: auto; }
+  .mp_login_form .mepr_username {
+    margin-bottom: 0; }
+  .mp_login_form input {
+    position: relative;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 0.25rem; }
+  .mp_login_form input:focus {
+    z-index: 2; }
+  .mp_login_form input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0; }
+  .mp_login_form input[type="password"] {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0; }
+  .mp_login_form label.rememberme {
+    font-size: 0.9rem; }
+  .mp_login_form .mepr-login-actions {
+    font-size: 0.9rem;
+    padding-left: 1rem; }
+  .mp_login_form .submit {
+    margin: 1.5rem 0; }
+
 .page-about .card {
   border: none;
   -webkit-box-orient: vertical;

@@ -766,6 +766,9 @@ function bcc_force_coupon_usage_when_purchasing_membership()
                 wc_print_notice($msg, "success");
                 $result = true;
             } else {
+                print "item_meta_data: " . $item_meta_data;
+                print "applied coupons:";
+                print_r($applied_coupons);
                 $msg =  "we have NOT applied the correct coupon";
                 // print $msg;
                 wc_print_notice($msg, "error");
