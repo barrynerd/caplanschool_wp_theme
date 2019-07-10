@@ -818,7 +818,7 @@ function custom_cart_items_prices($cart)
         return;
     }
 
-    if (!is_cart()){
+    if (!is_cart()) {
         return;
     }
 
@@ -851,7 +851,83 @@ function custom_cart_items_prices($cart)
     }
 }
 #----------------------------------------------------
-#----------------------------------------------------
+// froom: https://gist.github.com/cartpauj/0f4dbbe189b5315262a6d2bb0a0499ad
+
+function mepr_must_fill_out_coupon_code($errors)
+{
+    if (!isset($_POST['mepr_member_code_turton']) || empty($_POST['mepr_member_code_turton'])) {
+        $errors[] = "You must fill out the Member code field before registering.";
+        return $errors;
+    }
+
+    // if (!$_POST['mepr_member_code_turton'] != $required_value) {
+    //     $errors[] = "Member code does not match required value.";
+    //
+    // }
+
+    print "<pre>";
+    print_r($_POST);
+    print "</pre>";
+
+    $post_id = $_POST['mepr_product_id'];
+    $my_coupon_code = $_POST['mepr_member_code_turton'];
+    print "my coupon code: $my_coupon_code";
+    // WP_Query arguments
+    $args = array(
+    'post_type'              => array( 'memberpresscoupon' ),
+  );
+
+    // The Query
+    $query = new WP_Query($args);
+
+    print "<pre>";
+    // The Loop
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            print "------------------";
+            // print_r($query->the_post());
+            // print get_the_title();
+            $found = false;
+            $title = get_the_title();
+            print "Title: $title";
+            if ($title != $my_coupon_code) {
+                print "coupon title does not match my entry from the form, skipping to next coupon";
+                continue;
+            }
+            print get_the_ID();
+            $result = get_post_meta(get_the_ID(), '_mepr_coupons_valid_products');
+            print_r($result);
+
+            foreach ($result as $index => $array) {
+                print_r($array);
+                if (in_array($post_id, $array)) {
+                    print "found $post_id";
+                    $found = true;
+                    break;
+                } else {
+                    print "did not find $post_id";
+                }
+            }
+
+            // do something
+        }
+    } else {
+        print "bbb";
+        // no posts found
+    }
+    print "Found: $found";
+    if (!$found) {
+        $errors[] = "Member code does not match required value.";
+    }
+
+    print "</pre>";
+    // Restore original Post Data
+    wp_reset_postdata();
+
+    return $errors;
+}
+add_filter('mepr-validate-signup', 'mepr_must_fill_out_coupon_code', 11, 1);#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
