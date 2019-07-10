@@ -855,79 +855,66 @@ function custom_cart_items_prices($cart)
 
 function mepr_must_fill_out_coupon_code($errors)
 {
-    if (!isset($_POST['mepr_member_code_turton']) || empty($_POST['mepr_member_code_turton'])) {
-        $errors[] = "You must fill out the Member code field before registering.";
-        return $errors;
-    }
+    // print "<pre>";
+    // print_r($_POST);
+    // print "</pre>";
 
-    // if (!$_POST['mepr_member_code_turton'] != $required_value) {
-    //     $errors[] = "Member code does not match required value.";
-    //
-    // }
+    #get all the published coupons
+    $membership_product_id = $_POST['mepr_product_id'];
+    $my_coupon_code = $_POST['mepr_member_code'];
 
-    print "<pre>";
-    print_r($_POST);
-    print "</pre>";
-
-    $post_id = $_POST['mepr_product_id'];
-    $my_coupon_code = $_POST['mepr_member_code_turton'];
-    print "my coupon code: $my_coupon_code";
     // WP_Query arguments
     $args = array(
     'post_type'              => array( 'memberpresscoupon' ),
-  );
+	'post_status'            => array( 'publish' ),
+    );
 
     // The Query
     $query = new WP_Query($args);
 
-    print "<pre>";
     // The Loop
     if ($query->have_posts()) {
         while ($query->have_posts()) {
             $query->the_post();
-            print "------------------";
-            // print_r($query->the_post());
-            // print get_the_title();
             $found = false;
             $title = get_the_title();
-            print "Title: $title";
             if ($title != $my_coupon_code) {
-                print "coupon title does not match my entry from the form, skipping to next coupon";
+                //this is not the coupon we want, skip to next one
                 continue;
             }
-            print get_the_ID();
-            $result = get_post_meta(get_the_ID(), '_mepr_coupons_valid_products');
-            print_r($result);
+            //for this coupon, get a list of memberships it applies to
+            $memberships_list = get_post_meta(get_the_ID(), '_mepr_coupons_valid_products');
+            // print_r($memberships_list);
 
-            foreach ($result as $index => $array) {
-                print_r($array);
-                if (in_array($post_id, $array)) {
-                    print "found $post_id";
+            // for each membership type that this coupon is good for
+            foreach ($memberships_list as $index => $array) {
+                // print_r($array);
+                if (in_array($membership_product_id, $array)) {
+                    // print "found $membership_product_id";
                     $found = true;
                     break;
-                } else {
-                    print "did not find $post_id";
                 }
             }
 
             // do something
         }
     } else {
-        print "bbb";
+        $errors[] = "There are no current active Member codes right now.";
         // no posts found
     }
-    print "Found: $found";
+    // print "Found: $found";
     if (!$found) {
         $errors[] = "Member code does not match required value.";
     }
 
-    print "</pre>";
-    // Restore original Post Data
+       // Restore original Post Data
     wp_reset_postdata();
 
     return $errors;
 }
-add_filter('mepr-validate-signup', 'mepr_must_fill_out_coupon_code', 11, 1);#----------------------------------------------------
+add_filter('mepr-validate-signup', 'mepr_must_fill_out_coupon_code', 11, 1);
+
+#----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
