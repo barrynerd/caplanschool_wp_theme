@@ -12160,6 +12160,11 @@ button#place_order {
   margin-bottom: 4vh;
   text-align: center; }
 
+.login-form-alert {
+  font-size: 1rem !important;
+  line-height: 1.2;
+  margin: 0 auto; }
+
 .page-about .card {
   border: none;
   -webkit-box-orient: vertical;
