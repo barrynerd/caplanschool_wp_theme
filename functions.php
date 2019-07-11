@@ -710,6 +710,7 @@ function add_search_form($items, $args)
 {
     if ($args->theme_location == 'secondary') {
         $new_item = '<li class="search-menu"><form role="search" method="get" id="searchform" class="searchform" action="'.home_url('/').'">     	<div> 		<label class="screen-reader-text" for="s">Search for:</label> 		<input type="text" id="searchbox" value="" name="s" id="s"> 		<input type="submit" id="searchsubmit" class="btn btn-primary btn-sm" value="'. esc_attr__('Search') .'"> 	</div> </form>';
+        $new_item = '<li class="search-menu"><form role="search" method="get" id="searchform" class="searchform" action="'.home_url('/').'">     	<div> 		<label class="screen-reader-text" for="s">Search for:</label> 		<input type="text" id="searchbox" value="" name="s" id="s"> 		<input type="submit" id="searchsubmit" class="btn btn-primary btn-sm" value="'. esc_attr__('Search') .'"> 	</div> </form></li>';
 
         $items .= $new_item;
     }
