@@ -307,7 +307,7 @@
 }
 
 .mepr-login-form-wrap {
-    margin-bottom: 4vh;
+    margin-bottom: 4vh!important;
     text-align: center;
 }
 
@@ -326,6 +326,7 @@
     // display: flex;
 }
 
+.reg-form-alert,
 .login-form-alert {
     font-size: 1rem!important;
     line-height: 1.2;
