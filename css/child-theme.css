@@ -10989,7 +10989,7 @@ a.skip-link {
   padding: 0 0.75rem 0 0; }
   @media (min-width: 544px) {
     #secondary-menu {
-      font-size: .85rem; } }
+      font-size: 0.85rem; } }
   #secondary-menu .navbar-toggler {
     margin-left: calc(100% - 8.33333%); }
   #secondary-menu .dropdown-toggle {
@@ -11000,7 +11000,7 @@ a.skip-link {
       right: 0;
       left: auto; } }
   #secondary-menu li.search-menu {
-    margin-bottom: .5rem; }
+    margin-bottom: 0.5rem; }
     @media (min-width: 768px) {
       #secondary-menu li.search-menu {
         margin-bottom: 0; } }
@@ -11072,7 +11072,7 @@ a.skip-link {
       right: -60px;
       left: auto; } }
   #main-menu li.menu-requirements {
-    font-size: .75rem; }
+    font-size: 0.75rem; }
   #main-menu ul.dropdown-menu {
     background: #fffbad;
     border: none;
@@ -11093,7 +11093,7 @@ a.skip-link {
 .nav-item.no-link a {
   background: #BBDFAB;
   cursor: text;
-  padding: .25rem 1rem; }
+  padding: 0.25rem 1rem; }
   .nav-item.no-link a::after {
     display: none; }
 
@@ -11135,6 +11135,18 @@ a.skip-link {
     @media (min-width: 768px) {
       .nav-inner-wrapper nav {
         margin-right: 0; } }
+
+.loginout-menu {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  padding-left: 0.25rem;
+  padding-right: 0.4rem; }
+  @media (min-width: 768px) {
+    .loginout-menu {
+      -webkit-box-ordinal-group: 701;
+          -ms-flex-order: 700;
+              order: 700; } }
 
 .btn,
 .wpcf7 input[type=submit] {
@@ -12678,9 +12690,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   padding-right: 0.4rem; }
   @media (min-width: 768px) {
     .search-menu {
-      -webkit-box-ordinal-group: 1000;
-          -ms-flex-order: 999;
-              order: 999; } }
+      -webkit-box-ordinal-group: 501;
+          -ms-flex-order: 500;
+              order: 500; } }
   .search-menu .btn-group-sm > .btn,
   .search-menu .wpcf7 .btn-group-sm > input[type=submit], .wpcf7 .search-menu .btn-group-sm > input[type=submit],
   .search-menu .btn-group-sm-bcc > .a,
