@@ -866,7 +866,7 @@ function mepr_must_fill_out_coupon_code($errors)
     // WP_Query arguments
     $args = array(
     'post_type'              => array( 'memberpresscoupon' ),
-	'post_status'            => array( 'publish' ),
+    'post_status'            => array( 'publish' ),
     );
 
     // The Query
@@ -907,7 +907,7 @@ function mepr_must_fill_out_coupon_code($errors)
         $errors[] = "Member code does not match required value.";
     }
 
-       // Restore original Post Data
+    // Restore original Post Data
     wp_reset_postdata();
 
     return $errors;
@@ -916,26 +916,54 @@ add_filter('mepr-validate-signup', 'mepr_must_fill_out_coupon_code', 11, 1);
 
 #----------------------------------------------------
 // based on https://codex.wordpress.org/Function_Reference/wp_loginout
- add_filter( 'wp_nav_menu_bootstrap-menu02a_items','wpsites_loginout_menu_link' );
+ add_filter('wp_nav_menu_bootstrap-menu02a_items', 'wpsites_loginout_menu_link');
 
-function wpsites_loginout_menu_link( $menu ) {
-    $loginout = wp_loginout($_SERVER['REQUEST_URI'], false );
+function wpsites_loginout_menu_link($menu)
+{
+    $my_dropdown = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-user-menu" class="menu-useful-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-user-menu nav-item loginout-menu"><a title="Useful Links" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-user-menu">User Menu</a>';
 
-    $item = '<li class="loginout-menu">' . $loginout . '</l1>';
+    $my_dropdown .= '<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-user-menu" role="menu">';
 
+    if ( is_user_logged_in()) {
+        $item = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-account-menu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-account-menu nav-item account-menu"><a title="My Account" class="dropdown-item" href="/account">My Account</a></li>';
+        $my_dropdown .= $item;
+        }
 
+    $loginout = wp_loginout($_SERVER['REQUEST_URI'], false);
+    $item = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-loginout-menu" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-loginout-menu nav-item account-menu loginout-menu-item">' . $loginout . '</l1>';
+    $my_dropdown .= $item;
 
-    $menu .= $item;
+    $my_dropdown .= '</ul>';
+    $my_dropdown .= '</li>';
+
+    $menu .= $my_dropdown;
     return $menu;
 }
 #----------------------------------------------------
 // based on https://codex.wordpress.org/Plugin_API/Filter_Reference/login_url
-add_filter( 'login_url', 'my_login_page', 10, 3 );
-function my_login_page( $login_url, $redirect, $force_reauth ) {
-    $login_page = home_url( '/login/' );
-    $login_url = add_query_arg( 'redirect_to', $redirect, $login_page );
+add_filter('login_url', 'my_login_page', 10, 3);
+function my_login_page($login_url, $redirect, $force_reauth)
+{
+    $login_page = home_url('/login/');
+    $login_url = add_query_arg('redirect_to', $redirect, $login_page);
     return $login_url;
-}#----------------------------------------------------
+}
+#----------------------------------------------------
+// based on https://core.trac.wordpress.org/browser/tags/5.2.1/src/wp-includes/general-template.php#L0
+add_filter('loginout', 'bcc_wp_loginout', 10, 3);
+
+function bcc_wp_loginout($content)
+{
+
+    if (! is_user_logged_in()) {
+        $content = str_replace("<a ", '<a title="Sign In" class="dropdown-item"', $content );
+        }
+    else {
+        $content = str_replace("<a ", '<a title="Sign Out" class="dropdown-item"', $content );
+
+    }
+    return  $content;
+}
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
