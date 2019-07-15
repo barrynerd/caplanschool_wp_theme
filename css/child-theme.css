@@ -12816,16 +12816,21 @@ h5.toc_subchapter {
   padding: 0;
   margin: 1rem auto .5rem; }
 
+#mepr-account-subscriptions-table,
 .woocommerce-orders-table {
   width: 100%; }
+  #mepr-account-subscriptions-table thead tr,
   .woocommerce-orders-table thead tr {
     background-color: #2a8700;
     color: white; }
+  #mepr-account-subscriptions-table thead th,
   .woocommerce-orders-table thead th {
     padding: 0.5rem 0.75rem; }
+  #mepr-account-subscriptions-table tbody tr:nth-child(odd),
   .woocommerce-orders-table tbody tr:nth-child(odd) {
     background-color: #BBDFAB;
     border-color: #BBDFAB; }
+  #mepr-account-subscriptions-table tbody tr td,
   .woocommerce-orders-table tbody tr td {
     padding: 0.75rem; }
 
