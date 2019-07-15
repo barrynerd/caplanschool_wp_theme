@@ -1,0 +1,25 @@
+.woocommerce-orders-table {
+    width: 100%;
+    thead {
+        tr {
+            background-color: $bcc_green;
+            color: $bcc-white;
+        }
+        th {
+            padding: .5rem 0.75rem;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background-color: $bcc_light_green;
+                border-color: $bcc_light_green;
+            }
+
+            td {
+                padding: 0.75rem;
+            }
+        }
+    }
+}

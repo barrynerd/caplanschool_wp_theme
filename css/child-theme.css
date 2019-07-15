@@ -12816,6 +12816,19 @@ h5.toc_subchapter {
   padding: 0;
   margin: 1rem auto .5rem; }
 
+.woocommerce-orders-table {
+  width: 100%; }
+  .woocommerce-orders-table thead tr {
+    background-color: #2a8700;
+    color: white; }
+  .woocommerce-orders-table thead th {
+    padding: .5rem 0.75rem; }
+  .woocommerce-orders-table tbody tr:nth-child(odd) {
+    background-color: #BBDFAB;
+    border-color: #BBDFAB; }
+  .woocommerce-orders-table tbody tr td {
+    padding: 0.75rem; }
+
 figcaption {
   font-size: 0.85rem; }
 
