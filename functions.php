@@ -920,7 +920,7 @@ add_filter('mepr-validate-signup', 'mepr_must_fill_out_coupon_code', 11, 1);
 
 function wpsites_loginout_menu_link($menu)
 {
-    $my_dropdown = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-user-menu" class="menu-useful-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-user-menu nav-item loginout-menu"><a title="Useful Links" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-user-menu">User Menu</a>';
+    $my_dropdown = '<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-user-menu" class="menu-useful-links menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-user-menu nav-item loginout-menu"><a title="Useful Links" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-user-menu"><i class="fa fa-user-o" aria-hidden="true"></i></a>';
 
     $my_dropdown .= '<ul class="dropdown-menu" aria-labelledby="menu-item-dropdown-user-menu" role="menu">';
 

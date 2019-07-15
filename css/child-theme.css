@@ -11147,6 +11147,11 @@ a.skip-link {
       -webkit-box-ordinal-group: 701;
           -ms-flex-order: 700;
               order: 700; } }
+  .loginout-menu i.fa {
+    font-weight: bold;
+    font-size: 1.25rem; }
+  .loginout-menu ul {
+    width: 10rem !important; }
 
 .btn,
 .wpcf7 input[type=submit] {
