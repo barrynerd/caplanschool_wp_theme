@@ -1,12 +1,14 @@
 .woocommerce-orders-table {
     width: 100%;
+
     thead {
         tr {
             background-color: $bcc_green;
             color: $bcc-white;
         }
+
         th {
-            padding: .5rem 0.75rem;
+            padding: 0.5rem 0.75rem;
         }
     }
 
@@ -19,6 +21,33 @@
 
             td {
                 padding: 0.75rem;
+            }
+        }
+    }
+}
+
+#mepr-account-nav {
+    display: flex;
+
+    .mepr-nav-item.mepr-active-nav-tab {
+        a {
+            border-radius: 0.25rem;
+            padding: 0.5rem 1rem;
+            background-color: $bcc_green;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+
+        .mepr-nav-item {
+            a {
+                display: block;
+
+                &:hover {
+                    color: $bcc_dark_green;
+                }
             }
         }
     }
