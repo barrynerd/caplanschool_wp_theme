@@ -12850,6 +12850,10 @@ h5.toc_subchapter {
     #mepr-account-nav .mepr-nav-item.mepr-active-nav-tab .mepr-nav-item a:hover {
       color: #366223; }
 
+.mepr-newpassword-form label,
+.mepr-account-form label {
+  font-weight: bold; }
+
 figcaption {
   font-size: 0.85rem; }
 
