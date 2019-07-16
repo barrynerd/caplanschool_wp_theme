@@ -12816,8 +12816,8 @@ h5.toc_subchapter {
   padding: 0;
   margin: 1rem auto .5rem; }
 
-#mepr-account-subscriptions-table,
-.woocommerce-orders-table {
+.woocommerce-orders-table,
+#mepr-account-subscriptions-table {
   border: 1px solid #ccc;
   border-collapse: collapse;
   margin: 0;
@@ -12825,53 +12825,53 @@ h5.toc_subchapter {
   width: 100vw;
   table-layout: fixed; }
   @media (min-width: 768px) {
-    #mepr-account-subscriptions-table,
-    .woocommerce-orders-table {
+    .woocommerce-orders-table,
+    #mepr-account-subscriptions-table {
       width: 100%; } }
-  #mepr-account-subscriptions-table caption,
-  .woocommerce-orders-table caption {
+  .woocommerce-orders-table caption,
+  #mepr-account-subscriptions-table caption {
     font-size: 1.5em;
     margin: 0.5em 0 0.75em; }
-  #mepr-account-subscriptions-table tr,
-  .woocommerce-orders-table tr {
+  .woocommerce-orders-table tr,
+  #mepr-account-subscriptions-table tr {
     background-color: #f8f8f8;
     border: 1px solid #ddd;
     padding: 0.35em; }
-  #mepr-account-subscriptions-table td,
-  #mepr-account-subscriptions-table th,
   .woocommerce-orders-table td,
-  .woocommerce-orders-table th {
+  .woocommerce-orders-table th,
+  #mepr-account-subscriptions-table td,
+  #mepr-account-subscriptions-table th {
     padding: 0.625em;
     text-align: center; }
-  #mepr-account-subscriptions-table th,
-  .woocommerce-orders-table th {
+  .woocommerce-orders-table th,
+  #mepr-account-subscriptions-table th {
     font-size: 0.85em;
     letter-spacing: 0.1em;
     text-transform: uppercase; }
-  #mepr-account-subscriptions-table thead tr,
-  .woocommerce-orders-table thead tr {
+  .woocommerce-orders-table thead tr,
+  #mepr-account-subscriptions-table thead tr {
     background-color: #2a8700;
     color: white; }
-  #mepr-account-subscriptions-table tbody tr:nth-child(odd),
-  .woocommerce-orders-table tbody tr:nth-child(odd) {
+  .woocommerce-orders-table tbody tr:nth-child(odd),
+  #mepr-account-subscriptions-table tbody tr:nth-child(odd) {
     background-color: #BBDFAB;
     border-color: #BBDFAB; }
-  #mepr-account-subscriptions-table tbody tr td,
-  .woocommerce-orders-table tbody tr td {
+  .woocommerce-orders-table tbody tr td,
+  #mepr-account-subscriptions-table tbody tr td {
     padding: 0.75rem 1.25rem; }
     @media (min-width: 768px) {
-      #mepr-account-subscriptions-table tbody tr td,
-      .woocommerce-orders-table tbody tr td {
+      .woocommerce-orders-table tbody tr td,
+      #mepr-account-subscriptions-table tbody tr td {
         padding: 0.75rem 0; } }
   @media screen and (max-width: 600px) {
-    #mepr-account-subscriptions-table,
-    .woocommerce-orders-table {
+    .woocommerce-orders-table,
+    #mepr-account-subscriptions-table {
       border: 0; }
-      #mepr-account-subscriptions-table caption,
-      .woocommerce-orders-table caption {
+      .woocommerce-orders-table caption,
+      #mepr-account-subscriptions-table caption {
         font-size: 1.3em; }
-      #mepr-account-subscriptions-table thead,
-      .woocommerce-orders-table thead {
+      .woocommerce-orders-table thead,
+      #mepr-account-subscriptions-table thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -12880,29 +12880,28 @@ h5.toc_subchapter {
         padding: 0;
         position: absolute;
         width: 1px; }
-      #mepr-account-subscriptions-table tr,
-      .woocommerce-orders-table tr {
+      .woocommerce-orders-table tr,
+      #mepr-account-subscriptions-table tr {
         border-bottom: 3px solid #ddd;
         display: block;
         margin-bottom: 0.625em; }
-      #mepr-account-subscriptions-table td,
-      .woocommerce-orders-table td {
+      .woocommerce-orders-table td,
+      #mepr-account-subscriptions-table td {
         border-bottom: 1px solid #ddd;
         display: block;
         font-size: 0.8em;
         text-align: right; }
-      #mepr-account-subscriptions-table td::before,
-      .woocommerce-orders-table td::before {
+      .woocommerce-orders-table td::before,
+      #mepr-account-subscriptions-table td::before {
         /*
         * aria-label has no advantage, it won't be read inside a table
         content: attr(aria-label);
         */
-        content: attr(data-title);
         float: left;
         font-weight: bold;
         text-transform: uppercase; }
-      #mepr-account-subscriptions-table td:last-child,
-      .woocommerce-orders-table td:last-child {
+      .woocommerce-orders-table td:last-child,
+      #mepr-account-subscriptions-table td:last-child {
         border-bottom: 0; } }
 
 div#mepr-account-nav {
@@ -12947,6 +12946,20 @@ div#mepr-account-nav {
 .mepr-account-form label,
 .mepr-newpassword-form label {
   font-weight: bold; }
+
+.woocommerce-orders-table td::before {
+  /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+  content: attr(data-title); }
+
+#mepr-account-subscriptions-table td::before {
+  /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+  content: attr(data-label); }
 
 figcaption {
   font-size: 0.85rem; }
