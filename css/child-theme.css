@@ -12961,6 +12961,12 @@ div#mepr-account-nav {
     */
   content: attr(data-label); }
 
+.woocommerce-account .woocommerce-MyAccount-content {
+  float: none;
+  width: 100%; }
+  .woocommerce-account .woocommerce-MyAccount-content p {
+    margin: 1.5rem; }
+
 figcaption {
   font-size: 0.85rem; }
 
