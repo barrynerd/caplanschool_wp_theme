@@ -12133,6 +12133,7 @@ button#place_order {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; }
 
+.mepr_reset_password_form,
 .mepr_forgot_password_form,
 .mp_login_form {
   width: 412px;
@@ -12142,15 +12143,18 @@ button#place_order {
           box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); }
+  .mepr_reset_password_form form,
   .mepr_forgot_password_form form,
   .mp_login_form form {
     width: 100%;
     max-width: 410px;
     padding: 1rem;
     margin: auto; }
+  .mepr_reset_password_form .mepr_username,
   .mepr_forgot_password_form .mepr_username,
   .mp_login_form .mepr_username {
     margin-bottom: 0; }
+  .mepr_reset_password_form input,
   .mepr_forgot_password_form input,
   .mp_login_form input {
     position: relative;
@@ -12160,25 +12164,31 @@ button#place_order {
     padding: 10px;
     font-size: 1rem;
     border-radius: 0.25rem; }
+  .mepr_reset_password_form input:focus,
   .mepr_forgot_password_form input:focus,
   .mp_login_form input:focus {
     z-index: 2; }
+  .mepr_reset_password_form input[type="text"],
   .mepr_forgot_password_form input[type="text"],
   .mp_login_form input[type="text"] {
     margin-bottom: -1px;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
+  .mepr_reset_password_form input[type="password"],
   .mepr_forgot_password_form input[type="password"],
   .mp_login_form input[type="password"] {
     border-top-right-radius: 0;
     border-top-left-radius: 0; }
+  .mepr_reset_password_form label.rememberme,
   .mepr_forgot_password_form label.rememberme,
   .mp_login_form label.rememberme {
     font-size: 0.9rem; }
+  .mepr_reset_password_form .mepr-login-actions,
   .mepr_forgot_password_form .mepr-login-actions,
   .mp_login_form .mepr-login-actions {
     font-size: 0.9rem;
     padding-left: 1rem; }
+  .mepr_reset_password_form .submit,
   .mepr_forgot_password_form .submit,
   .mp_login_form .submit {
     margin: 1.5rem 0; }
