@@ -134,9 +134,9 @@ function custom_cart_items_prices($cart)
 
 function mepr_must_fill_out_coupon_code($errors)
 {
-    print "<pre>";
-    print_r($_POST);
-    print "</pre>";
+    // print "<pre>";
+    // print_r($_POST);
+    // print "</pre>";
 
     #get all the published coupons
     $membership_product_id = $_POST['mepr_product_id'];
@@ -158,26 +158,26 @@ function mepr_must_fill_out_coupon_code($errors)
             $query->the_post();
             // $found = FALSE;
             $title = get_the_title();
-            print $title;
+            // print $title;
             if ($title != $my_coupon_code) {
                 //this is not the coupon we want, skip to next one
                 continue;
             }
             //for this coupon, get a list of memberships it applies to
             $memberships_list = get_post_meta(get_the_ID(), '_mepr_coupons_valid_products');
-            print_r($memberships_list);
+            // print_r($memberships_list);
 
             // for each membership type that this coupon is good for
             foreach ($memberships_list as $index => $array) {
-                print_r($array);
+                // print_r($array);
                 if (in_array($membership_product_id, $array)) {
-                    print "found $membership_product_id";
+                    // print "found $membership_product_id";
                     $found = true;
-                    if ($found) {
-                        print "Found:aaa yes";
-                    } else {
-                        print "Found:aaa no";
-                    }
+                    // if ($found) {
+                    //     print "Found:aaa yes";
+                    // } else {
+                    //     print "Found:aaa no";
+                    // }
                     break;
                 }
             }
@@ -188,11 +188,11 @@ function mepr_must_fill_out_coupon_code($errors)
         $errors[] = "There are no current active Member codes right now.";
         // no posts found
     }
-    if ($found) {
-        print "Found: yes";
-    } else {
-        print "Found: no";
-    }
+    // if ($found) {
+    //     print "Found: yes";
+    // } else {
+    //     print "Found: no";
+    // }
     if (!$found) {
         $errors[] = "Member code does not match required value.";
     }
