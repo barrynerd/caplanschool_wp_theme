@@ -12246,8 +12246,7 @@ button#place_order {
 
 @media (min-width: 768px) {
   .page-about .card-body {
-    padding: 0 1.25rem;
-    color: red; } }
+    padding: 0 1.25rem; } }
 
 .header-announce .header-online-ce {
   padding: 0;
