@@ -1,0 +1,185 @@
+.woocommerce-orders-table,
+#mepr-account-subscriptions-table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    @media (min-width: 768px) {
+        width: 100%;
+    }
+
+    table-layout: fixed;
+
+    caption {
+        font-size: 1.5em;
+        margin: 0.5em 0 0.75em;
+    }
+
+    tr {
+        background-color: #f8f8f8;
+        border: 1px solid #ddd;
+        padding: 0.35em;
+    }
+
+    td,
+    th {
+        padding: 0.625em;
+        text-align: center;
+    }
+
+    th {
+        font-size: 0.85em;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    thead {
+        tr {
+            background-color: $bcc_green;
+            color: $bcc-white;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-child(odd) {
+                background-color: $bcc_light_green;
+                border-color: $bcc_light_green;
+            }
+
+            td {
+                padding: 0.75rem 1.25rem;
+                @media (min-width: 768px) {
+                    padding: 0.75rem 0;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 600px) {
+        border: 0;
+
+        caption {
+            font-size: 1.3em;
+        }
+
+        thead {
+            border: none;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+
+        tr {
+            border-bottom: 3px solid #ddd;
+            display: block;
+            margin-bottom: 0.625em;
+        }
+
+        td {
+            border-bottom: 1px solid #ddd;
+            display: block;
+            font-size: 0.8em;
+            text-align: right;
+        }
+
+        td::before {
+            /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+            float: left;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        td:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+div#mepr-account-nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8rem;
+    justify-content: flex-start;
+    // margin: 1.5rem 0;
+    @media (min-width: 768px) {
+        justify-content: flex-start;
+        font-size: .9rem;
+    }
+
+    .mepr-nav-item.mepr-active-nav-tab {
+        a {
+            border-radius: 0.25rem;
+            background-color: $bcc_green;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            @media (min-width: 768px) {
+                padding: 0.5rem 1rem;
+            }
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    .mepr-nav-item {
+        // padding: 0;
+        padding: .4rem;
+
+        @media (min-width: 768px) {
+            padding: .4rem;
+        }
+        a {
+            display: block;
+
+            &:hover {
+                color: $bcc_dark_green;
+            }
+        }
+    }
+}
+
+.mepr-account-form,
+.mepr-newpassword-form {
+    label {
+        font-weight: bold;
+    }
+}
+
+.woocommerce-orders-table {
+    td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-title);
+    }
+}
+#mepr-account-subscriptions-table {
+    td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+    }
+}
+
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    float: none;
+    width: 100%;
+
+    p{
+        margin: 1.5rem;
+    }
+}
