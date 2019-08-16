@@ -159,3 +159,178 @@
         display: none;
     }
 }
+
+.reg-form {
+    width: 412px;
+    margin: 10vh auto 5vh;
+    background-color: #ffffff4d;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    form {
+        width: 100%;
+        max-width: 410px;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    .mepr-signup-form {
+        display: flex;
+        flex-direction: column;
+
+        input {
+            margin-bottom: -2px;
+        }
+
+        div.mepr_mepr_member_code {
+            order: -1;
+            font-weight: bold;
+
+            input {
+                border-radius: 0.25rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        div.mepr_first_name {
+            input {
+                border-top-right-radius: 0.25rem;
+                border-top-left-radius: 0.25rem;
+            }
+        }
+
+        div.mepr_password_confirm {
+            input {
+                border-bottom-right-radius: 0.25rem;
+                border-bottom-left-radius: 0.25rem;
+            }
+        }
+
+        .mepr_spacer {
+            height:0;
+        }
+
+        .mp-form-submit {
+            margin-top: 2rem;
+        }
+    }
+
+
+    .mepr_bold {
+        font-weight: bold;
+    }
+
+    .mepr_price {
+        order: -2;
+        padding: 0.25rem;
+        text-align: center;
+    }
+
+    input {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 1rem;
+        // border-radius: 0.25rem;
+    }
+
+    input:focus {
+        z-index: 2;
+    }
+
+    .mp-form-row {
+        margin: 0;
+    }
+
+    div.mp-form-row:first-of-type {
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+    }
+}
+// #reg-form,
+
+.mepr_reset_password_form,
+.mepr_forgot_password_form,
+.mp_login_form {
+    width: 412px;
+    margin: 10vh auto 5vh;
+    background-color: #ffffff4d;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.12), 0 12px 40px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+    form {
+        width: 100%;
+        max-width: 410px;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    .mepr_username {
+        margin-bottom: 0;
+    }
+
+    input {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+    }
+
+    input:focus {
+        z-index: 2;
+    }
+
+    input[type="text"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    input[type="password"] {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    label.rememberme {
+        font-size: 0.9rem;
+    }
+
+    .mepr-login-actions {
+        font-size: 0.9rem;
+        padding-left: 1rem;
+    }
+
+    .submit {
+        margin: 1.5rem 0;
+    }
+}
+
+.mepr-login-form-wrap {
+    margin-bottom: 4vh!important;
+    text-align: center;
+}
+
+
+// .entry-content > .mp_wrapper {
+//     display:flex;
+//     justify-content: center;
+//
+//     .mepr-unauthorized-message,
+//     .mepr-login-form-wrap {
+//         width: 40%;
+//     }
+// }
+
+.mepr-unauthorized-message {
+    // display: flex;
+}
+
+.reg-form-alert,
+.login-form-alert {
+    font-size: 1rem!important;
+    line-height: 1.2;
+    margin: 0 auto;
+}
