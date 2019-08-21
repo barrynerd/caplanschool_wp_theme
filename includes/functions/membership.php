@@ -1,4 +1,4 @@
-<?php
+    <?php
 #----------------------------------------------------
 #force coupon usage for purchasing membership
 function bcc_force_coupon_usage_when_purchasing_membership()
@@ -32,12 +32,27 @@ function bcc_force_coupon_usage_when_purchasing_membership()
         // $formatted_meta_data = $item->get_formatted_meta_data();
         // $item_meta_data = $product->get_meta_data();
         $item_meta_data = $product->get_meta("required_coupon");
-        // echo '<pre>'; print_r($item_meta_data); echo '</pre>';
-        // print "\n------end meta\n";
+       //  echo '<pre>';
+       //  echo "item_meta_data:<br/>";
+       //  print_r($item_meta_data);
+       //  echo "<br/>";
+       //  print "\n------end meta\n";
+       //  if (isset($item_meta_data)){
+       //     print "isset<br/>";
+       //     }
+       // if (empty($item_meta_data)){
+       //    print "empty<br/>";
+       //    }
+       //  if (is_null($item_meta_data)){
+       //         print "is_null<br/>";
+       //     }
+       //  print "</pre>";
+
 
         $result = true;
 
-        if (isset($item_meta_data)) {
+//        if (isset($item_meta_data)) {
+        if (!empty($item_meta_data)) {
             // print "Coupon is required";
             if (in_array($item_meta_data, $applied_coupons)) {
                 $msg =  "we have applied the correct coupon";
@@ -280,9 +295,13 @@ function my_registration($user_id)
 
         $url = get_home_url(). '/login/?act=' . $code;
         // basically we will edit here to make this nicer
-        $html = 'Please click the following links <br/><br/> <a href="'.$url.'">'.$url.'</a>';
+        $html = '<p>Please click the following link to confirm your email address and to complete activating your account: </p> <p><a href="'.$url.'">'.$url.'</a></p><p>If you can\'t click the link, please cut and paste it into your browser.';
         // send an email out to user
-        wp_mail($user_info->user_email, __('Email Subject', 'text-domain'), $html);
+
+        // headers based on this: https://wordpress.stackexchange.com/questions/27856/is-there-a-way-to-send-html-formatted-emails-with-wordpress-wp-mail-function
+        $subject = "Caplan School of Real Estate: Please click to confirm your email address";
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+        wp_mail($user_info->user_email, $subject, $html, $headers);
     }
 }
 
@@ -315,6 +334,34 @@ function verify_user_code()
     }
 }
 #--------------------------------------
+// based on https://wordpress.stackexchange.com/questions/307378/check-for-user-meta-data-at-login
+function isUserActivated($username){
+
+    // First need to get the user object
+    $user = get_user_by('login', $username);
+    if(!$user) {
+        $user = get_user_by('email', $username);
+        if(!$user) {
+            return $username;
+        }
+    }
+
+    $userStatus = get_user_meta($user->ID, 'account_activated', true);
+
+
+    //for testing $userStatus = 1;
+    if($userStatus == 0){
+        $login_page  = home_url('login/?redirect_to=/');
+        wp_redirect($login_page . "?login=failed_email_not_confirmed");
+        exit;
+
+    }
+
+}
+
+add_action('wp_authenticate', 'isUserActivated');
+#--------------------------------------
+
 // based on https://smallenvelop.com/add-custom-message-wordpress-login-page/
 //* Add custom message to WordPress login page
 
