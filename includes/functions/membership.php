@@ -289,19 +289,17 @@ function my_registration($user_id)
         update_user_meta($user_id, 'activation_code', $code);
         // create the url
         $code= base64_encode(serialize($string));
-        print "<pre>";
-        print $code;
-        print "</pre>";
+        // print "<pre>";
+        // print $code;
+        // print "</pre>";
 
         $url = get_home_url(). '/login/?act=' . $code;
         // basically we will edit here to make this nicer
-        $html = '<p>Please click the following link to confirm your email address and to complete activating your account: </p> <p><a href="'.$url.'">'.$url.'</a></p><p>If you can\'t click the link, please cut and paste it into your browser.';
-        // send an email out to user
-
-        // headers based on this: https://wordpress.stackexchange.com/questions/27856/is-there-a-way-to-send-html-formatted-emails-with-wordpress-wp-mail-function
-        $subject = "Caplan School of Real Estate: Please click to confirm your email address";
+        $body = '<p>Please click the following link to confirm your email address for your CaplanSchool.com account: </p><p> <a href="'.$url.'">'.$url.'</a></p>';
         $headers = array('Content-Type: text/html; charset=UTF-8');
-        wp_mail($user_info->user_email, $subject, $html, $headers);
+        $subject = "CaplanSchool.com email confirmation link for activation";
+        // send an email out to user
+        wp_mail($user_info->user_email, __($subject, 'text-domain'), $body, $headers);
     }
 }
 
@@ -375,10 +373,46 @@ function smallenvelop_login_message($message)
 }
 
 // add_filter( 'login_message', 'smallenvelop_login_message' );
-#-----------------------------------
 #https://gist.github.com/cartpauj/088e47c55718582753b864881f03d33d
+#-----------------------------------
 function mepr_disable_auto_login($auto_login, $membership_id, $mepr_user)
 {
     return false;
 }
 add_filter('mepr-auto-login', 'mepr_disable_auto_login', 3, 3);
+
+#-----------------------------------
+#based on https://wordpress.stackexchange.com/questions/247729/how-to-restrict-user-login-whenever-if-a-user-puts-on-hold-by-editing-wp-login-a
+add_filter('authenticate', 'myplugin_authenticate_account_activated', 21);#-----------------------------------
+function myplugin_authenticate_account_activated($user){
+
+
+    // username and password are correct
+    if ($user instanceof WP_User) {
+        $account_activated = get_user_meta($user->ID, 'account_activated', true);
+        if ($account_activated == 0) {
+            return new WP_Error('denied', "Please check your email for an account activation link before logging in.");
+            // return new WP_Error('denied', 'not activated');
+        }
+    }
+
+    return $user;
+}
+
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
