@@ -1,4 +1,4 @@
-<?php
+    <?php
 #----------------------------------------------------
 #force coupon usage for purchasing membership
 function bcc_force_coupon_usage_when_purchasing_membership()
@@ -32,12 +32,27 @@ function bcc_force_coupon_usage_when_purchasing_membership()
         // $formatted_meta_data = $item->get_formatted_meta_data();
         // $item_meta_data = $product->get_meta_data();
         $item_meta_data = $product->get_meta("required_coupon");
-        // echo '<pre>'; print_r($item_meta_data); echo '</pre>';
-        // print "\n------end meta\n";
+       //  echo '<pre>';
+       //  echo "item_meta_data:<br/>";
+       //  print_r($item_meta_data);
+       //  echo "<br/>";
+       //  print "\n------end meta\n";
+       //  if (isset($item_meta_data)){
+       //     print "isset<br/>";
+       //     }
+       // if (empty($item_meta_data)){
+       //    print "empty<br/>";
+       //    }
+       //  if (is_null($item_meta_data)){
+       //         print "is_null<br/>";
+       //     }
+       //  print "</pre>";
+
 
         $result = true;
 
-        if (isset($item_meta_data)) {
+//        if (isset($item_meta_data)) {
+        if (!empty($item_meta_data)) {
             // print "Coupon is required";
             if (in_array($item_meta_data, $applied_coupons)) {
                 $msg =  "we have applied the correct coupon";
@@ -274,15 +289,17 @@ function my_registration($user_id)
         update_user_meta($user_id, 'activation_code', $code);
         // create the url
         $code= base64_encode(serialize($string));
-        print "<pre>";
-        print $code;
-        print "</pre>";
+        // print "<pre>";
+        // print $code;
+        // print "</pre>";
 
         $url = get_home_url(). '/login/?act=' . $code;
         // basically we will edit here to make this nicer
-        $html = 'Please click the following links <br/><br/> <a href="'.$url.'">'.$url.'</a>';
+        $body = '<p>Please click the following link to confirm your email address for your CaplanSchool.com account: </p><p> <a href="'.$url.'">'.$url.'</a></p>';
+        $headers = array('Content-Type: text/html; charset=UTF-8');
+        $subject = "CaplanSchool.com email confirmation link for activation";
         // send an email out to user
-        wp_mail($user_info->user_email, __('Email Subject', 'text-domain'), $html);
+        wp_mail($user_info->user_email, __($subject, 'text-domain'), $body, $headers);
     }
 }
 
@@ -315,6 +332,34 @@ function verify_user_code()
     }
 }
 #--------------------------------------
+// based on https://wordpress.stackexchange.com/questions/307378/check-for-user-meta-data-at-login
+function isUserActivated($username){
+
+    // First need to get the user object
+    $user = get_user_by('login', $username);
+    if(!$user) {
+        $user = get_user_by('email', $username);
+        if(!$user) {
+            return $username;
+        }
+    }
+
+    $userStatus = get_user_meta($user->ID, 'account_activated', true);
+
+
+    //for testing $userStatus = 1;
+    if($userStatus == 0){
+        $login_page  = home_url('login/?redirect_to=/');
+        wp_redirect($login_page . "?login=failed_email_not_confirmed");
+        exit;
+
+    }
+
+}
+
+add_action('wp_authenticate', 'isUserActivated');
+#--------------------------------------
+
 // based on https://smallenvelop.com/add-custom-message-wordpress-login-page/
 //* Add custom message to WordPress login page
 
@@ -328,10 +373,46 @@ function smallenvelop_login_message($message)
 }
 
 // add_filter( 'login_message', 'smallenvelop_login_message' );
-#-----------------------------------
 #https://gist.github.com/cartpauj/088e47c55718582753b864881f03d33d
+#-----------------------------------
 function mepr_disable_auto_login($auto_login, $membership_id, $mepr_user)
 {
     return false;
 }
 add_filter('mepr-auto-login', 'mepr_disable_auto_login', 3, 3);
+
+#-----------------------------------
+#based on https://wordpress.stackexchange.com/questions/247729/how-to-restrict-user-login-whenever-if-a-user-puts-on-hold-by-editing-wp-login-a
+add_filter('authenticate', 'myplugin_authenticate_account_activated', 21);#-----------------------------------
+function myplugin_authenticate_account_activated($user){
+
+
+    // username and password are correct
+    if ($user instanceof WP_User) {
+        $account_activated = get_user_meta($user->ID, 'account_activated', true);
+        if ($account_activated == 0) {
+            return new WP_Error('denied', "Please check your email for an account activation link before logging in.");
+            // return new WP_Error('denied', 'not activated');
+        }
+    }
+
+    return $user;
+}
+
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
+#-----------------------------------
