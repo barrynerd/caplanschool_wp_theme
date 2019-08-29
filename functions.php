@@ -720,3 +720,4 @@ function add_search_form($items, $args)
 // refactor to include files here
 require_once dirname(__FILE__) . '/includes/functions/nulling.php';
 require_once dirname(__FILE__) . '/includes/functions/membership.php';
+require_once dirname(__FILE__) . '/includes/functions/woocommerce.php';
