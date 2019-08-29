@@ -21,7 +21,7 @@
             width: 30vw;
             @media (min-width: 768px) {
                 display: block;
-                }
+            }
         }
 
         td.product-name {
@@ -30,7 +30,6 @@
                 width: 30vw;
             }
         }
-
     }
 }
 
@@ -136,6 +135,23 @@
             .form-row-last {
                 width: 100%;
             }
+        }
+    }
+}
+
+.woocommerce {
+    span.onsale {
+        top: -1.5rem;
+        left: -.5rem;
+        background: $bcc_orange;
+        color: black;
+        padding: 1rem;
+        font-size: 0.8rem;
+        max-width: 21rem;
+        line-height: 1.2;
+        @media (min-width: 768px) {
+            padding: 1.5rem;
+            font-size: 1.3rem;
         }
     }
 }

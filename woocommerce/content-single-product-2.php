@@ -41,38 +41,7 @@ if ( post_password_required() ) {
   //      do_action( 'woocommerce_before_single_product_summary' );
         ?>
 
-<style scoped>
-.bcc_sale_flash {
-    min-height: 3.236em;
-    min-width: 3.236em;
-    font-weight: 700;
-    position: absolute;
-    text-align: center;
-    line-height: 3.236;
-    top: -1.5rem;
-    left: -.5rem;
-    margin: 0;
-    border-radius: 100%;
-    z-index: 9;
-	
-	background: orange;
-    	color: black;
-   	margin: 0px auto;
-        padding: 1rem;
-        font-size: .8rem;
-	max-width: 21rem;
-    	line-height: 1.2;
-	}
-        
-@media (min-width: 768px) {
-	.bcc_sale_flash {
-        	padding: 1.5rem;
-        	font-size: 1.3rem;
-        	}
-}
-</style>
-
-<span class="xonsale bcc_sale_flash">Early Bird Special!</br>$50 before Sep 20</br>Regular $99</span>
+<span class="onsale">Early Bird Special!</br>$50 before Sep 20</br>Regular $99</span>
 	<?php
 			$image_size = array(740, 386);
 			the_post_thumbnail($image_size);

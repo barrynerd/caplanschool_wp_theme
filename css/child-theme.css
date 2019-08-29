@@ -11488,6 +11488,20 @@ button#place_order {
 .woocommerce-page .cart-collaterals form .form-row-last {
   width: 100%; }
 
+.woocommerce span.onsale {
+  top: -1.5rem;
+  left: -.5rem;
+  background: #FE9328;
+  color: black;
+  padding: 1rem;
+  font-size: 0.8rem;
+  max-width: 21rem;
+  line-height: 1.2; }
+  @media (min-width: 768px) {
+    .woocommerce span.onsale {
+      padding: 1.5rem;
+      font-size: 1.3rem; } }
+
 .course-description-card {
   background-color: #fffbad !important;
   margin: 1.5rem 0 1rem;
