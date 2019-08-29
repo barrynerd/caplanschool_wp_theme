@@ -21,6 +21,16 @@ function my_custom_sales_badge() {
 	return $img;
 }
 #----------------------------------------------------
+add_filter('woocommerce_sale_flash', 'bcc_change_sales_flash_content', 10, 3);
+function bcc_change_sales_flash_content($content, $post, $product){
+
+	$message = get_post_meta( $product->get_id(), 'sale_flash_message',true );
+	if ($message) {
+		$content = '<span class="onsale">'.__( $message, 'woocommerce' ).'</span>';
+	}
+
+return $content;
+}
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
