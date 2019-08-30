@@ -40,7 +40,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				<div class="col-10 col-md-8 content-area p-0 mx-auto" id="primary">
 					<?php while (have_posts()) : the_post(); ?>
-						<?php wc_get_template_part('content', 'single-product'); ?>
+                        <?php
+                            if (bcc_product_uses_gutenberg()) {
+                                wc_get_template_part('content', 'single-product-2');
+                            }
+                            else {
+                                wc_get_template_part('content', 'single-product');
+                            }
+                        ?>
 					<?php endwhile; // end of the loop.?>
 
 					</div>
