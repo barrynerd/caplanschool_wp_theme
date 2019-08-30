@@ -32,6 +32,16 @@ function bcc_change_sales_flash_content($content, $post, $product){
 return $content;
 }
 #----------------------------------------------------
+function bcc_product_uses_gutenberg() {
+	$gutenberg_start_date = "2019-08-28"; //date we swtiched to gutenberg in  WooCommerce products
+
+	$result = true;
+	if (get_the_date('c') < $gutenberg_start_date){
+		$result = false;
+		}
+
+	return $result;
+}
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------

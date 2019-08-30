@@ -15,17 +15,17 @@
  * @version 3.4.0
  */
 
-defined('ABSPATH') || exit;
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Hook: woocommerce_before_single_product.
  *
  * @hooked wc_print_notices - 10
  */
-do_action('woocommerce_before_single_product');
-if (post_password_required()) {
-    echo get_the_password_form(); // WPCS: XSS ok.
-    return;
+do_action( 'woocommerce_before_single_product' );
+if ( post_password_required() ) {
+	echo get_the_password_form(); // WPCS: XSS ok.
+	return;
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class("product"); ?>>
@@ -55,8 +55,9 @@ if (post_password_required()) {
             // remove the meta data from display
             remove_action("woocommerce_single_product_summary", "woocommerce_template_single_meta", 40);
 
-remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
-add_action('woocommerce_single_product_summary', 'the_content', 20);
+			//use the guttenberg blocks intead of the plain description
+			remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 20);
+			add_action('woocommerce_single_product_summary', 'the_content', 20);
             /**
              * Hook: woocommerce_single_product_summary.
              *
