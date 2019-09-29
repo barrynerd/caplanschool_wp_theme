@@ -29,6 +29,7 @@ if ( post_password_required() ) {
 }
 ?>
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class("product"); ?>>
+
       <?php
         /**
          * Hook: woocommerce_before_single_product_summary.
@@ -46,6 +47,7 @@ if ( post_password_required() ) {
             the_post_thumbnail($image_size);
     ?>
 
+	<div class="woocommerce-product-details__short-description">
 	<div class="summary entry-summary">
 		<?php
             // move price on single product page to be after the priduct description
@@ -72,7 +74,7 @@ if ( post_password_required() ) {
              */
             do_action('woocommerce_single_product_summary');
         ?>
-
+	</div>
 	</div>
 
 	<?php
