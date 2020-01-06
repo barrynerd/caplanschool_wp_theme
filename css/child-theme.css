@@ -12357,6 +12357,18 @@ button#place_order {
 .online-ce.pa .twostep01-jumbotron {
   background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
+.online-license.appraisal-license.nj .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/house-mortgage-home-sold-real-estate-1586145-pxhere.com_-768x495.jpg"); }
+  @media (min-width: 768px) {
+    .online-license.appraisal-license.nj .twostep01-jumbotron {
+      background-image: url("/wordpress/wp-content/uploads/house-mortgage-home-sold-real-estate-1586145-pxhere.com_-1024x660.jpg"); } }
+
+.online-ce.appraisal-ce.nj .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/laptop-computer-writing-work-working-woman-893407-pxhere.com_-e1578099841867-768x432.jpg"); }
+  @media (min-width: 768px) {
+    .online-ce.appraisal-ce.nj .twostep01-jumbotron {
+      background-image: url("/wordpress/wp-content/uploads/laptop-computer-writing-work-working-woman-893407-pxhere.com_-e1578099841867-1200x675.jpg"); } }
+
 .online-license .card {
   border: none;
   border-top-left-radius: 1.2rem;
