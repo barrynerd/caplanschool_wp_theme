@@ -126,7 +126,7 @@ function custom_cart_items_prices($cart)
         // print "</pre>";
 
         $sku = method_exists($product, 'get_sku') ? $product->get_sku() : $product->post->sku;
-        print "SKU: $sku";
+        // print "SKU: $sku";
 
         if (preg_match('/^membership-/', $sku)) {
             // Get the product name (Added Woocommerce 3+ compatibility)
