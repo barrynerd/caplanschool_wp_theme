@@ -228,6 +228,26 @@ function get_coupons_string($order){
 
 
 #----------------------------------------------------
+function bcc_customer_invoice_has_scholarship_coupon_applied($order, $sent_to_admin, $plain_text, $email)
+{
+    $coupon_id = 'scholarship'; #scholarship coupons
+
+    $applied_coupons = $order->get_used_coupons();
+
+
+    if (in_array($coupon_id, $applied_coupons)) {
+        $message = <<<EOT
+            <p>
+            <strong>
+            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first day of class.
+            </strong>
+            </p>
+EOT;
+        echo $message;
+    }
+}
+add_action('woocommerce_email_order_details', 'bcc_customer_invoice_has_scholarship_coupon_applied',10,4);
+
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
