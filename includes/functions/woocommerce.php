@@ -55,7 +55,7 @@ function bcc_product_uses_gutenberg()
     return $result;
 }
 #----------------------------------------------------
-function bcc_checkout_has_scholarship_coupon_applied($message, $products, $show_qty)
+function bcc_cart_has_scholarship_coupon_applied($message, $products, $show_qty)
 {
     $coupon_id = 'scholarship'; #scholarship coupons
     $applied_coupons = WC()->cart->get_applied_coupons();
@@ -65,15 +65,34 @@ function bcc_checkout_has_scholarship_coupon_applied($message, $products, $show_
         $message = <<<EOT
             <span class="alert alert-success" role="alert">
             <strong>
-            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first day of class
+            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first   day of class
             </strong>
             </span>
 EOT;
     }
     return $message;
 };
-add_filter('woocommerce_coupon_message', 'bcc_checkout_has_scholarship_coupon_applied', 10, 3);
+add_filter('woocommerce_coupon_message', 'bcc_cart_has_scholarship_coupon_applied', 10, 3);
 #----------------------------------------------------
+
+function bcc_checkout_has_scholarship_coupon_applied()
+{
+    $coupon_id = 'scholarship'; #scholarship coupons
+    $applied_coupons = WC()->cart->get_applied_coupons();
+
+
+    if (in_array($coupon_id, $applied_coupons)) {
+        $message = <<<EOT
+            <div class="alert alert-success" role="alert">
+            <strong>
+            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first day of class.
+            </strong>
+            </div>
+EOT;
+        echo $message;
+    }
+}
+add_action('woocommerce_checkout_before_customer_details', 'bcc_checkout_has_scholarship_coupon_applied');
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
