@@ -32,13 +32,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 	<?php
-		if (is_front_page()) :
+		// if (is_front_page()) :
 			if ( is_active_sidebar( 'Announce Sidebar' ) ) : ?>
 				<div id="wrapper-announce" class="header-announce">
 					<?php dynamic_sidebar( 'Announce Sidebar' ); ?>
 				</div>
 	<?php
-			endif;
+			// endif;
 		endif; ?>
 
 
