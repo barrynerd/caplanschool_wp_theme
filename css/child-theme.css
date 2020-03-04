@@ -11972,6 +11972,19 @@ button#place_order {
        object-fit: cover;
     height: 100%; }
 
+h1.testimonial {
+  color: #2a8700;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: .5rem;
+  padding: 0 !important;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h1.testimonial {
+      font-size: 2.5rem;
+      line-height: 1.2; } }
+
 .members-ce .banner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -13301,7 +13314,7 @@ ul.products span.cart-buttons {
             justify-content: center;
     margin: 0 auto;
     padding: 0; }
-    #about-text .row h1 {
+    #about-text .row h2 {
       color: #2a8700;
       font-size: 1.6rem;
       font-weight: bold;
@@ -13309,7 +13322,7 @@ ul.products span.cart-buttons {
       margin-bottom: 2.5rem;
       text-align: center; }
       @media (min-width: 768px) {
-        #about-text .row h1 {
+        #about-text .row h2 {
           font-size: 2.5rem;
           line-height: 1.2; } }
     #about-text .row h5 {
