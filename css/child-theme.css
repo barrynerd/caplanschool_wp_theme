@@ -11972,6 +11972,19 @@ button#place_order {
        object-fit: cover;
     height: 100%; }
 
+h1.testimonial {
+  color: #2a8700;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: .5rem;
+  padding: 0 !important;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h1.testimonial {
+      font-size: 2.5rem;
+      line-height: 1.2; } }
+
 .members-ce .banner {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
