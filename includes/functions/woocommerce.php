@@ -64,11 +64,11 @@ function bcc_cart_has_scholarship_coupon_applied($message, $products, $show_qty)
     if (in_array($coupon_id, $applied_coupons)) {
         $message = <<<EOT
             <span class="alert alert-success" role="alert">
-            <strong>
-            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first   day of class
+            <strong>Scholarship coupon has been applied.
             </strong>
             </span>
 EOT;
+//            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first   day of class
     }
     return $message;
 };
@@ -84,11 +84,11 @@ function bcc_checkout_has_scholarship_coupon_applied()
     if (in_array($coupon_id, $applied_coupons)) {
         $message = <<<EOT
             <div class="alert alert-success" role="alert">
-            <strong>
-            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first day of class.
+            <strong>Scholarship coupon has been applied.
             </strong>
             </div>
 EOT;
+//            Scholarship coupon has been applied. $100 Credit will be applied to remaining balance on first day of class.
         echo $message;
     }
 }
