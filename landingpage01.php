@@ -15,7 +15,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper" id="full-width-page-wrapper" style="background: #f4f4f4";
+>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" style="max-width:100%">
 
@@ -27,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php while ( have_posts() ) : the_post(); ?>
 
-						<?php get_template_part( 'loop-templates/content', 'page' ); ?>
+						<?php get_template_part( 'loop-templates/content', 'landingpage01' ); ?>
 
 						<?php
 						// If comments are open or we have at least one comment, load up the comment template.
