@@ -11488,6 +11488,20 @@ button#place_order {
 .woocommerce-page .cart-collaterals form .form-row-last {
   width: 100%; }
 
+.woocommerce span.onsale {
+  top: -1.5rem;
+  left: -.5rem;
+  background: #FE9328;
+  color: black;
+  padding: 1rem;
+  font-size: 0.8rem;
+  max-width: 21rem;
+  line-height: 1.2; }
+  @media (min-width: 768px) {
+    .woocommerce span.onsale {
+      padding: 1.5rem;
+      font-size: 1.3rem; } }
+
 .course-description-card {
   background-color: #fffbad !important;
   margin: 1.5rem 0 1rem;
@@ -11797,7 +11811,8 @@ button#place_order {
         background: url("/wordpress/wp-content/uploads/New-Real-Estate-Broker-02large.jpg");
         background-position: 51% 29%; } }
 
-.twostep02-descriptions h1 {
+.twostep02-descriptions h1, .twostep02-descriptions h2 {
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center; }
 
@@ -11957,6 +11972,19 @@ button#place_order {
     -o-object-fit: cover;
        object-fit: cover;
     height: 100%; }
+
+h1.testimonial {
+  color: #2a8700;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1;
+  margin: .5rem;
+  padding: 0 !important;
+  text-align: center; }
+  @media (min-width: 768px) {
+    h1.testimonial {
+      font-size: 2.5rem;
+      line-height: 1.2; } }
 
 .members-ce .banner {
   -webkit-box-pack: center;
@@ -12343,6 +12371,18 @@ button#place_order {
 .online-ce.pa .twostep01-jumbotron {
   background-image: url("/wordpress/wp-content/uploads/online-course-01-rev.jpg"); }
 
+.online-license.appraisal-license.nj .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/house-mortgage-home-sold-real-estate-1586145-pxhere.com_-768x495.jpg"); }
+  @media (min-width: 768px) {
+    .online-license.appraisal-license.nj .twostep01-jumbotron {
+      background-image: url("/wordpress/wp-content/uploads/house-mortgage-home-sold-real-estate-1586145-pxhere.com_-1024x660.jpg"); } }
+
+.online-ce.appraisal-ce.nj .twostep01-jumbotron {
+  background-image: url("/wordpress/wp-content/uploads/laptop-computer-writing-work-working-woman-893407-pxhere.com_-e1578099841867-768x432.jpg"); }
+  @media (min-width: 768px) {
+    .online-ce.appraisal-ce.nj .twostep01-jumbotron {
+      background-image: url("/wordpress/wp-content/uploads/laptop-computer-writing-work-working-woman-893407-pxhere.com_-e1578099841867-1200x675.jpg"); } }
+
 .online-license .card {
   border: none;
   border-top-left-radius: 1.2rem;
@@ -12673,7 +12713,8 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   max-width: 100%; }
 
 .page-template-page-no_featured_img #main article {
-  max-width: 100%; }
+  max-width: 100%;
+  margin-bottom: 0; }
 
 .search article.page .entry-header {
   display: block; }
@@ -13274,7 +13315,7 @@ ul.products span.cart-buttons {
             justify-content: center;
     margin: 0 auto;
     padding: 0; }
-    #about-text .row h1 {
+    #about-text .row h2 {
       color: #2a8700;
       font-size: 1.6rem;
       font-weight: bold;
@@ -13282,7 +13323,7 @@ ul.products span.cart-buttons {
       margin-bottom: 2.5rem;
       text-align: center; }
       @media (min-width: 768px) {
-        #about-text .row h1 {
+        #about-text .row h2 {
           font-size: 2.5rem;
           line-height: 1.2; } }
     #about-text .row h5 {
