@@ -359,9 +359,18 @@ function bc_ce_classes_by_month($atts)
         #'product_cat' 			 => 'continuing-education, designations',
         'tax_query' 			 => array(
             array(
-                'taxonomy' => 'product_cat',
-                'field'    => 'term_id',
-                'terms'    => array( 69, 70 ),
+                'relation' => 'AND',
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms' => array(89),
+                    'operator' => "NOT IN",
+                ),
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => array( 69, 70 ),
+                ),
             ),
         ),
         'meta_query'             => array(
