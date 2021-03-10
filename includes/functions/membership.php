@@ -221,7 +221,8 @@ add_filter('mepr-validate-signup', 'mepr_must_fill_out_coupon_code', 11, 1);
 
 #----------------------------------------------------
 // based on https://codex.wordpress.org/Function_Reference/wp_loginout
- add_filter('wp_nav_menu_bootstrap-menu02a_items', 'wpsites_loginout_menu_link');
+// commented out to remove from membu barry 10-24-20
+ // add_filter('wp_nav_menu_bootstrap-menu02a_items', 'wpsites_loginout_menu_link');
 
 function wpsites_loginout_menu_link($menu)
 {

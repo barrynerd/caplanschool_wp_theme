@@ -450,7 +450,7 @@ function woocommerce_shortcode_products_orderby($args)
  *
  * Note: Required for infinite scroll to work on localhost.
  */
-add_filter('jetpack_development_mode', '__return_true');
+#add_filter('jetpack_development_mode', '__return_true');
 #----------------------------------------------------
 /**
  * Add theme support for infinite scroll.
@@ -705,7 +705,8 @@ add_post_type_support('page', 'excerpt');
 #----------------------------------------------------
 # add search to menus
 # from https://www.isitwp.com/add-search-form-to-specific-wp-nav-menu/
-add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
+//  commented out to remove from menu - barry - 10/24/20
+// add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 function add_search_form($items, $args)
 {
     if ($args->theme_location == 'secondary') {

@@ -202,7 +202,8 @@ function get_admin_email_order_string_neptune($order){
 #---------------------------------------------------------
 function has_coupons($order){
 
-    return $order->get_used_coupons();
+    #return $order->get_used_coupons();
+    return $order->get_coupon_codes();
     }
 
 #---------------------------------------------------------
@@ -212,7 +213,8 @@ function get_coupons_string($order){
 */
 
 
-	$used_coupons = $order->get_used_coupons();
+	#$used_coupons = $order->get_used_coupons();
+	$used_coupons = $order->get_coupon_codes();
 
     $result = "--- Be sure to reduce the total by the coupon amount on the first day of class for scholarship coupons ---\n\n";
     $result .= "Coupons Used:\n";
@@ -232,7 +234,8 @@ function bcc_customer_invoice_has_scholarship_coupon_applied($order, $sent_to_ad
 {
     $coupon_id = 'scholarship'; #scholarship coupons
 
-    $applied_coupons = $order->get_used_coupons();
+    #$applied_coupons = $order->get_used_coupons();
+    $applied_coupons = $order->get_coupon_codes();
 
 
     if (in_array($coupon_id, $applied_coupons)) {
@@ -249,6 +252,22 @@ EOT;
 add_action('woocommerce_email_order_details', 'bcc_customer_invoice_has_scholarship_coupon_applied',10,4);
 
 #----------------------------------------------------
+// calculate discount and apply the discount
+//see https://github.com/woocommerce/woocommerce/issues/21148
+
+function rebateNJREFScholarshipHandlingFee($cartObject)
+{
+	#if (current_user_can('administrator')) {
+		$njref_coupon_id = "njref";
+		#print_r(WC()->cart->get_applied_coupons());
+		if(in_array($njref_coupon_id, WC()->cart->get_applied_coupons())){
+    			$discount = 4.00; // 15% discount
+    			$cartObject->add_fee('Handling fee rebate', -$discount, false, 'zero-rate');
+			}
+	#}
+}
+
+add_action('woocommerce_cart_calculate_fees', 'rebateNJREFScholarshipHandlingFee');
 #----------------------------------------------------
 #----------------------------------------------------
 #----------------------------------------------------
