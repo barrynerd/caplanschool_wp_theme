@@ -18,7 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <div class="wrapper" id="full-width-page-wrapper" style="background: #f4f4f4";
 >
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" style="max-width:100%">
+	<div class="<?php echo esc_attr( $container ); ?>" id="content" style="max-width:1510px; padding: 0 40px 40px;">
 
 		<div class="row">
 

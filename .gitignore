@@ -32,3 +32,8 @@ package.json
 package-lock.json
 
 /tmp/
+
+*swp
+error_log
+*.save*
+

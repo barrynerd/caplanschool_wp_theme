@@ -27,7 +27,7 @@
                          'theme_location'  => 'secondary',
                         'container_class' => 'collapse navbar-collapse',
                         'container_id'    => 'navbarNavDropdown',
-                        'menu_class'      => 'navbar-nav ml-auto align-items-center text-nowrap',
+                        'menu_class'      => 'navbar-nav ml-auto mr-auto align-items-center text-nowrap',
                         'fallback_cb'     => '',
                         // 'menu_id'         => 'secondary-menu',
                         'depth'           => 2,

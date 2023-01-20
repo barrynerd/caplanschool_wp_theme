@@ -359,9 +359,18 @@ function bc_ce_classes_by_month($atts)
         #'product_cat' 			 => 'continuing-education, designations',
         'tax_query' 			 => array(
             array(
-                'taxonomy' => 'product_cat',
-                'field'    => 'term_id',
-                'terms'    => array( 69, 70 ),
+                'relation' => 'AND',
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms' => array(89),
+                    'operator' => "NOT IN",
+                ),
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => array( 69, 70 ),
+                ),
             ),
         ),
         'meta_query'             => array(
@@ -450,7 +459,7 @@ function woocommerce_shortcode_products_orderby($args)
  *
  * Note: Required for infinite scroll to work on localhost.
  */
-add_filter('jetpack_development_mode', '__return_true');
+#add_filter('jetpack_development_mode', '__return_true');
 #----------------------------------------------------
 /**
  * Add theme support for infinite scroll.
@@ -705,7 +714,8 @@ add_post_type_support('page', 'excerpt');
 #----------------------------------------------------
 # add search to menus
 # from https://www.isitwp.com/add-search-form-to-specific-wp-nav-menu/
-add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
+//  commented out to remove from menu - barry - 10/24/20
+// add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
 function add_search_form($items, $args)
 {
     if ($args->theme_location == 'secondary') {
@@ -721,3 +731,8 @@ function add_search_form($items, $args)
 require_once dirname(__FILE__) . '/includes/functions/nulling.php';
 require_once dirname(__FILE__) . '/includes/functions/membership.php';
 require_once dirname(__FILE__) . '/includes/functions/woocommerce.php';
+
+//based on https://tipsnfreeware.com/how-to-disable-the-widget-block-editor-in-wordpress-5-8/
+add_filter( 'use_widgets_block_editor', '__return_false' );
+
+

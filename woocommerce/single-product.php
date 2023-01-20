@@ -40,6 +40,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				<div class="col-10 col-md-8 content-area p-0 mx-auto" id="primary">
 					<?php while (have_posts()) : the_post(); ?>
+
+            <?php
+              // if(current_user_can('administrator')) { //is admin
+                echo '<h1 class="course-title font-weight-bold">';
+                print $product->get_title();
+                echo '</h1>';
+              // }
+            ?>
+
                         <?php
                             wc_get_template_part('content', 'single-product');
 //                             if (bcc_product_uses_gutenberg()) {
