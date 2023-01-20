@@ -32,11 +32,9 @@ $container = get_theme_mod('understrap_container_type');
 
 					        <div class="card">
 					            <ul class="card-body">
-					                <li>3455 State Route 66</li>
-					                <li>Neptune, NJ 07753</li>
-							<li>&nbsp;</li>
-					                <li>(Corner of Green Grove Road in</li>
-					                <li>Stout & O'Hagan Building)</li>
+					                <li>2008 Route 37 East</li>
+							<li>Suite 16</li>
+					                <li>Toms River, NJ 08753</li>
                                     <li><a class="font-italic" href="/directions-and-map/">Directions and map</a></li>
 					                </ul>
 					            </div>

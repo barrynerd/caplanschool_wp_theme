@@ -252,6 +252,21 @@ EOT;
 add_action('woocommerce_email_order_details', 'bcc_customer_invoice_has_scholarship_coupon_applied',10,4);
 
 #----------------------------------------------------
+function bcc_pickup_books($order, $sent_to_admin, $plain_text, $email)
+{
+    $message = <<<EOT
+        <p>
+        <strong>
+        For Prelicense and Broker Courses:
+        Book pick up Monday through Friday 9 AM to 4 PM except holidays
+        </strong>
+        </p>
+EOT;
+        echo $message;
+}
+add_action('woocommerce_email_order_details', 'bcc_pickup_books',10,4);
+
+#----------------------------------------------------
 // calculate discount and apply the discount
 //see https://github.com/woocommerce/woocommerce/issues/21148
 
