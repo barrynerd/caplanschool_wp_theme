@@ -68,8 +68,7 @@ function bc_ce_classes_by_month02($atts)
         $result .= '<ul class="products">';
         while ($query->have_posts()) {
             $query->the_post();
-            #http://stackoverflow.com/questions/18957416/load-template-in-wordpress-
-without-echo-it
+            #http://stackoverflow.com/questions/18957416/load-template-in-wordpress-without-echo-it
             ob_start();
             wc_get_template_part('content', 'product');
             $result .= ob_get_clean();
