@@ -32,17 +32,20 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     $name = str_replace('Fair Housing -', 'Fair Housing:', $name, $count);
     $limit = -1;
     $pieces = explode(" - ", $name);
-
 ?>
   
-<div class="list-wrapper d-flex justify-content-between align-items-center" style="height:75px;">
-<div class="card-title col-3 mb-0"> <?php print $pieces[0]; ?></div>
-<div class="card-title col-3 mb-0"> <?php print $pieces[1]; ?></div>
-<div class="card-title col-3 mb-0"> <?php print "$pieces[2]-$pieces[3]"; ?></div>
+<div class="list-wrapper d-flex flex-row justify-content-between align-items-center my-3">
+
+
+    <div class="course-wrapper d-flex flex-column col-7 pl-0">
+        <div class="card-title mb-0 px-0 font-weight-bold"> <?php print $pieces[0]; ?></div>
+        <div class="card-title mb-0 pl-0"> <?php print $pieces[1]; ?></div>
+        <div class="card-title mb-0 pl-0"> <?php print "$pieces[2]-$pieces[3]"; ?></div>
+    </div>
     <?php
         $add_to_cart_text = "Register";
         printf(
-            '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="btn btn-primary %s product_type_%s col-3">%s</a>',
+            '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s" class="btn btn-primary %s product_type_%s col col-md-3" style="max-height: 136.67px">%s</a>',
             esc_url( $product->add_to_cart_url() ),
             esc_attr( $product->get_id() ),
             esc_attr( $product->get_sku() ),
