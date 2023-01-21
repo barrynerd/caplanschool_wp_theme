@@ -2,6 +2,10 @@
 
 function bc_ce_classes_by_month02($atts)
 {
+
+    global $product;
+    
+
     $atts = shortcode_atts(
         array(
           'title' => '',
@@ -64,16 +68,19 @@ function bc_ce_classes_by_month02($atts)
     // The Loop
     if ($query->have_posts()) {
         $result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
-        $result .= "<div class=\"bc_ce_classes_by_month woocommerce columns-1\">";
-        $result .= '<ul class="products">';
+        $result .= "<div class=\"bc_ce_classes_by_month woocommerce \">";
+        $result .= '<div class="products card col">';
+        $result .= '<div class="card-body pl-0">';
+
         while ($query->have_posts()) {
             $query->the_post();
-            #http://stackoverflow.com/questions/18957416/load-template-in-wordpress-without-echo-it
+            #http://stackoverflow.com/questions/18957416/load-template-in-wordpress- without-echo-it
             ob_start();
-            wc_get_template_part('content', 'product');
+            wc_get_template_part('content', 'product02');
             $result .= ob_get_clean();
         }
-        $result .=  "</ul>";
+        $result .=  "</div>";
+        $result .=  "</div>";
         $result .= "</div>";
     } else {
         // no posts found
