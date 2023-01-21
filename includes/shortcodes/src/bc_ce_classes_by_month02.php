@@ -70,7 +70,7 @@ function bc_ce_classes_by_month02($atts)
         $result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
         $result .= "<div class=\"bc_ce_classes_by_month woocommerce \">";
         $result .= '<div class="products card col">';
-        $result .= '<div class="card-body pl-0">';
+        $result .= '<div class="card-body pl-0" style="line-height: 1.2">';
 
         while ($query->have_posts()) {
             $query->the_post();

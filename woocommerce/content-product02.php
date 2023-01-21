@@ -24,9 +24,21 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         return;
 }
 ?>
+
+<?php
+
+    $count = 1;
+    $name = $product->get_name();
+    $name = str_replace('Fair Housing -', 'Fair Housing:', $name, $count);
+    $limit = -1;
+    $pieces = explode(" - ", $name);
+
+?>
   
 <div class="list-wrapper d-flex justify-content-between align-items-center" style="height:75px;">
-<div class="card-title col mb-0"> <?php print $product->get_name(); ?></div>
+<div class="card-title col-3 mb-0"> <?php print $pieces[0]; ?></div>
+<div class="card-title col-3 mb-0"> <?php print $pieces[1]; ?></div>
+<div class="card-title col-3 mb-0"> <?php print "$pieces[2]-$pieces[3]"; ?></div>
     <?php
         $add_to_cart_text = "Register";
         printf(
