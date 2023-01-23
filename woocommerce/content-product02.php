@@ -34,7 +34,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     $pieces = explode(" - ", $name);
 ?>
   
-<div class="list-wrapper d-flex flex-row justify-content-between align-items-center my-3">
+<div class="list-wrapper d-flex flex-row justify-content-center align-items-center my-3">
 
 
     <div class="course-wrapper d-flex flex-column col-7 pl-0">
