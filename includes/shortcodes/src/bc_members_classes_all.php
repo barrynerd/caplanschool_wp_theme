@@ -11,14 +11,18 @@ function bc_members_classes_all($atts)
           'title' => '',
           'month' => '',
           'year' => '',
+          'member_cat' => '',
         ),
         $atts
       );
 
     $start_date = $atts['year']."-01-00";
     $end_date = $atts['year']."-12-99";
-    #print "start date: $start_date end date: $end_date";
+    // print "start date: $start_date end date: $end_date";
 
+
+    $member_cat = $atts['member_cat'];
+    // print "member_cat= $member_cat";
 
     #query all continuing ed, all designations
     $args = array(
@@ -33,7 +37,7 @@ function bc_members_classes_all($atts)
                 array(
                     'taxonomy' => 'product_cat',
                     'field'    => 'term_id',
-                    'terms'    => array( 89, 136 ),
+                    'terms'    => array( $member_cat ),
                 ),
             ),
         ),
@@ -67,6 +71,7 @@ function bc_members_classes_all($atts)
 
         while ($query->have_posts()) {
             $query->the_post();
+            // print "id: " . $product->id . "-";
             #http://stackoverflow.com/questions/18957416/load-template-in-wordpress- without-echo-it
             ob_start();
             wc_get_template_part('content', 'product02');
@@ -88,5 +93,3 @@ function bc_members_classes_all($atts)
 }
 
 add_shortcode('bc_members_classes_all', 'bc_members_classes_all');
-
-
