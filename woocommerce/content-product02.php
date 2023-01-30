@@ -32,6 +32,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     $name = str_replace('Fair Housing -', 'Fair Housing:', $name, $count);
     $limit = -1;
     $pieces = explode(" - ", $name);
+
+    $permalink = get_permalink( $product->get_id() );
 ?>
   
 <div class="list-wrapper d-flex flex-row justify-content-center align-items-center my-3">
@@ -41,6 +43,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
         <div class="card-title mb-0 px-0 font-weight-bold"> <?php print $pieces[0]; ?></div>
         <div class="card-title mb-0 pl-0"> <?php print $pieces[1]; ?></div>
         <div class="card-title mb-0 pl-0"> <?php print "$pieces[2]-$pieces[3]"; ?></div>
+        <div class="card-title mb-0 pl-0"> <a href="<?php echo $permalink ?>">Course Details</a></div>
     </div>
     <?php
         $add_to_cart_text = "Register";
