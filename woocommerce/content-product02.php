@@ -29,7 +29,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 
     $count = 1;
     $name = $product->get_name();
-    $name = str_replace('Fair Housing -', 'Fair Housing:', $name, $count);
+    $name = str_replace('Fair Housing - Then', 'Fair Housing: Then', $name, $count);
     $limit = -1;
     $pieces = explode(" - ", $name);
 
