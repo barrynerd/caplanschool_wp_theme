@@ -30,7 +30,6 @@ function bc_ce_classes_by_title($atts)
         'order'                  => 'ASC',
         'orderby'                => 'meta_value',
         'meta_key'                               => 'start_date',
-        #'product_cat'                   => 'continuing-education, designations',
         'tax_query'                      => array(
             array(
                 'relation' => 'AND',
@@ -47,20 +46,6 @@ function bc_ce_classes_by_title($atts)
                 ),
             ),
         ),
-        // 'meta_query'             => array(
-        //     'relation' => 'AND',
-        //                 array(
-        //         'key'       => 'start_date',
-        //         'value'     => $start_date,
-        //         'compare'   => '>=',
-        //     ),
-
-        //     array(
-        //         'key'       => 'start_date',
-        //         'value'     => $end_date,
-        //         'compare'   => '<=',
-        //     ),
-        // ),
         'nopaging' => true,
         'posts_per_page' => -1,
     );
