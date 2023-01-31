@@ -23,6 +23,11 @@ function bc_ce_classes_by_title($atts)
 
     $category_id = $atts['category_id'];
 
+    // see https://wordpress.stackexchange.com/questions/188892/getting-a-taxonomys-thumbnail-url
+    $taxonomies = array( 'product_cat' );
+    $thumb_id = get_woocommerce_term_meta( $category_id, 'thumbnail_id', true );
+    $term_img = wp_get_attachment_url(  $thumb_id );
+
     #query all continuing ed, all designations
     $args = array(
         'post_type'              => 'product',
@@ -55,6 +60,7 @@ function bc_ce_classes_by_title($atts)
 
     // The Loop
     if ($query->have_posts()) {
+        $result .= "<img src=\"$term_img\" class=\"d-block mx-auto\" >";
         $result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
         $result .= "<div class=\"bc_ce_classes_by_month woocommerce p-0\">";
         $result .= '<div class="products card col px-0 border-0">';
@@ -64,7 +70,7 @@ function bc_ce_classes_by_title($atts)
             $query->the_post();
             #http://stackoverflow.com/questions/18957416/load-template-in-wordpress- without-echo-it
             ob_start();
-            wc_get_template_part('content', 'product02');
+            wc_get_template_part('content', 'product03');
             $result .= ob_get_clean();
         }
         $result .=  "</div>";
