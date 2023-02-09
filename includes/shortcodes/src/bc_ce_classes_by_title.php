@@ -6,6 +6,8 @@ function bc_ce_classes_by_title($atts)
     global $product;
     
 
+    $result = "";
+
     $atts = shortcode_atts(
         array(
           'title' => '',
