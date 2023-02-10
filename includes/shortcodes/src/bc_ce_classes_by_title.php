@@ -62,7 +62,7 @@ function bc_ce_classes_by_title($atts)
 
     // The Loop
     if ($query->have_posts()) {
-        $result .= "<img src=\"$term_img\" class=\"d-block mx-auto\" >";
+        $result .= "<img src=\"$term_img\" class=\"d-block mx-auto my-4\" >";
 	if ($atts['title']){
         	$result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
 	}
