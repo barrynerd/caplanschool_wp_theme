@@ -63,7 +63,9 @@ function bc_ce_classes_by_title($atts)
     // The Loop
     if ($query->have_posts()) {
         $result .= "<img src=\"$term_img\" class=\"d-block mx-auto\" >";
-        $result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
+	if ($atts['title']){
+        	$result .= "<h2 id=\"$start_date\">{$atts['title']}</h2>";
+	}
         $result .= "<div class=\"bc_ce_classes_by_month woocommerce p-0\">";
         $result .= '<div class="products card col px-0 border-0">';
         $result .= '<div class="card-body px-0 px-md-4 my-0 mx-md-0" style="line-height: 1">';
