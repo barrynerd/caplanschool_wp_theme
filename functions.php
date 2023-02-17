@@ -3,7 +3,7 @@ if (! defined('ABSPATH')) {
     exit; // Exit if accessed directly.
 }
 
-function understrap_remove_scripts()
+function xunderstrap_remove_scripts()
 {
     wp_dequeue_style('understrap-styles');
     wp_deregister_style('understrap-styles');
@@ -13,7 +13,7 @@ function understrap_remove_scripts()
 
     // Removes the parent themes stylesheet and scripts from inc/enqueue.php
 }
-add_action('wp_enqueue_scripts', 'understrap_remove_scripts', 20);
+//add_action('wp_enqueue_scripts', 'understrap_remove_scripts', 20);
 
 add_action('wp_enqueue_scripts', 'theme_enqueue_styles');
 function theme_enqueue_styles()
@@ -732,6 +732,7 @@ require_once dirname(__FILE__) . '/includes/functions/nulling.php';
 require_once dirname(__FILE__) . '/includes/functions/membership.php';
 require_once dirname(__FILE__) . '/includes/functions/woocommerce.php';
 
+require_once dirname(__FILE__) . '/includes/functions/dequeue.php';
 require_once dirname(__FILE__) . '/includes/shortcodes/index.php';
 
 //based on https://tipsnfreeware.com/how-to-disable-the-widget-block-editor-in-wordpress-5-8/
