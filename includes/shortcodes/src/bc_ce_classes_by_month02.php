@@ -4,6 +4,7 @@ function bc_ce_classes_by_month02($atts)
 {
 
     global $product;
+	$result = "";
     
 
     $atts = shortcode_atts(
