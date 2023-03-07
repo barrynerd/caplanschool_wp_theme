@@ -732,6 +732,10 @@ require_once dirname(__FILE__) . '/includes/functions/nulling.php';
 require_once dirname(__FILE__) . '/includes/functions/membership.php';
 require_once dirname(__FILE__) . '/includes/functions/woocommerce.php';
 
+require_once dirname(__FILE__) . '/includes/shortcodes/bc_members_classes_all.php';
+require_once dirname(__FILE__) . '/includes/shortcodes/bc_ce_classes_by_title.php';
+require_once dirname(__FILE__) . '/includes/shortcodes/bc_ce_classes_by_month02.php';
+
 //based on https://tipsnfreeware.com/how-to-disable-the-widget-block-editor-in-wordpress-5-8/
 add_filter( 'use_widgets_block_editor', '__return_false' );
 
