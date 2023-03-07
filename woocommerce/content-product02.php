@@ -32,10 +32,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     $name = str_replace('Fair Housing - Then', 'Fair Housing: Then', $name, $count);
     $limit = -1;
     $pieces = explode(" - ", $name);
-    print("<pre>");
-    // print_r($pieces);
-    print("</pre>");
-
+    
     $permalink = get_permalink( $product->get_id() );
 ?>
   

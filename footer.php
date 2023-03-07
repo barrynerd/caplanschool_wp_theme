@@ -28,7 +28,7 @@ $container = get_theme_mod('understrap_container_type');
 
 					<div class="site-info">
 
-						<div class="card-collection">
+						<div class="card-collection align-items-md-stretch justify-content-center">
 
 					        <div class="card">
 					            <ul class="card-body">
