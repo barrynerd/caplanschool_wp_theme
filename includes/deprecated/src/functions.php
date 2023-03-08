@@ -80,3 +80,60 @@ function custom__shortcode_products_query($query_args, $atts, $loop_name)
     return $query_args;
 }
 
+#----------------------------------------------------
+// see: https://lorut.no/responsive-vimeo-youtube-embed-wordpress/
+// Hook onto 'oembed_dataparse' and get 2 parameters
+// add_filter( 'oembed_dataparse','responsive_wrap_oembed_dataparse',0,2);
+
+function responsive_wrap_oembed_dataparse($html, $data)
+{
+    print "ccc";
+    // Verify oembed data (as done in the oEmbed data2html code)
+    if (! is_object($data) || empty($data->type)) {
+        return $html;
+    }
+
+    // Verify that it is a video
+    if (!($data->type == 'video')) {
+        return $html;
+    }
+
+    // Calculate aspect ratio
+    $ar = $data->width / $data->height;
+
+    // Set the aspect ratio modifier
+    $ar_mod = (abs($ar-(4/3)) < abs($ar-(16/9)) ? 'embed-responsive-4by3' : 'embed-responsive-16by9');
+
+    // Strip width and height from html
+    $html = preg_replace('/(width|height)="\d*"\s/', "", $html);
+
+    // Return code
+    return '<div class="embed-responsive '.$ar_mod.'" data-aspectratio="'.number_format($ar, 5, '.').'">'.$html.'</div>';
+}
+#----------------------------------------------------
+# see https://stackoverflow.com/questions/30254833/how-to-get-masonry-and-imagesloaded-to-work-with-wordpress
+function my_masonry()
+{
+    // wp_enqueue_script('jquery-masonry');
+    wp_enqueue_script('masonry');
+    wp_enqueue_script('masonryloader', get_stylesheet_directory_uri() . '/js/TaS-masonryInitializer.js', array( 'masonry', 'jquery' ));
+}
+// add_action('wp_enqueue_scripts', 'my_masonry');
+
+#----------------------------------------------------
+# add search to menus
+# from https://www.isitwp.com/add-search-form-to-specific-wp-nav-menu/
+//  commented out to remove from menu - barry - 10/24/20
+// add_filter('wp_nav_menu_items', 'add_search_form', 10, 2);
+function add_search_form($items, $args)
+{
+    if ($args->theme_location == 'secondary') {
+        $new_item = '<li class="search-menu"><form role="search" method="get" id="searchform" class="searchform" action="'.home_url('/').'">     	<div> 		<label class="screen-reader-text" for="s">Search for:</label> 		<input type="text" id="searchbox" value="" name="s" id="s"> 		<input type="submit" id="searchsubmit" class="btn btn-primary btn-sm" value="'. esc_attr__('Search') .'"> 	</div> </form></li>';
+
+        $items .= $new_item;
+    }
+    return $items;
+}
+
+
+
