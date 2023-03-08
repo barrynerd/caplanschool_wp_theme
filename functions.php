@@ -112,35 +112,6 @@ function bcc_woocommerce_form_field($key, $field, $fields, $checkout)
     // echo "key; $key, field: $field";
     woocommerce_form_field($key, $field, $checkout->get_value($key));
 }
-#----------------------------------------------------
-// based on answer #1 here:
-// https://stackoverflow.com/questions/48302186/woocommerce-only-show-products-between-start-and-end-dates
-
-function custom__shortcode_products_query($query_args, $atts, $loop_name)
-{
-    //ugly, I know
-    global $__xomli_month_num;
-    global $__xomli_year;
-
-    $month = $__xomli_month_num;
-    $year = $__xomli_year;
-
-    $query_args['meta_query'] = array(
-        'meta_query' => array(
-            array(
-                'key'=>'_sku',
-                'value' => "-$year-$month",
-                'compare'=> 'REGEXP',
-                ),
-        ));
-
-    // echo ("<pre>");
-    // print_r( $query_args);
-    // echo ("</pre>");
-
-    return $query_args;
-}
-
 /**
  * Exclude products from a particular category on the shop page
  */
