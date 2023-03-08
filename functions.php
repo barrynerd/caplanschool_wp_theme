@@ -5,16 +5,6 @@ if (! defined('ABSPATH')) {
 
 
 #----------------------------------------------------
-// remove roduct image zoom
-
-// https://businessbloomer.com/woocommerce-disable-zoom-gallery-slider-lightbox-single-product/
-add_action('after_setup_theme', 'xomli_remove_zoom_theme_support', 99);
-
-function xomli_remove_zoom_theme_support()
-{
-    remove_theme_support('wc-product-gallery-zoom');
-}
-#----------------------------------------------------
 // from old ecaplan-child theme
 function bcc_product_has_deposit($product)
 {
@@ -220,11 +210,6 @@ add_shortcode('bc_ce_classes_by_month', 'bc_ce_classes_by_month');
 
 
 
-#----------------------------------------------------
-//stop spurious insertions of <br> tags after several shortcodes in a row
-// https://stackoverflow.com/questions/32570351/shortcode-output-adding-br-after-new-line
-// remove_filter( 'the_content', 'wpautop' );
-// add_filter( 'the_content', 'wpautop' , 12);
 #----------------------------------------------------
 // restore custom fields edit box that acf plugin is hiding
 // see https://www.wpbeginner.com/wp-tutorials/how-to-fix-custom-fields-not-showing-in-wordpress/
