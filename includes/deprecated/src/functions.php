@@ -133,7 +133,21 @@ function add_search_form($items, $args)
         $items .= $new_item;
     }
     return $items;
-}
+}#----------------------------------------------------
+/**
+ * Jetpack development mode.
+ *
+ * Note: Required for infinite scroll to work on localhost.
+ */
+#add_filter('jetpack_development_mode', '__return_true');
 
+
+#----------------------------------------------------
+/**
+ * Jetpack development mode.
+ *
+ * Note: Required for infinite scroll to work on localhost.
+ */
+#add_filter('jetpack_development_mode', '__return_true');
 
 

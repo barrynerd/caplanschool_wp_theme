@@ -208,3 +208,55 @@ add_filter('the_title', 'ask_elliott_bold_title', 10, 2);
 #----------------------------------------------------
 # from https://www.wpbeginner.com/plugins/add-excerpts-to-your-pages-in-wordpress/
 add_post_type_support('page', 'excerpt');
+
+#----------------------------------------------------
+#see: https://wordpress.stackexchange.com/questions/175793/get-first-video-from-the-post-both-embed-and-video-shortcodes
+function theme_oembed_videos()
+{
+    $post = get_the_ID();
+
+    if ($post && get_post($post)) {
+        $result="";
+        $pattern1 ="https:\/\/youtu.be\/[a-zA-Z0-9_-]*";
+        $pattern2 ="(http[sv]*:\/\/www.youtube.com\/.+?)\&";
+        $pattern3 ="(http[sv]*:\/\/www.youtube.com\/watch\?v=[A-Za-z0-9_-]*)";
+
+        $regex = "/$pattern1|$pattern2|$pattern3/i";
+        // if (current_user_can('administrator')) {
+        //     print_r($pattern);
+        //     print "<pre> Content:";
+        //     print get_the_content();
+        //     print "</pre>";
+        // }
+
+        if (preg_match($regex, get_the_content(), $matches)) {
+            // if (current_user_can('administrator')) {
+            //     print "Matches:";
+            //     print_r($matches);
+            // }
+
+            $my_embed = $matches[0];
+            if (!empty($matches[1])) {
+                $my_embed = $matches[1];
+            } elseif (!empty($matches[2])) {
+                $my_embed = $matches[2];
+            }
+
+            $my_embed = str_replace("httpv:", "https:", $my_embed);
+            $my_embed = str_replace("http:", "https:", $my_embed);
+
+            $my_embed = str_replace("www.youtube.com/watch?v=", "youtu.be/", $my_embed);
+
+            // if (current_user_can('administrator')) {
+            //     print "my_embed:";
+            //     print $my_embed;
+            // }
+
+            $embed = wp_oembed_get($my_embed, array('width'=>"100%", 'class'=>'embed-responsive-item'));
+            $result =<<<END
+				<div  class="embed-responsive embed-responsive-16by9">$embed</div>
+END;
+        }
+    }
+    return $result;
+}
