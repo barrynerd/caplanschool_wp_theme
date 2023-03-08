@@ -210,10 +210,6 @@ add_shortcode('bc_ce_classes_by_month', 'bc_ce_classes_by_month');
 
 
 
-#----------------------------------------------------
-// restore custom fields edit box that acf plugin is hiding
-// see https://www.wpbeginner.com/wp-tutorials/how-to-fix-custom-fields-not-showing-in-wordpress/
-add_filter('acf/settings/remove_wp_meta_box', '__return_false');
 
 #----------------------------------------------------
 #https://docs.woocommerce.com/document/woocommerce-shortcodes/
@@ -520,6 +516,7 @@ require_once dirname(__FILE__) . '/includes/shortcodes/index.php';
 
 require_once dirname(__FILE__) . '/includes/deprecated/index.php';
 
+require_once dirname(__FILE__) . '/includes/acf-overrides/index.php';
 require_once dirname(__FILE__) . '/includes/theme-setup/index.php';
 require_once dirname(__FILE__) . '/includes/woocommerce-overrides/index.php';
 require_once dirname(__FILE__) . '/includes/woocommerce-bootstrap-overrides/index.php';
