@@ -25,23 +25,6 @@ function understrap_child_widgets_init()
     ));
 }
 #----------------------------------------------------
-// woocommerce hooks
-
-// remove breadcrumbs from woocommerce pages
-
-// https://www.isitwp.com/remove-woocommerce-breadcrumbs/
-remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0);
-#----------------------------------------------------
-// remove tabls
-
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
-#----------------------------------------------------
-// Remove related products output
-
-// https://docs.woocommerce.com/document/remove-related-posts-output/
-remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
-
-#----------------------------------------------------
 // remove roduct image zoom
 
 // https://businessbloomer.com/woocommerce-disable-zoom-gallery-slider-lightbox-single-product/
@@ -572,6 +555,7 @@ require_once dirname(__FILE__) . '/includes/shortcodes/index.php';
 
 require_once dirname(__FILE__) . '/includes/deprecated/index.php';
 
+require_once dirname(__FILE__) . '/includes/woocommerce-overrides/index.php';
 require_once dirname(__FILE__) . '/includes/woocommerce-bootstrap-overrides/index.php';
 
 //based on https://tipsnfreeware.com/how-to-disable-the-widget-block-editor-in-wordpress-5-8/
