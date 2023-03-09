@@ -1,4 +1,7 @@
 <?php
+    if (! defined('ABSPATH')) {
+        exit; // Exit if accessed directly.
+    }
 
 //activate gutenberg for products
 // https://wplook.com/how-to-enamble-gutenberg-for-woocommerce-products/`

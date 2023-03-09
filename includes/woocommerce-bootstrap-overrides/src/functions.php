@@ -1,4 +1,7 @@
 <?php
+    if (! defined('ABSPATH')) {
+        exit; // Exit if accessed directly.
+    }
 
 #----------------------------------------------------
 // restore custom fields edit box that acf plugin is hiding

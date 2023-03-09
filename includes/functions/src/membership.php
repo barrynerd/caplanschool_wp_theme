@@ -1,4 +1,7 @@
 <?php
+    if (! defined('ABSPATH')) {
+        exit; // Exit if accessed directly.
+    }
 #----------------------------------------------------
 #force coupon usage for purchasing membership
 function bcc_force_coupon_usage_when_purchasing_membership()

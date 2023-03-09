@@ -1,4 +1,7 @@
 <?php
+    if (! defined('ABSPATH')) {
+        exit; // Exit if accessed directly.
+    }
     $container   = get_theme_mod( 'understrap_container_type' );
     if ( 'container' == $container ) : ?>
         <div class="container mx-0" >

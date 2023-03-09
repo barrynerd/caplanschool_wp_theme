@@ -1,4 +1,7 @@
 <?php
+    if (! defined('ABSPATH')) {
+        exit; // Exit if accessed directly.
+    }
 
 require_once dirname(__FILE__) . '/src/bc_members_classes_all.php';
 
