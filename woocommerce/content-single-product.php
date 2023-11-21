@@ -35,15 +35,22 @@ if ( post_password_required() ) {
 			the_post_thumbnail($image_size);
 	?>
 
-	<div class="summary entry-summary">
-		<?php
-			// move price on single product page to be after the priduct description
+	<?php
+		// move actions so things display in the right order
+			// move price on single product page to be after the long product description
 			remove_action("woocommerce_single_product_summary", "woocommerce_template_single_price", 10);
-			add_action("woocommerce_single_product_summary", "woocommerce_template_single_price", 25);
+			add_action("woocommerce_after_single_product_summary", "woocommerce_template_single_price", 25);
+
+			// move addtocart button on single product page to be after the long product description
+			remove_action("woocommerce_single_product_summary", "woocommerce_template_single_add_to_cart", 30);
+			add_action("woocommerce_after_single_product_summary", "woocommerce_template_single_add_to_cart", 25);
 
 			// remove the meta data from display
 			remove_action("woocommerce_single_product_summary","woocommerce_template_single_meta", 40);
 
+	?>
+	<div class="short-description">
+		<?php
 			/**
 			 * Hook: woocommerce_single_product_summary.
 			 *
@@ -56,20 +63,29 @@ if ( post_password_required() ) {
 			 * @hooked woocommerce_template_single_sharing - 50
 			 * @hooked WC_Structured_Data::generate_product_data() - 60
 			 */
+		
 			do_action( 'woocommerce_single_product_summary' );
-		?>
+			
+			?>
 	</div>
 
-	<?php
-		/**
-		 * Hook: woocommerce_after_single_product_summary.
-		 *
-		 * @hooked woocommerce_output_product_data_tabs - 10
-		 * @hooked woocommerce_upsell_display - 15
-		 * @hooked woocommerce_output_related_products - 20
-		 */
-		do_action( 'woocommerce_after_single_product_summary' );
-	?>
+	<div class="summary entry-summary">
+		<?php
+
+			/**
+			 * Hook: woocommerce_after_single_product_summary.
+			 *
+			 * @hooked woocommerce_output_product_data_tabs - 10
+			 * @hooked woocommerce_upsell_display - 15
+			 * @hooked woocommerce_output_related_products - 20
+			 */
+			// do_action( 'woocommerce_after_single_product_summary' );
+			
+			do_action( 'woocommerce_after_single_product_summary' );
+			// do_action( 'woocommerce_single_product_summary' );
+			?>
+	</div>
+
 </div>
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>

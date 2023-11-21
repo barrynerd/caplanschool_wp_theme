@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Default,No Sidebars Template
+/* Template Name: xDefault,No Sidebars Template
 Template Post Type: post, page, product
 */
 /**
