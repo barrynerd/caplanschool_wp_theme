@@ -35,7 +35,8 @@ function bc_ce_classes_by_title($atts)
 
     // see https://wordpress.stackexchange.com/questions/188892/getting-a-taxonomys-thumbnail-url
     $taxonomies = array( 'product_cat' );
-    $thumb_id = get_woocommerce_term_meta( $category_id, 'thumbnail_id', true );
+    // $thumb_id = get_woocommerce_term_meta( $category_id, 'thumbnail_id', true ); deprecated
+    $thumb_id = get_term_meta( $category_id, 'thumbnail_id', true );
     $term_img = wp_get_attachment_url(  $thumb_id );
 
     #query all continuing ed, all designations
