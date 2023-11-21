@@ -146,9 +146,13 @@ function woocommerce_shortcode_products_orderby($args)
 // from old ecaplan-child theme
 function bcc_product_has_deposit($product)
 {
+    //deprecate this function, we aren't doing deposits anymore
+    $has_deposit = false;
+    return $has_deposit;
+
+
     $product_id = $product->get_id();
     $deposit_enabled = get_post_meta($product_id, "_enable_deposit");
-    $has_deposit = false;
     if ($deposit_enabled[0] == "yes") {
         $has_deposit = true;
     }
