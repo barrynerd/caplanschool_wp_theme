@@ -28,23 +28,37 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 <?php
 
     $count = 1;
+    // New Jersey Agency and Ethics Evening Course: Tuesday Feb 13, 2024 to Thursday Feb 22, 2024
     $name = $product->get_name();
     $name = str_replace('Fair Housing - Then', 'Fair Housing: Then', $name, $count);
     $limit = -1;
-    $pieces = explode(" - ", $name);
+    // $pieces = explode(": ", $name);
+    $pieces = explode(": ", $name);
+
+    // print("<div>");
+    // print_r($pieces);
+    // print("</div>");
 
     $permalink = get_permalink( $product->get_id() );
+
+    //Tuesday Feb 13, 2024 to Thursday Feb 22, 2024
+    $dates = $pieces[1];
+
+    $pattern="/\w+ (.+?), (\d+) \w+ \w+ (.*?),.*/i";
+    $replacement = 'From $1 - $3, $2';
+    $result = preg_replace($pattern, $replacement, $dates);
+    // $result = $dates;
+
 ?>
   
 <div class="list-wrapper d-flex flex-row justify-content-center align-items-center my-3">
 
 
     <div class="course-wrapper d-flex flex-column col-7 pl-0">
-        <!-- <div class="card-title mb-0 px-0 font-weight-bold"> <?php print $pieces[0]; ?></div> -->
-        <div class="card-title mb-0 pl-0 font-weight-bold"> <?php print $pieces[1]; ?></div>
-        <div class="card-title mb-0 pl-0"> <?php print "$pieces[2]-$pieces[3]"; ?></div>
+        <div class="card-title mb-0 pl-0 font-weight-bold"><?php print $result; ?></div>
         <div class="card-title mb-0 pl-0"> <a href="<?php echo $permalink ?>">Course Details</a></div>
-    </div>
+
+        </div>
     <?php
         $add_to_cart_text = "Register";
         printf(
@@ -53,7 +67,8 @@ if ( empty( $product ) || ! $product->is_visible() ) {
             esc_attr( $product->get_id() ),
             esc_attr( $product->get_sku() ),
             $product->is_purchasable() ? 'add_to_cart_button' : '',
-            esc_attr( $product->product_type ),
+            // esc_attr( $product->product_type ), deprecated
+            esc_attr( $product->get_type() ),
             esc_html( $add_to_cart_text )
         );
     ?>
