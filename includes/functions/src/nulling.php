@@ -1,4 +1,7 @@
 <?php
+    if (! defined('ABSPATH')) {
+        exit; // Exit if accessed directly.
+    }
 
 // instructions:
 // place these lines near top of  public static function addons
