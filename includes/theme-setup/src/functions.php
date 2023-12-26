@@ -173,22 +173,42 @@ add_filter('get_the_archive_title', function ($title) {
 function bcc_widgets_init()
 {
     register_sidebar(array(
-        'name'          => 'BCC widget area 01',
-        'id'            => 'bcc_widget_area_01',
-        'before_widget' => '<div>',
+        'name'          => 'Announce Sidebar - Admin Only',
+        'id'            => 'announce-widget-area-admin-only',
+        'before_widget' => '<div id="announce-widget-area-admin-only">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="rounded">',
         'after_title'   => '</h2>',
     ));
 
     register_sidebar(array(
-        'name'          => 'BCC widget area 02',
-        'id'            => 'bcc_widget_area_02',
-        'before_widget' => '<div>',
+        'name'          => 'Announce Sidebar - Front Page Only',
+        'id'            => 'announce-widget-area-front-page-only',
+        'before_widget' => '<div id="announce-widget-area-front-page-only">',
         'after_widget'  => '</div>',
         'before_title'  => '<h2 class="rounded">',
         'after_title'   => '</h2>',
     ));
+
+    register_sidebar(array(
+        'name'          => 'BCC widget area 01',
+        'id'            => 'bcc-widget-area-01',
+        'before_widget' => '<div id="bcc-widget-area-01">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));    
+
+    register_sidebar(array(
+        'name'          => 'BCC widget area 02',
+        'id'            => 'bcc-widget-area-02',
+        'before_widget' => '<div id="bcc-widget-area-02">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ));    
+
+
 }
 add_action('widgets_init', 'bcc_widgets_init');
 
