@@ -44,12 +44,13 @@ $container = get_theme_mod('understrap_container_type');
 	<div class="hfeed site" id="page">
 
 		<?php
-		if (false) { ?>
-			<!-- if (is_active_sidebar('Announce Sidebar')) { ?> -->
-			<div id="wrapper-announce" class="header-announce">
-				<?php dynamic_sidebar('Announce Sidebar'); ?>
-			</div>
+		if (false) {
+			if (is_active_sidebar('Announce Sidebar')) { ?>
+				<div id="wrapper-announce" class="header-announce">
+					<?php dynamic_sidebar('Announce Sidebar'); ?>
+				</div>
 			<?php
+			}
 		}
 
 		if (is_front_page()) {
@@ -57,18 +58,18 @@ $container = get_theme_mod('understrap_container_type');
 				<div id="wrapper-announce" class="header-announce">
 					<?php dynamic_sidebar('announce-widget-area-front-page-only'); ?>
 				</div>
-			<?php
+				<?php
 			}
-		}
 
-		// only show these widgets to admin
-		if (current_user_can('edit_posts')) {
-			if (is_active_sidebar('announce-widget-area-admin-only')) {
-			?>
-				<div id="wrapper-announce" class="header-announce admin-only">
-					<?php dynamic_sidebar('announce-widget-area-admin-only'); ?>
-				</div>
+			// only show these front page widgets to admin
+			if (current_user_can('edit_posts')) {
+				if (is_active_sidebar('announce-widget-area-admin-only')) {
+				?>
+					<div id="wrapper-announce" class="header-announce admin-only">
+						<?php dynamic_sidebar('announce-widget-area-admin-only'); ?>
+					</div>
 		<?php
+				}
 			}
 		}
 		?>
