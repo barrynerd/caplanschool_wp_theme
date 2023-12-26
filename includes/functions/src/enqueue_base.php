@@ -18,6 +18,7 @@ function theme_enqueue_styles()
     }
 
  wp_enqueue_script('barry-scripts', get_stylesheet_directory_uri() . '/js/theme-bootstrap4.js',);
+//  wp_enqueue_script('barry-scripts', get_stylesheet_directory_uri() . '/src/js/bootstrap4/bootstrap4.js',);
 }
 
 
