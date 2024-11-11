@@ -47,7 +47,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     $dates = $pieces[1];
 
     $pattern="/\w+ (.+?), (\d+) \w+ \w+ (.*?),.*/i";
-    $replacement = 'From $1 - $3, $2';
+    $replacement = '$1 - $3, $2';
     $result = preg_replace($pattern, $replacement, $dates);
     // $result = $dates;
 
