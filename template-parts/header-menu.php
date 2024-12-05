@@ -12,7 +12,7 @@ if ('container' == $container) : ?>
         <a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e('Skip to content', 'understrap'); ?></a>
 
         <div>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="/">
                 <img class="old-logo" src="/wordpress/wp-content/uploads/cropped-roof-banner-02.png" />
             </a>
         </div>

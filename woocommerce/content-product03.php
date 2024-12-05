@@ -31,13 +31,15 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     // New Jersey Agency and Ethics Evening Course: Tuesday Feb 13, 2024 to Thursday Feb 22, 2024
     $name = $product->get_name();
     $name = str_replace('Fair Housing - Then', 'Fair Housing: Then', $name, $count);
+    $name = str_replace(', beginning', ': Beginning', $name, $count);
     $limit = -1;
     // $pieces = explode(": ", $name);
     $pieces = explode(": ", $name);
 
-    // print("<div>");
-    // print_r($pieces);
-    // print("</div>");
+     //print("<div>");
+     //print_r($pieces);
+     //print("$name");
+     //print("</div>");
 
     $permalink = get_permalink( $product->get_id() );
 
@@ -45,7 +47,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
     $dates = $pieces[1];
 
     $pattern="/\w+ (.+?), (\d+) \w+ \w+ (.*?),.*/i";
-    $replacement = 'From $1 - $3, $2';
+    $replacement = '$1 - $3, $2';
     $result = preg_replace($pattern, $replacement, $dates);
     // $result = $dates;
 
